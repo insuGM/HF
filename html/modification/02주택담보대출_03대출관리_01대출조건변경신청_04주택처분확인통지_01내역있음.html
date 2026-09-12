@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko">
+    <meta property="og:site_name" content="한국주택금융공사">
+    <meta property="og:updated_time" content="">
+    <meta name="twitter:card" content="summary">
+    <title>한국주택금융공사</title>
+
+    <!-- CSS 파일들 -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+
+    <!-- JavaScript 파일들 -->
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- !추가부분 -->
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+
+    <!--// !추가부분 -->
+</head>
+
+<body>
+
+    <div class="wrapper sub" id="app">
+        <div data-include="../inc/header.html"></div>
+
+        <div id="container">
+            <div class="container_in">
+
+                <div class="contents">
+                    <div class="krds-tab-area layer list">
+                        <div class="tab fill line scroll full">
+                            <ul role="tablist">
+                                <li id="tabInfo01" aria-controls="tabpanelInfo01">
+                                    <button type="button" class="btn-tab">담보대출 우대금리</button>
+                                </li>
+                                <li id="tabInfo02" aria-controls="tabpanelInfo02">
+                                    <button type="button" class="btn-tab">금리우대 보금자리론</button>
+                                </li>
+                                <li id="tabInfo03" aria-controls="tabpanelInfo03">
+                                    <button type="button" class="btn-tab">우대금리 신청 내역</button>
+                                </li>
+                                <li id="tabInfo04" aria-controls="tabpanelInfo04">
+                                    <button type="button" class="btn-tab">처분기한 유예</button>
+                                </li>
+                                <li id="tabInfo05" class="active" aria-controls="tabpanelInfo05" aria-selected="true">
+                                    <button type="button" class="btn-tab">주택처분 확인·통지</button>
+                                </li>
+                                <li id="tabInfo06" aria-controls="tabpanelInfo06">
+                                    <button type="button" class="btn-tab">대출계약 철회</button>
+                                </li>
+                                <li id="tabInfo07" aria-controls="tabpanelInfo07">
+                                    <button type="button" class="btn-tab">내집마련디딤돌대출 금리방식 변경 신청</button>
+                                </li>
+                                <li id="tabInfo08" aria-controls="tabpanelInfo08">
+                                    <button type="button" class="btn-tab">선납방식 변경 신청</button>
+                                </li>
+                                <li id="tabInfo09" aria-controls="tabpanelInfo09">
+                                    <button type="button" class="btn-tab">선납방식 변경 신청 내역</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-conts-wrap type1">
+                            <div id="tabpanelInfo01" aria-labelledby="tabInfo01" class="tab-conts" role="tabpanel">
+                            </div>
+                            <div id="tabpanelInfo02" aria-labelledby="tabInfo02" class="tab-conts" role="tabpanel">
+                            </div>
+                            <div id="tabpanelInfo03" aria-labelledby="tabInfo03" class="tab-conts" role="tabpanel">
+                            </div>
+                            <div id="tabpanelInfo04" aria-labelledby="tabInfo04" class="tab-conts" role="tabpanel">
+                            </div>
+                            <div id="tabpanelInfo05" aria-labelledby="tabInfo05" class="tab-conts active" role="tabpanel">
+                                <div class="pro_anagement_cont">
+                                    <div class="pro_anagement_list_area">
+                                        <ul class="list">
+                                            <li>
+                                                <div class="cont">
+                                                    <div class="title_cont">
+                                                        <div class="title">
+                                                            <h2>대출계좌 선택</h2>
+                                                            <div class="point">*</div>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="slt_btn type1 data" data-pop="com_pop2">
+                                                        <div class="sub">대출계좌</div>
+                                                        131-1233-123123 아낌e보금자리론
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="pro_anagement_cont gap down">
+                                    <div class="main_tit_area type2 m0">
+                                        <div class="title">대출금리 및 주택처분 내역</div>
+                                        <a href="#" class="link_btn">일시적 2주택 처분통지</a>
+                                    </div>
+                                    <div class="apply_status_list">
+                                        <div class="apply_status_card line">
+                                            <div class="card_head">
+                                                <div class="tit_box">
+                                                    <div class="tit">아낌e보금자리론</div>
+                                                    <div class="num">0116407055441</div>
+                                                </div>
+                                                <div class="date_box">
+                                                    <div class="label">신청일자</div>
+                                                    <div class="date">2026-05-07</div>
+                                                </div>
+                                            </div>
+                                            <div class="card_line"></div>
+                                            <div class="com_info_list_cont">
+                                                <ul class="list">
+                                                    <li>
+                                                        <div class="cont">
+                                                            <div class="box">
+                                                                <div class="tit">기본금리</div>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div class="txt">4.45%</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cont">
+                                                            <div class="box">
+                                                                <div class="tit">부가금리</div>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div class="txt">0%</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cont">
+                                                            <div class="box">
+                                                                <div class="tit">최종금리</div>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div class="txt">4.45%</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cont">
+                                                            <div class="box">
+                                                                <div class="tit">처분기한</div>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div class="txt">2026-04-05</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cont">
+                                                            <div class="box">
+                                                                <div class="tit">처분기한(유예 후)</div>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div class="txt">2026-04-05</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cont">
+                                                            <div class="box">
+                                                                <div class="tit">처분여부</div>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div class="txt">미처분</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cont">
+                                                            <div class="box">
+                                                                <div class="tit">기한이익상실여부</div>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div class="txt">해당</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cont">
+                                                            <div class="box">
+                                                                <div class="tit">처분통지 상태</div>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div class="txt">신청</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="card_line"></div>
+                                            <ul class="krds-info-list decimal">
+                                                <li>'23년 3월 7일부터 처분조건부 보금자리론 기존주택 처분기한이 대출실행일로부터 3년('23년 3월 7일 이전 신청 건에도 소급 적용)으로 연장되었습니다.</li>
+                                                <li>다만, 양수 전 계좌인 경우 양수 이후에 처분기한 소급연장, 문자 발송이 예정되어 있습니다.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro_anagement_cont gap down">
+                                    <div class="main_tit_area m0">
+                                        <div class="title">주택처분사실 통지</div>
+                                    </div>
+                                    <div class="fieldset">
+                                        <div class="form-group none_bg">
+                                            <div class="form-tit-cont">
+                                                <div class="form-tit"><label>주소</label></div>
+                                            </div>
+                                            <div class="form-conts">
+                                                <div class="form-inp">
+                                                    <input type="text" class="krds-input p0 disabled" value="(02049) 서울특별시 중랑구 봉화산로 **길 **" title="(02049) 서울특별시 중랑구 봉화산로 **길 **" disabled>
+                                                </div>
+                                                <div class="form-inp">
+                                                    <input type="text" class="krds-input p0 disabled" value="가동 ***호 (중화동, 장미빌라타운)" title="가동 ***호 (중화동, 장미빌라타운)" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro_anagement_cont gap down">
+                                    <div class="fieldset">
+                                        <div class="form-group none_bg">
+                                            <div class="form-tit-cont">
+                                                <div class="form-tit"><label>처분(소유권이전) 여부</label></div>
+                                            </div>
+                                            <div class="form-conts">
+                                                <div class="chip-wrap cunt auto">
+                                                    <div class="krds-form-chip type1">
+                                                        <input type="radio" class="radio" name="disposal" id="disposal_0" checked>
+                                                        <label for="disposal_0">처분안함</label>
+                                                    </div>
+                                                    <div class="krds-form-chip type1">
+                                                        <input type="radio" class="radio" name="disposal" id="disposal_1">
+                                                        <label for="disposal_1">처분함</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro_anagement_cont gap down">
+                                    <div class="fieldset">
+                                        <div class="form-group none_bg">
+                                            <div class="form-tit-cont">
+                                                <div class="form-tit"><label>처분통지일</label></div>
+                                            </div>
+                                            <div class="form-conts">
+                                                <div class="form-txt">2026.04.09</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro_anagement_cont gap down">
+                                    <div class="fieldset">
+                                        <div class="form-group none_bg">
+                                            <div class="form-tit-cont">
+                                                <div class="form-tit"><label>처분상세</label></div>
+                                            </div>
+                                            <div class="form-conts">
+                                                <div class="form-inp">
+                                                    <select class="krds-form-select" title="처분상세">
+                                                        <option value="">선택해 주세요.</option>
+                                                        <option value="1">소유권이전(등기부)</option>
+                                                        <option value="2">매매계약</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro_anagement_cont gap down">
+                                    <div class="fieldset">
+                                        <div class="form-group none_bg">
+                                            <div class="form-tit-cont">
+                                                <div class="form-tit"><label>위의 주소가 처분약정주소와 동일합니까?</label></div>
+                                            </div>
+                                            <div class="form-conts">
+                                                <div class="chip-wrap cunt auto">
+                                                    <div class="krds-form-chip type1">
+                                                        <input type="radio" class="radio" name="sameAddr2" id="sameAddr2_0" checked>
+                                                        <label for="sameAddr2_0">아니오</label>
+                                                    </div>
+                                                    <div class="krds-form-chip type1">
+                                                        <input type="radio" class="radio" name="sameAddr2" id="sameAddr2_1">
+                                                        <label for="sameAddr2_1">예</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro_anagement_cont gap down">
+                                    <div class="fieldset">
+                                        <div class="form-group none_bg">
+                                            <div class="form-tit-cont">
+                                                <div class="form-tit"><label>처분약정주소(변경)</label></div>
+                                            <button type="button" class="btn blue">주소검색</button>
+                                            </div>
+                                            <div class="form-conts">
+                                                <div class="form-inp">
+                                                    <input type="text" class="krds-input p0 disabled" placeholder="주소를 검색해주세요" title="주소를 검색해주세요" disabled>
+                                                </div>
+                                                <div class="form-inp">
+                                                    <input type="text" class="krds-input p0" placeholder="상세주소를 입력해주세요" title="상세주소">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg_line"></div>
+                                <div class="pro_anagement_cont gap down">
+                                    <div class="main_tit_area m0">
+                                        <div class="title">주의사항</div>
+                                    </div>
+                                    <ul class="krds-info-list decimal">
+                                        <li>기존주택 처분사실 확인 작업 및 금리인상 등의 조치를 위하여 처분사실 접수는 처분한 날의 해당월 마지막 영업일 16:00일까지 공사로 주택처분사실을 통지해야 합니다.<br><span class="txt_sub">예시 : 2017.01.02.(월) 주택 처분 시 2017.01.31.(화) 16:00까지</span></li>
+                                        <li>통지 통지방법 : 공사 홈페이지(본화면), 고객센터(1688-8114), 지사로 유선접수</li>
+                                        <li>통지내용이 사실과 다른 것으로 확인될 경우 부가금리가 적용될 수 있습니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="tabpanelInfo06" aria-labelledby="tabInfo06" class="tab-conts" role="tabpanel">
+                            </div>
+                            <div id="tabpanelInfo07" aria-labelledby="tabInfo07" class="tab-conts" role="tabpanel">
+                            </div>
+                            <div id="tabpanelInfo08" aria-labelledby="tabInfo08" class="tab-conts" role="tabpanel">
+                            </div>
+                            <div id="tabpanelInfo09" aria-labelledby="tabInfo09" class="tab-conts" role="tabpanel">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn_cont page">
+                    <button type="button" class="com_btn blue2">확인</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div data-include="../inc/footer.html"></div>
+            <!-- 처분증빙 서류제출 -->
+            <div class="com_pop_wrap type41">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">처분증빙 서류제출</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>주택처분사실을 증빙할 수 있는 서류를 간편 서류제출을 통해 업로드해주시기 바랍니다.</li>
+                        </ul>
+                        <ul class="krds-info-list ordered">
+                            <li><span class="num">&#9312;</span> 소유권을 이전한 경우 : 제출서류 없음</li>
+                            <li><span class="num">&#9313;</span> 분양권을 처분한 경우 : 권리의무승계내역, 부동산거래신고필증(시·군·구청 발급가능), 채무인수약정서</li>
+                            <li><span class="num">&#9314;</span> 임대사업자로 등록한 경우(17.09.26 이후 신청분만 해당) : 임대사업자등록증(시·군·구청 발급가능)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //처분증빙 서류제출 -->
+
+
+    </div>
+
+</body>
+<script type="text/javascript" src="/resources/js/include.js"></script>
+</html>

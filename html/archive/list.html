@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko">
+    <meta property="og:site_name" content="한국주택금융공사">
+    <meta property="og:updated_time" content="">
+    <meta name="twitter:card" content="summary">
+    <title>한국주택금융공사</title>
+
+    <!-- CSS 파일들 -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+
+    <!-- JavaScript 파일들 -->
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- !추가부분 -->
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/krds.custom.home.js"></script>
+
+    <!--// !추가부분 -->
+</head>
+<body>
+
+<div class="wrapper sub" id="app">
+    <div data-include="../inc/header.html"></div>
+
+    <div id="container">
+        <div class="container_in">
+
+            <div class="contents">
+                <div class="krds-tab-area layer list">
+                    <div class="tab fill full">
+                        <ul role="tablist">
+                            <li id="tabInfo01" class="active" aria-controls="tabpanelInfo01" aria-selected="true">
+                                <button type="button" class="btn-tab">주택담보대출</button>
+                            </li>
+                            <li id="tabInfo02" aria-controls="tabpanelInfo02">
+                                <button type="button" class="btn-tab">주택보증</button>
+                            </li>
+                            <li id="tabInfo03" aria-controls="tabpanelInfo03">
+                                <button type="button" class="btn-tab">주택연금</button>
+                            </li>
+                        </ul>
+                        <div class="bg_line"></div>
+                    </div>
+
+                    <div class="tab-conts-wrap">
+                        <!-- 주택담보대출 -->
+                        <div id="tabpanelInfo01" aria-labelledby="tabInfo01" class="tab-conts active" role="tabpanel">
+                            <div class="com_sch_cont">
+                                <div class="krds_select_box" id="krds-sel-1">
+                                    <div class="select_tit">
+                                        <button type="button" id="appl-sch-sel1" aria-haspopup="listbox" aria-expanded="false" aria-controls="list-krds-sel-1" title="제목+내용"><span class="opt_txt">제목+내용</span></button>
+                                    </div>
+                                    <div class="select_list" style="display: none;">
+                                        <ul role="listbox" id="list-krds-sel-1">
+                                            <li>
+                                                <button type="button" value="제목+내용" title="제목+내용" role="option" aria-selected="true" class="selected"><span class="opt_txt">제목+내용</span></button>
+                                            </li>
+                                            <li>
+                                                <button type="button" value="제목" title="제목" role="option" aria-selected="false"><span class="opt_txt">제목</span></button>
+                                            </li>
+                                            <li>
+                                                <button type="button" value="내용" title="내용" role="option" aria-selected="false"><span class="opt_txt">내용</span></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="inp_area">
+                                    <!-- 접근성 준수를 위한 label제공 외 title속성으로 대체 -->
+                                    <input type="text" placeholder="검색어를 입력해주세요" title="검색어를 입력해주세요">
+                                    <button type="button" class="sch_btn" title="검색"></button>
+                                </div>
+                            </div>
+
+                            <div class="total_page">
+                                <div>전체 <span class="blue">215</span>건</div>
+
+                                <button type="button" class="krds-btn text" data-pop="com_pop11" title="주택담보대출 유형 선택"><i class="svg-icon ico-filter"></i></button>
+                            </div>
+
+                            <div class="notice_list_cont">
+                                <ul class="list">
+                                    <li>
+                                        <a href="/html/archive/view.html" class="cont">
+                                            <div class="title_area">
+                                                <div class="krds-badge bg-light-primary">보금자리론</div>
+                                                <div class="title">
+                                                    <div class="tit">보금자리론 관련서식 개정 전문(2026.5.15기준)</div>
+                                                </div>
+                                                <div class="data_cont">
+                                                    <div class="data"><span class="sr-only">등록일</span>2026-04-23</div>
+                                                    <div class="data"><span class="sr-only">조회수</span>1,935</div>
+                                                    <i class="svg-icon ico-file"></i>
+                                                    <span class="sr-only">첨부파일 있음</span>
+                                                </div>
+                                            </div>
+                                            <i class="svg-icon ico-angle right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/html/archive/view.html" class="cont">
+                                            <div class="title_area">
+                                                <div class="krds-badge bg-light-primary">보금자리론</div>
+                                                <div class="title">
+                                                    <div class="tit">보금자리론 관련서식 개정 전문(2026.5.15기준)</div>
+                                                </div>
+                                                <div class="data_cont">
+                                                    <div class="data"><span class="sr-only">등록일</span>2026-04-23</div>
+                                                    <div class="data"><span class="sr-only">조회수</span>1,935</div>
+                                                    <i class="svg-icon ico-file"></i>
+                                                    <span class="sr-only">첨부파일 있음</span>
+                                                </div>
+                                            </div>
+                                            <i class="svg-icon ico-angle right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/html/archive/view.html" class="cont">
+                                            <div class="title_area">
+                                                <div class="krds-badge bg-light-primary">내집마련디딤돌대출</div>
+                                                <div class="title">
+                                                    <div class="tit">내집마련 디딤돌대출 관련서식 개정 전문(2026.1.1기준) 디딤돌 대출 관련서식 개정 전문</div>
+                                                </div>
+                                                <div class="data_cont">
+                                                    <div class="data"><span class="sr-only">등록일</span>2026-04-23</div>
+                                                    <div class="data"><span class="sr-only">조회수</span>1,935</div>
+                                                    <i class="svg-icon ico-file"></i>
+                                                    <span class="sr-only">첨부파일 있음</span>
+                                                </div>
+                                            </div>
+                                            <i class="svg-icon ico-angle right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/html/archive/view.html" class="cont">
+                                            <div class="title_area">
+                                                <div class="krds-badge bg-light-primary">내집마련디딤돌대출</div>
+                                                <div class="title">
+                                                    <div class="tit">내집마련 디딤돌 대출 관련서식 개정 전문(2025.1.1기준)</div>
+                                                </div>
+                                                <div class="data_cont">
+                                                    <div class="data"><span class="sr-only">등록일</span>2026-04-23</div>
+                                                    <div class="data"><span class="sr-only">조회수</span>1,935</div>
+                                                    <i class="svg-icon ico-file"></i>
+                                                    <span class="sr-only">첨부파일 있음</span>
+                                                </div>
+                                            </div>
+                                            <i class="svg-icon ico-angle right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/html/archive/view.html" class="cont">
+                                            <div class="title_area">
+                                                <div class="krds-badge bg-light-primary">보금자리론</div>
+                                                <div class="title">
+                                                    <div class="tit">보금자리론 관련서식 개정 전문(2026.5.15기준)</div>
+                                                </div>
+                                                <div class="data_cont">
+                                                    <div class="data"><span class="sr-only">등록일</span>2026-04-23</div>
+                                                    <div class="data"><span class="sr-only">조회수</span>1,935</div>
+                                                    <i class="svg-icon ico-file"></i>
+                                                    <span class="sr-only">첨부파일 있음</span>
+                                                </div>
+                                            </div>
+                                            <i class="svg-icon ico-angle right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/html/archive/view.html" class="cont">
+                                            <div class="title_area">
+                                                <div class="krds-badge bg-light-primary">보금자리론</div>
+                                                <div class="title">
+                                                    <div class="tit">보금자리론 관련서식 개정 전문(2026.5.15기준)</div>
+                                                </div>
+                                                <div class="data_cont">
+                                                    <div class="data"><span class="sr-only">등록일</span>2026-04-23</div>
+                                                    <div class="data"><span class="sr-only">조회수</span>1,935</div>
+                                                    <i class="svg-icon ico-file"></i>
+                                                    <span class="sr-only">첨부파일 있음</span>
+                                                </div>
+                                            </div>
+                                            <i class="svg-icon ico-angle right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/html/archive/view.html" class="cont">
+                                            <div class="title_area">
+                                                <div class="krds-badge bg-light-primary">보금자리론</div>
+                                                <div class="title">
+                                                    <div class="tit">보금자리론 관련서식 개정 전문(2026.5.15기준)</div>
+                                                </div>
+                                                <div class="data_cont">
+                                                    <div class="data"><span class="sr-only">등록일</span>2026-04-23</div>
+                                                    <div class="data"><span class="sr-only">조회수</span>1,935</div>
+                                                    <i class="svg-icon ico-file"></i>
+                                                    <span class="sr-only">첨부파일 있음</span>
+                                                </div>
+                                            </div>
+                                            <i class="svg-icon ico-angle right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="btn_cont page fixed">
+                                <button type="button" class="com_btn">더보기 (1/50)</button>
+                            </div>
+                        </div>
+
+                        <!-- 주택보증 -->
+                        <div id="tabpanelInfo02" aria-labelledby="tabInfo02" class="tab-conts" role="tabpanel">
+                            <div class="com_sch_cont">
+                                <div class="krds_select_box" id="krds-sel-2">
+                                    <div class="select_tit">
+                                        <button type="button" id="appl-sch-sel2" aria-haspopup="listbox" aria-expanded="false" aria-controls="list-krds-sel-2" title="제목+내용"><span class="opt_txt">제목+내용</span></button>
+                                    </div>
+                                    <div class="select_list" style="display: none;">
+                                        <ul role="listbox" id="list-krds-sel-2">
+                                            <li>
+                                                <button type="button" value="제목+내용" title="제목+내용" role="option" aria-selected="true" class="selected"><span class="opt_txt">제목+내용</span></button>
+                                            </li>
+                                            <li>
+                                                <button type="button" value="제목" title="제목" role="option" aria-selected="false"><span class="opt_txt">제목</span></button>
+                                            </li>
+                                            <li>
+                                                <button type="button" value="내용" title="내용" role="option" aria-selected="false"><span class="opt_txt">내용</span></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="inp_area">
+                                    <!-- 접근성 준수를 위한 label제공 외 title속성으로 대체 -->
+                                    <input type="text" placeholder="검색어를 입력해주세요" title="검색어를 입력해주세요">
+                                    <button type="button" class="sch_btn" title="검색"></button>
+                                </div>
+                            </div>
+
+                            <div class="total_page">
+                                <div>전체 <span class="blue">215</span>건</div>
+
+                                <button type="button" class="krds-btn text" data-pop="com_pop12" title="주택보증 유형 선택"><i class="svg-icon ico-filter"></i></button>
+                            </div>
+
+                            <div class="notice_list_cont">
+                                <ul class="list">
+                                    <li>
+                                        <a href="/html/archive/view.html" class="cont">
+                                            <div class="title_area">
+                                                <div class="krds-badge bg-light-primary">전세자금보증</div>
+                                                <div class="title">
+                                                    <div class="tit">임대차보증금에 대한 권리침해 유무확인서</div>
+                                                </div>
+                                                <div class="data_cont">
+                                                    <div class="data"><span class="sr-only">등록일</span>2026-04-23</div>
+                                                    <div class="data"><span class="sr-only">조회수</span>1,935</div>
+                                                    <i class="svg-icon ico-file"></i>
+                                                    <span class="sr-only">첨부파일 있음</span>
+                                                </div>
+                                            </div>
+                                            <i class="svg-icon ico-angle right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/html/archive/view.html" class="cont">
+                                            <div class="title_area">
+                                                <div class="krds-badge bg-light-primary">중도금보증</div>
+                                                <div class="title">
+                                                    <div class="tit">임대차계약 중도해지 쌍방협의서</div>
+                                                </div>
+                                                <div class="data_cont">
+                                                    <div class="data"><span class="sr-only">등록일</span>2026-04-23</div>
+                                                    <div class="data"><span class="sr-only">조회수</span>1,935</div>
+                                                    <i class="svg-icon ico-file"></i>
+                                                    <span class="sr-only">첨부파일 있음</span>
+                                                </div>
+                                            </div>
+                                            <i class="svg-icon ico-angle right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/html/archive/view.html" class="cont">
+                                            <div class="title_area">
+                                                <div class="krds-badge bg-light-primary">임대보증금 반환자금보증</div>
+                                                <div class="title">
+                                                    <div class="tit">임대차 계약종료 확인서</div>
+                                                </div>
+                                                <div class="data_cont">
+                                                    <div class="data"><span class="sr-only">등록일</span>2026-04-23</div>
+                                                    <div class="data"><span class="sr-only">조회수</span>1,935</div>
+                                                    <i class="svg-icon ico-file"></i>
+                                                    <span class="sr-only">첨부파일 있음</span>
+                                                </div>
+                                            </div>
+                                            <i class="svg-icon ico-angle right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/html/archive/view.html" class="cont">
+                                            <div class="title_area">
+                                                <div class="krds-badge bg-light-primary">전세지킴보증</div>
+                                                <div class="title">
+                                                    <div class="tit">임대차보증금에 대한 권리침해 유무확인서</div>
+                                                </div>
+                                                <div class="data_cont">
+                                                    <div class="data"><span class="sr-only">등록일</span>2026-04-23</div>
+                                                    <div class="data"><span class="sr-only">조회수</span>1,935</div>
+                                                    <i class="svg-icon ico-file"></i>
+                                                    <span class="sr-only">첨부파일 있음</span>
+                                                </div>
+                                            </div>
+                                            <i class="svg-icon ico-angle right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/html/archive/view.html" class="cont">
+                                            <div class="title_area">
+                                                <div class="krds-badge bg-light-primary">보금자리론</div>
+                                                <div class="title">
+                                                    <div class="tit">임대차보증금에 대한 권리침해 유무확인서</div>
+                                                </div>
+                                                <div class="data_cont">
+                                                    <div class="data"><span class="sr-only">등록일</span>2026-04-23</div>
+                                                    <div class="data"><span class="sr-only">조회수</span>1,935</div>
+                                                    <i class="svg-icon ico-file"></i>
+                                                    <span class="sr-only">첨부파일 있음</span>
+                                                </div>
+                                            </div>
+                                            <i class="svg-icon ico-angle right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/html/archive/view.html" class="cont">
+                                            <div class="title_area">
+                                                <div class="krds-badge bg-light-primary">보금자리론</div>
+                                                <div class="title">
+                                                    <div class="tit">임대차보증금에 대한 권리침해 유무확인서</div>
+                                                </div>
+                                                <div class="data_cont">
+                                                    <div class="data"><span class="sr-only">등록일</span>2026-04-23</div>
+                                                    <div class="data"><span class="sr-only">조회수</span>1,935</div>
+                                                    <i class="svg-icon ico-file"></i>
+                                                    <span class="sr-only">첨부파일 있음</span>
+                                                </div>
+                                            </div>
+                                            <i class="svg-icon ico-angle right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/html/archive/view.html" class="cont">
+                                            <div class="title_area">
+                                                <div class="krds-badge bg-light-primary">보금자리론</div>
+                                                <div class="title">
+                                                    <div class="tit">임대차보증금에 대한 권리침해 유무확인서</div>
+                                                </div>
+                                                <div class="data_cont">
+                                                    <div class="data"><span class="sr-only">등록일</span>2026-04-23</div>
+                                                    <div class="data"><span class="sr-only">조회수</span>1,935</div>
+                                                    <i class="svg-icon ico-file"></i>
+                                                    <span class="sr-only">첨부파일 있음</span>
+                                                </div>
+                                            </div>
+                                            <i class="svg-icon ico-angle right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="btn_cont page fixed">
+                                <button type="button" class="com_btn">더보기 (1/50)</button>
+                            </div>
+                        </div>
+
+                        <!-- 주택연금 : 유형 필터 없음 (상품 구분 뱃지 없음) -->
+                        <div id="tabpanelInfo03" aria-labelledby="tabInfo03" class="tab-conts" role="tabpanel">
+                            <div class="com_sch_cont">
+                                <div class="krds_select_box" id="krds-sel-3">
+                                    <div class="select_tit">
+                                        <button type="button" id="appl-sch-sel3" aria-haspopup="listbox" aria-expanded="false" aria-controls="list-krds-sel-3" title="제목+내용"><span class="opt_txt">제목+내용</span></button>
+                                    </div>
+                                    <div class="select_list" style="display: none;">
+                                        <ul role="listbox" id="list-krds-sel-3">
+                                            <li>
+                                                <button type="button" value="제목+내용" title="제목+내용" role="option" aria-selected="true" class="selected"><span class="opt_txt">제목+내용</span></button>
+                                            </li>
+                                            <li>
+                                                <button type="button" value="제목" title="제목" role="option" aria-selected="false"><span class="opt_txt">제목</span></button>
+                                            </li>
+                                            <li>
+                                                <button type="button" value="내용" title="내용" role="option" aria-selected="false"><span class="opt_txt">내용</span></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="inp_area">
+                                    <!-- 접근성 준수를 위한 label제공 외 title속성으로 대체 -->
+                                    <input type="text" placeholder="검색어를 입력해주세요" title="검색어를 입력해주세요">
+                                    <button type="button" class="sch_btn" title="검색"></button>
+                                </div>
+                            </div>
+
+                            <div class="total_page">
+                                <div>전체 <span class="blue">215</span>건</div>
+                            </div>
+
+                            <div class="notice_list_cont">
+                                <ul class="list">
+                                    <li>
+                                        <a href="/html/archive/view.html" class="cont">
+                                            <div class="title_area">
+                                                <div class="title">
+                                                    <div class="tit">주택연금 설명서 및 체크리스트(신탁방식)</div>
+                                                </div>
+                                                <div class="data_cont">
+                                                    <div class="data"><span class="sr-only">등록일</span>2026-04-23</div>
+                                                    <div class="data"><span class="sr-only">조회수</span>1,935</div>
+                                                    <i class="svg-icon ico-file"></i>
+                                                    <span class="sr-only">첨부파일 있음</span>
+                                                </div>
+                                            </div>
+                                            <i class="svg-icon ico-angle right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/html/archive/view.html" class="cont">
+                                            <div class="title_area">
+                                                <div class="title">
+                                                    <div class="tit">주택연금 설명서 및 체크리스트(신탁방식)</div>
+                                                </div>
+                                                <div class="data_cont">
+                                                    <div class="data"><span class="sr-only">등록일</span>2026-04-23</div>
+                                                    <div class="data"><span class="sr-only">조회수</span>1,935</div>
+                                                    <i class="svg-icon ico-file"></i>
+                                                    <span class="sr-only">첨부파일 있음</span>
+                                                </div>
+                                            </div>
+                                            <i class="svg-icon ico-angle right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/html/archive/view.html" class="cont">
+                                            <div class="title_area">
+                                                <div class="title">
+                                                    <div class="tit">주택연금 설명서 및 체크리스트(신탁방식)</div>
+                                                </div>
+                                                <div class="data_cont">
+                                                    <div class="data"><span class="sr-only">등록일</span>2026-04-23</div>
+                                                    <div class="data"><span class="sr-only">조회수</span>1,935</div>
+                                                    <i class="svg-icon ico-file"></i>
+                                                    <span class="sr-only">첨부파일 있음</span>
+                                                </div>
+                                            </div>
+                                            <i class="svg-icon ico-angle right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/html/archive/view.html" class="cont">
+                                            <div class="title_area">
+                                                <div class="title">
+                                                    <div class="tit">주택연금 설명서 및 체크리스트(신탁방식)</div>
+                                                </div>
+                                                <div class="data_cont">
+                                                    <div class="data"><span class="sr-only">등록일</span>2026-04-23</div>
+                                                    <div class="data"><span class="sr-only">조회수</span>1,935</div>
+                                                    <i class="svg-icon ico-file"></i>
+                                                    <span class="sr-only">첨부파일 있음</span>
+                                                </div>
+                                            </div>
+                                            <i class="svg-icon ico-angle right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/html/archive/view.html" class="cont">
+                                            <div class="title_area">
+                                                <div class="title">
+                                                    <div class="tit">주택연금 설명서 및 체크리스트(신탁방식)</div>
+                                                </div>
+                                                <div class="data_cont">
+                                                    <div class="data"><span class="sr-only">등록일</span>2026-04-23</div>
+                                                    <div class="data"><span class="sr-only">조회수</span>1,935</div>
+                                                    <i class="svg-icon ico-file"></i>
+                                                    <span class="sr-only">첨부파일 있음</span>
+                                                </div>
+                                            </div>
+                                            <i class="svg-icon ico-angle right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/html/archive/view.html" class="cont">
+                                            <div class="title_area">
+                                                <div class="title">
+                                                    <div class="tit">주택연금 설명서 및 체크리스트(신탁방식)</div>
+                                                </div>
+                                                <div class="data_cont">
+                                                    <div class="data"><span class="sr-only">등록일</span>2026-04-23</div>
+                                                    <div class="data"><span class="sr-only">조회수</span>1,935</div>
+                                                    <i class="svg-icon ico-file"></i>
+                                                    <span class="sr-only">첨부파일 있음</span>
+                                                </div>
+                                            </div>
+                                            <i class="svg-icon ico-angle right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/html/archive/view.html" class="cont">
+                                            <div class="title_area">
+                                                <div class="title">
+                                                    <div class="tit">주택연금 설명서 및 체크리스트(신탁방식)</div>
+                                                </div>
+                                                <div class="data_cont">
+                                                    <div class="data"><span class="sr-only">등록일</span>2026-04-23</div>
+                                                    <div class="data"><span class="sr-only">조회수</span>1,935</div>
+                                                    <i class="svg-icon ico-file"></i>
+                                                    <span class="sr-only">첨부파일 있음</span>
+                                                </div>
+                                            </div>
+                                            <i class="svg-icon ico-angle right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="btn_cont page fixed">
+                                <button type="button" class="com_btn">더보기 (1/50)</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- //sub_con -->
+        </div> <!-- //container_in -->
+    </div>
+
+    <div data-include="../inc/footer.html"></div>
+
+    <!-- 주택담보대출 유형 선택 -->
+    <div class="com_pop_wrap type11">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">주택담보대출 유형 선택</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="sort_list_area">
+                    <ul class="list">
+                        <li>
+                            <button type="button" class="chk_btn active">
+                                <div class="txt">전체</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">보금자리론</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">내집마련디딤돌</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">대출구조전환 보금자리론</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">서민형 안심전환대출</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">채무조정</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 주택보증 유형 선택 -->
+    <div class="com_pop_wrap type12">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">주택보증 유형 선택</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="sort_list_area">
+                    <ul class="list">
+                        <li>
+                            <button type="button" class="chk_btn active">
+                                <div class="txt">전체</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">전세자금보증</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">중도금보증</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">구입자금보증</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">건축개량자금보증</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">월세자금보증</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">임대보증금 반환자금보증</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">주택사업자보증</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">전세지킴보증</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- //wrap -->
+
+
+
+</body>
+<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+<script type="text/javascript" src="/resources/js/include.js"></script>
+<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</html>

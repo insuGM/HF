@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko">
+    <meta property="og:site_name" content="한국주택금융공사">
+    <meta property="og:updated_time" content="">
+    <meta name="twitter:card" content="summary">
+    <title>한국주택금융공사</title>
+    
+    <!-- CSS 파일들 -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+
+    <!-- JavaScript 파일들 -->
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+    
+    <!-- !추가부분 -->
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+
+    <!--// !추가부분 -->
+</head>
+<body>
+
+<div class="wrapper sub" id="app">
+    <div data-include="../inc/header.html"></div>
+
+    <div id="container">
+        <div class="container_in">
+
+            <div class="contents com_sub">
+
+                <div class="debt_list_cont">
+                    <div class="inner_box">
+                        <div class="top_area">
+                            <div class="sub_tit_area">
+                                <h2 class="tit">채무인수대상 대출계좌조회</h2>
+                            </div>
+                            <div class="debt_list_area">
+                                <ul class="list">
+                                    <li>
+                                        <div class="fieldset">
+                                            <!-- 폼그룹 -->
+                                            <div class="form-group none_bg">
+                                                <div class="form-tit">
+                                                    <label for="consult_name21">
+                                                        <span class="point">*</span>
+                                                        채무인수 금융기관
+                                                    </label>
+                                                </div>
+                                                <div class="form-conts">
+                                                    <button type="button" data-pop="com_pop11" class="slt_btn" title="채무인수 금융기관 팝업 열기">없음</button>
+                                                </div>
+                                            </div>
+                                            <!-- //폼그룹 -->
+                                            <!-- 폼그룹 -->
+                                            <div class="form-group none_bg">
+                                                <div class="form-tit">
+                                                    <label for="consult_name22">
+                                                        <span class="point">*</span>
+                                                        채무인수 계좌번호
+                                                    </label>
+                                                </div>
+                                                <div class="form-conts">
+                                                    <input type="text" id="consult_name22" class="krds-input" placeholder="- 없이 계좌번호를 입력하세요" title="채무인수 계좌번호를 입력해 주세요." value="">
+                                                </div>
+                                            </div>
+                                            <!-- //폼그룹 -->
+                                        </div>
+                                        <!-- text list -->
+                                        <!-- krds-info-list -->
+                                        <div class="krds_info_list_area mt">
+                                            <ul class="krds-info-list decimal">
+                                                <li>My HF → 주택담보대출 → 신청내역 조회 → 대출정보 상세조회 클릭 → 대출계좌 확인 가능(대출계좌는 자동이체 계좌번호가 아닙니다.)</li>
+                                                <li>채무인수 신청에 어려움을 겪는 만 50세 이상, 청각장애인 또는 재외동포(재외국민, 외국국적동포)를 대상으로 원격신청지원 서비스를 제공하고 있습니다. 해당 서비스를 필요로 하시는 경우, [주택담보대출신청 항목 &gt; 원격지원을 통한 신청] 화면에서 서비스신청 가능합니다.</li>
+                                            </ul>
+                                        </div>
+                                        <!-- //krds-info-list -->
+                                        <!-- //text list -->
+                                        <!-- text list -->
+                                        <!-- krds-info-list -->
+                                        <div class="krds_info_list_area mt bg">
+                                            <ul class="krds-info-list decimal">
+                                                <li>채무인수하시려는 대출의 금융기관과 계좌번호(자동이체계좌 아님)를 입력하시고 '조회' 버튼을 클릭하시면 계좌정보가 표시됩니다.</li>
+                                                <li>가상계좌 입금 시 본인 계좌의 이체한도를 먼저 확인하시기 바랍니다.</li>
+                                            </ul>
+                                        </div>
+                                        <!-- //krds-info-list -->
+                                        <!-- //text list -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="btn_cont type1 sub2">
+                            <button type="button" class="com_btn" disabled>조회</button>
+                        </div>
+                    </div> 
+                </div>
+
+            </div>
+            <!-- //sub_con -->
+        </div> <!-- //container_in -->
+    </div>
+
+    <div data-include="../inc/footer.html"></div>
+            <!-- 계좌조회에 실패하였습니다. -->
+            <div class="com_pop_wrap w_min type21 active">
+                <div class="com_pop_cont active">
+                    <div class="title_area">
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="main_tit_area">
+                            <div class="title small">알림</div>
+                            <div class="title">계좌조회에 실패하였습니다.</div>
+                            <div class="text">금융기관, 계좌번호를 확인해 주세요.</div>
+                        </div>
+                        <div class="btn_cont direction">
+                            <button type="button" class="com_btn blue2">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //계좌조회에 실패하였습니다. -->
+
+
+    <div class="com_pop_wrap type11">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">채무인수 금융기관</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="sort_list_area">
+                    <ul class="list">
+                        <li>
+                            <button type="button" class="chk_btn active">
+                                <div class="txt">기타</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">기타</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">기타</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div> <!-- //wrap -->
+
+
+
+</body>
+<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+<script type="text/javascript" src="/resources/js/include.js"></script>
+<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</html>

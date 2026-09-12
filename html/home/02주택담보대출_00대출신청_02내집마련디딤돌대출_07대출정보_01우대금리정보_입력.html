@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko">
+    <meta property="og:site_name" content="한국주택금융공사">
+    <meta property="og:updated_time" content="">
+    <meta name="twitter:card" content="summary">
+    <title>한국주택금융공사</title>
+    
+    <!-- CSS 파일들 -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+
+    <!-- JavaScript 파일들 -->
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+    
+    <!-- !추가부분 -->
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+
+    <!--// !추가부분 -->
+</head>
+<body>
+
+<div class="wrapper sub" id="app">
+    <div data-include="../inc/header.html"></div>
+
+    <div id="container">
+        <div class="container_in">
+
+            <div class="contents none_bg">
+                <div class="pro_anagement_cont gap down">
+                    <div class="main_tit_area m0">
+                        <h2 class="tit">우대금리 정보</h2>
+                    </div>
+                    <div class="fieldset up">
+                        <div class="form-group none_bg">
+                            <div class="form-conts">
+                                <div class="rate_box_cont">
+                                    <div class="rate_box">
+                                        <div class="rate_item">
+                                            <div class="rate_tit">기준금리<i class="svg-icon ico-question"></i></div>
+                                            <div class="rate_val"><span class="num">4.20</span><span class="unit">%</span></div>
+                                        </div>
+                                        <div class="rate_line"></div>
+                                        <div class="rate_item">
+                                            <div class="rate_tit">적용 예상 금리</div>
+                                            <div class="rate_val blue"><span class="num">4.20</span><span class="unit">%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-conts">
+                                <ul class="krds-info-list decimal">
+                                    <li>우대금리는 <strong class="bold">최대 1.0%p</strong>를 한도로 중복 적용 가능합니다. (아낌e 할인금리 제외)</li>
+                                    <li>선택 합계 1.0%p 초과 시 표기된 값보다 실제 차감 적용되는 우대금리 값이 더 작을 수 있습니다.</li>
+                                    <li>부부합산소득 <strong>7천만원 초과</strong>할 경우, 기타/사회적배려층 우대금리가 체크되지 않습니다. (녹색건축물 우대금리 제외)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont type2">
+                                <div class="form-tit-box">
+                                    <div class="form-tit"><label>기타 우대금리</label></div>
+                                </div>
+                                <div class="apply_rate">적용우대금리 <span class="num">0</span><span class="bold">개 항목</span></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="com_list_bg_cont gap">
+                                    <div class="com_list_bg_area">
+                                        <div class="krds-check-area direction">
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="etcRate00">
+                                                <label for="etcRate00">저소득 청년 (-0.1%)</label>
+                                            </div>
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="etcRate01">
+                                                <label for="etcRate01">아낌e할인 (-0.1%)</label>
+                                            </div>
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="etcRate02">
+                                                <label for="etcRate02">전세사기 피해자 (-0.1%)</label>
+                                            </div>
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="etcRate03">
+                                                <label for="etcRate03">녹색건축물 우대금리 (-0.1%)</label>
+                                            </div>
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="etcRate04">
+                                                <label for="etcRate04">[가산금리] 담보물 소재지 규제지역 (+0.1%p)</label>
+                                            </div>
+                                            <ul class="krds-info-list importance">
+                                                <li class="sub_txt gray">담보주택 의 녹색건축(예비)인증 등급이 2등급 이상 또는 제로에너지건축물 인증서 발급 대상인 경우</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont type2">
+                                <div class="form-tit-box">
+                                    <div class="form-tit"><label>저출생 해소 우대금리</label></div>
+                                </div>
+                                <div class="apply_rate">적용우대금리 <span class="num">0</span><span class="bold">개 항목</span></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="com_list_bg_cont gap">
+                                    <div class="com_list_bg_area">
+                                        <div class="krds-check-area direction">
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="birthRate00">
+                                                <label for="birthRate00">
+                                                    <span class="etc">
+                                                        신혼가구 (-0.3%)
+                                                        <span class="desc">부부합산 연소득 7천만원 이하 7년 이내 혼인신고한 가구</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="birthRate01">
+                                                <label for="birthRate01">
+                                                    <span class="etc">
+                                                        신생아 출산가구 (-0.2%)
+                                                        <span class="desc">부부합산 연소득 7천만원 이하 대출신청일 기준 2년 내 출산한 가구 (신혼가구와 중복 적용 불가)</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="birthRate02">
+                                                <label for="birthRate02">
+                                                    <span class="etc">
+                                                        다자녀 (-0.5%)
+                                                        <span class="desc">부부합산 연소득 1억원 이하 3자녀 이상 0.7%, 2자녀 0.5%</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont type2">
+                                <div class="form-tit-box">
+                                    <div class="form-tit"><label>사회적 배려층 우대금리</label></div>
+                                </div>
+                                <div class="apply_rate">적용우대금리 <span class="num">0</span>개 항목</div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="com_list_bg_cont gap">
+                                    <div class="com_list_bg_area">
+                                        <div class="krds-check-area direction">
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="socialRate00">
+                                                <label for="socialRate00">
+                                                    <span class="etc">
+                                                        장애인 (-0.7%)
+                                                        <span class="desc">고객님 또는 배우자, 동일세대 구성기간이 계속해서 1년 이상인 고객님(배우자)의 직계존비속이 장애인증명서 또는 국가유공자확인원 발급대상인 가구</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="socialRate01">
+                                                <label for="socialRate01">다문화 (-0.7%)</label>
+                                            </div>
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="socialRate02">
+                                                <label for="socialRate02">
+                                                    <span class="etc">
+                                                        한부모 (-0.7%)
+                                                        <span class="desc">신청인이 한부모가족증명서 발급대상인 가구(대상이나 선택이 불가능할 경우 신청완료 후 한국주택금융공사 고객센터(1688-8114)로 연락주시기 바랍니다.</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="socialRate03">
+                                                <label for="socialRate03">생애최초 주택구입 (-0.2%)</label>
+                                            </div>
+                                            <div class="krds-form-check between">
+                                                <input type="checkbox" id="socialRate04">
+                                                <label for="socialRate04">청약(종합)저축 (#적용값#%)</label>
+                                                <button type="button" class="area_btn small">설정</button>
+                                            </div>
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="socialRate05">
+                                                <label for="socialRate05">부동산전자계약 (-0.1%)</label>
+                                            </div>
+                                            <ul class="krds-info-list importance">
+                                                <li class="sub_txt gray">사회적 배려층 우대금리는 다음요건을 모두 충족시에만 적용가능합니다.
+                                                    <ul class="krds-info-list decimal">
+                                                        <li class="sub_txt gray">주택가격 6억원 이하</li>
+                                                        <li class="sub_txt gray">부부합산 연소득 7천만원 이하</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_cont page">
+                <button type="button" class="com_btn" disabled>저장</button>
+            </div>
+        </div>
+    </div>
+
+    <div data-include="../inc/footer.html"></div>
+
+</div>
+
+<script type="text/javascript" src="/resources/js/include.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko">
+    <meta property="og:site_name" content="한국주택금융공사">
+    <meta property="og:updated_time" content="">
+    <meta name="twitter:card" content="summary">
+    <title>한국주택금융공사</title>
+    
+    <!-- CSS 파일들 -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+
+    <!-- JavaScript 파일들 -->
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+    
+    <!-- !추가부분 -->
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+
+    <!--// !추가부분 -->
+</head>
+<body>
+
+<div class="wrapper sub" id="app">
+    <div data-include="../inc/header.html"></div>
+
+    <div id="container">
+        <div class="container_in">
+
+            <div class="contents">
+                <div class="pro_anagement_cont gap">
+                    <div class="fieldset up">
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont type1">
+                                <div class="form-tit"><label>대출신청 금액<span class="point">*</span></label></div>
+                                <button type="button" class="link_btn">대출한도 용도별 기준</button>
+                            </div>
+                            <div class="form-conts">
+                                <div class="form-text">
+                                    <div class="text">
+                                        <div class="num">영</div>
+                                        <div class="txt">원</div>
+                                    </div>
+                                </div>
+                                <div class="form-inp">
+                                    <input type="text" class="krds-input" placeholder="0" title="대출신청 금액">
+                                    <div class="txt">원</div>
+                                </div>
+                            </div>
+                            <div class="form-conts">
+                                <ul class="krds-info-list importance">
+                                    <li class="gray">십만원 단위로 입력하세요.</li>
+                                </ul>
+                            </div>
+                            <div class="form-conts">
+                                <ul class="krds-info-list importance">
+                                    <li class="red">신혼가구는 2.2억원까지 대출신청이 가능합니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>대출만기<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="chip-wrap cunt wrap">
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="loanTerm00" name="loanTerm" class="radio">
+                                        <label for="loanTerm00">10년 (2.5%)</label>
+                                    </div>
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="loanTerm01" name="loanTerm" class="radio">
+                                        <label for="loanTerm01">15년 (2.6%)</label>
+                                    </div>
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="loanTerm02" name="loanTerm" class="radio">
+                                        <label for="loanTerm02">20년 (2.7%)</label>
+                                    </div>
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="loanTerm03" name="loanTerm" class="radio">
+                                        <label for="loanTerm03">30년 (2.75%)</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>거치기간<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="chip-wrap cunt">
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="graceTerm00" name="graceTerm" class="radio">
+                                        <label for="graceTerm00">없음</label>
+                                    </div>
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="graceTerm01" name="graceTerm" class="radio">
+                                        <label for="graceTerm01">1년</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>금리유형<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="chip-wrap cunt">
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="rateType00" name="rateType" class="radio">
+                                        <label for="rateType00">고정</label>
+                                    </div>
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="rateType01" name="rateType" class="radio">
+                                        <label for="rateType01">5년 변동</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-conts">
+                                <ul class="krds-info-list importance">
+                                    <li class="gray">5년 변동 : 대출실행 시의 금리가 5년간 고정되고, 매5년 마다 변동일의 제시금리로 적용됩니다.</li>
+                                </ul>
+                            </div>
+                            <div class="form-conts">
+                                <ul class="krds-info-list importance">
+                                    <li class="gray">5년 변동’을 선택한 경우, 상환방식 중 ‘체증식분할’은 선택할 수 없습니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont type1">
+                                <div class="form-tit"><label>상환방식<span class="point">*</span></label></div>
+                                <button type="button" class="link_btn">상환방식 유형 안내</button>
+                            </div>
+                            <div class="form-conts">
+                                <div class="chip-wrap cunt wrap">
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="repayType00" name="repayType" class="radio">
+                                        <label for="repayType00">원리금균등분할</label>
+                                    </div>
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="repayType01" name="repayType" class="radio">
+                                        <label for="repayType01">원금균등분할</label>
+                                    </div>
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="repayType02" name="repayType" class="radio">
+                                        <label for="repayType02">체증식분할</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>유한책임형 여부<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="chip-wrap cunt">
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="limitedLiab00" name="limitedLiab" class="radio" checked>
+                                        <label for="limitedLiab00">예</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-conts">
+                                <ul class="krds-info-list importance">
+                                    <li class="gray">담보주택 심사평가표의 평가점수에 따라 심사 후 승인 여부가 결정됩니다. (유한책임형을 이용하지 않아도 디딤돌 대출 이용 가능)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_cont page">
+                <button type="button" class="com_btn" disabled>저장</button>
+            </div>
+        </div>
+    </div>
+
+    <div data-include="../inc/footer.html"></div>
+
+</div>
+
+<script type="text/javascript" src="/resources/js/include.js"></script>
+</body>
+</html>

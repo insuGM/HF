@@ -1,0 +1,4 @@
+.dictionary_wrap button:focus{ 
+	outline: 3px solid #0000FF;
+	font-weight: bold;
+}

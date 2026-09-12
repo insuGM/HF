@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko">
+    <meta property="og:site_name" content="한국주택금융공사">
+    <meta property="og:updated_time" content="">
+    <meta name="twitter:card" content="summary">
+    <title>한국주택금융공사</title>
+
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+</head>
+<body>
+
+<div class="wrapper sub" id="app">
+    <div data-include="../inc/header.html"></div>
+
+    <div id="container">
+        <div class="container_in">
+
+            <div class="contents">
+                <div class="krds-tab-area layer list">
+                    <div class="tab fill full line">
+                        <ul role="tablist">
+                            <li id="tabInfo01" class="active" aria-controls="tabpanelInfo01" aria-selected="true">
+                                <button type="button" class="btn-tab">경매·공매 사건 통지</button>
+                            </li>
+                            <li id="tabInfo02" aria-controls="tabpanelInfo02">
+                                <button type="button" class="btn-tab">회생·파산 사건 통지</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-conts-wrap type1">
+                        <div id="tabpanelInfo01" aria-labelledby="tabInfo01" class="tab-conts active" role="tabpanel">
+                            <div class="hf-form-section">
+                                <div class="hf-form-section-tit">경·공매 사건 정보</div>
+                                <div class="fieldset">
+                                    <!-- 집행구분 -->
+                                    <div class="form-group">
+                                        <div class="form-tit-cont">
+                                            <div class="form-tit">
+                                                <label>집행구분<span class="point">*</span></label>
+                                            </div>
+                                        </div>
+                                        <div class="form-conts">
+                                            <div class="chip-wrap cunt">
+                                                <div class="krds-form-chip type1">
+                                                    <input type="radio" id="execDiv01" name="execDiv" class="radio" checked>
+                                                    <label for="execDiv01">경매</label>
+                                                </div>
+                                                <div class="krds-form-chip type1">
+                                                    <input type="radio" id="execDiv02" name="execDiv" class="radio">
+                                                    <label for="execDiv02">공매</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 사건번호 -->
+                                    <div class="form-group">
+                                        <div class="form-tit-cont">
+                                            <div class="form-tit">
+                                                <label for="caseNoFront">사건번호<span class="point">*</span></label>
+                                            </div>
+                                        </div>
+                                        <div class="form-conts">
+                                            <div class="form-inp">
+                                                <input type="text" id="caseNoFront" class="krds-input p0" placeholder="사건번호 앞자리를 입력해 주세요">
+                                            </div>
+                                            <button type="button" data-pop="com_pop11" class="slt_btn" title="사건 구분 팝업 열기">사건 구분을 선택해 주세요</button>
+                                            <div class="form-inp">
+                                                <input type="text" id="caseNoRear" class="krds-input p0" placeholder="사건번호 뒷자리를 입력해 주세요">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 관할법원 -->
+                                    <div class="form-group">
+                                        <div class="form-tit-cont">
+                                            <div class="form-tit">
+                                                <label for="courtName">관할법원<span class="point">*</span></label>
+                                            </div>
+                                        </div>
+                                        <div class="form-conts">
+                                            <div class="form-inp type2">
+                                                <input type="text" id="courtName" class="krds-input p0 type2" disabled>
+                                                <button type="button" data-pop="com_pop11" class="area_btn">관할법원 검색</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 관할지사 -->
+                                    <div class="form-group">
+                                        <div class="form-tit-cont">
+                                            <div class="form-tit">
+                                                <label for="branchOffice">관할지사</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-conts">
+                                            <div class="form-inp">
+                                                <input type="text" id="branchOffice" class="krds-input p0" value="전북지사" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 경매사건구분 -->
+                                    <div class="form-group">
+                                        <div class="form-tit-cont">
+                                            <div class="form-tit">
+                                                <label>경매사건구분</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-conts">
+                                            <button type="button" data-pop="com_pop11" class="slt_btn" title="경매사건구분 팝업 열기">선택해 주세요</button>
+                                        </div>
+                                    </div>
+                                    <!-- 청구금액 -->
+                                    <div class="form-group">
+                                        <div class="form-tit-cont">
+                                            <div class="form-tit">
+                                                <label for="claimAmt">청구금액<span class="point">*</span></label>
+                                            </div>
+                                        </div>
+                                        <div class="form-conts cunt">
+                                            <div class="form-cunt">
+                                                <div class="form-text">
+                                                    <div class="text">
+                                                        <div class="num">삼십오억삼천사백오십삼만오천사백삼십오</div>
+                                                        <div class="txt">원</div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-inp">
+                                                    <input type="text" id="claimAmt" class="krds-input" inputmode="numeric" value="3,534,535,425" title="청구금액을 입력해 주세요" aria-label="청구금액">
+                                                    <div class="txt">원</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 소유자 -->
+                                    <div class="form-group">
+                                        <div class="form-tit-cont">
+                                            <div class="form-tit">
+                                                <label for="ownerName">소유자</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-conts">
+                                            <div class="form-inp">
+                                                <input type="text" id="ownerName" class="krds-input p0" placeholder="입력해 주세요">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 개시결정일 -->
+                                    <div class="form-group">
+                                        <div class="form-tit-cont">
+                                            <div class="form-tit">
+                                                <label for="startDecisionDate">개시결정일</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-conts">
+                                            <div class="calendar-input">
+                                                <input type="text" id="startDecisionDate" class="krds-input datepicker cal" value="2026.01.24" disabled>
+                                                <button type="button" class="krds-btn medium icon form-btn-datepicker"><span class="sr-only">날짜 선택</span><i class="svg-icon ico-calendar"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 신청권자 -->
+                                    <div class="form-group">
+                                        <div class="form-tit-cont">
+                                            <div class="form-tit">
+                                                <label for="applicantName">신청권자</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-conts">
+                                            <div class="form-inp">
+                                                <input type="text" id="applicantName" class="krds-input p0" placeholder="입력해 주세요">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 종국일자 -->
+                                    <div class="form-group">
+                                        <div class="form-tit-cont">
+                                            <div class="form-tit">
+                                                <label for="finalDate">종국일자</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-conts">
+                                            <div class="calendar-input">
+                                                <input type="text" id="finalDate" class="krds-input datepicker cal" value="2026.01.24" disabled>
+                                                <button type="button" class="krds-btn medium icon form-btn-datepicker"><span class="sr-only">날짜 선택</span><i class="svg-icon ico-calendar"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tabpanelInfo02" aria-labelledby="tabInfo02" class="tab-conts" role="tabpanel">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_cont page hf-btn-area">
+                <button type="button" class="com_btn blue2">완료</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div data-include="../inc/footer.html"></div>
+            <!-- 사건번호 뒷자리 의<br>최소길이는 8입니다 -->
+            <div class="com_pop_wrap w_min type44">
+                <div class="com_pop_cont">
+                    <div class="title_area">
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="main_tit_area">
+                            <div class="title small">알림</div>
+                            <div class="title">사건번호 뒷자리 의<br>최소길이는 8입니다.</div>
+                        </div>
+                        <div class="btn_cont direction">
+                            <button type="button" class="com_btn blue2">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //사건번호 뒷자리 의<br>최소길이는 8입니다 -->
+
+            <!-- 사건번호 뒷자리 은(는)<br>필수 입력 사 -->
+            <div class="com_pop_wrap w_min type43">
+                <div class="com_pop_cont">
+                    <div class="title_area">
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="main_tit_area">
+                            <div class="title small">알림</div>
+                            <div class="title">사건번호 뒷자리 은(는)<br>필수 입력 사항입니다.</div>
+                        </div>
+                        <div class="btn_cont direction">
+                            <button type="button" class="com_btn blue2">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //사건번호 뒷자리 은(는)<br>필수 입력 사 -->
+
+            <!-- 사건번호 앞자리 의<br>최소길이는 4입니다 -->
+            <div class="com_pop_wrap w_min type42 active">
+                <div class="com_pop_cont active">
+                    <div class="title_area">
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="main_tit_area">
+                            <div class="title small">알림</div>
+                            <div class="title">사건번호 앞자리 의<br>최소길이는 4입니다.</div>
+                        </div>
+                        <div class="btn_cont direction">
+                            <button type="button" class="com_btn blue2">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //사건번호 앞자리 의<br>최소길이는 4입니다 -->
+
+            <!-- 사건번호 앞자리 은(는)<br>필수 입력 사 -->
+            <div class="com_pop_wrap w_min type41">
+                <div class="com_pop_cont">
+                    <div class="title_area">
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="main_tit_area">
+                            <div class="title small">알림</div>
+                            <div class="title">사건번호 앞자리 은(는)<br>필수 입력 사항입니다.</div>
+                        </div>
+                        <div class="btn_cont direction">
+                            <button type="button" class="com_btn blue2">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //사건번호 앞자리 은(는)<br>필수 입력 사 -->
+
+
+    <div class="com_pop_wrap full type11"> <!-- 확인시 active 넣으면됨 -->
+        <div class="com_pop_cont"> <!-- 확인시 active 넣으면됨 -->
+            <div class="title_area">
+                <div class="title">관할법원 검색</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="sch_bank_cont">
+                    <div class="fieldset">
+                        <div class="form-group none_bg">
+                            <div class="form-conts">
+                                <div class="form-inp">
+                                    <input type="text" id="consult_name11" class="krds-input p0" placeholder="내용을 입력해 주세요" title="관할법원을 입력해 주세요.">
+                                    <button type="button" class="sch_btn">
+                                        <i class="svg-icon ico-sch"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bank_info_txt">관할 법원명을 검색해주세요  예) 서울중앙, 수원, 부산</div>
+                </div>
+                <div class="bg_line"></div>
+                <div class="area_sch_data_list_area" style="display: flex;">
+                    <div class="total_cont">
+                        검색 결과 <span class="blue">2</span>건
+                    </div>
+                    <div class="list_area">
+                        <ul class="list">
+                            <li>
+                                <button type="button" class="cont"  data-pop="com_pop13">
+                                    <div class="code">
+                                        <div class="txt medium">서울회생법원</div>
+                                        <div class="icon"></div>
+                                    </div>
+                                </button>
+                            </li>
+                            <!--li class="none_data">
+                                검색결과가 없습니다.
+                            </li-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn_cont page fixed">
+                    <button type="button" class="com_btn blue2">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="/resources/js/include.js"></script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko">
+    <meta property="og:site_name" content="한국주택금융공사">
+    <meta property="og:updated_time" content="">
+    <meta name="twitter:card" content="summary">
+    <title>한국주택금융공사</title>
+    
+    <!-- CSS 파일들 -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+
+    <!-- JavaScript 파일들 -->
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+    
+    <!-- !추가부분 -->
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+
+    <!--// !추가부분 -->
+</head>
+<body>
+
+<div class="wrapper sub" id="app">
+    <div data-include="../inc/header.html"></div>
+
+    <div id="container">
+        <div class="container_in">
+
+            <div class="contents">
+                <div class="pro_anagement_cont gap">
+                    <div class="fieldset up">
+                        <div class="form-group">
+                            <div class="form-tit-cont type1">
+                                <div class="form-tit"><label>소득정보 안내</label></div>
+                                <button type="button" class="link_btn">소득정보 입력 안내</button>
+                            </div>
+                        </div>
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>소득증빙 방법 여부<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="chip-wrap cunt">
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="incomeProof00" name="incomeProof" class="radio" checked>
+                                        <label for="incomeProof00">본인</label>
+                                    </div>
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="incomeProof01" name="incomeProof" class="radio">
+                                        <label for="incomeProof01">부부공동</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont type1">
+                                <div class="form-tit"><label>소득증빙 방법 여부<span class="point">*</span></label></div>
+                                <button type="button" class="link_btn">증빙·인정소득 정의</button>
+                            </div>
+                            <div class="form-conts">
+                                <div class="chip-wrap cunt">
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="incomeType00" name="incomeType" class="radio">
+                                        <label for="incomeType00">증빙소득</label>
+                                    </div>
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="incomeType01" name="incomeType" class="radio" checked>
+                                        <label for="incomeType01">인정소득</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>사업자등록번호<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="form-inp">
+                                    <input type="text" class="krds-input p0" placeholder="'-'없이 숫자만 입력해 주세요" title="사업자등록번호">
+                                </div>
+                            </div>
+                            <div class="form-conts">
+                                <ul class="krds-info-list importance">
+                                    <li class="gray">사업자 (휴 · 폐업 포함)인 경우 입력해 주세요.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>소득 정보<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="chip-wrap cunt">
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="incomeWho00" name="incomeWho" class="radio" checked>
+                                        <label for="incomeWho00">본인소득</label>
+                                    </div>
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="incomeWho01" name="incomeWho" class="radio">
+                                        <label for="incomeWho01">배우자 소득</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>근로자 여부<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="chip-wrap cunt">
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="workerYn00" name="workerYn" class="radio" checked>
+                                        <label for="workerYn00">아니오</label>
+                                    </div>
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="workerYn01" name="workerYn" class="radio">
+                                        <label for="workerYn01">예</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-conts">
+                                <ul class="krds-info-list importance">
+                                    <li class="gray">인정소득을 활용하는 경우 LTV 60%로 제한</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont type1">
+                                <div class="form-tit"><label>소득 인정방식<span class="point">*</span></label></div>
+                                <button type="button" class="link_btn">건강보험 납부요건</button>
+                            </div>
+                            <div class="form-conts">
+                                <div class="chip-wrap cunt">
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="incomeMethod00" name="incomeMethod" class="radio" checked>
+                                        <label for="incomeMethod00">건강보험</label>
+                                    </div>
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="incomeMethod01" name="incomeMethod" class="radio">
+                                        <label for="incomeMethod01">국민연금</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-conts">
+                                <ul class="krds-info-list importance">
+                                    <li class="gray">지역 · 직장 및 임의 계속 가입자 혼용 가능</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>건강보험료 납부내역(최근 3개월)<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-group up">
+                                <div class="form-conts">
+                                    <div class="form-tit-cont type1">
+                                        <div class="form-tit"><label>최근 1개월</label></div>
+                                    </div>
+                                    <div class="form-text">
+                                        <div class="text">
+                                            <div class="num">영</div>
+                                            <div class="txt">원</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-inp">
+                                        <input type="text" class="krds-input" placeholder="0" title="최근 1개월 납부액">
+                                        <div class="txt">원</div>
+                                    </div>
+                                    <button type="button" class="slt_btn" title="최근 1개월 납부 구분 선택">선택해 주세요.</button>
+                                </div>
+                                <div class="form-conts">
+                                    <div class="form-tit-cont type1">
+                                        <div class="form-tit"><label>최근 2개월</label></div>
+                                    </div>
+                                    <div class="form-text">
+                                        <div class="text">
+                                            <div class="num">영</div>
+                                            <div class="txt">원</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-inp">
+                                        <input type="text" class="krds-input" placeholder="0" title="최근 2개월 납부액">
+                                        <div class="txt">원</div>
+                                    </div>
+                                    <button type="button" class="slt_btn" title="최근 2개월 납부 구분 선택">선택해 주세요.</button>
+                                </div>
+                                <div class="form-conts">
+                                    <div class="form-tit-cont type1">
+                                        <div class="form-tit"><label>최근 3개월</label></div>
+                                    </div>
+                                    <div class="form-text">
+                                        <div class="text">
+                                            <div class="num">영</div>
+                                            <div class="txt">원</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-inp">
+                                        <input type="text" class="krds-input" placeholder="0" title="최근 3개월 납부액">
+                                        <div class="txt">원</div>
+                                    </div>
+                                    <button type="button" class="slt_btn" title="최근 3개월 납부 구분 선택">선택해 주세요.</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-tit-cont">
+                                    <div class="form-tit"><label>산출소득<span class="point">*</span></label></div>
+                                </div>
+                                <div class="form-conts">
+                                    <div class="form-text">
+                                        <div class="text">
+                                            <div class="num">영</div>
+                                            <div class="txt">원</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-inp">
+                                        <input type="text" class="krds-input" placeholder="0" title="산출소득">
+                                        <div class="txt">원</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-tit-cont">
+                                    <div class="form-tit"><label>최근소득(예상)<span class="point">*</span></label></div>
+                                </div>
+                                <div class="form-conts">
+                                    <div class="form-text">
+                                        <div class="text">
+                                            <div class="num">영</div>
+                                            <div class="txt">원</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-inp">
+                                        <input type="text" class="krds-input" placeholder="0" title="최근소득(예상)">
+                                        <div class="txt">원</div>
+                                    </div>
+                                </div>
+                                <div class="form-conts">
+                                    <ul class="krds-info-list importance">
+                                        <li class="gray">인정소득 이용 시 연소득은 50백만원을 한도로 합니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg_line"></div>
+                <div class="pro_anagement_cont">
+                    <div class="fieldset">
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>소득합계</label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="income_sum_cont">
+                                    <div class="income_area">
+                                        <div class="sum_top">
+                                            <div class="sum_tit">
+                                                <span class="tit">소득 제한</span>
+                                                <span class="num">5,000</span>
+                                            </div>
+                                            <span class="unit">(단위: 만원)</span>
+                                        </div>
+                                        <div class="bar_line_cont">
+                                            <div class="bar blue3" style="width: 80%;"></div>
+                                            <div class="bar blue2" style="width: 20%;"></div>
+                                        </div>
+                                    </div>
+                                    <ul class="sum_legend">
+                                        <li>
+                                            <div class="legend"><span class="dot blue3"></span>본인</div>
+                                            <div class="val">4,000</div>
+                                        </li>
+                                        <li>
+                                            <div class="legend"><span class="dot blue2"></span>여유 소득한도</div>
+                                            <div class="val">1,000</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="btn_cont m0">
+                                    <button type="button" class="com_btn blue org">인정소득 대상확인</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_cont page">
+                <button type="button" class="com_btn" disabled>저장</button>
+            </div>
+        </div>
+    </div>
+
+    <div data-include="../inc/footer.html"></div>
+
+</div>
+
+<script type="text/javascript" src="/resources/js/include.js"></script>
+</body>
+</html>

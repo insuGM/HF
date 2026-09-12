@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko">
+    <meta property="og:site_name" content="한국주택금융공사">
+    <meta property="og:updated_time" content="">
+    <meta name="twitter:card" content="summary">
+    <title>한국주택금융공사</title>
+    
+    <!-- CSS 파일들 -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+
+    <!-- JavaScript 파일들 -->
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+    
+    <!-- !추가부분 -->
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+
+    <!--// !추가부분 -->
+</head>
+<body>
+
+<div class="wrapper sub" id="app">
+    <div data-include="../inc/header.html"></div>
+
+    <div id="container">
+        <div class="container_in">
+
+            <div class="contents com_sub">
+                 
+                <div class="certificate_cont">
+                    <div class="title_area">
+                        <h2>발급 받으실 증명서를<br>선택해 주세요.</h2>
+                    </div>
+
+                    <div class="fieldset type1">
+                        <!-- 폼그룹 -->
+                        <div class="form-group none_bg">
+                            <div class="form-tit">
+                                <label for="consult_name21">
+                                    발급목록
+                                </label>
+                            </div>
+                            <div class="form-conts type1">
+                                <div class="form-sub">
+                                    <div class="text sub">업무 구분</div>
+                                    <button type="button" data-pop="com_pop11" class="slt_btn" title="업무 구분 팝업 열기">증명서 선택해</button>
+                                </div>
+                                <div class="form-sub">
+                                    <div class="text sub">증명서 유형</div>
+                                    <button type="button" data-pop="com_pop12" class="slt_btn" title="증명서 유형 팝업 열기">증명서 선택</button>
+                                </div>
+                            </div>
+                            <!--p class="form-hint-invalid">에러 메시지</p-->
+                        </div>
+                        <!-- //폼그룹 -->
+                         
+                        <!-- 폼그룹 -->
+                        <div class="form-group none_bg">
+                            <div class="form-tit">
+                                <label for="consult_name21">
+                                    추가정보
+                                </label>
+                            </div>
+                            <div class="form-conts type1">
+                                <div class="form-sub">
+                                    <div class="text sub">대출계좌번호</div>
+                                    <button type="button" class="slt_btn" title="대출계좌번호 팝업 열기" disabled>증명서 선택</button>
+                                </div>
+                                <div class="form-sub">
+                                    <div class="text sub">기타</div>
+                                    <button type="button" class="slt_btn" title="발급사유 팝업 열기" disabled>기타</button>
+                                    <input type="text" id="" class="krds-input bg_none" value="" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //폼그룹 -->
+                        
+                        
+                    </div>
+                </div>
+                
+
+            </div>
+            <!-- //sub_con -->
+
+            <div class="btn_cont page">
+                <button type="button" data-pop="com_pop13" class="com_btn blue2">발급</button>
+            </div>
+        </div> <!-- //container_in -->
+    </div>
+
+    <div data-include="../inc/footer.html"></div>
+
+    <div class="com_pop_wrap type11">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">업무 구분</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="sort_list_area">
+                    <ul class="list">
+                        <li>
+                            <button type="button" class="chk_btn active">
+                                <div class="txt">주택담보대출</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">학자금대출</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">주택보증</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">주택연금</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">부채확인서 및 채무상환확인서</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="com_pop_wrap type12">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">증명서 유형</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="sort_list_area">
+                    <ul class="list">
+                        <li>
+                            <button type="button" class="chk_btn active">
+                                <div class="txt">채무완납확인서</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">부채확인서 (모기지)</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">금융(장기주택저당차입금)거래확인서</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">거래내역확인서</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">대출현황확인서</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">장기주택저당차입금 이자상환증명서</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">대출승인내역확인서</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">영문 채무완납확인서</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">영문 부채증명서</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">영문 금융거래확인서</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">영문 거래내역확인서</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="com_pop_wrap type13">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">보증잔액확인서 발급</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content pt0 scroll">
+                <div class="form-group">
+                    <div class="agree_cont">
+                        <div class="top_area">
+                            <div class="title_area">
+                                <div class="title">개인정보 출력여부 (선택)</div>
+                            </div>              
+                        </div>
+                        <div class="bot_area">
+                            <ul class="terms-agree-ul">
+                                <li>
+                                    <div class="krds-check-area">
+                                        <div class="krds-form-check">
+                                            <input type="checkbox" id="terms_check1">
+                                            <label for="terms_check1">주문등록번호를 전부 공개하여 발급</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="krds-check-area">
+                                        <div class="krds-form-check">
+                                            <input type="checkbox" id="terms_check2">
+                                            <label for="terms_check2">대출계좌를 전부 공개하여 발급</label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="fieldset gap_none">
+                        <!-- 폼그룹 -->
+                        <div class="form-group none_bg">
+                            <div class="form-tit">
+                                <div class="krds-check-area">
+                                    <div class="krds-form-check">
+                                        <input type="checkbox" id="terms_check3">
+                                        <label for="terms_check3">FAX</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-conts type1">
+                                <div class="form-sub">
+                                    <div class="tel">
+                                        <button type="button" data-pop="com_pop14" class="slt_btn" title="번호 선택 팝업 열기">선택</button>
+                                        <span class="text">-</span>
+                                        <input type="text" id="" class="krds-input bg_none" title="중간 FAX 번호를 입력해 주세요.">
+                                        <span class="text">-</span>
+                                        <input type="text" id="" class="krds-input bg_none" title="마지막 FAX 번호를 입력해 주세요.">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--p class="form-hint-invalid">에러 메시지</p-->
+                        </div>
+                        <!-- //폼그룹 -->
+                         
+                        
+                        <!-- 폼그룹 -->
+                        <div class="form-group none_bg">
+                            <div class="form-tit">
+                                <div class="krds-check-area">
+                                    <div class="krds-form-check">
+                                        <input type="checkbox" id="terms_check4">
+                                        <label for="terms_check4">E-mail</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-conts type1">
+                                <div class="form-sub">
+                                    <div class="email">
+                                        <input type="text" id="" class="krds-input bg_none" title="이메일을 입력해 주세요.">
+                                        <span class="text">@</span>
+                                        <!--
+                                        이메일 직접선택 일경우 노출
+                                        <input type="text" id="" class="krds-input bg_none" title="이메일주소를 직접 입력해 주세요.">
+                                        -->
+                                        <button type="button" data-pop="com_pop14" class="slt_btn" title="이메일 팝업 열기">직접 선택</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="hint_txt">수신메일에 첨부된 PDF파일 비밀번호는 신청인의 주민번호앞 6자리로 설정되어 있습니다.</p>
+                        </div>
+                        <!-- //폼그룹 -->
+                        <!-- 폼그룹 -->
+                        <div class="form-group none_bg">
+                            <div class="form-tit">
+                                <div class="krds-check-area">
+                                    <div class="krds-form-check">
+                                        <input type="checkbox" id="terms_check5">
+                                        <label for="terms_check5">PDF 직접 다운로드</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //폼그룹 -->
+                    </div>
+                    <div class="btn_cont page">
+                        <button type="button" data-pop="com_pop15" data-hide="end" class="com_btn blue2">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="com_pop_wrap type14">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">업무 구분</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="sort_list_area">
+                    <ul class="list">
+                        <li>
+                            <button type="button" class="chk_btn active">
+                                <div class="txt">031</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 증명서 발급 안내 팝업 -->
+    <div class="com_pop_wrap type15 w_min">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="text_area">
+                    <h2 class="sub_tit">증명서 발급 안내</h2>
+                    <div class="tit">
+                       증명서 발급이 완료되었습니다.
+                    </div>
+                    <div class="txt"><span class="blue">보증잔액확인서</span>를<br> 추가 발급을 받으시겠습니까?</div>
+                </div>
+                <div class="btn_cont">
+                    <button type="button" class="com_btn end">아니요</button>
+                    <button type="button" class="com_btn end blue2">추가 발급</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div> <!-- //wrap -->
+
+
+
+</body>
+<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+<script type="text/javascript" src="/resources/js/include.js"></script>
+<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</html>

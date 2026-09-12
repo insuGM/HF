@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="ko">
+        <meta property="og:site_name" content="한국주택금융공사">
+        <meta property="og:updated_time" content="">
+        <meta name="twitter:card" content="summary">
+        <title>한국주택금융공사</title>
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+        <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+        <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+        <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+        <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+        <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+    </head>
+    <body>
+        <div class="wrapper sub" id="app">
+            <div data-include="../inc/header.html"></div>
+            <div id="container">
+                <div class="container_in">
+                    <div class="contents">
+                        <div class="krds-tab-area layer list">
+                            <div class="tab fill full line">
+                                <ul role="tablist">
+                                    <li id="tabInfo01" aria-controls="tabpanelInfo01">
+                                        <button type="button" class="btn-tab">대출신청조회</button>
+                                    </li>
+                                    <li id="tabInfo02" class="active" aria-controls="tabpanelInfo02" aria-selected="true">
+                                        <button type="button" class="btn-tab">대출정보조회</button>
+                                    </li>
+                                    <li id="tabInfo03" aria-controls="tabpanelInfo03">
+                                        <button type="button" class="btn-tab">대출상환내역</button>
+                                    </li>
+                                    <li id="tabInfo04" aria-controls="tabpanelInfo04">
+                                        <button type="button" class="btn-tab">탁상감정 신청내역 조회</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-conts-wrap type1">
+                                <div id="tabpanelInfo01" aria-labelledby="tabInfo01" class="tab-conts" role="tabpanel"></div>
+                                <div id="tabpanelInfo02" aria-labelledby="tabInfo02" class="tab-conts active" role="tabpanel">
+                                    <div class="pro_anagement_cont bg">
+                                        <div class="loan_apply_list">
+                                            <div class="loan_apply_card use">
+                                                <div class="card_inner">
+                                                    <div class="card_top">
+                                                        <div class="state">
+                                                            <div class="apply_step"><span class="badge">정상</span></div>
+                                                        </div>
+                                                        <div class="title">
+                                                            <a href="#" class="name">아낌e보금자리론<i class="svg-icon ico-angle right"></i></a>
+                                                            <div class="code">대출계좌번호 123456789012345</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card_line"></div>
+                                                    <div class="com_info_list_cont">
+                                                        <ul class="list">
+                                                            <li class="em">
+                                                                <div class="cont">
+                                                                    <div class="box">
+                                                                        <div class="tit">대출 잔액</div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="txt">247,606,296원</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="cont">
+                                                                    <div class="box">
+                                                                        <div class="tit">최초 대출금액</div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="txt">315,000,000원</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="cont">
+                                                                    <div class="box">
+                                                                        <div class="tit">다음 납부일</div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="txt">2026-08-11</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="cont">
+                                                                    <div class="box">
+                                                                        <div class="tit">월 납부액</div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="txt">1,800,000원</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="cont">
+                                                                    <div class="box">
+                                                                        <div class="tit">적용 금리</div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="txt">3.23%</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="btn_area_groups">
+                                                    <div class="btn_area">
+                                                        <button type="button" class="com_btn tonal">원금 및 이자 납부</button>
+                                                        <button type="button" class="com_btn tonal">가상계좌상환 신청</button>
+                                                    </div>
+                                                    <div class="btn_area">
+                                                        <button type="button" class="com_btn tonal">납부일자 변경</button>
+                                                        <button type="button" class="com_btn tonal">자동이체 계좌변경</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="loan_apply_card use">
+                                                <div class="card_inner">
+                                                    <div class="card_top">
+                                                        <div class="state">
+                                                            <div class="apply_step"><span class="badge red">연체</span><span class="num">4월 연체이자</span><span class="name">120,000 (연 17%)</span></div>
+                                                        </div>
+                                                        <div class="title">
+                                                            <a href="#" class="name">아낌e보금자리론<i class="svg-icon ico-angle right"></i></a>
+                                                            <div class="code">대출계좌번호 123456789012345</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card_line"></div>
+                                                    <div class="com_info_list_cont">
+                                                        <ul class="list">
+                                                            <li class="em">
+                                                                <div class="cont">
+                                                                    <div class="box">
+                                                                        <div class="tit">대출 잔액</div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="txt">247,606,296원</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="cont">
+                                                                    <div class="box">
+                                                                        <div class="tit">최초 대출금액</div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="txt">315,000,000원</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="cont">
+                                                                    <div class="box">
+                                                                        <div class="tit">다음 납부일</div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="txt">2026-08-11</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="cont">
+                                                                    <div class="box">
+                                                                        <div class="tit">월 납부액</div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="txt">1,800,000원</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="cont">
+                                                                    <div class="box">
+                                                                        <div class="tit">적용 금리</div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="txt">3.23%</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="btn_area_groups">
+                                                    <div class="btn_area">
+                                                        <button type="button" class="com_btn tonal">원금 및 이자 납부</button>
+                                                        <button type="button" class="com_btn tonal">가상계좌상환 신청</button>
+                                                    </div>
+                                                    <div class="btn_area">
+                                                        <button type="button" class="com_btn tonal">납부일자 변경</button>
+                                                        <button type="button" class="com_btn tonal">자동이체 계좌변경</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="loan_apply_card use">
+                                                <div class="card_inner">
+                                                    <div class="card_top">
+                                                        <div class="state">
+                                                            <div class="apply_step"><span class="badge navy">완제</span></div>
+                                                        </div>
+                                                        <div class="title">
+                                                            <a href="#" class="name">아낌e보금자리론<i class="svg-icon ico-angle right"></i></a>
+                                                            <div class="code">대출계좌번호 123456789012345</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card_line"></div>
+                                                    <div class="com_info_list_cont">
+                                                        <ul class="list">
+                                                            <li class="em">
+                                                                <div class="cont">
+                                                                    <div class="box">
+                                                                        <div class="tit">대출 잔액</div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="txt">0원</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="cont">
+                                                                    <div class="box">
+                                                                        <div class="tit">최초 대출금액</div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="txt">315,000,000원</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="cont">
+                                                                    <div class="box">
+                                                                        <div class="tit">완납일</div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="txt">2026-08-11</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="cont">
+                                                                    <div class="box">
+                                                                        <div class="tit">적용 금리</div>
+                                                                    </div>
+                                                                    <div class="box">
+                                                                        <div class="txt">3.23%</div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tabpanelInfo03" aria-labelledby="tabInfo03" class="tab-conts" role="tabpanel"></div>
+                                <div id="tabpanelInfo04" aria-labelledby="tabInfo04" class="tab-conts" role="tabpanel"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-include="../inc/footer.html"></div>
+
+            
+            <div class="com_pop_wrap full active type11">
+                <div class="com_pop_cont active"> 
+                    <div class="title_area">
+                        <div class="title">상환내역 조회</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="pro_anagement_cont gap down">
+                            <div class="main_tit_area m0">
+                                <div class="title medium">차회납부내역</div>
+                                <a href="#" class="link_btn">다음 회차 납부 안내</a>
+                            </div>
+                            <div class="repay_tools">
+                                <button type="button" class="tool_btn"><span class="ico excel"></span>엑셀 내려받기</button>
+                                <button type="button" class="tool_btn">거래확인서 발급</button>
+                            </div>
+                            <div class="com_info_list_cont bg">
+                                <ul class="list">
+                                    <li class="em">
+                                        <div class="cont">
+                                            <div class="box">
+                                                <div class="tit">합계</div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="txt">16,373,692 원</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cont">
+                                            <div class="box">
+                                                <div class="tit">납일예정일</div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="txt">2026-01-30</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cont">
+                                            <div class="box">
+                                                <div class="tit">채권상태</div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="txt">원리금연체</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cont">
+                                            <div class="box">
+                                                <div class="tit">지연배상금</div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="txt">525,638원</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cont">
+                                            <div class="box">
+                                                <div class="tit">이자</div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="txt">3,125,646원</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bg_line"></div>
+                        <div class="pro_anagement_cont gap down">
+                            <div class="main_tit_area m0 between">
+                                <div class="title medium">일자별거래내역</div>
+                                <div class="text">기준일자 : 2026-06-23</div>
+                            </div>
+                            <a href="#" class="link_btn">기간별 조회 안내</a>
+                            <div class="date_sch_area">
+                                <div class="calendar-input">
+                                    <input type="text" class="krds-input datepicker cal" value="2026.05.09" readonly title="시작일 선택">
+                                </div>
+                                <span class="dash">-</span>
+                                <div class="calendar-input">
+                                    <input type="text" class="krds-input datepicker cal" value="2026.05.12" readonly title="종료일 선택">
+                                    <button type="button" class="krds-btn medium icon form-btn-datepicker"><i class="svg-icon ico-calendar"></i><span class="sr-only">달력 열기</span></button>
+                                </div>
+                                <button type="button" class="sch_btn medium">조회</button>
+                            </div>
+                            <div class="repay_list">
+                                <div class="repay_item">
+                                    <div class="ri_head">
+                                        <div class="ri_tit"><span class="num">109번</span><span class="date">2024-12-11</span></div>
+                                        <span class="badge2">상환</span>
+                                    </div>
+                                    <div class="card_line"></div>
+                                    <div class="com_info_list_cont">
+                                        <ul class="list">
+                                            <li class="em">
+                                                <div class="cont">
+                                                    <div class="box">
+                                                        <div class="tit">합계</div>
+                                                    </div>
+                                                    <div class="box">
+                                                        <div class="txt">571,023원</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cont">
+                                                    <div class="box">
+                                                        <div class="tit">원금</div>
+                                                    </div>
+                                                    <div class="box">
+                                                        <div class="txt">326,743원</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cont">
+                                                    <div class="box">
+                                                        <div class="tit">이자</div>
+                                                    </div>
+                                                    <div class="box">
+                                                        <div class="txt">244,280원</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cont">
+                                                    <div class="box">
+                                                        <div class="tit">지연배상금</div>
+                                                    </div>
+                                                    <div class="box">
+                                                        <div class="txt">0원</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cont">
+                                                    <div class="box">
+                                                        <div class="tit">환출이자</div>
+                                                    </div>
+                                                    <div class="box">
+                                                        <div class="txt">0원</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cont">
+                                                    <div class="box">
+                                                        <div class="tit">조기상환수수료</div>
+                                                    </div>
+                                                    <div class="box">
+                                                        <div class="txt">0원</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="repay_item">
+                                    <div class="ri_head">
+                                        <div class="ri_tit"><span class="num">108번</span><span class="date">2024-12-11</span></div>
+                                        <span class="badge2">상환</span>
+                                    </div>
+                                    <div class="card_line"></div>
+                                    <div class="com_info_list_cont">
+                                        <ul class="list">
+                                            <li class="em">
+                                                <div class="cont">
+                                                    <div class="box">
+                                                        <div class="tit">합계</div>
+                                                    </div>
+                                                    <div class="box">
+                                                        <div class="txt">571,023원</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cont">
+                                                    <div class="box">
+                                                        <div class="tit">원금</div>
+                                                    </div>
+                                                    <div class="box">
+                                                        <div class="txt">326,743원</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cont">
+                                                    <div class="box">
+                                                        <div class="tit">이자</div>
+                                                    </div>
+                                                    <div class="box">
+                                                        <div class="txt">244,280원</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cont">
+                                                    <div class="box">
+                                                        <div class="tit">지연배상금</div>
+                                                    </div>
+                                                    <div class="box">
+                                                        <div class="txt">0원</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cont">
+                                                    <div class="box">
+                                                        <div class="tit">환출이자</div>
+                                                    </div>
+                                                    <div class="box">
+                                                        <div class="txt">0원</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cont">
+                                                    <div class="box">
+                                                        <div class="tit">조기상환수수료</div>
+                                                    </div>
+                                                    <div class="box">
+                                                        <div class="txt">0원</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="repay_item">
+                                    <div class="ri_head">
+                                        <div class="ri_tit"><span class="num">107번</span><span class="date">2024-10-11</span></div>
+                                        <span class="badge2">상환</span>
+                                    </div>
+                                    <div class="card_line"></div>
+                                    <div class="com_info_list_cont">
+                                        <ul class="list">
+                                            <li class="em">
+                                                <div class="cont">
+                                                    <div class="box">
+                                                        <div class="tit">합계</div>
+                                                    </div>
+                                                    <div class="box">
+                                                        <div class="txt">571,023원</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cont">
+                                                    <div class="box">
+                                                        <div class="tit">원금</div>
+                                                    </div>
+                                                    <div class="box">
+                                                        <div class="txt">326,743원</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cont">
+                                                    <div class="box">
+                                                        <div class="tit">이자</div>
+                                                    </div>
+                                                    <div class="box">
+                                                        <div class="txt">244,280원</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cont">
+                                                    <div class="box">
+                                                        <div class="tit">지연배상금</div>
+                                                    </div>
+                                                    <div class="box">
+                                                        <div class="txt">0원</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cont">
+                                                    <div class="box">
+                                                        <div class="tit">환출이자</div>
+                                                    </div>
+                                                    <div class="box">
+                                                        <div class="txt">0원</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cont">
+                                                    <div class="box">
+                                                        <div class="tit">조기상환수수료</div>
+                                                    </div>
+                                                    <div class="box">
+                                                        <div class="txt">0원</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_cont page">
+                            <button type="button" class="com_btn">목록</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <script type="text/javascript" src="/resources/js/include.js"></script>
+    </body>
+</html>

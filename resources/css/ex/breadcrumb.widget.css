@@ -1,0 +1,2 @@
+.location ul li{display:none;}
+.location ul li.active{display:block;}

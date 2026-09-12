@@ -1,0 +1,506 @@
+[
+ {
+  "key": "krds_accordion_area",
+  "cat": "탭 · 아코디언",
+  "name": "아코디언 영역 래퍼",
+  "note": "아코디언을 감싸는 바깥 영역. 안쪽 .krds-accordion 에 blue 를 붙이면 파란 제목형, com_ok_accordion 을 같이 주면 완료 화면용 여백이 된다.",
+  "file": "html/debt/02주택담보대출_02채무인수_01채무인수신청_보금자리론_10완료.html",
+  "html": "<div class=\"krds_accordion_area com_ok_accordion\">\n    <div class=\"krds-accordion blue\">\n        <div class=\"accordion-item\">\n            <h2 class=\"accordion-header\">\n                <button type=\"button\" class=\"btn-accordion\">요청사항</button>\n            </h2>\n        </div>\n        <div class=\"accordion-item\">\n            <h2 class=\"accordion-header\">\n                <button type=\"button\" class=\"btn-accordion\">대출조건 유의사항 확인</button>\n            </h2>\n        </div>\n    </div>\n</div>",
+  "len": 486
+ },
+ {
+  "key": "hf-btn-area",
+  "cat": "버튼",
+  "name": "넓은 하단 버튼 영역",
+  "note": "btn_cont page 에 덧붙이는 변형. 버튼 위아래 여백이 기본형보다 크다(실측 9.4rem). fixed 와 같이 쓰면 본문 아래 12.8rem 여백이 CSS 로 자동 확보된다.",
+  "file": "html/annual_application/04주택연금_00주택연금신청_00주택연금가입안내.html",
+  "html": "<div class=\"btn_cont page hf-btn-area\">\n    <button type=\"button\" class=\"com_btn blue2\">주택연금 신청</button>\n</div>",
+  "len": 111
+ },
+ {
+  "key": "pro_anagement_chk_list_area",
+  "cat": "선택 컨트롤",
+  "name": "동의 체크 묶음",
+  "note": "동의 화면의 표준 골격. fieldset > form-group.none_bg > form-conts > krds-check-area.chk-column 순서가 고정이다. 전체동의 행에는 .krds-form-check.all 을 준다.",
+  "file": "html/debt/02주택담보대출_02채무인수_01채무인수신청_01단계_00.html",
+  "html": "<div class=\"pro_anagement_chk_list_area\">\n    <div class=\"fieldset\">\n        <div class=\"form-group none_bg\">\n            <div class=\"form-conts\">\n                <div class=\"krds-check-area chk-column\">\n                    <div class=\"krds-form-check all\">\n                        <input type=\"checkbox\" id=\"chk_additional_1\">\n                        <label for=\"chk_additional_1\">\n                            [전체] 본인은 공사에 제공한 적합성·적정성 관련 정보와 관련하여 다음과 같은 사항을 확인합니다.\n                        </label>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>",
+  "len": 600
+ },
+ {
+  "key": "pro_anagement_list_area",
+  "cat": "목록 · 정보",
+  "name": "본문 목록 래퍼",
+  "note": "본문 안 단순 목록을 감싸는 래퍼. 안에는 ul.list 만 둔다.",
+  "file": "html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보.html",
+  "html": "<div class=\"pro_anagement_list_area\">\n    <ul class=\"list\">\n    </ul>\n</div>",
+  "len": 76
+ },
+ {
+  "key": "pro_comparison_cont",
+  "cat": "카드 · 결과",
+  "name": "비교 블록",
+  "note": "상환방식 비교처럼 이미지 + 제목 + 수치목록을 나열하는 비교 영역. .cont 를 항목 수만큼 반복한다.",
+  "file": "html/expectations/00_공통_주소검색_00검색선택.html",
+  "html": "<div class=\"pro_comparison_cont\">\n                    <div class=\"cont\">\n                        <img src=\"/resources/images/common/icon/ico_pro_cont01.svg\" alt=\"(선택) 원리금 균등분할 상환(매달 똑같이) 금액,기간 표시된 예시\">\n                        <div class=\"title_area\">\n                            <div class=\"title\">원리금 균등분할 상환(매달 똑같이)</div>\n                            <div class=\"text_list_area\">\n                                <ul class=\"list\">\n                                    <li>\n                                        월 납입금 : 1,196,650원 ~ 557,590원\n                                    </li>\n</ul>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"cont\">\n                        <img src=\"/resources/images/common/icon/ico_pro_cont02.svg\" alt=\"체감식(가장 적은 이자) 금액,기간 표시된 예시\">\n                        <div class=\"title_area\">\n                            <div class=\"title\">체감식(가장 적은 이자)</div>\n                            <div class=\"text_list_area\">\n                                <ul class=\"list\">\n                                    <li>\n                                        월 납입금 : 1,196,650원 ~ 557,590원\n                                    </li>\n                                    <li>\n                                        총이자 : 117,333,212원\n                                    </li>\n                                </ul>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"cont\">\n                        <img src=\"/resources/images/common/icon/ico_pro_cont03.svg\" alt=\"체증식(처음에 부담없이) 금액,기간 표시된 예시\">\n                        <div class=\"title_area\">\n                            <div class=\"title\">체증식(처음에 부담없이)</div>\n                            <div class=\"text_list_area\">\n                                <ul class=\"list\">\n                                    <li>\n                                        월 납입금 : 1,196,650원 ~ 557,590원\n                                    </li>\n                                    <li>\n                                        총이자 : 117,333,212원\n                                    </li>\n                                </ul>\n                            </div>\n                        </div>\n                    </div>\n                </div>",
+  "len": 2317
+ },
+ {
+  "key": "pro_schedule_list_cont",
+  "cat": "목록 · 정보",
+  "name": "스케줄 목록",
+  "note": "행 전체가 버튼인 스케줄 목록. list_cont > list_area > ul.list > li > button.cont 구조이고 행 내용은 schedule_data_area 가 담당한다.",
+  "file": "html/debt/02주택담보대출_02채무인수_01채무인수신청_보금자리론_07대출조건_08대출신청금액및예상금리확인_규제.html",
+  "html": "<div class=\"pro_schedule_list_cont\">\n                            <div class=\"list_cont p0\">\n                                <div class=\"list_area\">\n                                    <ul class=\"list\">\n                                <li>\n                                    <button type=\"button\" data-pop=\"com_pop_schedule\" class=\"cont\">\n                                        <div class=\"schedule_data_area\">\n                                            <div class=\"data_area\">\n                                                <div class=\"box\">64 회차</div>\n                                                <div class=\"box\">2026-04-12</div>\n                                            </div>\n                                            <div class=\"text_area\">\n                                                <div class=\"box\">\n                                                    <div class=\"tit\">예정금액</div>\n                                                    <div class=\"num\">502,279</div>\n                                                </div>\n                                                <div class=\"box\">\n                                                    <div class=\"tit\">상환 후 예정 잔액</div>\n                                                    <div class=\"num\">248,700,494</div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                        <i class=\"svg-icon ico-angle right\"></i>\n                                    </button>\n                                </li>\n</ul>\n                                </div>\n                            </div>\n                        </div>",
+  "len": 1709
+ },
+ {
+  "key": "list_area",
+  "cat": "목록 · 정보",
+  "name": "선택 목록 (행 전체 버튼)",
+  "note": "행 전체가 버튼인 선택 목록의 최소 단위. 결과가 없을 때는 li.none_data 를 노출한다.",
+  "file": "html/assurance/03주택보증_04보증관리_03사건사고신청_00경매공매사건통지_02case1.html",
+  "html": "<div class=\"list_area\">\n                        <ul class=\"list\">\n                            <li>\n                                <button type=\"button\" class=\"cont\"  data-pop=\"com_pop13\">\n                                    <div class=\"code\">\n                                        <div class=\"txt medium\">서울회생법원</div>\n                                        <div class=\"icon\"></div>\n                                    </div>\n                                </button>\n                            </li>\n</ul>\n                    </div>",
+  "len": 537
+ },
+ {
+  "key": "debt_list_area",
+  "cat": "목록 · 정보",
+  "name": "약관 동의 목록",
+  "note": "li 마다 동의 체크 묶음이 통째로 들어가는 목록. 약관이 여러 건일 때 쓴다.",
+  "file": "html/individual_expectations/03주택보증_01보증금액미리보기_00개인보증예상금액조회_01개인정보동의.html",
+  "html": "<div class=\"debt_list_area\">\n                        <ul class=\"list\">\n                            <li>\n                                <div class=\"pro_anagement_chk_list_area\">\n                                    <div class=\"fieldset\">\n                                        <div class=\"form-group none_bg\">\n                                            <div class=\"form-conts\">\n                                                <div class=\"krds-check-area chk-column\">\n                                                    <div class=\"krds-form-check all\">\n                                                        <input type=\"checkbox\" id=\"chk_all_2\">\n                                                        <label for=\"chk_all_2\">\n                                                            [전체] 개인(신용)정보 수집 · 이용 · 조회 · 제공 동의서(상품서비스 안내 등)\n                                                        </label>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                        <div class=\"form-group none_bg\">\n                                            <div class=\"form-conts\">\n                                                <div class=\"krds-check-area chk-column\">\n                                                    <div class=\"krds-form-check\">\n                                                        <input type=\"checkbox\" id=\"chk_7\">\n                                                        <label for=\"chk_7\">[선택] 1.수집·이용에 관한 사항</label>\n                                                    </div>\n                                                </div>\n                                                <div class=\"krds-check-area chk-column\">\n                                                    <div class=\"krds-form-check\">\n                                                        <input type=\"checkbox\" id=\"chk_8\">\n                                                        <label for=\"chk_8\">[필수] 2.제공에 관한 사항</label>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </li>\n</ul>\n                    </div>",
+  "len": 2457
+ },
+ {
+  "key": "com_list_bg_area",
+  "cat": "목록 · 정보",
+  "name": "회색 배경 안내 목록",
+  "note": "회색 배경 위에 올리는 안내 목록. li 에 gray no_indent no_bullet 을 주면 별표 각주형이 된다.",
+  "file": "html/debt_adjustment/05채무조정_00채무조정신청_01기타채무조정_00채무조정신청_완료.html",
+  "html": "<div class=\"com_list_bg_area\">\n    <ul class=\"krds-info-list\">\n        <li class=\"gray no_indent no_bullet\">* 자세한 문의는 <a href=\"#;\" class=\"link_btn2\">0000(서민금융콜센터)</a>로 연락하시기 바랍니다.</li>\n    </ul>\n</div>",
+  "len": 201
+ },
+ {
+  "key": "com_ok_cont",
+  "cat": "카드 · 결과",
+  "name": "완료 화면 (구형)",
+  "note": "아이콘 + 제목 + 본문 + 버튼으로 된 완료 화면. 신규 화면은 hf-complete 를 쓰고 이 패턴은 기존 화면 유지보수용이다.",
+  "file": "html/automatic_money/02주택담보대출_03대출관리_00대출 계좌·상환 관리_02자동이체계좌변경_03변경결과확인.html",
+  "html": "<div class=\"com_ok_cont\">\n    <div class=\"icon\">\n        <img src=\"/resources/images/common/icon/ico_com_ok.svg\" alt=\"\">\n    </div>\n    <div class=\"title_area\">\n        <div class=\"title\">가상계좌상환 신청이<br> 완료되었습니다.</div>\n    </div>\n    <div class=\"text_area\">\n        <div class=\"text\">변경된 자동이체계좌는 대출정보조회화면에서<br> 확인하실 수 있습니다.</div>\n        <div class=\"text\">추가문의: 고객센터 <a href=\"tel:1688-8114\">1688-8114</a></div>\n    </div>\n    <div class=\"btn_cont\">\n        <button type=\"button\" class=\"com_btn blue org\">대출정보조회</button>\n    </div>\n</div>",
+  "len": 536
+ },
+ {
+  "key": "com_info_txt_area",
+  "cat": "목록 · 정보",
+  "name": "라벨/값 2단 목록",
+  "note": "왼쪽 라벨(.tit_area) 오른쪽 값(.txt_area) 구조의 정보 목록. type2 는 구분선, bg_none 은 배경 제거.",
+  "file": "html/debt/02주택담보대출_02채무인수_01채무인수신청_08단계_00.html",
+  "html": "<div class=\"com_info_txt_area type2 bg_none\">\n                                                                    <ul class=\"list\">\n                                                                        <li>\n                                                                            <div class=\"box\">\n                                                                                <div class=\"tit_area\">\n                                                                                    <div class=\"tit\">채무인수예정일</div>\n                                                                                </div>\n                                                                                <div class=\"txt_area\">\n                                                                                    <div class=\"txt\">2026년 07월 01일</div>\n                                                                                </div>\n                                                                            </div>\n                                                                        </li>\n                                                                        <li>\n                                                                            <div class=\"box\">\n                                                                                <div class=\"tit_area\">\n                                                                                    <div class=\"tit\">담보제공자</div>\n                                                                                </div>\n                                                                                <div class=\"txt_area\">\n                                                                                    <div class=\"txt\">본인</div>\n                                                                                </div>\n                                                                            </div>\n                                                                        </li>\n</ul>\n                                                                </div>",
+  "len": 2091
+ },
+ {
+  "key": "hf-step-list-cont",
+  "cat": "단계 · 진행",
+  "name": "단계 표시 (신청 흐름)",
+  "note": "step_list_cont type1 stepN 과 함께 쓴다. 현재 단계 li 에 active 를 주고 그 안에 em.sr-only 현재단계 를 반드시 넣는다.",
+  "file": "html/annual_application/04주택연금_00주택연금신청_01신청_00신청방법선택_20260907.html",
+  "html": "<div class=\"step_list_cont type1 step1 hf-step-list-cont\">\n    <ol class=\"krds-step-wrap\">\n        <li class=\"active\">\n            <span>\n                <em class=\"sr-only\">현재단계</em>\n                <span class=\"tit\">신청 방법 선택</span>\n            </span>\n        </li>\n        <li>\n            <span>\n                <span class=\"tit\">정보제공동의</span>\n            </span>\n        </li>\n        <li>\n            <span>\n                <span class=\"tit\">스마트서류제출</span>\n            </span>\n        </li>\n    </ol>\n</div>",
+  "len": 513
+ },
+ {
+  "key": "table_area",
+  "cat": "표 · 파일 · 기타",
+  "name": "데이터 표",
+  "note": "caption + colgroup + thead 를 갖춘 기본 표. 가로로 넘치는 표는 krds-table-wrap 으로 감싼다.",
+  "file": "html/info/00주택금융안내_00HF상품찾기_01주택담보대출_01보금자리론.html",
+  "html": "<div class=\"table_area\">\n    <table>\n        <caption>u-보금자리론 만기별 금리</caption>\n        <colgroup>\n            <col style=\"width: 16.6%;\"><col style=\"width: 16.6%;\"><col style=\"width: 16.6%;\">\n            <col style=\"width: 16.6%;\"><col style=\"width: 16.8%;\"><col style=\"width: 16.8%;\">\n        </colgroup>\n        <thead>\n            <tr>\n                <th scope=\"col\">10년</th><th scope=\"col\">15년</th><th scope=\"col\">20년</th>\n                <th scope=\"col\">30년</th><th scope=\"col\">*40년</th><th scope=\"col\">*50년</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr><td>4.15</td><td>4.15</td><td>4.30</td><td>4.35</td><td>4.40</td><td>4.45</td></tr>\n        </tbody>\n    </table>\n</div>",
+  "len": 706
+ },
+ {
+  "key": "title_cont",
+  "cat": "레이아웃 · 제목",
+  "name": "필수 표시 제목",
+  "note": "h2 와 필수 표시(.point)를 묶는 제목. 폼 섹션 제목에 쓴다.",
+  "file": "html/automatic_money/02주택담보대출_03대출관리_00대출 계좌·상환 관리_02자동이체계좌변경_00계좌선택.html",
+  "html": "<div class=\"title_cont\">\n    <div class=\"title\">\n        <h2>\n            대출계좌 선택\n        </h2>\n        <div class=\"point\">*</div>\n    </div>\n</div>",
+  "len": 148
+ },
+ {
+  "key": "krds-calendar-area",
+  "cat": "입력폼",
+  "name": "달력 영역",
+  "note": "달력이 붙는 자리. 안쪽 .calendar-wrap 은 krds 스크립트가 채우므로 비워 둔다.",
+  "file": "html/individual_expectations/03주택보증_01보증금액미리보기_00개인보증예상금액조회_01개인정보동의_01case1.html",
+  "html": "<div class=\"krds-calendar-area\">\n    <div class=\"calendar-wrap\"></div>\n</div>",
+  "len": 77
+ },
+ {
+  "key": "hf-es-method",
+  "cat": "버튼",
+  "name": "서류 제출 수단 버튼",
+  "note": "스크래핑 / 서류첨부 / 사진촬영 3종 버튼 행. left 는 좌측정렬, 버튼에 border 를 주면 외곽선형.",
+  "file": "html/simple_document/간편서류제출.html",
+  "html": "<div class=\"hf-es-method\">\n    <button type=\"button\" class=\"hf-es-method-btn\"><i class=\"svg-icon ico-certification\"></i>스크래핑</button>\n    <button type=\"button\" class=\"hf-es-method-btn\"><i class=\"svg-icon ico-upload\"></i>서류첨부</button>\n    <button type=\"button\" class=\"hf-es-method-btn\"><i class=\"svg-icon ico-img\"></i>사진촬영</button>\n</div>",
+  "len": 337
+ },
+ {
+  "key": "etc_cont",
+  "cat": "레이아웃 · 제목",
+  "name": "본문 하단 부가 설명",
+  "note": "본문 아래 덧붙이는 설명 블록. main_tit_area 와 krds-info-list 를 함께 쓴다.",
+  "file": "html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내.html",
+  "html": "<div class=\"etc_cont\">\n    <div class=\"main_tit_area\">\n        <div class=\"title\">가입자 사망 후 배우자가 주택연금을 승계해야 하는 경우</div>\n    </div>\n    <ul class=\"krds-info-list\">\n        <li class=\"no_bullet no_indent gray\">가입자가 사망하면 월지급금 지급이 중단되며, 배우자(최초 가입 시부터 계속 혼인관계에 있는 배우자에 한함. 이하 같음)가 주택연금을 이어 받기 위해서는 가입자의 사망일로부터 6월 이내에 주택연금 승계(채무인수) 절차를 완료해야 합니다. 이 경우 담보취득 방식별로 주택연금 승계(채무인수) 절차에 차이(아래 표 참고)가 있는 점 유의하시기 바랍니다.</li>\n    </ul>\n</div>",
+  "len": 423
+ },
+ {
+  "key": "submit_list_area",
+  "cat": "목록 · 정보",
+  "name": "서류 제출 목록",
+  "note": "제출 서류 목록. li 마다 submit_info_area(제출상태 .mark + 제목 + 제출수단 버튼)가 들어간다.",
+  "file": "html/smart/05간편서류제출_09반환보증서류제출_00경공매법원.html",
+  "html": "<div class=\"submit_list_area\">\n                                                    <ul class=\"list\">\n                                                        <li>\n                                                            <div class=\"submit_info_area\">\n                                                                <div class=\"title_area\">\n                                                                    <div class=\"mark\">미제출</div>\n                                                                    <div class=\"title\">법원서류</div>\n                                                                </div>\n                                                                <div class=\"hf-es-method left\">\n                                                                <button type=\"button\" class=\"hf-es-method-btn border\"><i class=\"svg-icon ico-upload\"></i>서류첨부</button>\n                                                                </div>\n                                                            </div>\n                                                        </li>\n</ul>\n                                                </div>",
+  "len": 1130
+ },
+ {
+  "key": "krds_info_list_area",
+  "cat": "목록 · 정보",
+  "name": "안내 목록 래퍼",
+  "note": "krds-info-list 를 감싸 위 여백을 주는 래퍼. mt 로 간격을 조절한다.",
+  "file": "html/debt/02주택담보대출_02채무인수_01채무인수신청_00채무인수대상 계좌조회 및 사유_00.html",
+  "html": "<div class=\"krds_info_list_area mt\">\n                                            <ul class=\"krds-info-list decimal\">\n                                                <li>My HF → 주택담보대출 → 신청내역 조회 → 대출정보 상세조회 클릭 → 대출계좌 확인 가능(대출계좌는 자동이체 계좌번호가 아닙니다.)</li>\n                                                <li>채무인수 신청에 어려움을 겪는 만 50세 이상, 청각장애인 또는 재외동포(재외국민, 외국국적동포)를 대상으로 원격신청지원 서비스를 제공하고 있습니다. 해당 서비스를 필요로 하시는 경우, [주택담보대출신청 항목 &gt; 원격지원을 통한 신청] 화면에서 서비스신청 가능합니다.</li>\n</ul>\n                                        </div>",
+  "len": 513
+ },
+ {
+  "key": "number_area",
+  "cat": "입력폼",
+  "name": "구분자 다중 입력",
+  "note": "하이픈으로 나뉜 다중 입력(주민번호, 인증번호). 주민번호 뒷자리는 type=password 로 둔다.",
+  "file": "html/certificate_center/mo_copy.html",
+  "html": "<div class=\"number_area\">\n    <div class=\"inp_area\">\n          <input type=\"text\" id=\"verification_code2_1\" class=\"krds-input\" placeholder=\"숫자 4자리\" value=\"\" data-pop=\"com_pop11\">\n    </div>\n    <span class=\"txt\">-</span>\n    <div class=\"inp_area\">\n        <input type=\"text\" id=\"verification_code2_2\" class=\"krds-input\" placeholder=\"숫자 4자리\" value=\"\">\n    </div>\n    <span class=\"txt\">-</span>\n    <div class=\"inp_area\">\n        <input type=\"text\" id=\"verification_code2_3\" class=\"krds-input\" placeholder=\"숫자 4자리\" value=\"\">\n    </div>\n</div>",
+  "len": 540
+ },
+ {
+  "key": "sub_main_tit_area",
+  "cat": "레이아웃 · 제목",
+  "name": "팝업 안 소제목",
+  "note": "팝업이나 바텀시트 안에서 쓰는 소제목.",
+  "file": "html/expectations/00_공통_주소검색_00검색선택.html",
+  "html": "<div class=\"sub_main_tit_area\">\n    <div class=\"title\">시세조회</div>\n</div>",
+  "len": 72
+ },
+ {
+  "key": "txt_list_area",
+  "cat": "목록 · 정보",
+  "name": "유의사항 번호 목록",
+  "note": "번호가 붙는 유의사항 목록. 첫 li 에 title ft_w 를 주면 목록 제목이 된다.",
+  "file": "html/certificate_center/hf_guide_note.html",
+  "html": "<div class=\"txt_list_area\">\n                    <ul class=\"krds-info-list decimal\">\n                      <li class=\"title ft_w\">HF 간편인증 이용에 대한 유의사항</li>\n                      <li>본 간편인증은 이용자의 인증 정보를 저장하거나 보관하지 않으며, 모바일 기기에 등록된 인증 정보와 이용자가 제출한 인증 정보의 일치 여부 확인 결과값만을 이용하여 인증을 진행합니다.</li>\n</ul>\n                  </div>",
+  "len": 317
+ },
+ {
+  "key": "hf-form-section",
+  "cat": "레이아웃 · 제목",
+  "name": "폼 섹션",
+  "note": "제목(hf-form-section-tit)과 번호 목록을 한 덩어리로 묶는 폼 섹션.",
+  "file": "html/assurance/03주택보증_04보증관리_04사고사유발생통지_01신청.html",
+  "html": "<div class=\"hf-form-section\">\n                                <div class=\"hf-form-section-tit\">전세지킴보증 사고사유 발생시 준수사항</div>\n                                <ul class=\"krds-info-list type2\">\n                                    <li><span class=\"num\">①</span> 관할법원에 임차권등기명령을 신청하고 접수증을 공사로 제출하셔야 사고처리가 가능합니다. (임차인이 임대차목적물에 전세권을 설정했거나 경･공매에 따라 임차권이 이미 소멸한 경우 제외)</li>\n                                    <li><span class=\"num\">②</span> 사고사유 증빙서류(내용증명우편, 경･공매 배당표 등)를 공사로 제출하셔야 합니다.</li>\n</ul>\n                            </div>",
+  "len": 519
+ },
+ {
+  "key": "area_sch_data_list_area",
+  "cat": "목록 · 정보",
+  "name": "검색 결과 (건수 + 목록)",
+  "note": "검색 결과 건수와 결과 목록을 묶은 영역. 인라인 display 는 스크립트가 토글하므로 마크업에서는 빼도 된다.",
+  "file": "html/assurance/03주택보증_04보증관리_03사건사고신청_00경매공매사건통지_02case1.html",
+  "html": "<div class=\"area_sch_data_list_area\" style=\"display: flex;\">\n                    <div class=\"total_cont\">\n                        검색 결과 <span class=\"blue\">2</span>건\n                    </div>\n                    <div class=\"list_area\">\n                        <ul class=\"list\">\n                            <li>\n                                <button type=\"button\" class=\"cont\"  data-pop=\"com_pop13\">\n                                    <div class=\"code\">\n                                        <div class=\"txt medium\">서울회생법원</div>\n                                        <div class=\"icon\"></div>\n                                    </div>\n                                </button>\n                            </li>\n</ul>\n                    </div>\n                </div>",
+  "len": 772
+ },
+ {
+  "key": "area_list_cont",
+  "cat": "입력폼",
+  "name": "주소 결과 + 상세주소 입력",
+  "note": "주소 검색 결과에 상세주소 입력이 붙는 목록. 오류 상태는 form-conts 에 is-error 를 준다.",
+  "file": "html/expectations/00_공통_주소검색_00검색선택.html",
+  "html": "<div class=\"area_list_cont\">\n                    <ul class=\"list\">\n                        <li>\n                            <div class=\"fieldset gap_none\">\n                                <div class=\"form-group none_bg\">\n                                    <div class=\"form-conts is-error\">\n                                        <div class=\"area\"><span class=\"blue\">[도로명]</span> 서울특별시 강남구 테헤란로 223(큰길타워)</div>\n                                        <div class=\"area\"><span class=\"blue\">[지번]</span> 서울특별시 강남구 역삼동 677-25</div>\n                                        <div class=\"form-inp\">\n                                            <input type=\"text\" id=\"consult_name\" class=\"krds-input p0\" placeholder=\"상세 주소를 입력해 주세요.\" title=\"상세 주소를 입력해 주세요.\">\n                                        </div>\n                                        <!--<p class=\"form-hint-invalid\">에러 메시지</p>\n                                        <p class=\"form-hint-success\">성공 메시지</p>\n                                        <p class=\"form-hint-information\">정보 메시지</p>-->\n                                    </div>\n                                </div>\n                                <div class=\"form-group none_bg\">\n                                    <div class=\"form-tit-cont\">\n                                        <div class=\"form-tit\">\n                                            <label for=\"\">최저층 여부</label>\n                                        </div>\n                                    </div>\n                                    <div class=\"form-conts\">\n                                        <div class=\"chip-wrap cunt auto\">\n                                            <div class=\"krds-form-chip type1\">\n                                                <input type=\"radio\" name=\"rdo_0\" id=\"rdo_1\" checked=\"\" class=\"radio\">\n                                                <label for=\"rdo_1\">아니오</label>\n                                            </div>\n                                            <div class=\"krds-form-chip type1\">\n                                                <input type=\"radio\" name=\"rdo_0\" id=\"rdo_2\" class=\"radio\">\n                                                <label for=\"rdo_2\">예</label>\n                                            </div>\n                                        </div>\n                                    </div>\n                                    <div class=\"form-list-info\">\n                                        <ul class=\"krds-info-list decimal\">\n                                            <li>담보주택이 최저층(1호, 101호)이면 예를 선택하세요.</li>\n                                        </ul>\n                                    </div>\n                                </div>\n                            </div>\n                        </li>\n</ul>\n                </div>",
+  "len": 2797
+ },
+ {
+  "key": "text_list_area",
+  "cat": "목록 · 정보",
+  "name": "불릿 없는 텍스트 목록",
+  "note": "카드 안 수치를 나열하는 단순 목록.",
+  "file": "html/expectations/00_공통_주소검색_00검색선택.html",
+  "html": "<div class=\"text_list_area\">\n    <ul class=\"list\">\n        <li>\n            월 납입금 : 1,196,650원 ~ 557,590원\n        </li>\n        <li>\n            총이자 : 117,333,212원\n        </li>\n    </ul>\n</div>",
+  "len": 194
+ },
+ {
+  "key": "tit_area",
+  "cat": "레이아웃 · 제목",
+  "name": "제목 + 보조문구",
+  "note": "제목과 보조문구를 묶는 소형 머리말. 카드 안에서 쓴다.",
+  "file": "html/ai_service/02주택담보대출_00대출신청_00상품추천서비스_07AI고정변동금리체험서비스.html",
+  "html": "<div class=\"tit_area\">\n    <div class=\"tit\">최종 대출한도</div>\n    <div class=\"txt\">아낌e보금자리론</div>\n</div>",
+  "len": 100
+ },
+ {
+  "key": "tit_box",
+  "cat": "레이아웃 · 제목",
+  "name": "구분 라벨 + 대상자",
+  "note": "구분 라벨(.num)과 대상자명(.tit)을 담는 박스.",
+  "file": "html/debt_adjustment/05채무조정_00채무조정신청_01기타채무조정_분할상환유예신청_안내.html",
+  "html": "<div class=\"tit_box\">\n    <div class=\"num\">주택신용보증 주채무자</div>\n    <div class=\"tit\">정** (12345-1******)</div>\n</div>",
+  "len": 114
+ },
+ {
+  "key": "hf-product-summary",
+  "cat": "레이아웃 · 제목",
+  "name": "상품 안내 머리말",
+  "note": "p.tit 와 p.desc 두 줄로 된 상품 안내 머리말.",
+  "file": "html/additional_information/04주택연금_07주택연금추가안내_00주택연금세제혜택.html",
+  "html": "<div class=\"hf-product-summary\">\n    <p class=\"tit\">주택연금 세제혜택 안내</p>\n    <p class=\"desc\">주택연금 가입 시 아래의 세금 감면 혜택을 받으실 수 있습니다.</p>\n</div>",
+  "len": 135
+ },
+ {
+  "key": "btn_cut_cont",
+  "cat": "버튼",
+  "name": "본문 안 소형 버튼",
+  "note": "본문 중간에 두는 소형 버튼 자리. right 로 우측 정렬한다.",
+  "file": "html/imagine/list2.html",
+  "html": "<div class=\"btn_cut_cont right\">\n    <button type=\"button\" class=\"blue_btn\">상환금액 계산</button>\n</div>",
+  "len": 99
+ },
+ {
+  "key": "hf-find-summary",
+  "cat": "레이아웃 · 제목",
+  "name": "상품 한 문단 요약",
+  "note": "상품찾기 상세 상단의 한 문단 요약.",
+  "file": "html/info/00주택금융안내_00HF상품찾기_01주택담보대출_01보금자리론.html",
+  "html": "<div class=\"hf-find-summary\">주택을 보유할 예정이거나 이미 보유중인 주택을 담보로 하여 구입자금, 대환대출, 생활안정자금을 지급받고 대출만기까지 고정금리로 원리금을 상환하는 HF 대출 상품</div>",
+  "len": 124
+ },
+ {
+  "key": "hf-find-menu",
+  "cat": "목록 · 정보",
+  "name": "아이콘 메뉴 목록",
+  "note": "아이콘 + 제목 + 화살표로 된 메뉴 목록. 각 항목이 data-pop 으로 팝업을 연다.",
+  "file": "html/info/00주택금융안내_00HF상품찾기_02주택보증(사업자)_08매입임대사업자보증(매입중도금).html",
+  "html": "<ul class=\"hf-find-menu\">\n                        <li>\n                            <button type=\"button\" class=\"hf-find-item\" data-pop=\"com_pop11\" title=\"상품개요 팝업 열기\">\n                                <div class=\"ico\"><img src=\"/resources/images/common/icon/ico_terms_file.svg\" alt=\"\"></div>\n                                <div class=\"tit\">상품개요</div>\n                                <i class=\"svg-icon ico-angle right\"></i>\n                            </button>\n                        </li>\n</ul>",
+  "len": 496
+ },
+ {
+  "key": "total_area",
+  "cat": "목록 · 정보",
+  "name": "총 건수 표시",
+  "note": "목록 위에 총 건수나 회차를 표시하는 한 줄.",
+  "file": "html/expectations/00_공통_주소검색_00검색선택.html",
+  "html": "<div class=\"total_area\">총 360회차</div>",
+  "len": 37
+ },
+ {
+  "key": "sch_tip_list_area",
+  "cat": "목록 · 정보",
+  "name": "검색 팁 목록",
+  "note": "h2.title 과 ul.list 로 된 검색 도움말.",
+  "file": "html/expectations/00_공통_주소검색_00검색선택.html",
+  "html": "<div class=\"sch_tip_list_area\">\n    <h2 class=\"title\">주소 검색 팁</h2>\n    <ul class=\"list\">\n        <li>· 건물명</li>\n        <li>· 건물 명칭 입력</li>\n        <li>· 예) 코엑스</li>\n        <li>· 도로명</li>\n        <li>· 도로명+건물번호</li>\n        <li>· 예) 영동대로502</li>\n        <li>· 지번주소</li>\n        <li>· 동(읍/면/리/가)</li>\n        <li>· 예) 삼성동 168-6</li>\n    </ul>\n</div>",
+  "len": 349
+ },
+ {
+  "key": "data_cont",
+  "cat": "표 · 파일 · 기타",
+  "name": "게시판 메타 정보",
+  "note": "등록일 / 조회수 / 첨부 여부를 한 줄로 표시. 각 라벨은 sr-only 로만 제공한다.",
+  "file": "html/archive/list.html",
+  "html": "<div class=\"data_cont\">\n    <div class=\"data\"><span class=\"sr-only\">등록일</span>2026-04-23</div>\n    <div class=\"data\"><span class=\"sr-only\">조회수</span>1,935</div>\n    <i class=\"svg-icon ico-file\"></i>\n    <span class=\"sr-only\">첨부파일 있음</span>\n</div>",
+  "len": 246
+ },
+ {
+  "key": "slt_btn_area",
+  "cat": "선택 컨트롤",
+  "name": "시트 여는 선택 버튼",
+  "note": "탭하면 선택 시트가 열리는 버튼 나열. 선행 선택이 필요한 버튼은 disabled 로 잠근다.",
+  "file": "html/annual_application/04주택연금_00주택연금신청_01신청_04인적사항_00.html",
+  "html": "<div class=\"slt_btn_area\">\n    <button type=\"button\" class=\"slt_btn\" title=\"광역시/도 선택\">광역시/도</button>\n    <button type=\"button\" class=\"slt_btn\" title=\"시/군/구 선택\" disabled>시/군/구</button>\n</div>",
+  "len": 190
+ },
+ {
+  "key": "exp_chk_info_list_area",
+  "cat": "목록 · 정보",
+  "name": "조회 결과 라벨/값 목록",
+  "note": "조회 결과를 라벨과 값으로 나열. li > .cont > .box(.tit) + .box(.txt) 구조.",
+  "file": "html/expectations/00_공통_주소검색_00검색선택.html",
+  "html": "<div class=\"exp_chk_info_list_area\">\n                        <ul class=\"list\">\n                            <li>\n                                <div class=\"cont\">\n                                    <div class=\"box\">\n                                        <div class=\"tit\">최대대출가능금액</div>\n                                    </div>\n                                    <div class=\"box\">\n                                        <div class=\"txt\">420,000,000원</div>\n                                    </div>\n                                </div>\n                            </li>\n                            <li>\n                                <div class=\"cont\">\n                                    <div class=\"box\">\n                                        <div class=\"tit\">대출금액</div>\n                                    </div>\n                                    <div class=\"box\">\n                                        <div class=\"txt\">200,000,000원</div>\n                                    </div>\n                                </div>\n                            </li>\n</ul>\n                    </div>",
+  "len": 1105
+ },
+ {
+  "key": "great_list_cont",
+  "cat": "선택 컨트롤",
+  "name": "우대금리 선택 목록",
+  "note": "체크 + 요율 + 안내가 한 행인 목록. 우대금리처럼 선택에 따라 값이 바뀌는 항목에 쓴다.",
+  "file": "html/expectations/00_공통_주소검색_00검색선택.html",
+  "html": "<div class=\"great_list_cont\">\n                    <ul class=\"list type1\">\n                        <li>\n                            <div class=\"cont\">\n                                <div class=\"fieldset\">\n                                    <div class=\"form-group none_bg\">\n                                        <div class=\"form-conts\">\n                                            <div class=\"form-chk-cont has_guide\">\n                                                <div class=\"krds-check-area chk-column\">\n                                                    <div class=\"krds-form-check \">\n                                                        <input type=\"checkbox\" id=\"chk_additional_1\" checked=\"\">\n                                                        <label for=\"chk_additional_1\">저소득청년</label>\n                                                    </div>\n                                                </div>\n                                                <div class=\"text\">0.1%p\n                                            </div>\n                                                <div class=\"guide_link\"><button type=\"button\" data-pop=\"com_pop36\" class=\"link_btn\">저소득청년 대출 요건</button></div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </li>\n</ul>\n                </div>",
+  "len": 1475
+ },
+ {
+  "key": "hf-doc-upload-zone",
+  "cat": "표 · 파일 · 기타",
+  "name": "파일 첨부 영역",
+  "note": "input[type=file] 은 sr-only 로 숨기고 버튼으로 대신 연다. input 에 aria-label 로 무슨 서류인지 밝힌다.",
+  "file": "html/hf_charter_on/전세on신청_02신청_08서류제출.html",
+  "html": "<div class=\"hf-doc-upload-zone\">\n    <span class=\"hf-doc-upload-txt\">서류첨부 버튼을 직접 선택해 주세요</span>\n    <input type=\"file\" accept=\".pdf,.jpg,.png,.hwp\" class=\"sr-only\" aria-label=\"임대차계약서 파일 첨부\">\n    <button type=\"button\" class=\"hf-doc-upload-btn\">서류첨부</button>\n</div>",
+  "len": 263
+ },
+ {
+  "key": "hf-doc-card",
+  "cat": "표 · 파일 · 기타",
+  "name": "제출 서류 카드",
+  "note": "파일명 + 확장자 정보와 다운로드 / 바로보기 버튼을 담는 카드.",
+  "file": "html/assurance/03주택보증_04보증관리_03사건사고신청_02사건정상화통지_02완료.html",
+  "html": "<ul class=\"hf-doc-card-list\">\n    <li>\n        <div class=\"hf-doc-card\">\n            <p class=\"hf-doc-name\">(반환보증용)사고정상화 통지서 <span class=\"hf-doc-ext\">[pdf.90.4B]</span></p>\n            <div class=\"hf-doc-btns\">\n                <button type=\"button\" class=\"hf-file-btn\"><i class=\"svg-icon ico-upload\"></i>다운로드</button>\n                <button type=\"button\" class=\"hf-file-btn\"><i class=\"svg-icon ico-link\"></i>바로보기</button>\n            </div>\n        </div>\n    </li>\n</ul>",
+  "len": 472
+ },
+ {
+  "key": "inp_col_area",
+  "cat": "입력폼",
+  "name": "입력 영역 안 체크",
+  "note": "입력 영역 안에 체크 한 줄을 둘 때 쓴다.",
+  "file": "html/hf_charter_on/전세on신청_02신청_00정보제공동의.html",
+  "html": "<div class=\"inp_col_area\">\n    <div class=\"krds-form-check\">\n        <input type=\"checkbox\" id=\"chk_additiona3_3\">\n        <label for=\"chk_additiona3_3\">\n            [필수] 대출금의 부정이용을 목적으로 하는 임대차 계약 체결은 불법이며 범죄사실 인지 시 반드시 경찰 또는 검찰에 신고 바랍니다.\n        </label>\n    </div>\n</div>",
+  "len": 273
+ },
+ {
+  "key": "inp_add_area",
+  "cat": "입력폼",
+  "name": "추가 입력 행 목록",
+  "note": "입력 행과 우측 버튼이 반복되는 추가 입력 목록.",
+  "file": "html/debt/02주택담보대출_02채무인수_01채무인수신청_02단계_00.html",
+  "html": "<div class=\"inp_add_area\">\n                                                    <ul class=\"list\">\n                                                        <li>\n                                                            <div class=\"number_area\">\n                                                                <div class=\"inp_area\">\n                                                                    <input type=\"text\" id=\"prev_rrn1_1\" class=\"krds-input\" placeholder=\"앞자리\" title=\"변경 전 주민등록번호 앞자리\" maxlength=\"6\">\n                                                                </div>\n                                                                <span class=\"txt\">-</span>\n                                                                <div class=\"inp_area\">\n                                                                    <input type=\"password\" id=\"prev_rrn1_2\" class=\"krds-input\" placeholder=\"뒷자리\" title=\"변경 전 주민등록번호 뒷자리\" maxlength=\"7\">\n                                                                </div>\n                                                            </div>\n                                                            <div class=\"btn_cont\">\n                                                                <button type=\"button\" class=\"com_btn\">삭제</button>\n                                                            </div>\n                                                        </li>\n</ul>\n                                                </div>",
+  "len": 1468
+ },
+ {
+  "key": "hf-file-btn",
+  "cat": "버튼",
+  "name": "아이콘 파일 버튼",
+  "note": "i.svg-icon 으로 아이콘을 지정하는 파일 버튼. ico-upload, ico-link 등을 쓴다.",
+  "file": "html/assurance_transition/03주택보증_02보증이행청구_00보증이행청구절차_00.html",
+  "html": "<button type=\"button\" class=\"hf-file-btn\">\n    <i class=\"svg-icon ico-upload\"></i>다운로드\n</button>",
+  "len": 96
+ },
+ {
+  "key": "apply_status_card",
+  "cat": "카드 · 결과",
+  "name": "이력 카드",
+  "note": "발송이나 처리 이력을 담는 카드. card_head + card_line + 본문 구조이고 border 로 외곽선형이 된다.",
+  "file": "html/my_hf/06MyHF_03문자통지문관리_00문자진위확인_02문자메시지유무_있음.html",
+  "html": "<div class=\"apply_status_card border\">\n    <div class=\"card_head msg\">\n        <div class=\"no\"><span>NO.</span><span>1</span></div>\n        <div class=\"send_date\"><span class=\"label\">발송일시</span><span class=\"date\">2021-04-26 16:19:12</span></div>\n    </div>\n    <div class=\"card_line\"></div>\n    <div class=\"msg_body\">\n        <div class=\"label\">발송내용</div>\n        <p class=\"msg_txt\">(주택금융공사) 05월 03일은 고객님의 보금자리론 대출금 13,000,000원 관련 안내입니다.<br>상세 내역은 HF 모바일앱에서 확인 가능합니다.<br>문의 1688-8114</p>\n    </div>\n</div>",
+  "len": 505
+ },
+ {
+  "key": "hf-complete",
+  "cat": "카드 · 결과",
+  "name": "완료 화면",
+  "note": "아이콘과 제목으로 된 완료 화면. 신규 화면은 구형 com_ok_cont 대신 이걸 쓴다.",
+  "file": "html/annual_tel/04주택연금_01전화상담신청_00전화상담예약_01완료.html",
+  "html": "<div class=\"hf-complete\">\n    <div class=\"hf-complete-title\">\n        <div class=\"hf-complete-head\">\n            <span class=\"hf-complete-icon\">\n                <img src=\"/resources/images/common/icon/ico_com_ok.svg\" alt=\"\">\n            </span>\n            <p class=\"hf-complete-tit\">전화상담 신청이<br>완료되었습니다.</p>\n        </div>\n    </div>\n</div>",
+  "len": 341
+ },
+ {
+  "key": "loan_apply_card",
+  "cat": "카드 · 결과",
+  "name": "대출 상품 카드",
+  "note": "상품명과 계좌번호를 담는 카드. 하단에 btn_cont 로 동작 버튼을 붙인다.",
+  "file": "html/my_hf/06MyHF_01이용상품조회_00주택담보대출조회_02대출상환내역.html",
+  "html": "<div class=\"loan_apply_card\">\n    <div class=\"card_inner\">\n        <div class=\"card_top\">\n            <div class=\"title\">\n                <div class=\"name\">아낌e보금자리론</div>\n                <div class=\"code\">대출계좌번호 12345678912345</div>\n            </div>\n        </div>\n        <div class=\"card_line\"></div>\n    </div>\n    <div class=\"btn_cont\">\n        <button type=\"button\" class=\"com_btn\">거래확인서 발급</button>\n    </div>\n</div>",
+  "len": 424
+ },
+ {
+  "key": "hf-guide-link",
+  "cat": "목록 · 정보",
+  "name": "안내 링크 목록",
+  "note": "좌측 설명과 우측 팝업 링크로 된 안내 목록. 원본 소스에 div type=button 오타가 있으니 새로 만들 때는 div 에서 type 을 빼야 한다.",
+  "file": "html/assurance_transition/03주택보증_02보증이행청구_00보증이행청구절차_00.html",
+  "html": "<ul class=\"list hf-guide-link-list\">\n                            <li>\n                                <div type=\"button\" class=\"hf-guide-link\">\n                                    이행 청구 절차 안내\n                                    <button type=\"button\" data-pop=\"pop_procedure\" aria-haspopup=\"dialog\"\n                                        class=\"link_btn\">보증이행 청구 절차</button>\n                                </div>\n                            </li>\n</ul>",
+  "len": 453
+ },
+ {
+  "key": "hf-q-card",
+  "cat": "선택 컨트롤",
+  "name": "번호 문답 카드",
+  "note": "번호(hf-q-num) + 질문 + 칩 라디오로 된 자가진단 문답 카드.",
+  "file": "html/assurance_transition/03주택보증_02보증이행청구_00이행청구자가진단_01진단_03임대차계약종료후.html",
+  "html": "<div class=\"hf-q-card\">\n    <span class=\"hf-q-num\">5</span>\n    <div class=\"hf-q-body\">\n        <p class=\"hf-q-tit\">임차권 등기명령 신청을 완료하였습니까?\n            <span class=\"point\">*</span>\n        </p>\n        <div class=\"chip-wrap cunt auto\">\n            <div class=\"krds-form-chip type1\">\n                <input type=\"radio\" name=\"rdo_q5\" id=\"rdo_q5_no\" checked class=\"radio\">\n                <label for=\"rdo_q5_no\">아니오</label>\n            </div>\n            <div class=\"krds-form-chip type1\">\n                <input type=\"radio\" name=\"rdo_q5\" id=\"rdo_q5_yes\" class=\"radio\">\n                <label for=\"rdo_q5_yes\">예</label>\n            </div>\n        </div>\n    </div>\n</div>",
+  "len": 668
+ },
+ {
+  "key": "schedule_data_area",
+  "cat": "목록 · 정보",
+  "name": "회차 + 금액 표시",
+  "note": "회차와 일자, 금액을 2단으로 보여주는 스케줄 행 내용.",
+  "file": "html/debt/02주택담보대출_02채무인수_01채무인수신청_보금자리론_07대출조건_08대출신청금액및예상금리확인_규제.html",
+  "html": "<div class=\"schedule_data_area\">\n    <div class=\"data_area\">\n        <div class=\"box\">64 회차</div>\n        <div class=\"box\">2026-04-12</div>\n    </div>\n    <div class=\"text_area\">\n        <div class=\"box\">\n            <div class=\"tit\">예정금액</div>\n            <div class=\"num\">502,279</div>\n        </div>\n        <div class=\"box\">\n            <div class=\"tit\">상환 후 예정 잔액</div>\n            <div class=\"num\">248,700,494</div>\n        </div>\n    </div>\n</div>",
+  "len": 454
+ },
+ {
+  "key": "inner_box",
+  "cat": "카드 · 결과",
+  "name": "아이콘 소형 박스",
+  "note": "아이콘과 라벨로 된 소형 박스. 인증수단 선택 등에 쓴다.",
+  "file": "html/automatic_money/02주택담보대출_03대출관리_00대출 계좌·상환 관리_02자동이체계좌변경_02변경내역확인.html",
+  "html": "<div class=\"inner_box\">\n    <div class=\"ico\"><img src=\"/resources/images/sub/auth_ico_fingerprint.svg\" alt=\"지문\"></div>\n    <div class=\"txt_area\">\n        <div class=\"txt\">지문</div>\n    </div>\n</div>",
+  "len": 197
+ },
+ {
+  "key": "nmain_card",
+  "cat": "카드 · 결과",
+  "name": "메인 카드",
+  "note": "메인 화면의 카드. 상담 현황처럼 통계를 나열한다.",
+  "file": "html/main/00메인_case3-1_주담대_신청중.html",
+  "html": "<div class=\"nmain_card\">\n    <ul class=\"nmain_counsel_stat\">\n            <li><span class=\"ico\"><img src=\"/resources/images/main/counsel_all.svg\" alt=\"\"></span><span class=\"tx\">전체<b>4</b></span></li>\n            <li><span class=\"ico\"><img src=\"/resources/images/main/counsel_ing.svg\" alt=\"\"></span><span class=\"tx\">처리중<b>1</b></span></li>\n            <li><span class=\"ico\"><img src=\"/resources/images/main/counsel_done.svg\" alt=\"\"></span><span class=\"tx\">완료<b>3</b></span></li>\n    </ul>\n    <p class=\"nmain_sub_tit\">최근 상담 이력</p>\n    <ul class=\"nmain_counsel_list\">\n            <li><span class=\"krds-badge bg-light-primary\">처리완료</span>보금자리론 금리 문의</li>\n            <li><span class=\"krds-badge bg-light-gray\">처리중</span>서류 보완 관련 문의</li>\n    </ul>\n</div>",
+  "len": 749
+ },
+ {
+  "key": "krds-table-wrap",
+  "cat": "표 · 파일 · 기타",
+  "name": "가로 스크롤 표",
+  "note": "가로로 넘치는 표를 감싸는 래퍼. table.tbl.data 를 안에 둔다.",
+  "file": "html/debt_adjustment/05채무조정_04캠코양도형채무조정.html",
+  "html": "<div class=\"krds-table-wrap\">\n    <table class=\"tbl data\">\n        <caption>캠코양도형 채무조정 신청대상</caption>\n        <colgroup>\n            <col style=\"width: 34%;\">\n            <col style=\"width: 66%;\">\n        </colgroup>\n        <thead>\n            <tr>\n                <th scope=\"col\">구분</th>\n                <th scope=\"col\">조건</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr>\n                <td>연체기간</td>\n                <td>3개월 이상</td>\n            </tr>\n            <tr>\n                <td>주택보유수</td>\n                <td>배우자를 포함한 주민등록표 상 세대원 전원이 담보주택 외 무주택자</td>\n            </tr>\n            <tr>\n                <td>소득</td>\n                <td>부부합산 7천만원 이하</td>\n            </tr>\n            <tr>\n                <td>주택가격</td>\n                <td>6억원 이하</td>\n            </tr>\n            <tr>\n                <td>담보주택 권리침해</td>\n                <td>제3자 경매 또는 공매*가 진행중이지 않을 것</td>\n            </tr>\n            <tr>\n                <td>대출채권</td>\n                <td>\n                    개인회생, 파산절차 진행중이지 않을 것\n                    <a href=\"#;\" class=\"link\">서울회생법원 도산제도 안내</a>\n                </td>\n            </tr>\n        </tbody>\n    </table>\n</div>",
+  "len": 1176
+ },
+ {
+  "key": "breakdown_list_area",
+  "cat": "목록 · 정보",
+  "name": "은행 계좌 선택 목록",
+  "note": "은행 아이콘과 계좌 정보가 있는 부채 선택 목록. 아이콘 파일명은 은행별로 다르다.",
+  "file": "html/hf_charter_on/전세on신청_02신청_04인적사항_00기본정보_등록완료.html",
+  "html": "<div class=\"breakdown_list_area\">\n                        <ul class=\"list\">\n                            <li>\n                                <button type=\"button\" class=\"cont\">\n                                    <div class=\"breakdown_info_area\">\n                                        <div class=\"box left\">\n                                            <div class=\"title_area\">\n                                                <div class=\"icon\">\n                                                    <img src=\"/resources/images/common/icon/ico_bank01.svg\" alt=\"\">\n                                                    <!--\n                                                    ico_bank01.svg 국민은행\n                                                    ico_bank02.svg\n                                                    ico_bank03.svg 농협은행\n                                                    ico_bank04.svg 신한은행\n                                                    ico_bank05.svg 우리은행\n                                                    ico_bank06.svg 하나은행\n                                                    ico_bank07.svg\n                                                    ico_bank08.svg BNK\n                                                    ico_bank09.svg 경남은행\n                                                    ico_bank11.svg\n                                                    ico_bank12.svg\n                                                    ico_bank13.svg\n                                                    ico_bank14.svg\n                                                    ico_bank15.svg 카카오뱅크\n                                                    ico_bank16.svg K뱅크\n                                                    ico_bank17.svg\n                                                    ico_bank18.svg\n                                                    ico_bank19.svg 토스\n                                                    -->\n                                                </div>\n                                                <div class=\"title\">농협은행</div>\n                                                <div class=\"mark blue\">전세대출</div>\n                                            </div>\n                                        </div>\n                                        <div class=\"box right\">\n                                            <div class=\"text_area\">\n                                                <div class=\"txt\">000-00-00000</div>\n                                                <div class=\"num\">340,030,000 원</div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                    <div class=\"icon\"></div>\n                                </button>\n                            </li>\n</ul>\n                    </div>",
+  "len": 2852
+ },
+ {
+  "key": "type_list_area",
+  "cat": "목록 · 정보",
+  "name": "2단 중첩 목록",
+  "note": "제목 아래 라벨/값 하위 목록이 중첩되는 2단 목록.",
+  "file": "html/home/02주택담보대출_00대출신청_02내집마련디딤돌대출_08대출신청금액및예상금리확인.html",
+  "html": "<div class=\"type_list_area\">\n                        <ul class=\"list\">\n                            <li>\n                                <div class=\"title\">상환예정일자</div>\n                                <ul class=\"list\">\n                                    <li>\n                                        <div class=\"cont\">\n                                            <div class=\"box\">\n                                                <div class=\"tit\">일자</div>\n                                            </div>\n                                            <div class=\"box\">\n                                                <div class=\"txt\">2026-04-21</div>\n                                            </div>\n                                        </div>\n                                    </li>\n                                    <li>\n                                        <div class=\"cont\">\n                                            <div class=\"box\">\n                                                <div class=\"tit\">영업일자</div>\n                                            </div>\n                                            <div class=\"box\">\n                                                <div class=\"txt\">2026-04-21</div>\n                                            </div>\n                                        </div>\n                                    </li>\n                                </ul>\n                            </li>\n</ul>\n                    </div>",
+  "len": 1466
+ },
+ {
+  "key": "info_group",
+  "cat": "레이아웃 · 제목",
+  "name": "제목 + 버튼 그룹",
+  "note": "제목과 우측 버튼, 하단 링크를 한 묶음으로 두는 그룹.",
+  "file": "html/my_hf/06MyHF_05마이페이지_00My정보관리.html",
+  "html": "<div class=\"info_group\">\n    <div class=\"main_tit_area m0\">\n        <div class=\"title medium\">금융서비스 등록해지</div>\n        <button type=\"button\" class=\"com_label_btn\">등록해지</button>\n    </div>\n    <a href=\"#\" class=\"hf-my-link\">유의사항</a>\n</div>",
+  "len": 238
+ },
+ {
+  "key": "hf_chk_input_list",
+  "cat": "입력폼",
+  "name": "체크 선택형 반복 입력",
+  "note": "왼쪽 체크로 행을 고르고 오른쪽에 입력 항목이 쌓이는 반복 입력 묶음. 행 추가·삭제는 머리말의 [추가] [삭제] 가 맡는다. 체크는 반드시 네이티브 checkbox 로 둔다 — .on 클래스로 흉내내면 값이 전송되지 않고 키보드·스크린리더로 조작할 수 없다. 체크만 있고 글자가 없으므로 label 안에 <span class=\"sr-only\">N번째 … 선택</span> 으로 이름을 준다. 원형 표시는 .hf_chk_input_list 스코프에서 label:before 의 radius 만 바꾼 것이다.",
+  "file": "html/debt/02주택담보대출_02채무인수_01채무인수신청_06단계_03소득정보.html",
+  "html": "<div class=\"fieldset\">\n    <div class=\"form-group none_bg\">\n        <div class=\"form-tit-cont hf_chk_input_head\">\n            <div class=\"form-tit\">\n                <label>직접입력\n                    <span class=\"point\">*</span>\n                </label>\n            </div>\n            <button type=\"button\" class=\"com_label_btn white\">삭제</button>\n            <button type=\"button\" class=\"com_label_btn white\">추가</button>\n        </div>\n        <div class=\"form-conts\">\n            <ul class=\"hf_chk_input_list\">\n                <li>\n                    <div class=\"krds-form-check\">\n                        <input type=\"checkbox\" id=\"incomeChk1\" name=\"incomeChk\">\n                        <label for=\"incomeChk1\"><span class=\"sr-only\">1번째 소득 입력 선택</span></label>\n                    </div>\n                    <div class=\"hf_chk_input_fields\">\n                        <div class=\"form-group none_bg\">\n                            <div class=\"form-tit-cont\">\n                                <div class=\"form-tit\"><label for=\"incomeCorp1\">직장(사업자)명</label></div>\n                            </div>\n                            <div class=\"form-conts\">\n                                <div class=\"form-inp\">\n                                    <input type=\"text\" id=\"incomeCorp1\" class=\"krds-input\" placeholder=\"입력해주세요\">\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"form-group none_bg\">\n                            <div class=\"form-tit-cont\">\n                                <div class=\"form-tit\"><label for=\"incomeAmt1\">(예상)최종소득</label></div>\n                            </div>\n                            <div class=\"form-conts\">\n                                <div class=\"form-inp\">\n                                    <input type=\"text\" id=\"incomeAmt1\" class=\"krds-input txt_r\" placeholder=\"0\">\n                                    <div class=\"txt\">원</div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </li>\n                <li>\n                    <div class=\"krds-form-check\">\n                        <input type=\"checkbox\" id=\"incomeChk2\" name=\"incomeChk\" checked>\n                        <label for=\"incomeChk2\"><span class=\"sr-only\">2번째 소득 입력 선택</span></label>\n                    </div>\n                    <div class=\"hf_chk_input_fields\">\n                        <div class=\"form-group none_bg\">\n                            <div class=\"form-tit-cont\">\n                                <div class=\"form-tit\"><label for=\"incomeCorp2\">직장(사업자)명</label></div>\n                            </div>\n                            <div class=\"form-conts\">\n                                <div class=\"form-inp\">\n                                    <input type=\"text\" id=\"incomeCorp2\" class=\"krds-input\" placeholder=\"입력해주세요\">\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"form-group none_bg\">\n                            <div class=\"form-tit-cont\">\n                                <div class=\"form-tit\"><label for=\"incomeAmt2\">(예상)최종소득</label></div>\n                            </div>\n                            <div class=\"form-conts\">\n                                <div class=\"form-inp\">\n                                    <input type=\"text\" id=\"incomeAmt2\" class=\"krds-input txt_r\" placeholder=\"0\">\n                                    <div class=\"txt\">원</div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </li>\n            </ul>\n            <div class=\"btn_cut_cont right\">\n                <button type=\"button\" class=\"area_btn small\">소득없음</button>\n            </div>\n        </div>\n    </div>\n</div>",
+  "len": 3890
+ }
+]

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko">
+    <meta property="og:site_name" content="한국주택금융공사">
+    <meta property="og:updated_time" content="">
+    <meta name="twitter:card" content="summary">
+    <title>한국주택금융공사</title>
+    
+    <!-- CSS 파일들 -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+
+    <!-- JavaScript 파일들 -->
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+    
+    <!-- !추가부분 -->
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+
+    <!--// !추가부분 -->
+</head>
+<body>
+
+<div class="wrapper sub" id="app">
+    <div data-include="../inc/header.html"></div>
+
+    <div id="container">
+        <div class="container_in">
+
+            <div class="contents">
+                <div class="pro_anagement_cont">
+                    <div class="step_cont">
+                        <span class="blue">2단계</span> / 3단계
+                    </div>
+                    <div class="step_list_cont type1 step3">
+                        <ol class="krds-step-wrap">
+                            <li class="done">
+                                <span>
+                                    <span class="tit">신청안내</span>
+                                </span>
+                            </li>
+                            <li class="active">
+                                <span>
+                                    <em class="sr-only">현재단계</em>
+                                    <span class="tit">신청동의</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <span class="tit">신청확인</span>
+                                </span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="bg_line"></div>
+                <div class="pro_anagement_cont gap down">
+                    <div class="main_tit_area m0">
+                        <div class="title">우대금리 신청안내</div>
+                        <button type="button" data-pop="com_pop" class="link_btn">우대금리 인하 적용안내</button>
+                    </div>
+                    <div class="pro_anagement_chk_list_area">
+                        <div class="fieldset">
+                            <div class="form-group none_bg">
+                                <div class="form-conts">
+                                    <div class="krds-check-area chk-column">
+                                        <div class="krds-form-check all">
+                                            <input type="checkbox" id="agreeAll1">
+                                            <label for="agreeAll1">
+                                                [전체] 우대금리 서류제출 관련 대출신청인 동의
+                                                <button type="button" data-pop="com_pop" class="btn">전체보기</button>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group none_bg">
+                                <div class="form-conts gap_none">
+                                    <div class="krds-check-area chk-column cont_line">
+                                        <div class="krds-form-check">
+                                            <input type="checkbox" id="agree1_0">
+                                            <label for="agree1_0">[필수] 신청서류를 이미지화하여 업로드할 경우 객관적인 식별이 불가능하여 금리인하 반영이 이루어지지 않을 경우 이의를 제기하지 않겠습니다.</label>
+                                        </div>
+                                        <div class="krds-form-check">
+                                            <input type="checkbox" id="agree1_1">
+                                            <label for="agree1_1">[필수] 신청인 본인의 책임하에 이미지를 업로드하였으며, 공사가 요구하지 않은 제3자의 개인정보 유출로 인한 법적 책임은 전적으로 본인에게 있음을 잘 알고 있습니다.</label>
+                                        </div>
+                                        <div class="krds-form-check">
+                                            <input type="checkbox" id="agree1_2">
+                                            <label for="agree1_2">[필수] 제출한 서류가 허위로 확인되어 기한의 이익이 상실되더라도 이의를 제기하지 않겠습니다. (결혼예정자 특약에 따른 혼인 여부 확인 등)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro_anagement_cont gap down">
+                    <div class="main_tit_area m0">
+                        <div class="title">우대금리 신청 사유</div>
+                    </div>
+                    <div class="fieldset">
+                        <div class="form-group none_bg">
+                            <div class="form-conts">
+                                <div class="com_list_bg_cont p0">
+                                    <div class="com_list_bg_area gap">
+                                        <div class="main_tit_area m0">
+                                            <div class="title">서류제출 사유 선택</div>
+                                        </div>
+                                        <div class="chip-wrap cunt auto">
+                                            <div class="krds-form-chip type1">
+                                                <input type="radio" class="radio" name="reason" id="reason1" checked>
+                                                <label for="reason1">신혼가구(혼인관계증명서) : 금리인하 기적용건</label>
+                                            </div>
+                                            <div class="krds-form-chip type1">
+                                                <input type="radio" class="radio" name="reason" id="reason2">
+                                                <label for="reason2">신혼가구(미제출 사유서 작성)</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg_line"></div>
+                <div class="pro_anagement_cont gap down">
+                    <div class="main_tit_area m0">
+                        <div class="title">미제출 사유서 작성</div>
+                    </div>
+                    <div class="pro_anagement_chk_list_area">
+                        <div class="fieldset">
+                            <div class="form-group none_bg">
+                                <div class="form-conts">
+                                    <div class="krds-check-area chk-column">
+                                        <div class="krds-form-check all">
+                                            <input type="checkbox" id="agreeAll2">
+                                            <label for="agreeAll2">
+                                                전체동의
+                                                <button type="button" data-pop="com_pop" class="btn">전체보기</button>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group none_bg">
+                                <div class="form-conts gap_none">
+                                    <div class="krds-check-area chk-column cont_line">
+                                        <div class="krds-form-check">
+                                            <input type="checkbox" id="agree2_0">
+                                            <label for="agree2_0">[필수] 본인은 미제출 사유서를 공사에 제출할 경우 대출실행일로부터 6개월까지 제출기한을 연장할 수 있음을 잘 알고 있습니다.</label>
+                                        </div>
+                                        <div class="krds-form-check">
+                                            <input type="checkbox" id="agree2_1">
+                                            <label for="agree2_1">[필수] 본인은 사유서 제출 후 연장된 제출기한까지 혼인관계증명서 등을 미제출 시 대출거래약정서 상 결혼예정자 특약에 기해 기한이익 상실 처리됨을 잘 알고 있습니다.</label>
+                                        </div>
+                                        <div class="krds-form-check">
+                                            <input type="checkbox" id="agree2_2">
+                                            <label for="agree2_2">[필수] 본인은 불가피한 사유로 미제출 사유서 제출 후 제출기한이 추가로 필요한 경우에는 관할지사에 문의 후 처리해야 함을 잘 알고 있습니다.</label>
+                                        </div>
+                                        <div class="krds-form-check">
+                                            <input type="checkbox" id="agree2_3">
+                                            <label for="agree2_3">[필수] 서류 제출기한 확인 : 2015-08-13</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro_anagement_cont">
+                    <div class="fieldset">
+                        <div class="form-group none_bg">
+                            <div class="form-conts">
+                                <div class="com_list_bg_cont type1">
+                                    <div class="com_list_bg_area gap">
+                                        <div class="main_tit_area m0">
+                                            <div class="title">미제출 사유서(복수 선택)</div>
+                                        </div>
+                                        <div class="krds-check-area type2">
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="rsn1">
+                                                <label for="rsn1">해외출장</label>
+                                            </div>
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="rsn2">
+                                                <label for="rsn2">사고·상해</label>
+                                            </div>
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="rsn3">
+                                                <label for="rsn3">중대질병</label>
+                                            </div>
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="rsn4" checked>
+                                                <label for="rsn4">기타</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-inp">
+                                            <input type="text" class="krds-input p0" placeholder="기타 사유를 입력하세요." title="기타 사유">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_cont page">
+                <button type="button" class="com_btn" disabled>전자서명</button>
+            </div>
+        </div>
+    </div>
+
+    <div data-include="../inc/footer.html"></div>
+            <!-- 우대금리 인하 적용안내 -->
+            <div class="com_pop_wrap type41">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">우대금리 인하 적용안내</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>금리인하 적용</li>
+                            <li>기존 생애 최초 우대금리 적용시 다문화, 장애인 우대금리 중복 적용 불가</li>
+                            <li>금리인하는 서류제출 및 승인완료일 기준 차회분(다음달)부터 적용되며, 상환스케줄 미리보기는 실제 원리금상환액과 다소 상이할 수 있습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //우대금리 인하 적용안내 -->
+
+
+</div>
+
+<script type="text/javascript" src="/resources/js/include.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* ============================================================
+   HF상품 소개 팝업 (com_pop_wrap.full.type2) — 보금자리론 등
+   - 이미지 영역(.hf-prod-hero-obj / .hf-prod-feature-obj)은 자리만 확보
+   - FAQ는 정본 .faq_list_cont(.type_plain) 사용, 구분선은 .bg_line
+   - sub2.css 에 병합 권장
+   ============================================================ */
+
+.com_pop_wrap.full.type2 .hf-prod {display:flex; flex-direction:column;}
+
+/* ── 히어로 ── */
+.hf-prod-hero {display:flex; flex-direction:column; align-items:center; gap:var(--hf-gap-6,2rem); padding:var(--hf-padding-8,2.4rem) var(--hf-padding-6,1.6rem);}
+.hf-prod-hero .hf-prod-tags {display:flex; gap:var(--hf-gap-3,0.8rem);}
+.hf-prod-hero .hf-prod-tags .tag {display:inline-flex; align-items:center; height:3rem; padding:0 var(--hf-padding-5,1.2rem); border-radius:var(--hf-radius-max,100rem); background-color:var(--hf-color-light-secondary-5); font-weight:500; font-size:var(--hf-font-size-body-small,1.5rem); color:var(--hf-color-text-subtle);}
+.hf-prod-hero .hf-prod-hero-tit {font-weight:700; font-size:3rem; line-height:1.4; letter-spacing:-0.06rem; color:var(--hf-color-text-basic); text-align:center;}
+.hf-prod-hero .hf-prod-hero-tit .point {color:var(--hf-color-text-primary);}
+.hf-prod-hero .hf-prod-hero-obj {width:16.8rem; height:16.8rem;}
+.hf-prod-hero .hf-prod-hero-obj > img {width:100%; height:100%; object-fit:contain;}
+
+/* 스탯 2x2 */
+.hf-prod-stat {display:grid; grid-template-columns:1fr 1fr; width:100%; background-color:var(--hf-color-surface-gray-subtler); border-radius:var(--hf-radius-xlarge1,1.2rem); overflow:hidden;}
+.hf-prod-stat .hf-prod-stat-item {display:flex; flex-direction:column; gap:var(--hf-gap-1,0.2rem); padding:var(--hf-padding-5,1.2rem) var(--hf-padding-6,1.6rem);}
+.hf-prod-stat .hf-prod-stat-item:nth-child(odd) {border-right:0.1rem solid var(--hf-color-divider-gray-extra-light);}
+.hf-prod-stat .hf-prod-stat-item:nth-child(n+3) {border-top:0.1rem solid var(--hf-color-divider-gray-extra-light);}
+.hf-prod-stat .hf-prod-stat-item .label {font-weight:500; font-size:var(--hf-font-size-body-small,1.5rem); color:var(--hf-color-text-subtle);}
+.hf-prod-stat .hf-prod-stat-item .value {font-weight:700; font-size:var(--hf-font-size-heading-small,1.9rem); line-height:1.4; color:var(--hf-color-text-basic);}
+.hf-prod-stat .hf-prod-stat-item .sub {font-weight:400; font-size:var(--hf-font-size-body-xsmall,1.3rem); color:var(--hf-color-text-muted);}
+
+/* ── 특징 섹션 ── */
+.hf-prod-feature {display:flex; flex-direction:column; gap:var(--hf-gap-7,2.4rem); padding:var(--hf-padding-9,3.2rem) var(--hf-padding-6,1.6rem);}
+.hf-prod-feature .hf-prod-feature-txt {display:flex; flex-direction:column; gap:var(--hf-gap-4,1.2rem);}
+.hf-prod-feature .hf-prod-feature-txt .label {font-weight:700; font-size:var(--hf-font-size-body-medium,1.6rem); color:var(--hf-color-text-primary);}
+.hf-prod-feature .hf-prod-feature-txt .tit {font-weight:700; font-size:var(--hf-font-size-heading-small,1.9rem); line-height:1.4; letter-spacing:-0.038rem; color:var(--hf-color-text-basic);}
+.hf-prod-feature .hf-prod-feature-txt .desc {font-weight:400; font-size:var(--hf-font-size-body-small,1.5rem); line-height:1.5; letter-spacing:-0.03rem; color:var(--hf-color-text-subtle);}
+.hf-prod-feature .hf-prod-feature-txt .note {font-weight:400; font-size:var(--hf-font-size-body-xsmall,1.3rem); color:var(--hf-color-text-muted);}
+.hf-prod-feature .hf-prod-feature-obj {width:100%; min-height:21rem; display:flex; align-items:center; justify-content:center;}
+.hf-prod-feature .hf-prod-feature-obj > img {max-width:100%; height:auto;}
+
+/* ── 자주하는 질문 ── */
+.hf-prod-faq {display:flex; flex-direction:column; gap:var(--hf-gap-6,2rem); padding:var(--hf-padding-8,2.4rem) var(--hf-padding-6,1.6rem);}
+.hf-prod-faq .main_tit_area {margin:0;}
+.hf-prod-faq .btn_cont {margin:0;}
+
+/* ── 상품 상세 정보 ── */
+.hf-prod-detail {display:flex; flex-direction:column; gap:var(--hf-gap-6,2rem); padding:var(--hf-padding-8,2.4rem) var(--hf-padding-6,1.6rem);}
+.hf-prod-detail .hf-prod-detail-head {display:flex; flex-direction:column; gap:var(--hf-gap-2,0.4rem);}
+.hf-prod-detail .hf-prod-detail-head .tit {font-weight:700; font-size:var(--hf-font-size-heading-xsmall,1.7rem); color:var(--hf-color-text-basic);}
+.hf-prod-detail .hf-prod-detail-head .desc {font-weight:400; font-size:var(--hf-font-size-body-small,1.5rem); color:var(--hf-color-text-subtle);}
+.hf-prod-detail .hf-prod-detail-list {display:flex; flex-direction:column; width:100%;}
+.hf-prod-detail .hf-prod-detail-list > li {border-bottom:0.1rem solid var(--hf-color-divider-gray-extra-light);}
+.hf-prod-detail .hf-prod-detail-list > li:last-child {border-bottom:0;}
+.hf-prod-detail .hf-prod-detail-list > li .cont {display:flex; align-items:center; justify-content:space-between; width:100%; padding:var(--hf-padding-5,1.2rem) 0; background:none; border:0; text-align:left; cursor:pointer;}
+.hf-prod-detail .hf-prod-detail-list > li .cont .tit {font-weight:500; font-size:var(--hf-font-size-body-medium,1.6rem); color:var(--hf-color-text-basic);}
+.hf-prod-detail .hf-prod-detail-list > li .cont > .svg-icon.ico-angle {flex-shrink:0; width:1.2rem; height:1.2rem;}

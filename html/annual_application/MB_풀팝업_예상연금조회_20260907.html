@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <title>한국주택금융공사</title>
+
+    <!-- CSS 파일들 -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+
+    <!-- JavaScript 파일들 -->
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- !추가부분 -->
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+    <!--// !추가부분 -->
+</head>
+<body>
+
+<div class="wrapper sub" id="app">
+    <div data-include="../inc/header.html"></div>
+
+    <div id="container">
+        <div class="container_in">
+            <div class="contents">
+                <div class="pro_anagement_cont gap down">
+                    <div class="main_tit_area m0">
+                        <div class="title">예상연금(월지급금) 조회 · 풀팝업 데모</div>
+                    </div>
+                    <div class="btn_cont">
+                        <button type="button" data-pop="com_pop_income" class="com_btn blue2">예상연금(월지급금) 조회하기</button>
+                    </div>
+                    <ul class="krds-info-list dash">
+                        <li>아래 버튼을 누르면 풀팝업이 열립니다. (이 데모 파일은 팝업이 처음부터 열려 있도록 active 상태로 표시)</li>
+                        <li>팝업 안 <b>조회결과 테이블</b>을 세로로 스크롤하면 <b>표 머리글(thead)이 상단에 고정</b>되어 따라옵니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-include="../inc/footer.html"></div>
+
+    <!-- ================================================================
+         풀팝업 : 예상연금(월지급금) 조회하기
+         · 셸        : com_pop_wrap full type11  (표시 상태 = active)
+         · 스크롤 표 : krds-table-wrap scroll-y  → 내부 세로 스크롤(max-height 32rem)
+                       + .tbl.data thead 가 sticky(top:0) 로 고정  ← 기존 sub2.css 자산
+         · 데모용으로 active 를 넣어 열린 상태로 표시. 실제로는 data-pop 클릭 시 열림.
+         ================================================================ -->
+    <div class="com_pop_wrap full active type11">
+        <div class="com_pop_cont active">
+            <div class="title_area">
+                <div class="title">예상연금(월지급금) 조회하기</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="pro_anagement_cont">
+                    <div class="fieldset">
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label for="popSpouseBirth">배우자 생년월일<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="form-inp type2">
+                                    <div class="calendar-input">
+                                        <input type="text" id="popSpouseBirth" class="krds-input datepicker cal p0" placeholder="선택해 주세요" title="배우자 생년월일" value="1961-11-11">
+                                        <button type="button" class="krds-btn medium icon form-btn-datepicker">
+                                            <span class="sr-only">달력 열기</span>
+                                            <i class="svg-icon ico-calendar"></i>
+                                        </button>
+                                    </div>
+                                    <button type="button" class="area_btn blue">조회</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group none_bg">
+                            <div class="main_tit_area">
+                                <div class="title">조회결과</div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="krds-table-wrap scroll-y scroll-x">
+                                    <table class="tbl data income_tbl">
+                                        <caption>연령별 예상 월지급금</caption>
+                                        <colgroup>
+                                            <col style="width: 16%;">
+                                            <col style="width: 28%;">
+                                            <col style="width: 28%;">
+                                            <col style="width: 28%;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">구분</th>
+                                                <th scope="col">정액형</th>
+                                                <th scope="col">초기증액형(3년)</th>
+                                                <th scope="col">정기증가형</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td class="txt_c">55</td><td class="txt_c">910,730원</td><td class="txt_c">1,206,480원</td><td class="txt_c">771,300원</td></tr>
+                                            <tr><td class="txt_c">56</td><td class="txt_c">910,730원</td><td class="txt_c">1,206,480원</td><td class="txt_c">771,300원</td></tr>
+                                            <tr><td class="txt_c">57</td><td class="txt_c">910,730원</td><td class="txt_c">1,206,480원</td><td class="txt_c">771,300원</td></tr>
+                                            <tr><td class="txt_c">58</td><td class="txt_c">910,730원</td><td class="txt_c">1,206,480원</td><td class="txt_c">771,300원</td></tr>
+                                            <tr><td class="txt_c">59</td><td class="txt_c">910,730원</td><td class="txt_c">1,206,480원</td><td class="txt_c">771,300원</td></tr>
+                                            <tr><td class="txt_c">60</td><td class="txt_c">910,730원</td><td class="txt_c">1,206,480원</td><td class="txt_c">771,300원</td></tr>
+                                            <tr><td class="txt_c">61</td><td class="txt_c">910,730원</td><td class="txt_c">1,206,480원</td><td class="txt_c">771,300원</td></tr>
+                                            <tr><td class="txt_c">62</td><td class="txt_c">910,730원</td><td class="txt_c">1,206,480원</td><td class="txt_c">771,300원</td></tr>
+                                            <tr><td class="txt_c">63</td><td class="txt_c">910,730원</td><td class="txt_c">1,206,480원</td><td class="txt_c">771,300원</td></tr>
+                                            <tr><td class="txt_c">64</td><td class="txt_c">910,730원</td><td class="txt_c">1,206,480원</td><td class="txt_c">771,300원</td></tr>
+                                            <tr><td class="txt_c">65</td><td class="txt_c">910,730원</td><td class="txt_c">1,206,480원</td><td class="txt_c">771,300원</td></tr>
+                                            <tr><td class="txt_c">66</td><td class="txt_c">910,730원</td><td class="txt_c">1,206,480원</td><td class="txt_c">771,300원</td></tr>
+                                            <tr><td class="txt_c">67</td><td class="txt_c">910,730원</td><td class="txt_c">1,206,480원</td><td class="txt_c">771,300원</td></tr>
+                                            <tr><td class="txt_c">68</td><td class="txt_c">910,730원</td><td class="txt_c">1,206,480원</td><td class="txt_c">771,300원</td></tr>
+                                            <tr><td class="txt_c">69</td><td class="txt_c">910,730원</td><td class="txt_c">1,206,480원</td><td class="txt_c">771,300원</td></tr>
+                                            <tr><td class="txt_c">70</td><td class="txt_c">910,730원</td><td class="txt_c">1,206,480원</td><td class="txt_c">771,300원</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <ul class="krds-info-list importance">
+                                    <li class="gray">아래의 예상월지급금은 참고용으로만 사용하며, 실제 연금실행 시의 월지급금과 다를 수 있습니다.</li>
+                                    <li class="gray">배우자 개인정보동의를 하지 않은 경우, 정확한 예상월지급금 조회를 위해 배우자의 생년월일을 입력 후 조회 버튼을 눌러 확인하시기 바랍니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>지급유형<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <button type="button" class="slt_btn krds-select" title="선택 팝업 열기">선택해주세요.</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="btn_cont page">
+                        <button type="button" class="com_btn blue2" disabled>선택</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="/resources/js/include.js"></script>
+</body>
+</html>

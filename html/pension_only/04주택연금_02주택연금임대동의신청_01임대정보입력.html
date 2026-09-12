@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko">
+    <meta property="og:site_name" content="한국주택금융공사">
+    <meta property="og:updated_time" content="">
+    <meta name="twitter:card" content="summary">
+    <title>한국주택금융공사</title>
+
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+</head>
+<body>
+
+<div class="wrapper sub" id="app">
+    <div data-include="../inc/header.html"></div>
+
+    <div id="container">
+        <div class="container_in">
+
+            <div class="contents">
+                <div class="pro_anagement_cont">
+                    <div class="step_cont">
+                        <span class="blue">1단계</span> / 3단계
+                    </div>
+                    <div class="step_list_cont type1 step3">
+                        <ol class="krds-step-wrap">
+                            <li class="active">
+                                <span>
+                                <em class="sr-only">현재단계</em>
+                                    <span class="tit">임대 정보 입력</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <span class="tit">보증금 운영 안내 동의</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <span class="tit">신청정보 확인</span>
+                                </span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="bg_line"></div>
+                <div class="pro_anagement_cont">
+                    <div class="main_tit_area">
+                        <div class="title">임대차 현황 입력</div>
+                    </div>
+                    <div class="fieldset cont_line type1">
+                        <div class="form-group">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>임대차 계약 구분<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="chip-wrap cunt">
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="contractType00" name="contractType" class="radio" checked>
+                                        <label for="contractType00">신규</label>
+                                    </div>
+                                    <div class="krds-form-chip type1 disabled">
+                                        <input type="radio" id="contractType01" name="contractType" class="radio" disabled>
+                                        <label for="contractType01">갱신</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>임대 범위<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="chip-wrap cunt">
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="scope00" name="scope" class="radio" checked>
+                                        <label for="scope00">전부 임대</label>
+                                    </div>
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="scope01" name="scope" class="radio">
+                                        <label for="scope01">일부 임대</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fieldset cont_line type1">
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>1. 임대 목적물(주택연금 담보주택 주소)</label></div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-tit-cont">
+                                    <div class="form-tit"><label>주소</label></div>
+                                </div>
+                                <div class="form-conts">
+                                    <div class="form-inp">
+                                        <textarea type="text" class="krds-input p0 disabled" value="06142 서울특별시 강남구 테헤란도 233 큰길타워" title="주소" disabled></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fieldset cont_line type1">
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>2. 임대인(피보증인) 현황</label></div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-tit-cont">
+                                    <div class="form-tit"><label>이름<span class="point">*</span></label></div>
+                                </div>
+                                <div class="form-conts">
+                                    <div class="form-inp">
+                                        <input type="text" class="krds-input p0" placeholder="입력해 주세요" title="이름">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-tit-cont">
+                                    <div class="form-tit"><label>생년월일<span class="point">*</span></label></div>
+                                </div>
+                                <div class="form-conts">
+                                    <div class="form-inp">
+                                        <input type="text" class="krds-input p0" placeholder="생년월일 8자리" title="생년월일">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-tit-cont">
+                                    <div class="form-tit"><label>주소<span class="point">*</span></label></div>
+                                </div>
+                                <div class="form-conts">
+                                    <div class="form-inp type2">
+                                        <input type="text" class="krds-input p0 disabled type1" title="우편번호" disabled>
+                                        <button type="button" class="area_btn blue">주소검색</button>
+                                    </div>
+                                    <div class="form-inp">
+                                        <input type="text" class="krds-input p0 disabled" placeholder="주소 검색 버튼을 눌러주세요." title="기본주소" disabled>
+                                    </div>
+                                    <div class="form-inp">
+                                        <input type="text" class="krds-input p0" placeholder="입력해 주세요" title="상세주소">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-tit-cont">
+                                    <div class="form-tit"><label>배우자 이름<span class="point">*</span></label></div>
+                                </div>
+                                <div class="form-conts">
+                                    <div class="form-inp">
+                                        <input type="text" class="krds-input p0" placeholder="입력해 주세요" title="배우자 이름">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-tit-cont">
+                                    <div class="form-tit"><label>생년월일<span class="point">*</span></label></div>
+                                </div>
+                                <div class="form-conts">
+                                    <div class="form-inp">
+                                        <input type="text" class="krds-input p0" placeholder="생년월일 8자리" title="생년월일">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-tit-cont">
+                                    <div class="form-tit"><label>주소<span class="point">*</span></label></div>
+                                </div>
+                                <div class="form-conts">
+                                    <div class="form-inp type2">
+                                        <input type="text" class="krds-input p0 disabled type1" title="우편번호" disabled>
+                                        <button type="button" class="area_btn blue">주소검색</button>
+                                    </div>
+                                    <div class="form-inp">
+                                        <input type="text" class="krds-input p0 disabled" placeholder="주소 검색 버튼을 눌러주세요." title="기본주소" disabled>
+                                    </div>
+                                    <div class="form-inp">
+                                        <input type="text" class="krds-input p0" placeholder="입력해 주세요" title="상세주소">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fieldset cont_line type1">
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>3. 임차인 정보</label></div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-tit-cont">
+                                    <div class="form-tit"><label>이름<span class="point">*</span></label></div>
+                                </div>
+                                <div class="form-conts">
+                                    <div class="form-inp">
+                                        <input type="text" class="krds-input p0" placeholder="입력해 주세요" title="이름">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-tit-cont">
+                                    <div class="form-tit"><label>생년월일<span class="point">*</span></label></div>
+                                </div>
+                                <div class="form-conts">
+                                    <div class="form-inp">
+                                        <input type="text" class="krds-input p0" placeholder="생년월일 8자리" title="생년월일">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fieldset cont_line type1">
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>4. 임대차 계약 정보</label></div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-tit-cont">
+                                    <div class="form-tit"><label>보증금액<span class="point">*</span></label></div>
+                                </div>
+                                <div class="form-conts">
+                                    <div class="form-text">
+                                        <div class="text">
+                                            <div class="num">영</div>
+                                            <div class="txt">원</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-inp">
+                                        <input type="text" class="krds-input p0" value="0" title="보증금액">
+                                        <div class="txt">원</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-tit-cont">
+                                    <div class="form-tit"><label>월세<span class="point">*</span></label></div>
+                                </div>
+                                <div class="form-conts">
+                                    <div class="form-text">
+                                        <div class="text">
+                                            <div class="num">일억육천구백오십오만오천</div>
+                                            <div class="txt">원</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-inp">
+                                        <input type="text" class="krds-input p0" value="169,555,000" title="월세">
+                                        <div class="txt">원</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-tit-cont">
+                                    <div class="form-tit"><label>계약기간<span class="point">*</span></label></div>
+                                </div>
+                                <div class="form-conts">
+                                    <div class="number_area gap">
+                                        <div class="calendar-input">
+                                            <input type="text" class="krds-input datepicker cal" placeholder="입력해 주세요" title="계약 시작일" id="periodStart">
+                                        </div>
+                                        <span class="dash">-</span>
+                                        <div class="calendar-input">
+                                            <input type="text" class="krds-input datepicker cal" placeholder="입력해 주세요" title="계약 종료일" id="periodEnd">
+                                            <button type="button" class="krds-btn medium icon form-btn-datepicker">
+                                                <span class="sr-only">달력 열기</span>
+                                                <i class="svg-icon ico-calendar"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fieldset cont_line type1">
+                        <div class="form-group none_bg">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>5. 계좌 정보</label></div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-tit-cont type1">
+                                    <div class="form-tit"><label>운영수익 지급계좌 입력<span class="point">*</span></label></div>
+                                    <button type="button" class="link_btn">운영수익이란?</button>
+                                </div>
+                                <div class="form-conts">
+                                    <button type="button" class="slt_btn" title="은행 선택">은행선택</button>
+                                    <div class="form-inp">
+                                        <input type="text" class="krds-input p0" placeholder="계좌번호 입력" title="계좌번호">
+                                    </div>
+                                    <div class="form-inp type2">
+                                        <input type="text" class="krds-input p0 disabled" placeholder="예금주 확인" title="예금주" disabled>
+                                        <button type="button" class="area_btn">예금주 조회</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_cont page">
+                <button type="button" class="com_btn" disabled>다음</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div data-include="../inc/footer.html"></div>
+            <!-- 저당권 방식 임대 동의 신청은<br>관할 지 -->
+            <div class="com_pop_wrap w_min type41">
+                <div class="com_pop_cont">
+                    <div class="title_area">
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="main_tit_area">
+                            <div class="title small">알림</div>
+                            <div class="title">저당권 방식 임대 동의 신청은<br>관할 지사로 문의 부탁드립니다.</div>
+                        </div>
+                        <div class="btn_cont direction">
+                            <button type="button" class="com_btn blue2">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //저당권 방식 임대 동의 신청은<br>관할 지 -->
+
+
+</div>
+
+<script type="text/javascript" src="/resources/js/include.js"></script>
+</body>
+</html>

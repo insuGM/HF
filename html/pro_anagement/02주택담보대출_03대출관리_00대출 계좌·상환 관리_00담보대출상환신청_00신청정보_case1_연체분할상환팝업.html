@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko">
+    <meta property="og:site_name" content="한국주택금융공사">
+    <meta property="og:updated_time" content="">
+    <meta name="twitter:card" content="summary">
+    <title>한국주택금융공사</title>
+    
+    <!-- CSS 파일들 -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+
+    <!-- JavaScript 파일들 -->
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+    
+    <!-- !추가부분 -->
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+
+    <!--// !추가부분 -->
+</head>
+<body>
+
+<div class="wrapper sub" id="app">
+    <div data-include="../inc/header.html"></div>
+
+    <div id="container">
+        <div class="container_in">
+
+            <div class="contents">
+                                    <div class="pro_anagement_cont">
+                        <div class="step_cont">
+                            <span class="blue">1단계</span> / 3단계
+                        </div>
+                        <div class="step_list_cont type1">
+                            <ol class="krds-step-wrap">
+                                <li class="active">
+                                    <span>
+                                        <em class="sr-only">현재단계</em>
+                                        <span class="tit">정보동의</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <span class="tit">대출계좌 및 납부금액확인</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <span class="tit">납부내역 확인</span>
+                                    </span>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="bg_line"></div>
+                    <div class="pro_anagement_cont">
+                        <div class="pro_anagement_chk_list_area">
+                            <div class="fieldset">
+                                <div class="form-group none_bg">
+                                    <div class="form-conts">
+                                        <div class="krds-check-area chk-column">
+                                            <div class="krds-form-check all">
+                                                <input type="checkbox" id="chk_additional_1">
+                                                <label for="chk_additional_1">
+                                                    [전체] 원금 및 이자 납부 동의
+                                                    <button type="button" data-pop="com_pop11" class="btn">전체보기</button>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group none_bg">
+                                    <div class="form-conts">
+                                        <div class="krds-check-area chk-column">
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="chk_additional_2">
+                                                <label for="chk_additional_2">
+                                                    [필수] 자동이체일인 경우나, 원리금연체 중인 경우에 상환신청을 하시면 중복하여 출금될 수 있습니다. (중복출금시 익영업일 환출)
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="krds-check-area chk-column">
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="chk_additional_3">
+                                                <label for="chk_additional_3">
+                                                    [필수] 계좌잔액이 입금하고자 하는 금액 이상이어야 하며, 상환신청 후에는 취소가 불가능합니다.
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="krds-check-area chk-column">
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="chk_additional_4">
+                                                <label for="chk_additional_4">
+                                                    [필수] 상환처리는 ① 지연배상금, ② 이자, ③ 원금 순으로 진행됩니다.
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="krds-check-area chk-column">
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="chk_additional_5">
+                                                <label for="chk_additional_5">
+                                                    [필수] (조기상환) 조기상환을 하시는 경우에는 조기상환금액에 대하여 상환 전일까지의 이자를 함께 상환하셔야 합니다. 
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="krds-check-area chk-column">
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="chk_additional_6">
+                                                <label for="chk_additional_6">
+                                                    [필수](조기상환) 대출일로부터 경과기간에 따라 조기상환수수료가 부과될 수 있습니다. 
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="krds-check-area chk-column">
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="chk_additional_7">
+                                                <label for="chk_additional_7">
+                                                    [필수](조기상환) 원리금 1회분 미만 금액이 선납된 경우 잔여 원리금을 상환해야 조기상환이 가능합니다. 
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="com_list_bg_cont">
+                        <div class="com_list_bg_area">
+                            <ul class="krds-info-list decimal" role="list">
+                                <li role="listitem">대출의 원금 및 이자 납부, 중도상환을 하실 수 있습니다</li>
+                                <li role="listitem">
+                                     이용 가능 시간
+                                    <ul class="krds-info-list dash" role="list">
+                                        <li role="listitem">
+                                            양수전 : 평일 08:30 ~ 18:00
+                                            <ul class="krds-info-list sub" role="list">
+                                                <li role="listitem">(경남은행, 대구은행의 경우, 평일 08:30~17:30)</li>
+                                            </ul>
+                                        </li>
+                                        <li role="listitem">
+                                            양수후 : 월~일 08:30 ~ 23:00
+                                            <ul class="krds-info-list sub" role="list">
+                                                <li role="listitem">(단, 전북 또는 경남은행은 공휴일 불가)</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn_cont page2">
+                        <button type="button" class="com_btn" disabled>다음</button>
+                    </div>
+                
+
+                
+
+                
+            </div>
+            <!-- //sub_con -->
+        </div> <!-- //container_in -->
+    </div>
+
+    <div data-include="../inc/footer.html"></div>
+
+    
+    <div class="com_pop_wrap full type11">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">전체보기</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                내용
+                <div class="btn_cont page">
+                    <button type="button" class="com_btn blue2">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="com_pop_wrap type12">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">대출계좌 선택</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="sort_list_area">
+                    <ul class="list">
+                        <li>
+                            <button type="button" class="chk_btn active">
+                                <div class="txt">전체</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">내용</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="com_pop_wrap type13">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">대출계좌 정보</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="list_area">
+                    <ul class="krds-info-list decimal">
+                        <li class="title2">
+                            대출잔액
+                            <ul class="krds-info-list dash2">
+                                <li>
+                                    고객님께서 현재 조회하신 대출계좌의 대출원금 잔액을 의미합니다.
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="title2">
+                            채권상태
+                            <ul class="krds-info-list dash2">
+                                <li>
+                                    원금 또는 이자의 연체가 있는 경우 연체로 표시
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="com_pop_wrap w_min type14 active">
+        <div class="com_pop_cont active">
+            <div class="title_area">
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="text_area">
+                    <h2 class="sub_tit">알림</h2>
+                    <div class="tit">
+                       탭을 이동하면 현재 입력하신 내용이<br>
+                       저장되지 않습니다.<br>
+                        이동하시겠습니까?
+                    </div>
+                </div>
+                <div class="btn_cont">
+                    <button type="button" class="com_btn gray3 end">아니오 </button>
+                    <button type="button" class="com_btn blue2 end">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="com_pop_wrap w_min type15">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="text_area">
+                    <h2 class="sub_tit">알림</h2>
+                    <div class="tit">
+                       상환희망금액을 계산해 주세요.
+                    </div>
+                </div>
+                <div class="btn_cont">
+                    <button type="button" class="com_btn blue2 end">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="com_pop_wrap w_min type6">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="text_area">
+                    <h2 class="sub_tit">알림</h2>
+                    <div class="tit">
+                       일반상환(선납포함)은<br>
+                        차회 원리금 상환입니다.<br>
+                        확인하셨습니까?
+                    </div>
+                </div>
+                <div class="btn_cont">
+                    <button type="button" class="com_btn blue2 end">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div> <!-- //wrap -->
+
+
+
+</body>
+<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+<script type="text/javascript" src="/resources/js/include.js"></script>
+<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</html>

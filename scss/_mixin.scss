@@ -1,0 +1,562 @@
+$mobile : 0;
+$tablet : 767px;
+$web : 1024px;
+
+@mixin tablet {
+    @media (min-width: #{$mobile}) and (max-width: #{$web}) {
+    @content;
+    }
+}
+
+@mixin mobile {
+    @media (min-width: #{$mobile}) and (max-width: #{$tablet}) {
+    @content;
+    }
+}
+
+@mixin web {
+    @media (min-width: #{$web + 1px}) {
+    @content;
+    }
+}
+
+// IR
+@mixin hide {
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    border: 0;
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(0,0,0,0);
+}
+
+// 배경
+$url : '';
+// 배경이미지, x축, y축, 배경색, 가로크기, 세로크기
+@mixin bg($file, $x:null, $y:null, $w:null, $h:null , $bg:null ) {
+    background: url(#{$url}#{$file}) no-repeat $x $y $bg;
+    background-size: $w $h;
+}
+
+// 포지션
+// x속성, x값, y속성, y값
+@mixin position($x, $xvalue, $y, $yvalue) {
+    position: absolute;
+    #{$x}:$xvalue;
+    #{$y}:$yvalue;
+    @if $xvalue == 50% and $yvalue == 50% {
+        transform: translate(-50%, -50%);
+    }@else if $xvalue == 50% {
+        transform: translateX(-50%);
+    }@else if $yvalue == 50% {
+        transform: translateY(-50%);
+    }
+}
+
+
+// 구분자 리스트
+// 선/배경 , 가로, 세로, 좌우여백, 배경 
+@mixin bar($method, $w, $h, $margin, $bg) {
+    display:flex;
+    > li {
+        display: flex;
+        align-items: center;
+        + li {
+            &::before {
+                content: '';
+                margin:0 $margin;
+                width:$w;
+                height:$h;
+
+                @if $method == 'l' or $method == 'line' {
+                    background-color: $bg;
+                }@else if $method == 'bg' or $method =='img' {
+                    @include bg($bg);
+                }
+            }
+        }
+    }
+}
+
+@mixin line($w, $h, $bg) {
+
+    width:$w;
+    height:$h;
+    background-color: $bg;
+}
+
+// 말줄임표
+@mixin ellipsis($line:1) {
+    @if $line == 1 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }@else{
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: $line;
+    }
+}
+
+// 스크롤바 디자인
+// 방향, 크기, 색
+@mixin scroll($dir, $w, $bg, $barbg) {
+    &::-webkit-scrollbar{
+        @if $dir == 'r' or $dir == 'right' {
+            width:$w;
+        }@else if $dir == 'b' or $dir == 'bottom'{
+            height:$w;
+        }
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        width:$w;
+        background-color: $barbg;
+        border-radius:$w;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-track-piece {
+         background: $bg; 
+    }
+
+}
+
+// before, after
+@mixin content($dir) {
+    @if $dir == 'b' or $dir == 'before' {
+        &::before {
+            content: '';
+            @content;
+        }
+    }@else if $dir == 'a' or $dir == 'after' {
+        &::after {
+            content: '';
+            @content;
+        }
+    }
+}
+
+// 불렛 스타일
+// 문자로 만든 불렛
+@mixin bullet_char($char: '・', $x: left, $xvalue: 0, $y: top, $yvalue: 0) {
+    position: relative;
+    padding-left: var(--hf-padding-6);
+    @include content(b) {
+        content: $char;
+        @include position($x, $xvalue, $y, $yvalue);
+    }
+}
+
+// 원형 점 불렛
+@mixin bullet_dot($size: 0.4rem, $color: var(--hf-color-text-subtle), $x: left, $xvalue: 0.8rem, $y: top, $yvalue: 1rem) {
+    position: relative;
+    padding-left: var(--hf-number-11);
+    @include content(b) {
+        @include position($x, $xvalue, $y, $yvalue);
+        width: $size;
+        height: $size;
+        background: $color;
+        border-radius: 50%;
+    }
+}
+
+
+@mixin ie {
+    @media screen and (-ms-high-contrast:active), (-ms-high-contrast:none){
+        @content;
+    }
+}
+
+
+%vc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+    /* Skip To Content */
+.skip { display: block; height: 0.1px solid ; width: 0.1px solid ; margin: 0 -0.1px solid  -0.1px solid  0; padding: 0; overflow: hidden; font-size: 0; line-height: 0; }
+.skip:hover, .skip:active, .skip:focus { width: 100%; height: auto; margin: 0; padding: 0.5px 0; text-indent: 1px solid ; font-weight: bold; font-size: 1.2px; color: #333; line-height: 1; text-decoration: none !important; position: relative; text-align: center; } 
+
+.fwb {
+    font-weight: bold !important;
+}
+.fwn {
+    font-weight: normal !important;
+}
+
+.web {
+    display: block !important;
+    @include mobile {
+        display: none !important;
+    }
+}
+.mobile {
+    display: none !important;
+    @include mobile {
+        display: block !important;
+    }
+}
+
+.web_colgroup {
+    display: none;
+    @include web {
+        display: table-column-group !important;
+    }
+}
+.mobile_colgroup {
+    display: table-column-group !important;
+    @include mobile {
+        display: none !important;
+    }
+}
+
+.ml_auto {
+    margin-left: auto;
+}
+
+.ls-1n5 {
+    letter-spacing: -0.15rem !important;
+}
+
+
+//----------------------------------------------------------------------
+  // 시작
+//----------------------------------------------------------------------  
+
+:root {
+    --hf-layout-width: 160rem;
+    --hf-color-highlight: var(--hf-color-light-secondary-80);
+    --hf-contents-wrap-size: 144rem;
+    --hf-color-light-primary-5: #F2F7FF;
+    --hf-color-light-primary-10: #D5E7FF;
+    --hf-color-light-primary-40: #4991F6;
+    --hf-color-light-primary-50: #036CFF;
+    --hf-color-light-primary-60: #004FBD;
+    --hf-color-light-primary-90: #001A3D;
+    --hf-color-high-contrast-primary-40:#4C87F6;
+    --hf-color-high-contrast-primary-50: #256EF4;
+
+    --hf-color-high-contrast-gray-20: #CDD1D5;
+
+    --hf-color-light-gray-0: #ffffff;
+    --hf-color-light-gray-5: #F7F8FB;
+    --hf-color-light-gray-20: #CDD1D5;
+    --hf-color-light-gray-40: #8A949E;
+    --hf-color-light-gray-50: #6D7882;
+    --hf-color-light-gray-60: #58616A;
+    --hf-color-light-gray-80: #33363D;
+    
+    --hf-color-text-primary: #0B50D0;
+    --hf-color-text-bolder: #131416;
+    --hf-color-text-subtle: #464C53;
+    --hf-color-text-basic: #1E2124;
+    --hf-color-text-basic-inverse: #FFFFFF;
+    --hf-color-text-inverse-static: #072157;
+    --hf-color-divider-gray: #8A949E;
+    --hf-color-divider-gray-light: #E2E5E8;
+    --hf-color-divider-secondary-light: #D6E0EB;
+    --hf-color-border-gray: #B1B8BE;
+    --hf-color-border-gray-light: #E2E5E8;
+    --hf-color-border-primary:#036CFF;
+    --hf-color-border-secondary-light: #D6E0EB;
+    --hf-color-surface-white-subtler: #FFFFFF;
+    --hf-color-input-surface: #FFFFFF;
+    --hf-color-input-border: #8A949E;
+    --hf-color-surface-gray-subtler: #F7F8FB;
+    --hf-color-surface-secondary-subtler: #EEF2F7;
+    --hf-color-action-secondary-hover: #EEF2F7;
+    --hf-color-background-inverse: #1E2124;
+    --hf-color-text-disabled: #8A949E;
+    --hf-color-text-point: #AB2B36;
+    --hf-color-icon-gray: #33363D;
+    --hf-color-light-point-5: #FFF7F0;
+    --hf-color-light-point-10: #FFE7D5;
+    --hf-color-light-point-40: #FF944B;
+    --hf-color-light-point-50: #FF8120;
+    --hf-color-light-point-60: #F76E19;
+    --hf-color-light-success-5: #EAF6EC;
+    --hf-color-light-success-10: #D8EEDD;
+    --hf-color-light-success-40: #3FA654;
+    --hf-color-light-success-50:#228738;
+    --hf-color-light-success-60: #267337;
+    --hf-color-light-success-70: #00B466;
+    --hf-color-light-information-40: #2098F3;
+    --hf-color-light-warning-40: #C78500;
+    --hf-color-light-warning-60: #8A5C00;
+    --hf-color-light-danger-40: #F05F42;
+    --hf-color-icon-point: #D63D4A;
+    --hf-color-light-alpha-black5: rgba(0, 0, 0, 0.05);
+    --hf-color-light-alpha-black8: rgba(0, 0, 0, 0.08);
+    --hf-color-light-alpha-black10: rgba(0, 0, 0, 0.10);
+    --hf-color-light-alpha-black25: rgba(0, 0, 0, 0.25);
+    --hf-color-light-alpha-black50: rgba(0, 0, 0, 0.50);
+    --hf-color-light-alpha-white25: rgba(255, 255, 255, 0.25);
+    --hf-color-high-contrast-secondary-5: #EDF6F8;
+    --hf-color-high-contrast-secondary-40: #3D9FB8;
+    --hf-color-high-contrast-secondary-50: #268097;
+    --hf-color-light-support-yellow-10: #FFFBF1;
+    --hf-color-light-support-orange-10: #FDF7F2;
+    --hf-color-light-support-orange-30: #FFC296;
+    --hf-color-light-support-orange-50: #FF8120;
+    --hf-color-light-support-orange-70: #FF6200;
+    --hf-color-light-support-orange-90: #5C2300;
+    --hf-color-light-support-green-5: #F2FBF6;
+    --hf-color-light-support-green-10: #EEFBF4;
+    --hf-color-light-support-green-50: #1FB960;
+    --hf-color-light-support-green-60: #25A75D;
+    --hf-color-light-support-green-70: #1C7D46; //#00A25C
+    --hf-color-light-support-blue-10: #D3EBFD;
+    --hf-color-light-support-blue-50: #1A8CF7;
+    --hf-color-light-support-purple-10: #D8E5FD;
+
+    --hf-color-alpha-shadow1: rgba(0, 0, 0, 0.05);
+    --hf-color-alpha-shadow2: rgba(0, 0, 0, 0.08);
+    --hf-color-alpha-shadow3: rgba(0, 0, 0, 0.12);
+    --hf-color-element-primary-lighter: #F5F8FF;
+    --hf-shadow-y-4: 16px;
+    --hf-shadow-blur-4: 24px;
+
+
+    --hf-color-text-secondary: #052B57;
+    --hf-color-divider-secondary: #063A74;
+    --hf-color-divider-gray: #8A949E;
+    --hf-color-light-information-5: #E7F4FE;
+    --hf-color-light-secondary-20: #BACBDE;
+    --hf-color-light-secondary-40: #114289;
+    --hf-color-light-secondary-80: #052B57;
+    --hf-color-light-secondary-90: #011021;
+    --hf-color-light-secondary-95: #02162C;
+    --hf-color-icon-gray-light: #464C53;
+
+    --hf-color-link-default: #036CFF;
+    --hf-color-icon-primary: #036CFF;
+
+
+    --hf-box-shadow-outline: 0 0 0 0.4rem #256ef4;
+    --krds-box-shadow-outline-inset: inset 0 0 0 0.2rem #256ef4;
+
+    --hf-border-width-variable-regular: 1px;
+    --hf-letter-spacing-0: 0;
+
+    --hf-color-border-gray-dark: #58616A;
+
+    --hf-number-0: 0rem;
+    --hf-number-1: 0.1rem;
+    --hf-number-2: 0.2rem;
+    --hf-number-3: 0.4rem;
+    --hf-number-4: 0.6rem;
+    --hf-number-5: 0.8rem;
+    --hf-number-6: 1rem;
+    --hf-number-7: 1.2rem;
+    --hf-number-8: 1.6rem;
+    --hf-number-9: 2rem;
+    --hf-number-10: 2.4rem;
+    --hf-number-11: 2.8rem;
+    --hf-number-12: 3.2rem;
+    --hf-number-13: 3.6rem;
+    --hf-number-14: 4rem;
+    --hf-number-15: 4.4rem;
+    --hf-number-16: 4.8rem;
+    --hf-number-17: 5.6rem;
+    --hf-number-18: 6.4rem;
+    --hf-number-19: 7.2rem;
+    --hf-number-20: 8rem;
+    --hf-number-21: 9.6rem;
+    --hf-number-max: 100rem;
+
+
+    --hf-gap-1: 0.2rem;
+    --hf-gap-2: 0.4rem;
+    --hf-gap-3: 0.8rem;
+    --hf-gap-4: 1.2rem;
+    --hf-gap-5: 1.6rem;
+    --hf-gap-6: 2rem;
+    --hf-gap-7: 2.4rem;
+    --hf-gap-8: 3.2rem;
+    --hf-gap-9: 4rem;
+    --hf-gap-10: 4.8rem;
+    --hf-gap-11: 6.4rem;
+    --hf-gap-12: 8rem;
+    --hf-padding-1: 0.2rem;
+    --hf-padding-2: 0.4rem;
+    --hf-padding-3: 0.8rem;
+    --hf-padding-4: 1rem;
+    --hf-padding-5: 1.2rem;
+    --hf-padding-6: 1.6rem;
+    --hf-padding-7: 2rem;
+    --hf-padding-8: 2.4rem;
+    --hf-padding-9: 3.2rem;
+    --hf-padding-10: 4rem;
+
+    --hf-size-height-1: 0.8rem;
+    --hf-size-height-2: 1.6rem;
+    --hf-size-height-3: 2rem;
+    --hf-size-height-4: 2.4rem;
+    --hf-size-height-5: 3.2rem;
+    --hf-size-height-6: 4rem;
+    --hf-size-height-7: 4.8rem;
+    --hf-size-height-8: 5.6rem;
+    --hf-size-height-9: 6.4rem;
+    --hf-size-height-10: 7.2rem;
+    --hf-size-height-11: 8rem;
+    --hf-radius-xsmall1: 0.2rem;
+    --hf-radius-xsmall2: 0.2rem;
+    --hf-radius-xsmall3: 0.2rem;
+    --hf-radius-small1: 0.4rem;
+    --hf-radius-small2: 0.4rem;
+    --hf-radius-small3: 0.4rem;
+    --hf-radius-small4: 0.4rem;
+    --hf-radius-medium1: 0.6rem;
+    --hf-radius-medium2: 0.6rem;
+    --hf-radius-medium3: 0.8rem;
+    --hf-radius-medium4: 0.8rem;
+    --hf-radius-large1: 1rem;
+    --hf-radius-large2: 1rem;
+    --hf-radius-large10: 1rem;
+    --hf-radius-xlarge1: 1.2rem;
+    --hf-radius-xlarge2: 1.2rem;
+    --hf-radius-xlarge12: 1.2rem;
+    --hf-radius-max: 100rem;
+
+
+    --hf-gap-layout-header-breadcrumb: 1.6rem;
+    --hf-gap-layout-breadcrumb-h1: 3.2rem;
+    --hf-gap-layout-h1-h2: 4.8rem;
+    --hf-gap-layout-h2-h3: 4rem;
+    --hf-gap-layout-contents-footer: 6.4rem;
+
+    --hf-light-color-alpha-shadow1: rgba(0, 0, 0, 0.05);
+    --hf-light-color-alpha-shadow2: rgba(0, 0, 0, 0.08);
+    --hf-light-color-alpha-shadow3: rgba(0, 0, 0, 0.12);
+
+    --hf-shadow-y-3: 8px;
+    --hf-shadow-blur-3: 16px;
+
+    --hf-border-width-static-regular: 1px;
+
+    --hf-font-size-display-large: 6rem;
+    --hf-font-size-display-medium: 4.4rem;
+    --hf-font-size-display-small: 3.6rem;
+    --hf-font-size-heading-xlarge: 4rem;
+    --hf-font-size-heading-large: 3.2rem;
+    --hf-font-size-heading-medium: 2.4rem;
+    --hf-font-size-heading-small: 1.9rem;
+    --hf-font-size-heading-xsmall: 1.7rem;
+    --hf-font-size-heading-xxsmall: 1.5rem;
+    --hf-font-size-body-large: 1.9rem;
+    --hf-font-size-body-medium: 1.7rem;
+    --hf-font-size-body-small: 1.5rem;
+    --hf-font-size-body-xsmall: 1.3rem;
+    --hf-font-size-label-large: 1.9rem;
+    --hf-font-size-label-medium: 1.7rem;
+    --hf-font-size-label-small: 1.5rem;
+    --hf-font-size-label-xsmall: 1.3rem;
+    --hf-font-size-navigation-title-medium: 2.4rem;
+    --hf-font-size-navigation-title-small: 1.9rem;
+    --hf-font-size-navigation-depth-medium-bold: 1.7rem;
+    --hf-font-size-navigation-depth-medium: 1.7rem;
+    --hf-font-size-navigation-depth-small: 1.5rem;
+    --hf-font-size-navigation-depth-small-bold: 1.5rem;
+    --hf-gap-layout-header-breadcrumb: 2.4rem;
+    --hf-gap-layout-left-contents: 6.4rem;
+    --hf-gap-layout-contents-right: 4rem;
+    --hf-gap-layout-contents-footer: 6.4rem;
+    --hf-gap-layout-breadcrumb-h1: 4rem;
+    --hf-gap-layout-h1-h2: 4.8rem;
+    --hf-gap-layout-h2-h2: 8rem;
+    --hf-gap-layout-h2-h3: 4rem;
+    --hf-gap-layout-h3-h3: 6.4rem;
+    --hf-gap-layout-h3-h4: 2.4rem;
+    --hf-gap-layout-h4-h4: 4rem;
+    --hf-gap-layout-h4-h5: 1.6rem;
+    --hf-gap-layout-h5-h5: 3.2rem;
+    --hf-gap-layout-title-body-large: 2.4rem;
+    --hf-gap-layout-title-body-medium: 2rem;
+    --hf-gap-layout-title-body-small: 1.6rem;
+    --hf-gap-layout-text-text-large: 2rem;
+    --hf-gap-layout-text-text-medium: 1.6rem;
+    --hf-gap-layout-text-text-small: 1.2rem;
+    --hf-gap-layout-image-text-large: 3.2rem;
+    --hf-gap-layout-image-text-medium: 2.4rem;
+    --hf-gap-layout-image-text-small: 2rem;
+    --hf-padding-card-large: 4rem;
+    --hf-padding-card-medium: 3.2rem;
+    --hf-padding-card-small: 2.4rem;
+    --hf-padding-card-xsmall: 1.6rem;
+    --hf-padding-card-inner-medium: 2.4rem;
+    --hf-padding-modal-inner-medium: 1.6rem;
+
+    --hf-letter-spacing-1: 0.1rem;
+
+    --hf-color-button-secondary-border: #036CFF;
+    --hf-color-button-secondary-fill: #F5F8FF;
+    --hf-color-button-primary-fill: #036CFF;
+    --hf-color-light-secondary-50: #0B2F64;
+    
+    @include mobile {
+      --hf-font-size-display-large: 4.4rem;
+      --hf-font-size-display-medium: 3.2rem;
+      --hf-font-size-display-small: 2.8rem;
+      --hf-font-size-heading-xlarge: 2.8rem;
+      --hf-font-size-heading-large: 2.4rem;
+      --hf-font-size-heading-medium: 2.2rem;
+      --hf-font-size-heading-small: 1.9rem;
+      --hf-font-size-heading-xsmall: 1.7rem;
+      --hf-font-size-heading-xxsmall: 1.5rem;
+      --hf-font-size-body-large: 1.9rem;
+      --hf-font-size-body-medium: 1.6rem;
+      --hf-font-size-body-small: 1.5rem;
+      --hf-font-size-body-xsmall: 1.3rem;
+      --hf-font-size-label-large: 1.9rem;
+      --hf-font-size-label-medium: 1.6rem;
+      --hf-font-size-label-small: 1.5rem;
+      --hf-font-size-label-xsmall: 1.3rem;
+      --hf-font-size-navigation-title-medium: 2.2rem;
+      --hf-font-size-navigation-title-small: 1.9rem;
+      --hf-font-size-navigation-depth-medium-bold: 1.6rem;
+      --hf-font-size-navigation-depth-medium: 1.6rem;
+      --hf-font-size-navigation-depth-small: 1.5rem;
+      --hf-font-size-navigation-depth-small-bold: 1.5rem;
+      --hf-gap-layout-header-breadcrumb: 1.6rem;
+      --hf-gap-layout-left-contents: 0rem;
+      --hf-gap-layout-contents-right: 0rem;
+      --hf-gap-layout-contents-footer: 6.4rem;
+      --hf-gap-layout-breadcrumb-h1: 3.2rem;
+      --hf-gap-layout-h1-h2: 3.2rem;
+      --hf-gap-layout-h2-h2: 4rem;
+      --hf-gap-layout-h2-h3: 2.4rem;
+      --hf-gap-layout-h3-h3: 3.2rem;
+      --hf-gap-layout-h3-h4: 1.6rem;
+      --hf-gap-layout-h4-h4: 2.4rem;
+      --hf-gap-layout-h4-h5: 1.2rem;
+      --hf-gap-layout-h5-h5: 1.6rem;
+      --hf-gap-layout-title-body-large: 2rem;
+      --hf-gap-layout-title-body-medium: 1.2rem;
+      --hf-gap-layout-title-body-small: 0.8rem;
+      --hf-gap-layout-text-text-large: 1.6rem;
+      --hf-gap-layout-text-text-medium: 1.2rem;
+      --hf-gap-layout-text-text-small: 1rem;
+      --hf-gap-layout-image-text-large: 2.4rem;
+      --hf-gap-layout-image-text-medium: 2rem;
+      --hf-gap-layout-image-text-small: 1.6rem;
+      --hf-padding-card-large: 2.4rem;
+      --hf-padding-card-medium: 2.4rem;
+      --hf-padding-card-small: 2rem;
+      --hf-padding-card-xsmall: 1.2rem;
+      --hf-padding-card-inner-medium: 0rem;
+      --hf-padding-modal-inner-medium: 0rem;
+
+    }
+
+}
+

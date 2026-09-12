@@ -1,0 +1,313 @@
+HF MB 퍼블리싱 린트
+검사 1282개 파일 · error 499건 · warn 31건 · 원인 33종
+
+=== 우선 조치 (고치면 가장 많은 파일이 해결되는 순서) ===
+  R02   consult_nameN                        58개 파일 /  111건
+        예: html/certificate/certificate.html:70
+  R05   resources/css/hf_loan_info.css       41개 파일 /   41건
+        예: html/my_hf/06MyHF_01이용상품조회_00주택담보대출조회_00대출신청조회_00신청정보확인.html:41
+  R05   resources/css/hf_loan_apply.css      41개 파일 /   41건
+        예: html/my_hf/06MyHF_01이용상품조회_00주택담보대출조회_00대출신청조회_00신청정보확인.html:40
+  R05   resources/css/hf_bojeung.css         41개 파일 /   41건
+        예: html/my_hf/06MyHF_01이용상품조회_00주택담보대출조회_00대출신청조회_00신청정보확인.html:42
+  R02   consult_name                         25개 파일 /  124건
+        예: html/debt/02주택담보대출_02채무인수_01채무인수신청_01단계_00.html:105
+  R05   resources/css/pages/charter_on.css   20개 파일 /   20건
+        예: html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보.html:42
+  R05   resources/js/pages/charter_on.js     19개 파일 /   19건
+        예: html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보.html:311
+  R05   resources/css/hf_mypage.css          19개 파일 /   19건
+        예: html/my_hf/06MyHF_05마이페이지_00My정보관리.html:43
+  R09   <div type=button>                    16개 파일 /   23건
+        예: html/assurance_transition/03주택보증_02보증이행청구_00보증이행청구절차_00.html:149
+  R05   resources/css/ex/hf_doc_popup.css    11개 파일 /   11건
+        예: html/smart/05간편서류제출_01채무감면서류목록_02채무조정기타서류안내.html:25
+
+[ERROR] R02  짝 없는 label[for] — 266건 / 100개 파일 / 원인 10종
+      for 가 가리키는 id 가 문서에 없다. 라벨을 눌러도 컨트롤이 반응하지 않는다.
+   · consult_nameN   (58개 파일 / 111건)
+       html/certificate/certificate.html:70
+       html/debt/02주택담보대출_02채무인수_01채무인수신청_00채무인수대상 계좌조회 및 사유_00.html:74
+       html/debt/02주택담보대출_02채무인수_01채무인수신청_00채무인수대상 계좌조회 및 사유_01.html:191
+       html/debt/02주택담보대출_02채무인수_01채무인수신청_00채무인수대상 계좌조회 및 사유_01_00알림.html:191
+       html/debt/02주택담보대출_02채무인수_01채무인수신청_00채무인수대상 계좌조회 및 사유_01_00알림2.html:191
+       html/debt/02주택담보대출_02채무인수_01채무인수신청_00채무인수대상 계좌조회 및 사유_01_00알림3.html:191
+       html/debt/02주택담보대출_02채무인수_01채무인수신청_00채무인수대상 계좌조회 및 사유_01_00알림4.html:191
+       html/debt/02주택담보대출_02채무인수_01채무인수신청_00채무인수대상 계좌조회 및 사유_알림_계좌조회실패.html:74
+       html/expectations/00_공통_주소검색_00검색선택.html:1970
+       html/expectations/00_공통_주소검색_00검색전.html:1970
+       html/expectations/02주택담보대출_01대출가능금액미리보기_00예상대출금액조회.html:2101
+       html/expectations/02주택담보대출_01대출가능금액미리보기_00예상대출금액조회_00바텀시트_04만19세미만자녀수.html:1879
+       ... 외 46개 파일 (--full)
+   · consult_name   (25개 파일 / 124건)
+       html/debt/02주택담보대출_02채무인수_01채무인수신청_01단계_00.html:105
+       html/debt/02주택담보대출_02채무인수_01채무인수신청_01단계_00_error.html:105
+       html/debt/02주택담보대출_02채무인수_01채무인수신청_02단계_00.html:99
+       html/debt/02주택담보대출_02채무인수_01채무인수신청_02단계_00_보금자리론 설명서 전체보기.html:99
+       html/debt/02주택담보대출_02채무인수_01채무인수신청_02단계_00_알림.html:99
+       html/debt/02주택담보대출_02채무인수_01채무인수신청_02단계_00_알림2.html:99
+       html/debt/02주택담보대출_02채무인수_01채무인수신청_02단계_00_알림3.html:99
+       html/debt/02주택담보대출_02채무인수_01채무인수신청_02단계_00_약관 전체보기.html:99
+       html/debt/02주택담보대출_02채무인수_01채무인수신청_03단계_00.html:102
+       html/debt/02주택담보대출_02채무인수_01채무인수신청_05단계_담보주택정보.html:102
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보.html:151
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보_00안내_잔금지급일.html:151
+       ... 외 13개 파일 (--full)
+   · slt_product   (7개 파일 / 7건)
+       html/individual_expectations/03주택보증_01보증금액미리보기_00개인보증예상금액조회_00보증상품선택.html:102
+       html/individual_expectations/03주택보증_01보증금액미리보기_00개인보증예상금액조회_00보증상품선택_00error.html:102
+       html/individual_expectations/03주택보증_01보증금액미리보기_00개인보증예상금액조회_00보증상품선택_01case1.html:102
+       html/individual_expectations/03주택보증_01보증금액미리보기_00개인보증예상금액조회_00보증상품선택_01case1_00error.html:102
+       html/individual_expectations/03주택보증_01보증금액미리보기_00개인보증예상금액조회_00보증상품선택_01case1_00error_00알림_00.html:102
+       html/individual_expectations/03주택보증_01보증금액미리보기_00개인보증예상금액조회_00보증상품선택_01case1_00error_00알림_01.html:102
+       html/individual_expectations/03주택보증_01보증금액미리보기_00개인보증예상금액조회_00보증상품선택_01case1_00error_00알림_02.html:102
+   · refundAccount   (4개 파일 / 4건)
+       html/my_hf/06MyHF_04환급금찾기_00내환급금조회신청.html:136
+       html/my_hf/06MyHF_04환급금찾기_01환급금신청결과조회.html:136
+       html/my_hf/06MyHF_04환급금찾기_02상속인환급금조회_결과없음.html:136
+       html/my_hf/06MyHF_04환급금찾기_02상속인환급금조회_결과있음.html:136
+   · cAddr   (3개 파일 / 3건)
+       html/my_hf/06MyHF_05마이페이지_01My상담내역_01등록.html:91
+       html/my_hf/06MyHF_05마이페이지_01My상담내역_01등록_알럿1.html:91
+       html/my_hf/06MyHF_05마이페이지_01My상담내역_01등록_알럿2.html:91
+   · chk_additionaN_N   (1개 파일 / 10건)
+       html/hf_charter_on/전세on신청_02신청_00정보제공동의_01정보입력항목_case1_20260907.html:113
+   · agreePrivacyN   (1개 파일 / 4건)
+       html/annual_application/04주택연금_00주택연금신청_01신청_01정보제공동의_case1_20260907.html:104
+   · spouseBirth   (1개 파일 / 1건)
+       html/annual_application/04주택연금_00주택연금신청_01신청_01정보제공동의_case1_20260907.html:250
+   · heirCnt   (1개 파일 / 1건)
+       html/home/02주택담보대출_00대출신청_02내집마련디딤돌대출_04신용정보확인_채무인수사유가상속인경우_case1.html:202
+   · agreeProduct   (1개 파일 / 1건)
+       html/annual_application/04주택연금_00주택연금신청_01신청_01정보제공동의_case1_20260907.html:172
+
+[ERROR] R05  없는 js/css 참조 — 233건 / 95개 파일 / 원인 16종
+      참조한 파일이 실제로 없다. '동작 안 함' 피드백의 대표 원인이다.
+   · resources/css/hf_loan_info.css   (41개 파일 / 41건)
+       html/my_hf/06MyHF_01이용상품조회_00주택담보대출조회_00대출신청조회_00신청정보확인.html:41
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_00보증신청내역.html:41
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_00보증신청내역_내역없음.html:41
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_01한도조회내역.html:41
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_01한도조회내역_상세.html:41
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_02보증내역보증료.html:41
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_02보증내역보증료_내역없음.html:41
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_02보증내역보증료_보증료조회.html:41
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증가입현황.html:41
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증가입현황_내역없음.html:41
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증이행현황_case1.html:41
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증이행현황_case2.html:41
+       ... 외 29개 파일 (--full)
+   · resources/css/hf_loan_apply.css   (41개 파일 / 41건)
+       html/my_hf/06MyHF_01이용상품조회_00주택담보대출조회_00대출신청조회_00신청정보확인.html:40
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_00보증신청내역.html:40
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_00보증신청내역_내역없음.html:40
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_01한도조회내역.html:40
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_01한도조회내역_상세.html:40
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_02보증내역보증료.html:40
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_02보증내역보증료_내역없음.html:40
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_02보증내역보증료_보증료조회.html:40
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증가입현황.html:40
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증가입현황_내역없음.html:40
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증이행현황_case1.html:40
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증이행현황_case2.html:40
+       ... 외 29개 파일 (--full)
+   · resources/css/hf_bojeung.css   (41개 파일 / 41건)
+       html/my_hf/06MyHF_01이용상품조회_00주택담보대출조회_00대출신청조회_00신청정보확인.html:42
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_00보증신청내역.html:42
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_00보증신청내역_내역없음.html:42
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_01한도조회내역.html:42
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_01한도조회내역_상세.html:42
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_02보증내역보증료.html:42
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_02보증내역보증료_내역없음.html:42
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_02보증내역보증료_보증료조회.html:42
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증가입현황.html:42
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증가입현황_내역없음.html:42
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증이행현황_case1.html:42
+       html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증이행현황_case2.html:42
+       ... 외 29개 파일 (--full)
+   · resources/css/pages/charter_on.css   (20개 파일 / 20건)
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보.html:42
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보_00안내_잔금지급일.html:42
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보_00안내_전세계약자.html:42
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보_00안내_전자임대차계약체결여부.html:42
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보_등록완료.html:42
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_01임차주택정보.html:42
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_01임차주택정보_00안내_월임대료.html:42
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_01임차주택정보_00안내_임차보증금.html:42
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_01임차주택정보_00안내_임차주택전용면적.html:42
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_01임차주택정보_00안내_임차주택정보기입안내.html:42
+       html/hf_charter_on/전세on신청_02신청_06신청정보확인.html:42
+       html/hf_charter_on/전세on신청_02신청_06신청정보확인_진입알럿.html:42
+       ... 외 8개 파일 (--full)
+   · resources/js/pages/charter_on.js   (19개 파일 / 19건)
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보.html:311
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보_00안내_잔금지급일.html:295
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보_00안내_전세계약자.html:278
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보_00안내_전자임대차계약체결여부.html:311
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보_등록완료.html:185
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_01임차주택정보.html:480
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_01임차주택정보_00안내_월임대료.html:382
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_01임차주택정보_00안내_임차보증금.html:365
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_01임차주택정보_00안내_임차주택전용면적.html:398
+       html/hf_charter_on/전세on신청_02신청_05임대차주택정보_01임차주택정보_00안내_임차주택정보기입안내.html:349
+       html/hf_charter_on/전세on신청_02신청_06신청정보확인.html:378
+       html/hf_charter_on/전세on신청_02신청_06신청정보확인_진입알럿.html:378
+       ... 외 7개 파일 (--full)
+   · resources/css/hf_mypage.css   (19개 파일 / 19건)
+       html/my_hf/06MyHF_05마이페이지_00My정보관리.html:43
+       html/my_hf/06MyHF_05마이페이지_00My정보관리_바텀시트1.html:43
+       html/my_hf/06MyHF_05마이페이지_00My정보관리_바텀시트2.html:43
+       html/my_hf/06MyHF_05마이페이지_00My정보관리_바텀시트3.html:43
+       html/my_hf/06MyHF_05마이페이지_00My정보관리_알럿1.html:43
+       html/my_hf/06MyHF_05마이페이지_00My정보관리_알럿2.html:43
+       html/my_hf/06MyHF_05마이페이지_01My상담내역_00목록.html:43
+       html/my_hf/06MyHF_05마이페이지_01My상담내역_00목록_필터.html:43
+       html/my_hf/06MyHF_05마이페이지_01My상담내역_01등록.html:43
+       html/my_hf/06MyHF_05마이페이지_01My상담내역_01등록_알럿1.html:43
+       html/my_hf/06MyHF_05마이페이지_01My상담내역_01등록_알럿2.html:43
+       html/my_hf/06MyHF_05마이페이지_01My상담내역_02상세.html:43
+       ... 외 7개 파일 (--full)
+   · resources/css/ex/hf_doc_popup.css   (11개 파일 / 11건)
+       html/smart/05간편서류제출_01채무감면서류목록_02채무조정기타서류안내.html:25
+       html/smart/05간편서류제출_공통_팝업_00개인정보제공동의.html:25
+       html/smart/05간편서류제출_공통_팝업_01스마트서류제출.html:25
+       html/smart/05간편서류제출_공통_팝업_02서류첨부방법선택.html:25
+       html/smart/05간편서류제출_공통_팝업_02스크래핑서류제출.html:25
+       html/smart/05간편서류제출_공통_팝업_03사업자정보확인.html:25
+       html/smart/05간편서류제출_공통_팝업_04제출된서류확인.html:25
+       html/smart/05간편서류제출_공통_팝업_05두개상품동시제출.html:25
+       html/smart/05간편서류제출_공통_팝업_05두개상품동시제출_알럿.html:25
+       html/smart/05간편서류제출_공통_팝업_06사업자등록증조회실패.html:25
+       html/smart/05간편서류제출_공통_팝업_제출서류확인.html:25
+   · resources/css/hf_yeongeum.css   (10개 파일 / 10건)
+       html/my_hf/06MyHF_01이용상품조회_02주택연금조회_00연금신청내역.html:43
+       html/my_hf/06MyHF_01이용상품조회_02주택연금조회_00연금신청내역_내역없음.html:43
+       html/my_hf/06MyHF_01이용상품조회_02주택연금조회_00연금신청내역_신청정보확인.html:43
+       html/my_hf/06MyHF_01이용상품조회_02주택연금조회_00연금신청내역_임대동의신청_임대동의서확인.html:43
+       html/my_hf/06MyHF_01이용상품조회_02주택연금조회_01신청정보안내사항확인.html:43
+       html/my_hf/06MyHF_01이용상품조회_02주택연금조회_01신청정보안내사항확인_체크리스트보기.html:43
+       html/my_hf/06MyHF_01이용상품조회_02주택연금조회_02연금정보조회.html:43
+       html/my_hf/06MyHF_01이용상품조회_02주택연금조회_03연금재가입가능여부.html:43
+       html/my_hf/06MyHF_01이용상품조회_02주택연금조회_03연금재가입가능여부_가입가능.html:43
+       html/my_hf/06MyHF_01이용상품조회_02주택연금조회_03연금재가입가능여부_불가능.html:43
+   · resources/js/pages/guarantee_death_procedure.js   (8개 파일 / 8건)
+       html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내.html:539
+       html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_기타 유의사항.html:539
+       html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_납부하셔야 할 세금_승계.html:539
+       html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_신탁방식의 경우 유의사항.html:539
+       html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_주택연금 승계(채무인수) 절차 (2).html:447
+       html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_주택연금 승계(채무인수) 절차.html:447
+       html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_주택연금 승계(채무인수) 절차_승계.html:539
+       html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00저당권방식.html:539
+   · resources/css/pages/guarantee_death_procedure.css   (8개 파일 / 8건)
+       html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내.html:43
+       html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_기타 유의사항.html:43
+       html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_납부하셔야 할 세금_승계.html:43
+       html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_신탁방식의 경우 유의사항.html:43
+       html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_주택연금 승계(채무인수) 절차 (2).html:43
+       html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_주택연금 승계(채무인수) 절차.html:43
+       html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_주택연금 승계(채무인수) 절차_승계.html:43
+       html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00저당권방식.html:43
+   · resources/js/hf_apply_confirm.js   (4개 파일 / 4건)
+       html/my_hf/06MyHF_01이용상품조회_00주택담보대출조회_01대출정보조회_신청내역및결과_신청정보확인.html:936
+       html/my_hf/06MyHF_01이용상품조회_00주택담보대출조회_01대출정보조회_신청내역및결과_신청정보확인_case1.html:1244
+       html/my_hf/06MyHF_01이용상품조회_00주택담보대출조회_01대출정보조회_신청내역및결과_신청정보확인_case2.html:1078
+       html/my_hf/06MyHF_01이용상품조회_00주택담보대출조회_01대출정보조회_신청내역및결과_신청정보확인_case3.html:971
+   · resources/css/pages/guarantee_add.css   (4개 파일 / 4건)
+       html/additional_information/04주택연금_08주택연금부가서비스_01법률세무상담서비스안내.html:43
+       html/additional_information/04주택연금_08주택연금부가서비스_01법률세무상담서비스안내_00안내_아코디언오픈.html:43
+       html/additional_information/04주택연금_08주택연금부가서비스_02다부짐프로그램신청안내.html:43
+       html/additional_information/04주택연금_08주택연금부가서비스_02다부짐프로그램신청안내_00안내_아코디언오픈.html:43
+   · resources/js/pages/guarantee_statistics.js   (3개 파일 / 3건)
+       html/additional_information/04주택연금_05주택연금가입통계.html:316
+       html/additional_information/04주택연금_05주택연금가입통계_00바텀시트_지역 선택.html:316
+       html/additional_information/04주택연금_05주택연금가입통계_안내.html:316
+   · resources/css/pages/guarantee_health_service.css   (2개 파일 / 2건)
+       html/additional_information/04주택연금_08주택연금부가서비스_00건강검진서비스안내.html:43
+       html/additional_information/04주택연금_08주택연금부가서비스_00건강검진서비스안내_00안내_외부사이트이동안내.html:43
+   · resources/css/pages/pension_guide.css   (1개 파일 / 1건)
+       html/content/04주택연금_08주택연금맞춤안내.html:26
+   · resources/css/pages/debt_deferral.css   (1개 파일 / 1건)
+       html/debt_adjustment/05채무조정_01원금상환유예신청_3단계_사유_다자녀.html:43
+
+[WARN] R09  div/span 에 type=button — 23건 / 16개 파일 / 원인 1종
+      div 에는 type 속성이 없다. 오타이거나, 버튼이어야 할 것이 div 로 되어 있다.
+   · <div type=button>   (16개 파일 / 23건)
+       html/assurance_transition/03주택보증_02보증이행청구_00보증이행청구절차_00.html:149
+       html/assurance_transition/03주택보증_02보증이행청구_00보증이행청구절차_01일반전세지킴보증약관유의사항.html:149
+       html/assurance_transition/03주택보증_02보증이행청구_00보증이행청구절차_02임대차보증금청구방법및서식.html:149
+       html/assurance_transition/03주택보증_02보증이행청구_00보증이행청구절차_03온라인이행청구시스템이용매뉴얼.html:149
+       html/assurance_transition/03주택보증_02보증이행청구_00보증이행청구절차_04안내_이행청구요건자가진단.html:149
+       html/assurance_transition/03주택보증_02보증이행청구_00보증이행청구절차_04안내_이행청구절차안내.html:149
+       html/assurance_transition/03주택보증_02보증이행청구_00보증이행청구절차_04안내_주요용어설명.html:149
+       html/assurance_transition/03주택보증_02보증이행청구_00이행청구자가진단_00.html:65
+       html/assurance_transition/03주택보증_02보증이행청구_01이행청구자가진단_00_00안내_절차.html:65
+       html/individual_expectations/03주택보증_01보증금액미리보기_01전세지킴보증_00case1_00가입가능.html:75
+       html/individual_expectations/03주택보증_01보증금액미리보기_01전세지킴보증_00case1_01불가능.html:78
+       html/individual_expectations/03주택보증_01보증금액미리보기_01전세지킴보증_00조회.html:70
+       ... 외 4개 파일 (--full)
+
+[WARN] R10  팝업 type2~5 충돌 — 5건 / 2개 파일 / 원인 4종
+      footer.html 이 com_pop_wrap type2~5 를 선점한다. 새 팝업은 type11 부터 쓴다.
+   · type2   (2개 파일 / 2건)
+       html/certificate_center/simple_number.html:120
+       html/inc/footer.html:127
+   · type5   (1개 파일 / 1건)
+       html/inc/footer.html:577
+   · type4   (1개 파일 / 1건)
+       html/inc/footer.html:420
+   · type3   (1개 파일 / 1건)
+       html/inc/footer.html:266
+
+[WARN] R14  보정 안 되는 고정 버튼 — 2건 / 2개 파일 / 원인 1종
+      .btn_cont.page.fixed.direction 은 부모가 .container_in 이 아니라 전역 하단 여백 규칙이 걸리지 않는다.
+   · fixed direction   (2개 파일 / 2건)
+       html/my_hf/06MyHF_01이용상품조회_02주택연금조회_01신청정보안내사항확인.html:93
+       html/my_hf/06MyHF_01이용상품조회_02주택연금조회_01신청정보안내사항확인_체크리스트보기.html:93
+
+[WARN] R11  닫기 수단 없는 팝업 — 1건 / 1개 파일 / 원인 1종
+      .close / .end / [data-close-pop] 이 하나도 없어 사용자가 팝업을 닫을 수 없다.
+   · 닫기 수단 없음   (1개 파일 / 1건)
+       html/ai_service/002주택담보대출_00대출신청_00상품추천서비스_00정보제공동의_00스마트서류제출_진행상황.html:221
+
+[백로그] 가이드 미수록 클래스 1295종 (상위 40)
+       1274개 파일  container_in
+        289개 파일  down
+        282개 파일  cont_line
+        235개 파일  form-text
+        198개 파일  sub_txt
+        198개 파일  page2
+        153개 파일  btn
+        133개 파일  primary
+        132개 파일  sub_tit
+        100개 파일  textarea-wrap
+         89개 파일  com_sub
+         85개 파일  between
+         83개 파일  table_cont
+         83개 파일  obj
+         78개 파일  tooltip
+         76개 파일  full2
+         75개 파일  dot
+         74개 파일  prev
+         74개 파일  next
+         73개 파일  textarea-count
+         73개 파일  text-point-primary
+         73개 파일  text-num
+         72개 파일  large
+         72개 파일  bottom
+         71개 파일  year
+         71개 파일  submit_cont
+         71개 파일  sel
+         71개 파일  month
+         71개 파일  ico-sch
+         71개 파일  ico-checkbox6
+         71개 파일  calendar-year-wrap
+         71개 파일  calendar-tbl
+         71개 파일  calendar-table-wrap
+         71개 파일  calendar-switch-wrap
+         71개 파일  calendar-select
+         71개 파일  calendar-mon-wrap
+         71개 파일  calendar-head
+         71개 파일  calendar-drop-down
+         71개 파일  calendar-body
+         71개 파일  btn-cal-switch

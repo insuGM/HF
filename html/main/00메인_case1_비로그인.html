@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="ko">
+	<meta property="og:site_name" content="한국주택금융공사">
+	<meta name="twitter:card" content="summary">
+	<title>한국주택금융공사</title>
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+	<script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+	<script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/resources/js/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/main.css">
+
+	<script type="text/javascript" src="/resources/js/swiper/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.custom.home.js"></script>
+	<script type="text/javascript" src="/resources/js/slick/slick.min.js"></script>
+</head>
+<body>
+	<div class="wrapper main app-main" id="app">
+    <div data-include="../inc/header.html"></div>
+		<div id="container">
+			<div class="container_in">
+
+				<div class="main_wrap">
+					<section class="sen main01">
+						<div class="main_container">
+							<div class="hf_main_visual">
+								<div class="hf_main_visual_inner">
+									<div class="hf_main_visual_slide">
+										<div class="item">
+											<div class="txt_area">
+												<span class="sub">연 4.46%부터 최대 3.6억원</span>
+												<strong class="tit">대출 가능한 예상금액을 조회해 보세요</strong>
+											</div>
+											<span class="obj"><img src="/resources/images/main/img_main_visual_01.svg" alt=""></span>
+										</div>
+										<div class="item">
+											<div class="txt_area">
+												<span class="sub">연 4.46%부터 최대 3.6억원</span>
+												<strong class="tit">내 집 마련 자금, 보금자리론으로 준비하세요</strong>
+											</div>
+											<span class="obj"><img src="/resources/images/main/img_main_visual_02.svg" alt=""></span>
+										</div>
+										<div class="item">
+											<div class="txt_area">
+												<span class="sub">만 55세 이상</span>
+												<strong class="tit">내 집에 살면서 평생 연금을 받아 보세요</strong>
+											</div>
+											<span class="obj"><img src="/resources/images/main/img_main_visual_03.svg" alt=""></span>
+										</div>
+										<div class="item">
+											<div class="txt_area">
+												<span class="sub">보증비율 90%</span>
+												<strong class="tit">전세자금대출 보증한도를 확인해 보세요</strong>
+											</div>
+											<span class="obj"><img src="/resources/images/main/img_main_visual_04.svg" alt=""></span>
+										</div>
+									</div>
+									<div class="hf_main_visual_dot_area">
+										<ul class="list"></ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="sen main02">
+						<div class="main_container">
+							<div class="hf_main_guide">
+								<div class="hf_main_guide_ico">
+										<span class="ico"><img src="/resources/images/main/ico_main_guide_delay.svg" alt=""></span>
+									</div>
+								<div class="hf_main_guide_txt">
+									<span class="label">신청량 급증</span>
+									<p class="desc">현재 신청량이 많아 처리에 시간이 걸리고 있습니다.<br>최대한 빠른 시일내에 연락드리겠습니다.</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="sen main03">
+						<div class="main_container">
+							<div class="hf_main_recommend">
+								<div class="hf_main_recommend_head">
+									<div class="hf_main_recommend_tab_area">
+										<ul class="list" role="tablist" aria-label="맞춤 추천 상품 분류">
+											<li class="on" role="presentation"><button type="button" id="rec_tab_t1" role="tab" aria-selected="true" aria-controls="rec_panel_t1" tabindex="0" data-tab="t1">주택구입</button></li>
+											<li role="presentation"><button type="button" id="rec_tab_t2" role="tab" aria-selected="false" aria-controls="rec_panel_t2" tabindex="-1" data-tab="t2">노후준비</button></li>
+											<li role="presentation"><button type="button" id="rec_tab_t3" role="tab" aria-selected="false" aria-controls="rec_panel_t3" tabindex="-1" data-tab="t3">전·월세</button></li>
+										</ul>
+									</div>
+									<a href="#n" class="more">전체 <i class="svg-icon ico-angle right"></i></a>
+								</div>
+								<div class="hf_main_recommend_body">
+									<div class="hf_main_recommend_slide on" id="rec_panel_t1" role="tabpanel" aria-labelledby="rec_tab_t1" data-tab="t1">
+										<div class="item type1">
+											<div class="txt_area">
+												<strong class="tit">보금자리론</strong>
+												<p class="desc">만기까지 변동 없는 고정금리<br>정부 지원 주택담보대출</p>
+											</div>
+											<div class="hf_main_recommend_data_area">
+												<ul class="list">
+													<li><span class="k">최저</span><strong class="v">4.35%</strong></li>
+													<li><span class="k">최대</span><strong class="v">3.6억</strong></li>
+													<li><span class="k">최장</span><strong class="v">50년</strong></li>
+												</ul>
+											</div>
+											<span class="obj"><img src="/resources/images/main/img_main_card_bogeum.svg" alt=""></span>
+										</div>
+										<div class="item type2 col2">
+											<div class="txt_area">
+												<strong class="tit">주택연금</strong>
+												<p class="desc">내 집에 살면서 평생 연금 수령<br>국가가 100% 지급을 보증하는 제도</p>
+											</div>
+											<div class="hf_main_recommend_data_area">
+												<ul class="list">
+													<li><span class="k">나이</span><strong class="v">만 55세 이상</strong></li>
+													<li><span class="k">주택 공시가</span><strong class="v">12억원 이하</strong></li>
+												</ul>
+											</div>
+											<span class="obj"><img src="/resources/images/main/img_main_card_pension.svg" alt=""></span>
+										</div>
+										<div class="item type3 col2">
+											<div class="txt_area">
+												<strong class="tit">HF전세ON</strong>
+												<p class="desc">하나은행 전세자금대출을 위한<br>보증한도 조회·신청 서비스</p>
+											</div>
+											<div class="hf_main_recommend_data_area">
+												<ul class="list">
+													<li><span class="k">금리</span><strong class="v">0.1%</strong></li>
+													<li><span class="k">최대</span><strong class="v">4억</strong></li>
+													<li><span class="k">보증비율</span><strong class="v">90%</strong></li>
+												</ul>
+											</div>
+											<span class="obj"><img src="/resources/images/main/img_main_card_pension2.svg" alt=""></span>
+										</div>
+									</div>
+									<div class="hf_main_recommend_slide" id="rec_panel_t2" role="tabpanel" aria-labelledby="rec_tab_t2" data-tab="t2">
+										<div class="item type1">
+											<div class="txt_area">
+												<strong class="tit">보금자리론</strong>
+												<p class="desc">만기까지 변동 없는 고정금리<br>정부 지원 주택담보대출</p>
+											</div>
+											<div class="hf_main_recommend_data_area">
+												<ul class="list">
+													<li><span class="k">최저</span><strong class="v">4.35%</strong></li>
+													<li><span class="k">최대</span><strong class="v">3.6억</strong></li>
+													<li><span class="k">최장</span><strong class="v">50년</strong></li>
+												</ul>
+											</div>
+											<span class="obj"><img src="/resources/images/main/img_main_card_bogeum.svg" alt=""></span>
+										</div>
+										<div class="item type2 col2">
+											<div class="txt_area">
+												<strong class="tit">주택연금</strong>
+												<p class="desc">내 집에 살면서 평생 연금 수령<br>국가가 100% 지급을 보증하는 제도</p>
+											</div>
+											<div class="hf_main_recommend_data_area">
+												<ul class="list">
+													<li><span class="k">나이</span><strong class="v">만 55세 이상</strong></li>
+													<li><span class="k">주택 공시가</span><strong class="v">12억원 이하</strong></li>
+												</ul>
+											</div>
+											<span class="obj"><img src="/resources/images/main/img_main_card_pension.svg" alt=""></span>
+										</div>
+										<div class="item type3 col2">
+											<div class="txt_area">
+												<strong class="tit">HF전세ON</strong>
+												<p class="desc">하나은행 전세자금대출을 위한<br>보증한도 조회·신청 서비스</p>
+											</div>
+											<div class="hf_main_recommend_data_area">
+												<ul class="list">
+													<li><span class="k">금리</span><strong class="v">0.1%</strong></li>
+													<li><span class="k">최대</span><strong class="v">4억</strong></li>
+													<li><span class="k">보증비율</span><strong class="v">90%</strong></li>
+												</ul>
+											</div>
+											<span class="obj"><img src="/resources/images/main/img_main_card_pension2.svg" alt=""></span>
+										</div>
+									</div>
+									<div class="hf_main_recommend_slide" id="rec_panel_t3" role="tabpanel" aria-labelledby="rec_tab_t3" data-tab="t3">
+										<div class="item type1">
+											<div class="txt_area">
+												<strong class="tit">보금자리론</strong>
+												<p class="desc">만기까지 변동 없는 고정금리<br>정부 지원 주택담보대출</p>
+											</div>
+											<div class="hf_main_recommend_data_area">
+												<ul class="list">
+													<li><span class="k">최저</span><strong class="v">4.35%</strong></li>
+													<li><span class="k">최대</span><strong class="v">3.6억</strong></li>
+													<li><span class="k">최장</span><strong class="v">50년</strong></li>
+												</ul>
+											</div>
+											<span class="obj"><img src="/resources/images/main/img_main_card_bogeum.svg" alt=""></span>
+										</div>
+										<div class="item type2 col2">
+											<div class="txt_area">
+												<strong class="tit">주택연금</strong>
+												<p class="desc">내 집에 살면서 평생 연금 수령<br>국가가 100% 지급을 보증하는 제도</p>
+											</div>
+											<div class="hf_main_recommend_data_area">
+												<ul class="list">
+													<li><span class="k">나이</span><strong class="v">만 55세 이상</strong></li>
+													<li><span class="k">주택 공시가</span><strong class="v">12억원 이하</strong></li>
+												</ul>
+											</div>
+											<span class="obj"><img src="/resources/images/main/img_main_card_pension.svg" alt=""></span>
+										</div>
+										<div class="item type3 col2">
+											<div class="txt_area">
+												<strong class="tit">HF전세ON</strong>
+												<p class="desc">하나은행 전세자금대출을 위한<br>보증한도 조회·신청 서비스</p>
+											</div>
+											<div class="hf_main_recommend_data_area">
+												<ul class="list">
+													<li><span class="k">금리</span><strong class="v">0.1%</strong></li>
+													<li><span class="k">최대</span><strong class="v">4억</strong></li>
+													<li><span class="k">보증비율</span><strong class="v">90%</strong></li>
+												</ul>
+											</div>
+											<span class="obj"><img src="/resources/images/main/img_main_card_pension2.svg" alt=""></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="sen main04">
+						<div class="main_container">
+							<div class="hf_main_calc">
+								<div class="hf_main_tit_area">
+									<strong class="tit">미리 계산해보세요</strong>
+									<span class="side">로그인 없이 먼저 계산해보세요</span>
+								</div>
+								<div class="hf_main_calc_list_area">
+									<ul class="list">
+										<li>
+											<a href="#n">
+												<span class="ico"><img src="/resources/images/main/ico_main_calc_ai.svg" alt=""></span>
+												<span class="tx">AI모기지<br>추천</span>
+											</a>
+										</li>
+										<li>
+											<a href="#n">
+												<span class="ico"><img src="/resources/images/main/ico_main_calc_pension.svg" alt=""></span>
+												<span class="tx">예상연금<br>조회</span>
+											</a>
+										</li>
+										<li>
+											<a href="#n">
+												<span class="ico"><img src="/resources/images/main/ico_main_calc_charter.svg" alt=""></span>
+												<span class="tx">전세보증<br>조회</span>
+											</a>
+										</li>
+										<li>
+											<a href="#n">
+												<span class="ico"><img src="/resources/images/main/ico_main_calc_money.svg" alt=""></span>
+												<span class="tx">예상원리금<br>조회</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="sen main05">
+						<div class="main_container">
+							<div class="hf_main_quick">
+								<div class="hf_main_tit_area">
+									<strong class="tit">자주 찾는 업무</strong>
+								</div>
+								<div class="hf_main_quick_list_area">
+									<ul class="list">
+										<li><button type="button">신청내역 조회</button></li>
+										<li><button type="button">신청서류 제출</button></li>
+										<li><button type="button">대출조건 변경</button></li>
+										<li><button type="button">배우자정보 제공동의</button></li>
+										<li><button type="button">주택연금 상담예약</button></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="sen main06">
+						<div class="main_container">
+							<div class="hf_main_info">
+								<a href="#n" class="hf_main_info_notice">
+									<span class="badge">공지</span>
+									<span class="tx">보금자리론 우대금리 적용 기준 변경 안내</span>
+									<i class="svg-icon ico-angle right" aria-hidden="true"></i>
+								</a>
+								<div class="hf_main_info_call">
+									<div class="l">
+										<span class="ico"><img src="/resources/images/main/ico_main_call.svg" alt=""></span>
+										<strong class="tel">1688-8114</strong>
+										<span class="time">평일 09:00 ~ 18:00</span>
+									</div>
+									<a href="#n" class="r">본사/지사 찾기 <i class="svg-icon ico-angle right"></i></a>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+
+			</div>
+		</div>
+    <div data-include="../inc/footer.html"></div>
+	</div>
+	<script type="text/javascript" src="/resources/js/include.js"></script>
+	<script type="text/javascript" src="/resources/js/main.js"></script>
+</body>
+</html>

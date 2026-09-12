@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko">
+    <meta property="og:site_name" content="한국주택금융공사">
+    <meta property="og:updated_time" content="">
+    <meta name="twitter:card" content="summary">
+    <title>한국주택금융공사</title>
+
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper sub" id="app">
+        <div data-include="../inc/header.html"></div>
+
+        <div id="container">
+            <div class="container_in">
+
+
+                <div class="contents">
+                    <div class="pro_anagement_cont">
+                        <div class="hf-guide-card">
+                            <div class="hf-guide-card-icon">
+                                <img src="/resources/images/common/icon/ico_guide.svg" alt="">
+                            </div>
+                            <div class="hf-guide-card-text">
+                                <p class="hf-guide-card-tit">하단 보증정보 입력 후<br>확인이 가능합니다.</p>
+                                <p class="hf-guide-card-txt">아래 필수 값 입력 후<br>[조회]를 클릭하여 확인해 주시기 바랍니다.</p>
+                            </div>
+                        </div>
+                        <div type="button" class="hf-guide-link">
+                            안내 사항 보기
+
+                        </div>
+                    </div>
+                    <div class="bg_line"></div>
+                    <div class="pro_anagement_cont">
+                        <div class="pro_anagement_list_area">
+                            <ul class="list">
+                                <li>
+                                    <div class="cont">
+                                        <div class="fieldset">
+                                            <div class="form-group none_bg">
+                                                <div class="form-tit-cont">
+                                                    <div class="form-tit type1">
+                                                        <label>보증종류
+                                                            <span class="point">*</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-conts">
+                                                    <div class="chip-wrap cunt auto">
+                                                        <div class="krds-form-chip type1">
+                                                            <input type="radio" name="rdo_guarantee"
+                                                                id="rdo_guarantee_1" checked class="radio">
+                                                            <label for="rdo_guarantee_1">
+                                                                <span class="rdo-label-wrap">
+                                                                    <span class="hf-radio-label-title">일반전세지킴보증</span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="krds-form-chip type1">
+                                                            <input type="radio" name="rdo_guarantee"
+                                                                id="rdo_guarantee_2" class="radio">
+                                                            <label for="rdo_guarantee_2">
+                                                                <span class="rdo-label-wrap">
+                                                                    <span class="hf-radio-label-title">특례전세지킴보증</span>
+                                                                    <span class="hf-radio-label-desc">임차인용,임대인용</span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cont">
+                                        <div class="fieldset">
+                                            <div class="form-group none_bg">
+                                                <div class="form-tit-cont">
+                                                    <div class="form-tit type1">
+                                                        <label>지역
+                                                            <span class="point">*</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-conts">
+                                                    <div class="chip-wrap cunt auto">
+                                                        <div class="krds-form-chip type1">
+                                                            <input type="radio" name="rdo_region" id="rdo_region_1"
+                                                                checked class="radio">
+                                                            <label for="rdo_region_1">수도권</label>
+                                                        </div>
+                                                        <div class="krds-form-chip type1">
+                                                            <input type="radio" name="rdo_region" id="rdo_region_2"
+                                                                class="radio">
+                                                            <label for="rdo_region_2">비수도권</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cont">
+                                        <div class="fieldset">
+                                            <div class="form-group none_bg">
+                                                <div class="form-tit-cont">
+                                                    <div class="form-tit type1">
+                                                        <label>주택가격
+                                                            <span class="point">*</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-conts">
+                                                    <div class="form-text">
+                                                        <div class="text">
+                                                            <div class="num">영</div>
+                                                            <div class="txt">원</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-inp">
+                                                        <input type="text" id="inp_house_price"
+                                                            class="krds-input padding-right" placeholder="0"
+                                                            title="금액을 입력해 주세요.">
+                                                        <div class="txt">원</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cont">
+                                        <div class="fieldset">
+                                            <div class="form-group none_bg">
+                                                <div class="form-tit-cont">
+                                                    <div class="form-tit type1">
+                                                        <label>임차보증금액
+                                                            <span class="point">*</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-conts">
+                                                    <div class="form-text">
+                                                        <div class="text">
+                                                            <div class="num">영</div>
+                                                            <div class="txt">원</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-inp">
+                                                        <input type="text" id="inp_deposit"
+                                                            class="krds-input padding-right" placeholder="0"
+                                                            title="금액을 입력해 주세요.">
+                                                        <div class="txt">원</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cont">
+                                        <div class="fieldset">
+                                            <div class="form-group none_bg">
+                                                <div class="form-tit-cont">
+                                                    <div class="form-tit type1">
+                                                        <label>선순위근저당권설정금액
+                                                            <span class="point">*</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-conts">
+                                                    <div class="form-text">
+                                                        <div class="text">
+                                                            <div class="num">영</div>
+                                                            <div class="txt">원</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-inp">
+                                                        <input type="text" id="inp_senior_mortgage"
+                                                            class="krds-input padding-right" placeholder="0"
+                                                            title="금액을 입력해 주세요.">
+                                                        <div class="txt">원</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn_cont page hf-btn-area">
+                        <button type="button" class="com_btn blue2 hf-btn-primary js-btn-search" disabled>조회</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div data-include="../inc/footer.html"></div>
+        <!-- 선순위근저당권설정금액을<br>입력해 주세요 -->
+        <div class="com_pop_wrap w_min type44">
+            <div class="com_pop_cont">
+                <div class="title_area">
+                    <button type="button" class="close" title="팝업 닫기"></button>
+                </div>
+                <div class="com_pop_content">
+                    <div class="main_tit_area">
+                        <div class="title small">알림</div>
+                        <div class="title">선순위근저당권설정금액을<br>입력해 주세요</div>
+                    </div>
+                    <div class="btn_cont direction">
+                        <button type="button" class="com_btn blue2">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //선순위근저당권설정금액을<br>입력해 주세요 -->
+
+        <!-- 임차보증금액을 입력해 주세요 -->
+        <div class="com_pop_wrap w_min type43">
+            <div class="com_pop_cont">
+                <div class="title_area">
+                    <button type="button" class="close" title="팝업 닫기"></button>
+                </div>
+                <div class="com_pop_content">
+                    <div class="main_tit_area">
+                        <div class="title small">알림</div>
+                        <div class="title">임차보증금액을 입력해 주세요</div>
+                    </div>
+                    <div class="btn_cont direction">
+                        <button type="button" class="com_btn blue2">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //임차보증금액을 입력해 주세요 -->
+
+        <!-- 주택가격을 입력해 주세요 -->
+        <div class="com_pop_wrap w_min type42">
+            <div class="com_pop_cont">
+                <div class="title_area">
+                    <button type="button" class="close" title="팝업 닫기"></button>
+                </div>
+                <div class="com_pop_content">
+                    <div class="main_tit_area">
+                        <div class="title small">알림</div>
+                        <div class="title">주택가격을 입력해 주세요</div>
+                    </div>
+                    <div class="btn_cont direction">
+                        <button type="button" class="com_btn blue2">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //주택가격을 입력해 주세요 -->
+
+        <!-- 전세지킴보증 안내 사항 -->
+        <div class="com_pop_wrap type41 active">
+            <div class="com_pop_cont type_bottom_sheet active">
+                <div class="title_area">
+                    <div class="title">전세지킴보증 안내 사항</div>
+                    <button type="button" class="close" title="팝업 닫기"></button>
+                </div>
+                <div class="com_pop_content">
+                    <ul class="krds-info-list char_bullet">
+                        <li>임대차계약 종료 시 임대인이 임차인에게 전세보증금을 반환하지 못하면 HF가 대신 임차인에게 전세보증금을 돌려주는 전세보증금반환보증 상품 (이후 임대인에게 구상권
+                            청구)<br><span class="gray">※ HF의 전세자금보증을 이용 중이거나 전세자금보증과 함께 신청하는 경우 이용 가능</span></li>
+                        <li>전세지킴보증은 임차보증금 전액이 보증한도 이하인 경우에만 가입이 가능한 상품입니다<br><span class="gray">※ 보증한도 : 주택가격의 90% -
+                                선순위채권</span><br><span class="gray">※ 선순위채권 : 선순위근저당권설정액 + 선순위 임차보증금</span></li>
+                        <li>선순위 임차보증금은 없다고 가정하며, 단독, 다가구주택의 경우 선순위임차보증금 확인이 어렵기 때문에 한도조회가 불가능합니다. 집합건물(아파트, 오피스텔, 다세대,
+                            연립주택)만 이용해주시기 바랍니다.</li>
+                        <li>조회결과는 고객편의를 위해 주택가격과 선순위채권 등을 기준으로 산정한 결과이므로 실제 보증한도와 다를 수 있습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- //전세지킴보증 안내 사항 -->
+
+
+    </div>
+
+    <script type="text/javascript" src="/resources/js/include.js"></script>
+</body>
+
+</html>

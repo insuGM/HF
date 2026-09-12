@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko">
+    <meta property="og:site_name" content="한국주택금융공사">
+    <meta property="og:updated_time" content="">
+    <meta name="twitter:card" content="summary">
+    <title>한국주택금융공사</title>
+    
+    <!-- CSS 파일들 -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+
+    <!-- JavaScript 파일들 -->
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+    
+    <!-- !추가부분 -->
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+
+    <!--// !추가부분 -->
+</head>
+<body>
+
+<div class="wrapper sub" id="app">
+    <div data-include="../inc/header.html"></div>
+
+    <div id="container">
+        <div class="container_in">
+
+                        <div class="contents">
+                <div class="pro_anagement_cont">
+                    <div class="step_cont">
+                        <span class="blue">6단계</span> / 9단계
+                    </div>
+                    <div class="step_list_cont type1 step4">
+                        <ol class="krds-step-wrap">
+                            <li class="done">
+                                <span>
+                                    <span class="tit">고객정보 확인</span>
+                                </span>
+                            </li>
+                            <li class="done">
+                                <span>
+                                    <span class="tit">정보제공동의</span>
+                                </span>
+                            </li>
+                            <li class="done">
+                                <span>
+                                    <span class="tit">적용요건 선택</span>
+                                </span>
+                            </li>
+                            <li class="active">
+                                <span>
+                                <em class="sr-only">현재단계</em>
+                                    <span class="tit">필요정보 입력</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <span class="tit">신청정보확인</span>
+                                </span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="bg_line"></div>
+                <div class="pro_anagement_cont gap down">
+                    <div class="main_tit_area type2 m0">
+                        <div class="title">필요정보 입력</div>
+                    </div>
+                    <div class="sub_tit_area m0">
+                        <div class="tit">해당되는 항목을 입력해 주세요</div>
+                    </div>
+                    <div class="fieldset">
+                        <div class="form-group">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>희망대출금액<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="form-text">
+                                    <div class="text">
+                                        <div class="num">영</div>
+                                        <div class="txt">원</div>
+                                    </div>
+                                </div>
+                                <div class="form-inp">
+                                    <input type="text" id="loanAmt" class="krds-input p0" placeholder="0">
+                                    <div class="txt">원</div>
+                                </div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="krds-check-area chk-column">
+                                    <div class="krds-form-check">
+                                        <input type="checkbox" id="chkMaxLoan">
+                                        <label for="chkMaxLoan">최대대출금액 설정</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>부부합산(년)소득<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts is-error">
+                                <div class="form-text">
+                                    <div class="text">
+                                        <div class="num">영</div>
+                                        <div class="txt">원</div>
+                                    </div>
+                                </div>
+                                <div class="form-inp">
+                                    <input type="text" id="coupleIncome" class="krds-input p0" placeholder="0">
+                                    <div class="txt">원</div>
+                                </div>
+                            <p class="form-hint-invalid">보금자리론의 {요건선택 항목} 소득우대에 상환은 9,000만원입니다.</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>기타부채의 월평균 이자상환액<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="form-text">
+                                    <div class="text">
+                                        <div class="num">영</div>
+                                        <div class="txt">원</div>
+                                    </div>
+                                </div>
+                                <div class="form-inp">
+                                    <input type="text" id="otherDebt" class="krds-input p0" placeholder="0">
+                                    <div class="txt">원</div>
+                                </div>
+                            </div>
+                            <ul class="krds-info-list importance">
+                                <li>주택담보대출 및 상환예정 대출을 제외한 기타부채(현금 서비스 포함)의 월평균 이자상환액을 입력하여 주시기 바랍니다.</li>
+                            </ul>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>담보주택유형<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="chip-wrap cunt">
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="houseType01" name="houseType" class="radio" checked>
+                                        <label for="houseType01">아파트</label>
+                                    </div>
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="houseType02" name="houseType" class="radio">
+                                        <label for="houseType02">기타주택</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>대상주택 주소<span class="point">*</span></label></div>
+                                <button type="button" class="com_label_btn">주소 및 시세 검색</button>
+                            </div>
+                            <div class="form-conts">
+                                <div class="form-inp">
+                                    <input type="text" id="addr1" class="krds-input p0 disabled" placeholder="" disabled>
+                                </div>
+                                <div class="form-inp">
+                                    <input type="text" id="addr2" class="krds-input p0" placeholder="입력해 주세요.">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>주택가격<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="form-text">
+                                    <div class="text">
+                                        <div class="num">영</div>
+                                        <div class="txt">원</div>
+                                    </div>
+                                </div>
+                                <div class="form-inp">
+                                    <input type="text" id="housePrice" class="krds-input p0" placeholder="0">
+                                    <div class="txt">원</div>
+                                </div>
+                            </div>
+                            <ul class="krds-info-list dash">
+                                <li>주택가격은 최대 6억원까지 가능합니다.</li>
+                            </ul>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>최저층<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="chip-wrap cunt">
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="lowFloor01" name="lowFloor" class="radio">
+                                        <label for="lowFloor01">예</label>
+                                    </div>
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="lowFloor02" name="lowFloor" class="radio">
+                                        <label for="lowFloor02">아니오</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="krds-info-list decimal">
+                                <li>대상주택이 최저층(1호, 101호 등)이면 예를 선택하세요.</li>
+                            </ul>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>녹색건축물<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="chip-wrap cunt">
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="greenBuild01" name="greenBuild" class="radio">
+                                        <label for="greenBuild01">예</label>
+                                    </div>
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="greenBuild02" name="greenBuild" class="radio">
+                                        <label for="greenBuild02">아니오</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>미분양<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="chip-wrap cunt">
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="unsold01" name="unsold" class="radio">
+                                        <label for="unsold01">예</label>
+                                    </div>
+                                    <div class="krds-form-chip type1">
+                                        <input type="radio" id="unsold02" name="unsold" class="radio">
+                                        <label for="unsold02">아니오</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_cont page">
+                <button type="button" class="com_btn" disabled>다음</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div data-include="../inc/footer.html"></div>
+            <!-- 금융기관 변동금리 상품TOP3 (최저금리순) -->
+            <div class="com_pop_wrap type23 active">
+                <div class="com_pop_cont type_bottom_sheet active">
+                    <div class="title_area">
+                        <div class="title">금융기관 변동금리 상품TOP3 (최저금리순)</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="sub_tit_area"><div class="tit">첫 번째 상품</div></div>
+                        <div class="com_info_box">
+                            <div class="tit">우리은행 <span class="gray">· 우리부동산론</span></div>
+                            <div class="com_info_list_cont bg">
+                                <ul class="list">
+                                    <li><div class="cont"><div class="box"><div class="tit">최저금리</div><div class="txt"><strong>3.8%</strong></div></div><div class="box"><div class="tit">최고금리</div><div class="txt"><strong>4.5%</strong></div></div><div class="box"><div class="tit">전월평균금리</div><div class="txt"><strong>4.5%</strong></div></div></div></li>
+                                </ul>
+                            </div>
+                            <div class="sub_tit_area"><div class="tit">대출한도</div><div class="txt">LTV 70%</div></div>
+                            <div class="btn_cont direction row">
+                                <button type="button" class="link_btn2">홈페이지 <i class="svg-icon ico-link"></i></button>
+                                <a href="tel:1588-5000" class="link_btn2"><i class="svg-icon ico-call"></i> 1588-5000</a>
+                            </div>
+                        </div>
+                        <div class="sub_tit_area"><div class="tit">두 번째 상품</div></div>
+                        <div class="com_info_box">
+                            <div class="tit">농협은행주식회사 <span class="gray">· NH주택담보대출</span></div>
+                            <div class="com_info_list_cont bg">
+                                <ul class="list">
+                                    <li><div class="cont"><div class="box"><div class="tit">최저금리</div><div class="txt"><strong>3.8%</strong></div></div><div class="box"><div class="tit">최고금리</div><div class="txt"><strong>6.6%</strong></div></div><div class="box"><div class="tit">전월평균금리</div><div class="txt"><strong>-</strong></div></div></div></li>
+                                </ul>
+                            </div>
+                            <div class="sub_tit_area"><div class="tit">대출한도</div><div class="txt">해당 주택의 담보평가금액에 따라 산출된 가능 금액 이내</div></div>
+                            <div class="btn_cont direction row">
+                                <button type="button" class="link_btn2">홈페이지 <i class="svg-icon ico-link"></i></button>
+                                <a href="tel:1588-5000" class="link_btn2"><i class="svg-icon ico-call"></i> 1588-5000</a>
+                            </div>
+                        </div>
+                        <div class="sub_tit_area"><div class="tit">세 번째 상품</div></div>
+                        <div class="com_info_box">
+                            <div class="tit">국민은행 <span class="gray">· KB주택담보대출</span></div>
+                            <div class="com_info_list_cont bg">
+                                <ul class="list">
+                                    <li><div class="cont"><div class="box"><div class="tit">최저금리</div><div class="txt"><strong>3.9%</strong></div></div><div class="box"><div class="tit">최고금리</div><div class="txt"><strong>5.9%</strong></div></div><div class="box"><div class="tit">전월평균금리</div><div class="txt"><strong>4.8%</strong></div></div></div></li>
+                                </ul>
+                            </div>
+                            <div class="sub_tit_area"><div class="tit">대출한도</div><div class="txt">LTV 70%</div></div>
+                            <div class="btn_cont direction row">
+                                <button type="button" class="link_btn2">홈페이지 <i class="svg-icon ico-link"></i></button>
+                                <a href="tel:1588-5000" class="link_btn2"><i class="svg-icon ico-call"></i> 1588-5000</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //금융기관 변동금리 상품TOP3 (최저금리순) -->
+
+            <!-- 적용요건 선택 -->
+            <div class="com_pop_wrap type22">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">적용요건 선택</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="sub_tit_area m0">
+                            <div class="tit">해당되는 항목을 선택해 주세요</div>
+                        </div>
+                        <div class="form-tit-cont"><div class="form-tit"><label>요건 선택</label><div class="point">*</div></div></div>
+                        <div class="check_order_list type_check col2">
+                            <div class="krds-form-check check_order_chip">
+                                <input type="checkbox" id="pfCond1">
+                                <label for="pfCond1">
+                                    <span class="chip_num" aria-hidden="true"></span>
+                                    <span class="chip_txt">1자녀</span>
+                                </label>
+                            </div>
+                            <div class="krds-form-check check_order_chip">
+                                <input type="checkbox" id="pfCond2">
+                                <label for="pfCond2">
+                                    <span class="chip_num" aria-hidden="true"></span>
+                                    <span class="chip_txt">2자녀</span>
+                                </label>
+                            </div>
+                            <div class="krds-form-check check_order_chip">
+                                <input type="checkbox" id="pfCond3">
+                                <label for="pfCond3">
+                                    <span class="chip_num" aria-hidden="true"></span>
+                                    <span class="chip_txt">3자녀 이상</span>
+                                </label>
+                            </div>
+                            <div class="krds-form-check check_order_chip">
+                                <input type="checkbox" id="pfCond4">
+                                <label for="pfCond4">
+                                    <span class="chip_num" aria-hidden="true"></span>
+                                    <span class="chip_txt">신생아 가구</span>
+                                </label>
+                            </div>
+                            <div class="krds-form-check check_order_chip">
+                                <input type="checkbox" id="pfCond5">
+                                <label for="pfCond5">
+                                    <span class="chip_num" aria-hidden="true"></span>
+                                    <span class="chip_txt">신혼부부</span>
+                                </label>
+                            </div>
+                            <div class="krds-form-check check_order_chip">
+                                <input type="checkbox" id="pfCond6">
+                                <label for="pfCond6">
+                                    <span class="chip_num" aria-hidden="true"></span>
+                                    <span class="chip_txt">장애인 가구</span>
+                                </label>
+                            </div>
+                            <div class="krds-form-check check_order_chip">
+                                <input type="checkbox" id="pfCond7">
+                                <label for="pfCond7">
+                                    <span class="chip_num" aria-hidden="true"></span>
+                                    <span class="chip_txt">한부모 가구</span>
+                                </label>
+                            </div>
+                            <div class="krds-form-check check_order_chip">
+                                <input type="checkbox" id="pfCond8">
+                                <label for="pfCond8">
+                                    <span class="chip_num" aria-hidden="true"></span>
+                                    <span class="chip_txt">다문화 가구</span>
+                                </label>
+                            </div>
+                        </div>
+                        <ul class="krds-info-list decimal">
+                            <li class="gray">체크되어 있는 항목들은 공사가 공공 마이데이터 및 스크래핑을 통해 분석한 내용입니다.</li>
+                            <li class="gray">최종 결과 화면에서 변경 후 재조회 할 수 있어요.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //적용요건 선택 -->
+
+            <!-- 우선순위 선택 -->
+            <div class="com_pop_wrap type21">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">우선순위 선택</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="sub_tit_area m0">
+                            <div class="tit">다음 대출요건 중 중요하다고<br>생각하는 순서에 따라 체크해 주세요.</div>
+                        </div>
+                        <div class="check_order_list type_order">
+                            <div class="krds-form-check check_order_chip">
+                                <input type="radio" id="pfOrder1" name="pfOrder">
+                                <label for="pfOrder1">
+                                    <span class="chip_num" aria-hidden="true"></span>
+                                    <span class="chip_txt">금리수준</span>
+                                </label>
+                            </div>
+                            <div class="krds-form-check check_order_chip">
+                                <input type="radio" id="pfOrder2" name="pfOrder">
+                                <label for="pfOrder2">
+                                    <span class="chip_num" aria-hidden="true"></span>
+                                    <span class="chip_txt">대출한도</span>
+                                </label>
+                            </div>
+                            <div class="krds-form-check check_order_chip">
+                                <input type="radio" id="pfOrder3" name="pfOrder">
+                                <label for="pfOrder3">
+                                    <span class="chip_num" aria-hidden="true"></span>
+                                    <span class="chip_txt">월상환부담</span>
+                                </label>
+                            </div>
+                        </div>
+                        <ul class="krds-info-list importance">
+                            <li class="gray">선택 순서에 따라 대출의 한도, 만기, 금리수준, 월상환부담이 달라집니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //우선순위 선택 -->
+
+
+</div>
+
+<script type="text/javascript" src="/resources/js/include.js"></script>
+</body>
+</html>

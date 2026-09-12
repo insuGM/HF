@@ -1,0 +1,388 @@
+<!doctype html><html lang=ko><head><meta charset=utf-8>
+<meta name=viewport content='width=device-width,initial-scale=1'>
+<title>HF MB 퍼블리싱 린트</title><style>body{margin:0;background:#f4f5f7;font:14px/1.6 -apple-system,'Malgun Gothic',sans-serif;color:#1e2124}
+.wrap{max-width:112rem;margin:0 auto;padding:24px}
+h1{font-size:22px;margin:0 0 4px}.lead{color:#5b6169;margin:0 0 20px;max-width:70ch}
+.sum{display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap}
+.sum b{display:block;font-size:22px}
+.sum div{background:#fff;border:1px solid #e2e5e8;border-radius:10px;padding:12px 18px;min-width:104px}
+.box{background:#fff;border:1px solid #e2e5e8;border-radius:10px;margin-bottom:14px;overflow:hidden}
+.box>h2{margin:0;padding:12px 16px;font-size:15px;display:flex;gap:8px;align-items:center;
+  border-bottom:1px solid #eef0f2;flex-wrap:wrap}
+.sev{font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;color:#fff}
+.error{background:#d92d20}.warn{background:#e5900a}.info{background:#5b6169}
+.cnt{margin-left:auto;color:#5b6169;font-size:12px;font-weight:400}
+.why{margin:0;padding:10px 16px;background:#fafbfc;color:#5b6169;font-size:13px;border-bottom:1px solid #eef0f2}
+table{width:100%;border-collapse:collapse;font-size:13px}
+td,th{padding:7px 16px;border-bottom:1px solid #f1f3f5;vertical-align:top;text-align:left}
+th{font-size:12px;color:#8a9199;font-weight:600;background:#fafbfc}
+td.f{width:56%;word-break:break-all;color:#2563eb}
+td.d,code{font-family:Consolas,monospace;font-size:12px;color:#3d444b;word-break:break-all}
+details{border-bottom:1px solid #f1f3f5}
+details>summary{padding:9px 16px;cursor:pointer;font-size:13px;list-style:none}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:'\25b8';margin-right:8px;color:#8a9199}
+details[open]>summary::before{content:'\25be'}
+details>summary b{color:#d92d20;font-weight:600}
+.files{padding:0 16px 12px 34px;margin:0;font-size:12px;color:#5b6169}
+.files li{word-break:break-all;padding:2px 0}
+.ok{background:#fff;border:1px solid #e2e5e8;border-radius:10px;padding:24px;text-align:center;color:#12805c}</style></head><body><div class=wrap>
+<h1>HF MB 퍼블리싱 린트</h1>
+<p class=lead>검사 1282개 파일. 한 화면이 상태별 파일로 복제돼 있어 원인 하나가 수십 건으로 불어난다. 건수가 아니라 <b>원인</b> 기준으로 보라 — 우선 조치 위에서부터 고치면 가장 많은 파일이 한 번에 해결된다.</p>
+<div class=sum><div><b>499</b>error</div><div><b>31</b>warn</div><div><b>33</b>원인</div><div><b>1295</b>미수록 클래스</div><div><b>0</b>신규 클래스</div></div>
+<section class=box><h2><span class='sev info'>우선</span>우선 조치<span class=cnt>고치면 가장 많은 파일이 해결되는 순서</span></h2><table><tr><th>규칙</th><th>원인</th><th>영향</th><th>예시 위치</th></tr>
+<tr><td><span class='sev error'>error</span> R02</td><td class=d>consult_nameN</td><td>58개 파일 / 111건</td><td class=f>html/certificate/certificate.html:70</td></tr>
+<tr><td><span class='sev error'>error</span> R05</td><td class=d>resources/css/hf_loan_info.css</td><td>41개 파일 / 41건</td><td class=f>html/my_hf/06MyHF_01이용상품조회_00주택담보대출조회_00대출신청조회_00신청정보확인.html:41</td></tr>
+<tr><td><span class='sev error'>error</span> R05</td><td class=d>resources/css/hf_loan_apply.css</td><td>41개 파일 / 41건</td><td class=f>html/my_hf/06MyHF_01이용상품조회_00주택담보대출조회_00대출신청조회_00신청정보확인.html:40</td></tr>
+<tr><td><span class='sev error'>error</span> R05</td><td class=d>resources/css/hf_bojeung.css</td><td>41개 파일 / 41건</td><td class=f>html/my_hf/06MyHF_01이용상품조회_00주택담보대출조회_00대출신청조회_00신청정보확인.html:42</td></tr>
+<tr><td><span class='sev error'>error</span> R02</td><td class=d>consult_name</td><td>25개 파일 / 124건</td><td class=f>html/debt/02주택담보대출_02채무인수_01채무인수신청_01단계_00.html:105</td></tr>
+<tr><td><span class='sev error'>error</span> R05</td><td class=d>resources/css/pages/charter_on.css</td><td>20개 파일 / 20건</td><td class=f>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보.html:42</td></tr>
+<tr><td><span class='sev error'>error</span> R05</td><td class=d>resources/js/pages/charter_on.js</td><td>19개 파일 / 19건</td><td class=f>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보.html:311</td></tr>
+<tr><td><span class='sev error'>error</span> R05</td><td class=d>resources/css/hf_mypage.css</td><td>19개 파일 / 19건</td><td class=f>html/my_hf/06MyHF_05마이페이지_00My정보관리.html:43</td></tr>
+<tr><td><span class='sev warn'>warn</span> R09</td><td class=d>&lt;div type=button&gt;</td><td>16개 파일 / 23건</td><td class=f>html/assurance_transition/03주택보증_02보증이행청구_00보증이행청구절차_00.html:149</td></tr>
+<tr><td><span class='sev error'>error</span> R05</td><td class=d>resources/css/ex/hf_doc_popup.css</td><td>11개 파일 / 11건</td><td class=f>html/smart/05간편서류제출_01채무감면서류목록_02채무조정기타서류안내.html:25</td></tr>
+</table></section>
+<section class=box><h2><span class='sev error'>error</span>R02 짝 없는 label[for]<span class=cnt>266건 / 100개 파일 / 원인 10종</span></h2>
+<p class=why>for 가 가리키는 id 가 문서에 없다. 라벨을 눌러도 컨트롤이 반응하지 않는다.</p>
+<details><summary><code>consult_nameN</code> — <b>58개 파일</b> / 111건</summary><ul class=files>
+<li>html/certificate/certificate.html:70</li>
+<li>html/debt/02주택담보대출_02채무인수_01채무인수신청_00채무인수대상 계좌조회 및 사유_00.html:74</li>
+<li>html/debt/02주택담보대출_02채무인수_01채무인수신청_00채무인수대상 계좌조회 및 사유_01.html:191</li>
+<li>html/debt/02주택담보대출_02채무인수_01채무인수신청_00채무인수대상 계좌조회 및 사유_01_00알림.html:191</li>
+<li>html/debt/02주택담보대출_02채무인수_01채무인수신청_00채무인수대상 계좌조회 및 사유_01_00알림2.html:191</li>
+<li>html/debt/02주택담보대출_02채무인수_01채무인수신청_00채무인수대상 계좌조회 및 사유_01_00알림3.html:191</li>
+<li>html/debt/02주택담보대출_02채무인수_01채무인수신청_00채무인수대상 계좌조회 및 사유_01_00알림4.html:191</li>
+<li>html/debt/02주택담보대출_02채무인수_01채무인수신청_00채무인수대상 계좌조회 및 사유_알림_계좌조회실패.html:74</li>
+<li>html/expectations/00_공통_주소검색_00검색선택.html:1970</li>
+<li>html/expectations/00_공통_주소검색_00검색전.html:1970</li>
+<li>html/expectations/02주택담보대출_01대출가능금액미리보기_00예상대출금액조회.html:2101</li>
+<li>html/expectations/02주택담보대출_01대출가능금액미리보기_00예상대출금액조회_00바텀시트_04만19세미만자녀수.html:1879</li>
+<li>… 외 46개 파일 (--full 로 전체 보기)</li>
+</ul></details>
+<details><summary><code>consult_name</code> — <b>25개 파일</b> / 124건</summary><ul class=files>
+<li>html/debt/02주택담보대출_02채무인수_01채무인수신청_01단계_00.html:105</li>
+<li>html/debt/02주택담보대출_02채무인수_01채무인수신청_01단계_00_error.html:105</li>
+<li>html/debt/02주택담보대출_02채무인수_01채무인수신청_02단계_00.html:99</li>
+<li>html/debt/02주택담보대출_02채무인수_01채무인수신청_02단계_00_보금자리론 설명서 전체보기.html:99</li>
+<li>html/debt/02주택담보대출_02채무인수_01채무인수신청_02단계_00_알림.html:99</li>
+<li>html/debt/02주택담보대출_02채무인수_01채무인수신청_02단계_00_알림2.html:99</li>
+<li>html/debt/02주택담보대출_02채무인수_01채무인수신청_02단계_00_알림3.html:99</li>
+<li>html/debt/02주택담보대출_02채무인수_01채무인수신청_02단계_00_약관 전체보기.html:99</li>
+<li>html/debt/02주택담보대출_02채무인수_01채무인수신청_03단계_00.html:102</li>
+<li>html/debt/02주택담보대출_02채무인수_01채무인수신청_05단계_담보주택정보.html:102</li>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보.html:151</li>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보_00안내_잔금지급일.html:151</li>
+<li>… 외 13개 파일 (--full 로 전체 보기)</li>
+</ul></details>
+<details><summary><code>slt_product</code> — <b>7개 파일</b> / 7건</summary><ul class=files>
+<li>html/individual_expectations/03주택보증_01보증금액미리보기_00개인보증예상금액조회_00보증상품선택.html:102</li>
+<li>html/individual_expectations/03주택보증_01보증금액미리보기_00개인보증예상금액조회_00보증상품선택_00error.html:102</li>
+<li>html/individual_expectations/03주택보증_01보증금액미리보기_00개인보증예상금액조회_00보증상품선택_01case1.html:102</li>
+<li>html/individual_expectations/03주택보증_01보증금액미리보기_00개인보증예상금액조회_00보증상품선택_01case1_00error.html:102</li>
+<li>html/individual_expectations/03주택보증_01보증금액미리보기_00개인보증예상금액조회_00보증상품선택_01case1_00error_00알림_00.html:102</li>
+<li>html/individual_expectations/03주택보증_01보증금액미리보기_00개인보증예상금액조회_00보증상품선택_01case1_00error_00알림_01.html:102</li>
+<li>html/individual_expectations/03주택보증_01보증금액미리보기_00개인보증예상금액조회_00보증상품선택_01case1_00error_00알림_02.html:102</li>
+</ul></details>
+<details><summary><code>refundAccount</code> — <b>4개 파일</b> / 4건</summary><ul class=files>
+<li>html/my_hf/06MyHF_04환급금찾기_00내환급금조회신청.html:136</li>
+<li>html/my_hf/06MyHF_04환급금찾기_01환급금신청결과조회.html:136</li>
+<li>html/my_hf/06MyHF_04환급금찾기_02상속인환급금조회_결과없음.html:136</li>
+<li>html/my_hf/06MyHF_04환급금찾기_02상속인환급금조회_결과있음.html:136</li>
+</ul></details>
+<details><summary><code>cAddr</code> — <b>3개 파일</b> / 3건</summary><ul class=files>
+<li>html/my_hf/06MyHF_05마이페이지_01My상담내역_01등록.html:91</li>
+<li>html/my_hf/06MyHF_05마이페이지_01My상담내역_01등록_알럿1.html:91</li>
+<li>html/my_hf/06MyHF_05마이페이지_01My상담내역_01등록_알럿2.html:91</li>
+</ul></details>
+<details><summary><code>chk_additionaN_N</code> — <b>1개 파일</b> / 10건</summary><ul class=files>
+<li>html/hf_charter_on/전세on신청_02신청_00정보제공동의_01정보입력항목_case1_20260907.html:113</li>
+</ul></details>
+<details><summary><code>agreePrivacyN</code> — <b>1개 파일</b> / 4건</summary><ul class=files>
+<li>html/annual_application/04주택연금_00주택연금신청_01신청_01정보제공동의_case1_20260907.html:104</li>
+</ul></details>
+<details><summary><code>spouseBirth</code> — <b>1개 파일</b> / 1건</summary><ul class=files>
+<li>html/annual_application/04주택연금_00주택연금신청_01신청_01정보제공동의_case1_20260907.html:250</li>
+</ul></details>
+<details><summary><code>heirCnt</code> — <b>1개 파일</b> / 1건</summary><ul class=files>
+<li>html/home/02주택담보대출_00대출신청_02내집마련디딤돌대출_04신용정보확인_채무인수사유가상속인경우_case1.html:202</li>
+</ul></details>
+<details><summary><code>agreeProduct</code> — <b>1개 파일</b> / 1건</summary><ul class=files>
+<li>html/annual_application/04주택연금_00주택연금신청_01신청_01정보제공동의_case1_20260907.html:172</li>
+</ul></details>
+</section>
+<section class=box><h2><span class='sev error'>error</span>R05 없는 js/css 참조<span class=cnt>233건 / 95개 파일 / 원인 16종</span></h2>
+<p class=why>참조한 파일이 실제로 없다. '동작 안 함' 피드백의 대표 원인이다.</p>
+<details><summary><code>resources/css/hf_loan_info.css</code> — <b>41개 파일</b> / 41건</summary><ul class=files>
+<li>html/my_hf/06MyHF_01이용상품조회_00주택담보대출조회_00대출신청조회_00신청정보확인.html:41</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_00보증신청내역.html:41</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_00보증신청내역_내역없음.html:41</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_01한도조회내역.html:41</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_01한도조회내역_상세.html:41</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_02보증내역보증료.html:41</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_02보증내역보증료_내역없음.html:41</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_02보증내역보증료_보증료조회.html:41</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증가입현황.html:41</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증가입현황_내역없음.html:41</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증이행현황_case1.html:41</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증이행현황_case2.html:41</li>
+<li>… 외 29개 파일 (--full 로 전체 보기)</li>
+</ul></details>
+<details><summary><code>resources/css/hf_loan_apply.css</code> — <b>41개 파일</b> / 41건</summary><ul class=files>
+<li>html/my_hf/06MyHF_01이용상품조회_00주택담보대출조회_00대출신청조회_00신청정보확인.html:40</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_00보증신청내역.html:40</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_00보증신청내역_내역없음.html:40</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_01한도조회내역.html:40</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_01한도조회내역_상세.html:40</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_02보증내역보증료.html:40</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_02보증내역보증료_내역없음.html:40</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_02보증내역보증료_보증료조회.html:40</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증가입현황.html:40</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증가입현황_내역없음.html:40</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증이행현황_case1.html:40</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증이행현황_case2.html:40</li>
+<li>… 외 29개 파일 (--full 로 전체 보기)</li>
+</ul></details>
+<details><summary><code>resources/css/hf_bojeung.css</code> — <b>41개 파일</b> / 41건</summary><ul class=files>
+<li>html/my_hf/06MyHF_01이용상품조회_00주택담보대출조회_00대출신청조회_00신청정보확인.html:42</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_00보증신청내역.html:42</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_00보증신청내역_내역없음.html:42</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_01한도조회내역.html:42</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_01한도조회내역_상세.html:42</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_02보증내역보증료.html:42</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_02보증내역보증료_내역없음.html:42</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_02보증내역보증료_보증료조회.html:42</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증가입현황.html:42</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증가입현황_내역없음.html:42</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증이행현황_case1.html:42</li>
+<li>html/my_hf/06MyHF_01이용상품조회_01주택보증조회_03전세지킴보증이행현황_case2.html:42</li>
+<li>… 외 29개 파일 (--full 로 전체 보기)</li>
+</ul></details>
+<details><summary><code>resources/css/pages/charter_on.css</code> — <b>20개 파일</b> / 20건</summary><ul class=files>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보.html:42</li>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보_00안내_잔금지급일.html:42</li>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보_00안내_전세계약자.html:42</li>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보_00안내_전자임대차계약체결여부.html:42</li>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보_등록완료.html:42</li>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_01임차주택정보.html:42</li>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_01임차주택정보_00안내_월임대료.html:42</li>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_01임차주택정보_00안내_임차보증금.html:42</li>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_01임차주택정보_00안내_임차주택전용면적.html:42</li>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_01임차주택정보_00안내_임차주택정보기입안내.html:42</li>
+<li>html/hf_charter_on/전세on신청_02신청_06신청정보확인.html:42</li>
+<li>html/hf_charter_on/전세on신청_02신청_06신청정보확인_진입알럿.html:42</li>
+<li>… 외 8개 파일 (--full 로 전체 보기)</li>
+</ul></details>
+<details><summary><code>resources/js/pages/charter_on.js</code> — <b>19개 파일</b> / 19건</summary><ul class=files>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보.html:311</li>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보_00안내_잔금지급일.html:295</li>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보_00안내_전세계약자.html:278</li>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보_00안내_전자임대차계약체결여부.html:311</li>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_00임대차계약정보_등록완료.html:185</li>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_01임차주택정보.html:480</li>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_01임차주택정보_00안내_월임대료.html:382</li>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_01임차주택정보_00안내_임차보증금.html:365</li>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_01임차주택정보_00안내_임차주택전용면적.html:398</li>
+<li>html/hf_charter_on/전세on신청_02신청_05임대차주택정보_01임차주택정보_00안내_임차주택정보기입안내.html:349</li>
+<li>html/hf_charter_on/전세on신청_02신청_06신청정보확인.html:378</li>
+<li>html/hf_charter_on/전세on신청_02신청_06신청정보확인_진입알럿.html:378</li>
+<li>… 외 7개 파일 (--full 로 전체 보기)</li>
+</ul></details>
+<details><summary><code>resources/css/hf_mypage.css</code> — <b>19개 파일</b> / 19건</summary><ul class=files>
+<li>html/my_hf/06MyHF_05마이페이지_00My정보관리.html:43</li>
+<li>html/my_hf/06MyHF_05마이페이지_00My정보관리_바텀시트1.html:43</li>
+<li>html/my_hf/06MyHF_05마이페이지_00My정보관리_바텀시트2.html:43</li>
+<li>html/my_hf/06MyHF_05마이페이지_00My정보관리_바텀시트3.html:43</li>
+<li>html/my_hf/06MyHF_05마이페이지_00My정보관리_알럿1.html:43</li>
+<li>html/my_hf/06MyHF_05마이페이지_00My정보관리_알럿2.html:43</li>
+<li>html/my_hf/06MyHF_05마이페이지_01My상담내역_00목록.html:43</li>
+<li>html/my_hf/06MyHF_05마이페이지_01My상담내역_00목록_필터.html:43</li>
+<li>html/my_hf/06MyHF_05마이페이지_01My상담내역_01등록.html:43</li>
+<li>html/my_hf/06MyHF_05마이페이지_01My상담내역_01등록_알럿1.html:43</li>
+<li>html/my_hf/06MyHF_05마이페이지_01My상담내역_01등록_알럿2.html:43</li>
+<li>html/my_hf/06MyHF_05마이페이지_01My상담내역_02상세.html:43</li>
+<li>… 외 7개 파일 (--full 로 전체 보기)</li>
+</ul></details>
+<details><summary><code>resources/css/ex/hf_doc_popup.css</code> — <b>11개 파일</b> / 11건</summary><ul class=files>
+<li>html/smart/05간편서류제출_01채무감면서류목록_02채무조정기타서류안내.html:25</li>
+<li>html/smart/05간편서류제출_공통_팝업_00개인정보제공동의.html:25</li>
+<li>html/smart/05간편서류제출_공통_팝업_01스마트서류제출.html:25</li>
+<li>html/smart/05간편서류제출_공통_팝업_02서류첨부방법선택.html:25</li>
+<li>html/smart/05간편서류제출_공통_팝업_02스크래핑서류제출.html:25</li>
+<li>html/smart/05간편서류제출_공통_팝업_03사업자정보확인.html:25</li>
+<li>html/smart/05간편서류제출_공통_팝업_04제출된서류확인.html:25</li>
+<li>html/smart/05간편서류제출_공통_팝업_05두개상품동시제출.html:25</li>
+<li>html/smart/05간편서류제출_공통_팝업_05두개상품동시제출_알럿.html:25</li>
+<li>html/smart/05간편서류제출_공통_팝업_06사업자등록증조회실패.html:25</li>
+<li>html/smart/05간편서류제출_공통_팝업_제출서류확인.html:25</li>
+</ul></details>
+<details><summary><code>resources/css/hf_yeongeum.css</code> — <b>10개 파일</b> / 10건</summary><ul class=files>
+<li>html/my_hf/06MyHF_01이용상품조회_02주택연금조회_00연금신청내역.html:43</li>
+<li>html/my_hf/06MyHF_01이용상품조회_02주택연금조회_00연금신청내역_내역없음.html:43</li>
+<li>html/my_hf/06MyHF_01이용상품조회_02주택연금조회_00연금신청내역_신청정보확인.html:43</li>
+<li>html/my_hf/06MyHF_01이용상품조회_02주택연금조회_00연금신청내역_임대동의신청_임대동의서확인.html:43</li>
+<li>html/my_hf/06MyHF_01이용상품조회_02주택연금조회_01신청정보안내사항확인.html:43</li>
+<li>html/my_hf/06MyHF_01이용상품조회_02주택연금조회_01신청정보안내사항확인_체크리스트보기.html:43</li>
+<li>html/my_hf/06MyHF_01이용상품조회_02주택연금조회_02연금정보조회.html:43</li>
+<li>html/my_hf/06MyHF_01이용상품조회_02주택연금조회_03연금재가입가능여부.html:43</li>
+<li>html/my_hf/06MyHF_01이용상품조회_02주택연금조회_03연금재가입가능여부_가입가능.html:43</li>
+<li>html/my_hf/06MyHF_01이용상품조회_02주택연금조회_03연금재가입가능여부_불가능.html:43</li>
+</ul></details>
+<details><summary><code>resources/js/pages/guarantee_death_procedure.js</code> — <b>8개 파일</b> / 8건</summary><ul class=files>
+<li>html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내.html:539</li>
+<li>html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_기타 유의사항.html:539</li>
+<li>html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_납부하셔야 할 세금_승계.html:539</li>
+<li>html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_신탁방식의 경우 유의사항.html:539</li>
+<li>html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_주택연금 승계(채무인수) 절차 (2).html:447</li>
+<li>html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_주택연금 승계(채무인수) 절차.html:447</li>
+<li>html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_주택연금 승계(채무인수) 절차_승계.html:539</li>
+<li>html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00저당권방식.html:539</li>
+</ul></details>
+<details><summary><code>resources/css/pages/guarantee_death_procedure.css</code> — <b>8개 파일</b> / 8건</summary><ul class=files>
+<li>html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내.html:43</li>
+<li>html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_기타 유의사항.html:43</li>
+<li>html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_납부하셔야 할 세금_승계.html:43</li>
+<li>html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_신탁방식의 경우 유의사항.html:43</li>
+<li>html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_주택연금 승계(채무인수) 절차 (2).html:43</li>
+<li>html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_주택연금 승계(채무인수) 절차.html:43</li>
+<li>html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00바텀시트_주택연금 승계(채무인수) 절차_승계.html:43</li>
+<li>html/additional_information/04주택연금_07주택연금추가안내_05가입고객사망후절차안내_00저당권방식.html:43</li>
+</ul></details>
+<details><summary><code>resources/js/hf_apply_confirm.js</code> — <b>4개 파일</b> / 4건</summary><ul class=files>
+<li>html/my_hf/06MyHF_01이용상품조회_00주택담보대출조회_01대출정보조회_신청내역및결과_신청정보확인.html:936</li>
+<li>html/my_hf/06MyHF_01이용상품조회_00주택담보대출조회_01대출정보조회_신청내역및결과_신청정보확인_case1.html:1244</li>
+<li>html/my_hf/06MyHF_01이용상품조회_00주택담보대출조회_01대출정보조회_신청내역및결과_신청정보확인_case2.html:1078</li>
+<li>html/my_hf/06MyHF_01이용상품조회_00주택담보대출조회_01대출정보조회_신청내역및결과_신청정보확인_case3.html:971</li>
+</ul></details>
+<details><summary><code>resources/css/pages/guarantee_add.css</code> — <b>4개 파일</b> / 4건</summary><ul class=files>
+<li>html/additional_information/04주택연금_08주택연금부가서비스_01법률세무상담서비스안내.html:43</li>
+<li>html/additional_information/04주택연금_08주택연금부가서비스_01법률세무상담서비스안내_00안내_아코디언오픈.html:43</li>
+<li>html/additional_information/04주택연금_08주택연금부가서비스_02다부짐프로그램신청안내.html:43</li>
+<li>html/additional_information/04주택연금_08주택연금부가서비스_02다부짐프로그램신청안내_00안내_아코디언오픈.html:43</li>
+</ul></details>
+<details><summary><code>resources/js/pages/guarantee_statistics.js</code> — <b>3개 파일</b> / 3건</summary><ul class=files>
+<li>html/additional_information/04주택연금_05주택연금가입통계.html:316</li>
+<li>html/additional_information/04주택연금_05주택연금가입통계_00바텀시트_지역 선택.html:316</li>
+<li>html/additional_information/04주택연금_05주택연금가입통계_안내.html:316</li>
+</ul></details>
+<details><summary><code>resources/css/pages/guarantee_health_service.css</code> — <b>2개 파일</b> / 2건</summary><ul class=files>
+<li>html/additional_information/04주택연금_08주택연금부가서비스_00건강검진서비스안내.html:43</li>
+<li>html/additional_information/04주택연금_08주택연금부가서비스_00건강검진서비스안내_00안내_외부사이트이동안내.html:43</li>
+</ul></details>
+<details><summary><code>resources/css/pages/pension_guide.css</code> — <b>1개 파일</b> / 1건</summary><ul class=files>
+<li>html/content/04주택연금_08주택연금맞춤안내.html:26</li>
+</ul></details>
+<details><summary><code>resources/css/pages/debt_deferral.css</code> — <b>1개 파일</b> / 1건</summary><ul class=files>
+<li>html/debt_adjustment/05채무조정_01원금상환유예신청_3단계_사유_다자녀.html:43</li>
+</ul></details>
+</section>
+<section class=box><h2><span class='sev warn'>warn</span>R09 div/span 에 type=button<span class=cnt>23건 / 16개 파일 / 원인 1종</span></h2>
+<p class=why>div 에는 type 속성이 없다. 오타이거나, 버튼이어야 할 것이 div 로 되어 있다.</p>
+<details><summary><code>&lt;div type=button&gt;</code> — <b>16개 파일</b> / 23건</summary><ul class=files>
+<li>html/assurance_transition/03주택보증_02보증이행청구_00보증이행청구절차_00.html:149</li>
+<li>html/assurance_transition/03주택보증_02보증이행청구_00보증이행청구절차_01일반전세지킴보증약관유의사항.html:149</li>
+<li>html/assurance_transition/03주택보증_02보증이행청구_00보증이행청구절차_02임대차보증금청구방법및서식.html:149</li>
+<li>html/assurance_transition/03주택보증_02보증이행청구_00보증이행청구절차_03온라인이행청구시스템이용매뉴얼.html:149</li>
+<li>html/assurance_transition/03주택보증_02보증이행청구_00보증이행청구절차_04안내_이행청구요건자가진단.html:149</li>
+<li>html/assurance_transition/03주택보증_02보증이행청구_00보증이행청구절차_04안내_이행청구절차안내.html:149</li>
+<li>html/assurance_transition/03주택보증_02보증이행청구_00보증이행청구절차_04안내_주요용어설명.html:149</li>
+<li>html/assurance_transition/03주택보증_02보증이행청구_00이행청구자가진단_00.html:65</li>
+<li>html/assurance_transition/03주택보증_02보증이행청구_01이행청구자가진단_00_00안내_절차.html:65</li>
+<li>html/individual_expectations/03주택보증_01보증금액미리보기_01전세지킴보증_00case1_00가입가능.html:75</li>
+<li>html/individual_expectations/03주택보증_01보증금액미리보기_01전세지킴보증_00case1_01불가능.html:78</li>
+<li>html/individual_expectations/03주택보증_01보증금액미리보기_01전세지킴보증_00조회.html:70</li>
+<li>… 외 4개 파일 (--full 로 전체 보기)</li>
+</ul></details>
+</section>
+<section class=box><h2><span class='sev warn'>warn</span>R10 팝업 type2~5 충돌<span class=cnt>5건 / 2개 파일 / 원인 4종</span></h2>
+<p class=why>footer.html 이 com_pop_wrap type2~5 를 선점한다. 새 팝업은 type11 부터 쓴다.</p>
+<details><summary><code>type2</code> — <b>2개 파일</b> / 2건</summary><ul class=files>
+<li>html/certificate_center/simple_number.html:120</li>
+<li>html/inc/footer.html:127</li>
+</ul></details>
+<details><summary><code>type5</code> — <b>1개 파일</b> / 1건</summary><ul class=files>
+<li>html/inc/footer.html:577</li>
+</ul></details>
+<details><summary><code>type4</code> — <b>1개 파일</b> / 1건</summary><ul class=files>
+<li>html/inc/footer.html:420</li>
+</ul></details>
+<details><summary><code>type3</code> — <b>1개 파일</b> / 1건</summary><ul class=files>
+<li>html/inc/footer.html:266</li>
+</ul></details>
+</section>
+<section class=box><h2><span class='sev warn'>warn</span>R14 보정 안 되는 고정 버튼<span class=cnt>2건 / 2개 파일 / 원인 1종</span></h2>
+<p class=why>.btn_cont.page.fixed.direction 은 부모가 .container_in 이 아니라 전역 하단 여백 규칙이 걸리지 않는다.</p>
+<details><summary><code>fixed direction</code> — <b>2개 파일</b> / 2건</summary><ul class=files>
+<li>html/my_hf/06MyHF_01이용상품조회_02주택연금조회_01신청정보안내사항확인.html:93</li>
+<li>html/my_hf/06MyHF_01이용상품조회_02주택연금조회_01신청정보안내사항확인_체크리스트보기.html:93</li>
+</ul></details>
+</section>
+<section class=box><h2><span class='sev warn'>warn</span>R11 닫기 수단 없는 팝업<span class=cnt>1건 / 1개 파일 / 원인 1종</span></h2>
+<p class=why>.close / .end / [data-close-pop] 이 하나도 없어 사용자가 팝업을 닫을 수 없다.</p>
+<details><summary><code>닫기 수단 없음</code> — <b>1개 파일</b> / 1건</summary><ul class=files>
+<li>html/ai_service/002주택담보대출_00대출신청_00상품추천서비스_00정보제공동의_00스마트서류제출_진행상황.html:221</li>
+</ul></details>
+</section>
+<section class=box><h2><span class='sev info'>info</span>백로그 · 가이드 미수록 클래스<span class=cnt>1295종</span></h2>
+<p class=why>사용 빈도 순. 위에서부터 mobile_guide.html 에 채우면 커버리지가 빨리 오른다.</p><table><tr><th>클래스</th><th>사용</th></tr>
+<tr><td class=f>container_in</td><td class=d>1274개 파일</td></tr>
+<tr><td class=f>down</td><td class=d>289개 파일</td></tr>
+<tr><td class=f>cont_line</td><td class=d>282개 파일</td></tr>
+<tr><td class=f>form-text</td><td class=d>235개 파일</td></tr>
+<tr><td class=f>sub_txt</td><td class=d>198개 파일</td></tr>
+<tr><td class=f>page2</td><td class=d>198개 파일</td></tr>
+<tr><td class=f>btn</td><td class=d>153개 파일</td></tr>
+<tr><td class=f>primary</td><td class=d>133개 파일</td></tr>
+<tr><td class=f>sub_tit</td><td class=d>132개 파일</td></tr>
+<tr><td class=f>textarea-wrap</td><td class=d>100개 파일</td></tr>
+<tr><td class=f>com_sub</td><td class=d>89개 파일</td></tr>
+<tr><td class=f>between</td><td class=d>85개 파일</td></tr>
+<tr><td class=f>table_cont</td><td class=d>83개 파일</td></tr>
+<tr><td class=f>obj</td><td class=d>83개 파일</td></tr>
+<tr><td class=f>tooltip</td><td class=d>78개 파일</td></tr>
+<tr><td class=f>full2</td><td class=d>76개 파일</td></tr>
+<tr><td class=f>dot</td><td class=d>75개 파일</td></tr>
+<tr><td class=f>prev</td><td class=d>74개 파일</td></tr>
+<tr><td class=f>next</td><td class=d>74개 파일</td></tr>
+<tr><td class=f>textarea-count</td><td class=d>73개 파일</td></tr>
+<tr><td class=f>text-point-primary</td><td class=d>73개 파일</td></tr>
+<tr><td class=f>text-num</td><td class=d>73개 파일</td></tr>
+<tr><td class=f>large</td><td class=d>72개 파일</td></tr>
+<tr><td class=f>bottom</td><td class=d>72개 파일</td></tr>
+<tr><td class=f>year</td><td class=d>71개 파일</td></tr>
+<tr><td class=f>submit_cont</td><td class=d>71개 파일</td></tr>
+<tr><td class=f>sel</td><td class=d>71개 파일</td></tr>
+<tr><td class=f>month</td><td class=d>71개 파일</td></tr>
+<tr><td class=f>ico-sch</td><td class=d>71개 파일</td></tr>
+<tr><td class=f>ico-checkbox6</td><td class=d>71개 파일</td></tr>
+<tr><td class=f>calendar-year-wrap</td><td class=d>71개 파일</td></tr>
+<tr><td class=f>calendar-tbl</td><td class=d>71개 파일</td></tr>
+<tr><td class=f>calendar-table-wrap</td><td class=d>71개 파일</td></tr>
+<tr><td class=f>calendar-switch-wrap</td><td class=d>71개 파일</td></tr>
+<tr><td class=f>calendar-select</td><td class=d>71개 파일</td></tr>
+<tr><td class=f>calendar-mon-wrap</td><td class=d>71개 파일</td></tr>
+<tr><td class=f>calendar-head</td><td class=d>71개 파일</td></tr>
+<tr><td class=f>calendar-drop-down</td><td class=d>71개 파일</td></tr>
+<tr><td class=f>calendar-body</td><td class=d>71개 파일</td></tr>
+<tr><td class=f>btn-cal-switch</td><td class=d>71개 파일</td></tr>
+<tr><td class=f>btn-cal-move</td><td class=d>71개 파일</td></tr>
+<tr><td class=f>today</td><td class=d>70개 파일</td></tr>
+<tr><td class=f>single</td><td class=d>70개 파일</td></tr>
+<tr><td class=f>old</td><td class=d>70개 파일</td></tr>
+<tr><td class=f>new</td><td class=d>70개 파일</td></tr>
+<tr><td class=f>day-off</td><td class=d>70개 파일</td></tr>
+<tr><td class=f>btn-set-date</td><td class=d>70개 파일</td></tr>
+<tr><td class=f>none_height</td><td class=d>67개 파일</td></tr>
+<tr><td class=f>yes</td><td class=d>63개 파일</td></tr>
+<tr><td class=f>up</td><td class=d>63개 파일</td></tr>
+<tr><td class=f>txt-box</td><td class=d>63개 파일</td></tr>
+<tr><td class=f>form-qu</td><td class=d>63개 파일</td></tr>
+<tr><td class=f>bg-gray</td><td class=d>63개 파일</td></tr>
+<tr><td class=f>assess-question-wrap</td><td class=d>63개 파일</td></tr>
+<tr><td class=f>assess-opinion-wrap</td><td class=d>63개 파일</td></tr>
+<tr><td class=f>assess-opinion-list</td><td class=d>63개 파일</td></tr>
+<tr><td class=f>assess-an</td><td class=d>63개 파일</td></tr>
+<tr><td class=f>padding-right</td><td class=d>62개 파일</td></tr>
+<tr><td class=f>form-sub</td><td class=d>60개 파일</td></tr>
+<tr><td class=f>com_list_bg_cont</td><td class=d>60개 파일</td></tr>
+</table></section>
+</div></body></html>

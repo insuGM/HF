@@ -1,0 +1,2069 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko">
+    <meta property="og:site_name" content="한국주택금융공사">
+    <meta property="og:updated_time" content="">
+    <meta name="twitter:card" content="summary">
+    <title>한국주택금융공사</title>
+    
+    <!-- CSS 파일들 -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+
+    <!-- JavaScript 파일들 -->
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+    
+    <!-- !추가부분 -->
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+
+    <!--// !추가부분 -->
+</head>
+<body>
+
+<div class="wrapper sub" id="app">
+    <div data-include="../inc/header.html"></div>
+
+    <div id="container"> 
+        <div class="container_in">
+
+            <div class="contents com_sub">
+
+                <div class="main_tit_area">
+                    <div class="title">예상대출금액 조회</div>
+                    <div class="support_btn">
+                        <div class="text">
+                            유의사항 안내
+                            <button type="button" class="tip_btn" data-pop="com_pop11" title="유의사항 안내 팝업 열기"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="com_info_inp_list_cont">
+                    <ul class="list">
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont">
+                                            <div class="form-tit">
+                                                <label for="consult_name">상품유형</label>
+                                                <div class="point">*</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-conts">
+                                            <div class="chip-wrap cunt auto">
+                                                <div class="krds-form-chip type1">
+                                                    <input type="radio" name="rdo_1" id="rdo_1-1" checked class="radio">
+                                                    <label for="rdo_1-1">u-보금자리론</label>
+                                                </div>
+                                                <div class="krds-form-chip type1">
+                                                    <input type="radio" name="rdo_1" id="rdo_1-2" class="radio">
+                                                    <label for="rdo_1-2">아낌e-보금자리론</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont type1">
+                                            <div class="form-tit">
+                                                <label for="consult_name">대출신청금액</label>
+                                                <div class="point">*</div>
+                                            </div>
+                                            <button type="button" data-pop="com_pop44" class="link_btn">보금자리론 단위</button>
+                                        </div>
+                                        <div class="form-conts is-error">
+                                            <div class="form-text">
+                                                <div class="text">
+                                                    <div class="num">영</div>
+                                                    <div class="txt">백만원</div>
+                                                </div>
+                                            </div>
+                                            <div class="form-inp">
+                                                <input type="text" id="consult_name" class="krds-input" placeholder="0"  title="대출신청금액을 입력해 주세요.">
+                                                <div class="txt">백만원</div>
+                                            </div>
+                                            <!--
+                                            <p class="form-hint-invalid">에러 메시지</p>
+                                            <p class="form-hint-success">성공 메시지</p>
+                                            <p class="form-hint-information">정보 메시지</p>
+                                            -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont type1">
+                                            <div class="form-tit">
+                                                <label for="consult_name_2">연소득금액(부부합산 기준)</label>
+                                                <div class="point">*</div>
+                                            </div>
+                                            <button type="button" data-pop="com_pop45" class="link_btn">소득심사 기준</button>
+                                        </div>
+                                        <div class="form-conts is-error">
+                                            <div class="form-text">
+                                                <div class="text">
+                                                    <div class="num">영</div>
+                                                    <div class="txt">원</div>
+                                                </div>
+                                            </div>
+                                            <div class="form-inp">
+                                                <input type="text" id="consult_name_2" class="krds-input padding-right" placeholder="0"  title="연소득금액(부부합산 기준)을 입력해 주세요.">
+                                                <div class="txt">원</div>
+                                            </div>
+                                            <p class="form-hint-invalid">에러 메시지</p>
+                                            <p class="form-hint-success">성공 메시지</p>
+                                            <p class="form-hint-information">정보 메시지</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont">
+                                            <div class="form-tit">
+                                                <label for="consult_name_2">만 19세 미만 자녀수</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-conts is-error">
+                                            <button type="button" data-pop="com_pop4" class="slt_btn krds-slt-btn">없음</button>
+                                            <p class="form-hint-invalid">에러 메시지</p>
+                                            <p class="form-hint-success">성공 메시지</p>
+                                            <p class="form-hint-information">정보 메시지</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont">
+                                            <div class="form-tit">
+                                                <label for="consult_name_2">신혼부부</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-conts">
+                                            <div class="chip-wrap cunt auto">
+                                                <div class="krds-form-chip type1">
+                                                    <input type="radio" name="rdo_2" id="rdo_1-3" checked class="radio">
+                                                    <label for="rdo_1-3">아니오</label>
+                                                </div>
+                                                <div class="krds-form-chip type1">
+                                                    <input type="radio" name="rdo_2" id="rdo_1-4" class="radio">
+                                                    <label for="rdo_1-4">예</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont type1">
+                                            <div class="form-tit">
+                                                <label for="consult_name_2">상환방법</label>
+                                                <div class="point">*</div>
+                                            </div>
+                                            <button type="button" data-pop="com_pop46" class="link_btn">대출용어 도움말</button>
+                                        </div>
+                                        <div class="form-conts is-error">
+                                            <button type="button" data-pop="com_pop6" class="slt_btn krds-slt-btn">전체</button>
+                                            <p class="form-hint-invalid">에러 메시지</p>
+                                            <p class="form-hint-success">성공 메시지</p>
+                                            <p class="form-hint-information">정보 메시지</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont type1">
+                                            <div class="form-tit">
+                                                <label for="consult_name_2">대출기간</label>
+                                                <div class="point">*</div>
+                                            </div>
+                                            <button type="button" data-pop="com_pop7" class="link_btn">초장기 모기지 요건</button>
+                                        </div>
+                                        <div class="form-conts is-error">
+                                            <button type="button" data-pop="com_pop8" class="slt_btn krds-slt-btn">전체</button>
+                                            <p class="form-hint-invalid">에러 메시지</p>
+                                            <p class="form-hint-success">성공 메시지</p>
+                                            <p class="form-hint-information">정보 메시지</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont type1">
+                                            <div class="form-tit">
+                                                <label for="consult_name_3">규제지역(조정대상지역, 투기지역, 투기과열지구) 여부확인</label>
+                                                <div class="point">*</div>
+                                            </div>
+                                            <button type="button" data-pop="com_pop9" class="link_btn">규제지역 예외조건</button>
+                                        </div>
+                                        <div class="form-conts">
+                                            <div class="chip-wrap cunt auto">
+                                                <div class="krds-form-chip type1">
+                                                    <input type="radio" name="rdo_3" id="rdo_1-5" checked class="radio">
+                                                    <label for="rdo_1-5">아니오</label>
+                                                </div>
+                                                <div class="krds-form-chip type1">
+                                                    <input type="radio" name="rdo_3" id="rdo_1-6" class="radio">
+                                                    <label for="rdo_1-6">예</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont type1">
+                                            <div class="form-tit">
+                                                <label for="consult_name_3">6.27 규제예외 여부</label>
+                                                <div class="point">*</div>
+                                            </div>
+                                            <button type="button" data-pop="com_pop10" class="link_btn">LTV 조정 예외조건</button>
+                                        </div>
+                                        <div class="form-conts">
+                                            <div class="chip-wrap cunt auto">
+                                                <div class="krds-form-chip type1">
+                                                    <input type="radio" name="rdo_4" id="rdo_1-5_2" checked class="radio">
+                                                    <label for="rdo_1-5_2">아니오</label>
+                                                </div>
+                                                <div class="krds-form-chip type1">
+                                                    <input type="radio" name="rdo_4" id="rdo_1-6_2" class="radio">
+                                                    <label for="rdo_1-6_2">예</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont type1">
+                                            <div class="form-tit">
+                                                <label for="consult_name_3">주택가격</label>
+                                                <div class="point">*</div>
+                                            </div>
+                                            <button type="button" data-pop="com_pop16" class="link_btn">담보주택 가격요건</button>
+                                            <button type="button" data-pop="com_pop12" class="btn">시세검색</button>
+                                        </div>
+                                        <div class="form-conts is-error">
+                                            <div class="form-text">
+                                                <div class="text">
+                                                    <div class="num">영</div>
+                                                    <div class="txt">원</div>
+                                                </div>
+                                            </div>
+                                            <div class="form-inp">
+                                                <input type="text" id="consult_name_3" class="krds-input padding-right" placeholder="0" title="주택가격을 입력해 주세요.">
+                                                <div class="txt">원</div>
+                                            </div>
+                                            <p class="form-hint-invalid">에러 메시지</p>
+                                            <p class="form-hint-success">성공 메시지</p>
+                                            <p class="form-hint-information">정보 메시지</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont">
+                                            <div class="form-tit">
+                                                <label for="consult_name_3">최저층여부</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-conts">
+                                            <div class="chip-wrap cunt auto">
+                                                <div class="krds-form-chip type1">
+                                                    <input type="radio" name="rdo_5" id="rdo_1-7" checked class="radio">
+                                                    <label for="rdo_1-7">아니오</label>
+                                                </div>
+                                                <div class="krds-form-chip type1">
+                                                    <input type="radio" name="rdo_5" id="rdo_1-8" class="radio">
+                                                    <label for="rdo_1-8">예</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont">
+                                            <div class="form-tit">
+                                                <label for="consult_name_4">주택유형</label>
+                                                <div class="point">*</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-conts is-error">
+                                            <button type="button" data-pop="com_pop16" class="slt_btn krds-slt-btn">전체</button>
+                                            <p class="form-hint-invalid">에러 메시지</p>
+                                            <p class="form-hint-success">성공 메시지</p>
+                                            <p class="form-hint-information">정보 메시지</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont">
+                                            <div class="form-tit">
+                                                <label for="consult_name_4">소액임차 보증금</label>
+                                            </div>
+                                            <button type="button" class="btn">조회</button>
+                                        </div>
+                                        <div class="form-conts is-error">
+                                            <div class="form-text">
+                                                <div class="text">
+                                                    <div class="num">영</div>
+                                                    <div class="txt">원</div>
+                                                </div>
+                                            </div>
+                                            <div class="form-inp">
+                                                <input type="text" id="consult_name_4" class="krds-input padding-right" placeholder="0" title="소액임차 보증금을 입력해 주세요.">
+                                                <div class="txt">원</div>
+                                            </div>
+                                            <p class="form-hint-invalid">에러 메시지</p>
+                                            <p class="form-hint-success">성공 메시지</p>
+                                            <p class="form-hint-information">정보 메시지</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont type1">
+                                            <div class="form-tit">
+                                                <label for="consult_name_4">수도권여부 (서울특별시 · 인천광역시 · 경기도)</label>
+                                            </div>
+                                            <button type="button" data-pop="com_pop19" class="link_btn">소득임차보증금 공제</button>
+                                        </div>
+                                        <div class="form-conts is-error">
+                                            <div class="chip-wrap cunt auto">
+                                                <div class="krds-form-chip type1">
+                                                    <input type="radio" name="rdo_6" id="rdo_1-9" checked class="radio">
+                                                    <label for="rdo_1-9">아니오</label>
+                                                </div>
+                                                <div class="krds-form-chip type1">
+                                                    <input type="radio" name="rdo_6" id="rdo_1-10" class="radio">
+                                                    <label for="rdo_1-10">예</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont type1">
+                                            <div class="form-tit">
+                                                <label for="consult_name_5">임대방수</label>
+                                            </div>
+                                            <button type="button" data-pop="com_pop46" class="link_btn">대출용어 도움말</button>
+                                        </div>
+                                        <div class="form-conts is-error">
+                                            <div class="form-inp">
+                                                <input type="text" id="consult_name_5" class="krds-input padding-right" placeholder="0" title="임대방수를 입력해 주세요.">
+                                                <div class="txt">개</div>
+                                            </div>
+                                            <p class="form-hint-invalid">에러 메시지</p>
+                                            <p class="form-hint-success">성공 메시지</p>
+                                            <p class="form-hint-information">정보 메시지</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont type1">
+                                            <div class="form-tit">
+                                                <label for="consult_name_6">총방수</label>
+                                            </div>
+                                            <button type="button" data-pop="com_pop20" class="link_btn">임대차 없음 처리</button>
+                                        </div>
+                                        <div class="form-conts is-error">
+                                            <div class="form-inp">
+                                                <input type="text" id="consult_name_6" class="krds-input padding-right" placeholder="0" title="총방수를 입력해 주세요.">
+                                                <div class="txt">개</div>
+                                            </div>
+                                            <p class="form-hint-invalid">에러 메시지</p>
+                                            <p class="form-hint-success">성공 메시지</p>
+                                            <p class="form-hint-information">정보 메시지</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont">
+                                            <div class="form-tit">
+                                                <label for="consult_name_7">임대보증금 합계액</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-conts is-error">
+                                            <div class="form-inp">
+                                                <input type="text" id="consult_name_7" class="krds-input padding-right" placeholder="0" title="임대보증금 합계액을 입력해 주세요.">
+                                                <div class="txt">원</div>
+                                            </div>
+                                            <p class="form-hint-invalid">에러 메시지</p>
+                                            <p class="form-hint-success">성공 메시지</p>
+                                            <p class="form-hint-information">정보 메시지</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont type1">
+                                            <div class="form-tit">
+                                                <label for="consult_name_8">기타부채금액</label>
+                                            </div>
+                                            <button type="button" data-pop="com_pop21" class="link_btn">기타대출금액 입력</button>
+                                        </div>
+                                        <div class="form-conts is-error">
+                                            <div class="form-inp">
+                                                <input type="text" id="consult_name_8" class="krds-input padding-right" placeholder="0" title="기타부채금액을 입력해 주세요.">
+                                                <div class="txt">원</div>
+                                            </div>
+                                            <p class="form-hint-invalid">에러 메시지</p>
+                                            <p class="form-hint-success">성공 메시지</p>
+                                            <p class="form-hint-information">정보 메시지</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont type1">
+                                            <div class="form-tit">
+                                                <label for="consult_name_8">생애최초 여부</label>
+                                                <div class="point">*</div>
+                                            </div>
+                                            <button type="button" data-pop="com_pop22" class="link_btn">구입용도 임대차 제한</button>
+                                        </div>
+                                        <div class="form-conts">
+                                            <div class="chip-wrap cunt auto">
+                                                <div class="krds-form-chip type1">
+                                                    <input type="radio" name="rdo_7" id="rdo_1-11" checked="" class="radio">
+                                                    <label for="rdo_1-11">아니오</label>
+                                                </div>
+                                                <div class="krds-form-chip type1">
+                                                    <input type="radio" name="rdo_7" id="rdo_1-12" class="radio">
+                                                    <label for="rdo_1-12">예</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont type1">
+                                            <div class="form-tit">
+                                                <label for="consult_name_9">구입자금보증 이용 여부</label>
+                                                <div class="point">*</div>
+                                            </div>
+                                            <button type="button" data-pop="com_pop23" class="link_btn">구입자금보증 LTV적용</button>
+                                        </div>
+                                        <div class="form-conts">
+                                            <div class="chip-wrap cunt auto">
+                                                <div class="krds-form-chip type1">
+                                                    <input type="radio" name="rdo_8" id="rdo_1-13" checked="" class="radio">
+                                                    <label for="rdo_1-13">아니오</label>
+                                                </div>
+                                                <div class="krds-form-chip type1">
+                                                    <input type="radio" name="rdo_8" id="rdo_1-14" class="radio">
+                                                    <label for="rdo_1-14">예</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont type1">
+                                            <div class="form-tit">
+                                                <label for="consult_name_9">우대금리 계산하기</label>
+                                            </div>
+                                            <button type="button" data-pop="com_pop24" class="link_btn">우대금리 중복적용</button>
+                                            <button type="button" data-pop="com_pop25" class="btn">우대금리</button>
+                                        </div>
+                                        <div class="form-conts is-error">
+                                            <div class="form-inp">
+                                                <input type="text" id="consult_name_9" class="krds-input padding-right" placeholder="0" title="우대금리를 입력해 주세요." disabled>
+                                                <div class="txt">%p</div>
+                                            </div>
+                                            <p class="form-hint-invalid">에러 메시지</p>
+                                            <p class="form-hint-success">성공 메시지</p>
+                                            <p class="form-hint-information">정보 메시지</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group">
+                                        <div class="form-tit-cont">
+                                            <div class="form-tit">
+                                                <label>가산금리</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-tit-cont type1">
+                                            <div class="form-tit">
+                                                <label>규제지역</label>
+                                            </div>
+                                            <button type="button" data-pop="com_pop27" class="link_btn">규제지역 가산금리</button>
+                                            <div class="text">0.1%p</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="btn_cont page sub2">
+                    <!--<button type="button" class="com_btn" disabled>조회</button>-->
+                    <button type="button" data-pop="com_pop26" class="com_btn blue">조회(팝업용)</button>
+                </div>
+
+            </div>
+            <!-- //sub_con -->
+        </div> <!-- //container_in -->
+    </div>
+
+    <div data-include="../inc/footer.html"></div>
+            <!-- 보금자리론 단위 -->
+            <div class="com_pop_wrap type44">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">보금자리론 단위</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>보금자리론은 1백만원 단위로 취급</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //보금자리론 단위 -->
+
+            <!-- 소득심사 기준 -->
+            <div class="com_pop_wrap type45">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">소득심사 기준</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>대출심사 시에는 최근 2개년 소득을 기초로 소득 심사 (과세 전 기준)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //소득심사 기준 -->
+
+            <!-- 규제지역 예외조건 -->
+            <div class="com_pop_wrap type9">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">규제지역 예외조건</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list importance">
+                            <li>다음중 하나에 해당될 경우 '아니오' 체크</li>
+                        </ul>
+                        <ul class="krds-info-list decimal">
+                            <li>실수요자 요건 충족할 경우(구입용도, 무주택, 주택 가격 6억 이하, 부부합산 연소득 7천만원 이하 모두 충족)</li>
+                            <li>강남, 서초, 송파, 용산을 제외한 지역이며 아래 중 1가지 충족할 경우</li>
+                            <li>'25.10.16 전 입주자모집 공고(착공신고, 관리처분인가)된 경우</li>
+                            <li>'25.10.16 전 매매계약 체결및 계약금 납부가 완료된 경우(분양권 거래의 경우 전매신고일)</li>
+                            <li>생애최초 주택구입자이거나 전세사기피해자</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //규제지역 예외조건 -->
+
+            <!-- LTV 조정 예외조건 -->
+            <div class="com_pop_wrap type10">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">LTV 조정 예외조건</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="text">&#39;아니오&#39; 체크시 생애최초 보금자리론 LTV 80% &#8594; 70%로 조정됩니다.<br>아래 사항 중 한가지에 해당될 경우 &#39;예&#39; 체크바랍니다.</div>
+                        <ul class="krds-info-list decimal">
+                            <li>비수도권이면서 비규제지역</li>
+                            <li>상환용도, 보전용도</li>
+                            <li>'25.6.28 전 매매계약 및 계약금 이체 완료된 경우</li>
+                            <li>입주자모집공고일이 '25.6.28 전인 수분양자인 경우</li>
+                            <li>분양권 전매신고일이 '25.6.28 전인 전매권자인 경우</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //LTV 조정 예외조건 -->
+
+            <!-- 초장기 모기지 요건 -->
+            <div class="com_pop_wrap type7">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">초장기 모기지 요건</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>초장기 모기지론은 언제 선택 가능한가요?
+                                <ul class="krds-info-list dash">
+                                    <li>40년, 50년 만기는 신청일 현재 채무자가 아래의 요건을 충족하는 경우 취급 가능
+                                        <ul class="krds-info-list ordered">
+                                            <li><span class="num">1)</span> 대출 만기가 40년일 경우 : 만 40세 미만(신혼가구인 경우 만 50세 미만)</li>
+                                            <li><span class="num">2)</span> 대출 만기가 50년일 경우 : 만 35세 미만(신혼가구인 경우 만 40세 미만)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //초장기 모기지 요건 -->
+
+            <!-- 담보주택 가격요건 -->
+            <div class="com_pop_wrap type16">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">담보주택 가격요건</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>대출승인일 현재 담보주택의 평가액이 6억원을 초과하는 주택은 취급불가</li>
+                            <li>구입용도인 경우 시세, 감정평가액, 매매가액(낙찰가, 분양계약서 상 실매매액 등 고객이 실제로 지급한 금액) 중 어느 하나라도 6억원 초과하는 주택 제외</li>
+                            <li>담보물 소재지가 투기지역 및 수도권 투기과열지구일 경우, 일정 요건을 충족하는 신규입주아파트라도 담보주택 평가액으로 '분양가액' 적용 불가</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //담보주택 가격요건 -->
+
+            <!-- 소득임차보증금 공제 -->
+            <div class="com_pop_wrap type19">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">소득임차보증금 공제</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>저가 단독주택(수도권 3억 이하, 비수도권 2.5억 이하)에 해당하는 경우, 소액임차보증금 공제 시 임대차 없는 방수가 3개 이하인 경우 1개 공제, 4개 이상인 경우 2개를 공제합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //소득임차보증금 공제 -->
+
+            <!-- 임대차 없음 처리 -->
+            <div class="com_pop_wrap type20">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">임대차 없음 처리</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>텍스트 목록 레벨3</li>
+                        </ul>
+                        <div class="btn_cont direction">
+                            <button type="button" class="com_btn blue2">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //임대차 없음 처리 -->
+
+            <!-- 기타대출금액 입력 -->
+            <div class="com_pop_wrap type21">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">기타대출금액 입력</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>텍스트 목록 레벨3</li>
+                        </ul>
+                        <div class="btn_cont direction">
+                            <button type="button" class="com_btn blue2">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //기타대출금액 입력 -->
+
+            <!-- 구입용도 임대차 제한 -->
+            <div class="com_pop_wrap type22">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">구입용도 임대차 제한</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>텍스트 목록 레벨3</li>
+                        </ul>
+                        <div class="btn_cont direction">
+                            <button type="button" class="com_btn blue2">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //구입용도 임대차 제한 -->
+
+            <!-- 구입자금보증 LTV적용 -->
+            <div class="com_pop_wrap type23">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">구입자금보증 LTV적용</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>담보주택이 단독주택 또는 연립/다세대 주택인 경우 소액임차보증금을 차감적용하여 대출한도를 계산합니다.</li>
+                            <li>이 때 구입자금보증을 이용하면 소액임차보증금을 공제하지 않고 LTV 한도까지 대출이 가능합니다.</li>
+                            <li>(단, 구입자금보증 대상요건을 충족하는 경우에 한해 이용 가능합니다.)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //구입자금보증 LTV적용 -->
+
+            <!-- 우대금리 중복적용 -->
+            <div class="com_pop_wrap type24">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">우대금리 중복적용</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>최대 1.0%p를 한도로 중복적용 가능. '전자약정 및 전자등기' 우대금리는 추가로 중복적용 가능</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //우대금리 중복적용 -->
+
+            <!-- 저소득청년 우대요건 -->
+            <div class="com_pop_wrap type36">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">저소득청년 우대요건</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>대출 신청일 기준 소득요건 부부합산 연소득 7천만원 이하</li>
+                            <li>대출 신청일 기준 연령 만 40세 미만</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //저소득청년 우대요건 -->
+
+            <!-- 신혼가구 소득·혼인요건 -->
+            <div class="com_pop_wrap type28">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">신혼가구 소득·혼인요건</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>대출 신청일 기준 부부합산 연소득 7천만원 이하(우대금리 : 7천만원 이하, 대출신청 : 8,500만원 이하)</li>
+                            <li>대출 신청일 기준 혼인관계증명서상 혼인신고일이 신청일로부터 7년 이내인 가구(결혼예정 가구 포함)</li>
+                        </ul>
+                        <ul class="krds-info-list importance">
+                            <li>배우자가 외국인인 경우 외국인등록 필수</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //신혼가구 소득·혼인요건 -->
+
+            <!-- 출산가구 우대요건 -->
+            <div class="com_pop_wrap type29">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">출산가구 우대요건</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>대출 신청일 기준 부부합산 연소득 7천만원 이하</li>
+                            <li>대출신청일 기준 2년 내에 출산한 가구</li>
+                            <li>신혼가구 우대금리와 중복적용 불가</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //출산가구 우대요건 -->
+
+            <!-- 다자녀 가구요건 -->
+            <div class="com_pop_wrap type30">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">다자녀 가구요건</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>대출 신청일 기준 신청인(배우자)의 만 19세 미만 자녀가 2인(세대 분리된 자녀 포함)인 가구</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //다자녀 가구요건 -->
+
+            <!-- 3자녀 이상 요건 -->
+            <div class="com_pop_wrap type31">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">3자녀 이상 요건</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>대출 신청일 기준 신청인(배우자)의 만 19세 미만 자녀가 3인 이상(세대 분리된 자녀 포함)인 가구</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //3자녀 이상 요건 -->
+
+            <!-- 사회적 배려층 우대요건 -->
+            <div class="com_pop_wrap type32">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">사회적 배려층 우대요건</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>대출 신청일 기준 부부합산 연소득 7천만원 이하 및 개별 요건을 충족하는 경우 적용</li>
+                            <li>최대 2가지 항목 적용 가능</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //사회적 배려층 우대요건 -->
+
+            <!-- 미분양아파트 우대요건 -->
+            <div class="com_pop_wrap type33">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">미분양아파트 우대요건</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>부부합산 연소득 7천만원 이하</li>
+                            <li>구입용도</li>
+                            <li>신청일 현재 무주택자</li>
+                            <li>최초 수분양자</li>
+                            <li>신청일 현재 서울특별시·인천광역시·경기도를 제외한 미분양관리지역에 소재하는 미분양 아파트</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //미분양아파트 우대요건 -->
+
+            <!-- 녹색·제로에너지 인증요건 -->
+            <div class="com_pop_wrap type34">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">녹색·제로에너지 인증요건</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="text">아래 &#9312; 또는 &#9313;에 해당할 경우</div>
+                        <ul class="krds-info-list no_bullet">
+                            <li>&#9312; 대출신청일 현재 지정된 인증기관<span class="point">*</span>에서 &#65378;녹색건축 예비인증서&#65379; 또는 &#65378;녹색건축 인증서&#65379;를 받고 녹색건축인증등급이 2등급인 이상인 경우
+                                <ul class="krds-info-list star">
+                                    <li>녹색건축인증제G-SEED통합운영시스템(<a href="https://www.gseed.or.kr" class="link_btn2" target="_blank">www.gseed.or.kr</a>)에서 인증기관 확인 가능</li>
+                                </ul>
+                            </li>
+                            <li>&#9313; 대출신청일 현재 지정된 인증기관<span class="point">*</span>에서 &#65378;제로에너지 건축물 예비인증서&#65379; 또는 &#65378;제로에너지 건축물 인증서&#65379;를 발급받은 경우
+                                <ul class="krds-info-list star">
+                                    <li>제로에너지 건축물 통합 인증시스템(<a href="https://www.zeb.energy.or.kr" class="link_btn2" target="_blank">www.zeb.energy.or.kr</a>)에서 인증기관 확인 가능</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //녹색·제로에너지 인증요건 -->
+
+            <!-- 전세사기피해자 요건 -->
+            <div class="com_pop_wrap type35">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">전세사기피해자 요건</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>전세사기피해자(전세사기피해자 결정문 정본 등으로 확인)</li>
+                            <li>구입용도, 상환용도
+                                <ul class="krds-info-list importance">
+                                    <li>상환용도의 경우 전세사기피해자등으로 결정되기 전에 전세사기피해주택 낙찰 시 이용한 주택담보대출을 상환하기 위하여 기존 대출의 잔액 범위 내 신청한 경우 해당(배우자 이용건도 포함)</li>
+                                </ul>
+                            </li>
+                            <li>소득상한 제한 없음</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //전세사기피해자 요건 -->
+
+            <!-- 규제지역 가산금리 -->
+            <div class="com_pop_wrap type27 active">
+                <div class="com_pop_cont type_bottom_sheet active">
+                    <div class="title_area">
+                        <div class="title">규제지역 가산금리</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>우대금리 최대 한도와 별도 계산 (0.1%p 가산금리)</li>
+                            <li>신청일 기준 담보주택이 규제지역에 소재한 경우
+                                <ul class="krds-info-list importance">
+                                    <li>규제지역을 체크한 경우 자동 반영</li>
+                                    <li>전세사기피해자인 경우 미적용</li>
+                                    <li>매매계약일이나 입주자모집공고일이 '25.10.16' 이전인 경우도 가산금리 적용</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //규제지역 가산금리 -->
+
+            <!-- 대출용어 도움말 -->
+            <div class="com_pop_wrap type46">
+                <div class="com_pop_cont type_bottom_sheet">
+                    <div class="title_area">
+                        <div class="title">대출용어 도움말</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <ul class="krds-info-list decimal">
+                            <li>임대방수<br>임대하거나 임대하려고 하는 방의 개수</li>
+                            <li>임대보증금합계액<br>임대건수의 임대보증금 합계액</li>
+                            <li>상환방법
+                                <ul class="krds-info-list dash">
+                                    <li>원리금 균등분할상환 : 대출일부터 만기일까지 매월 상환하는 원금과 이자의 합계가 동일</li>
+                                    <li>체감식(원금균등) 분할상환 : 대출일부터 만기일까지 매월 동일한 원금이 상환되고 이자는 대출잔액에 따라 계산되어, 매월 상환하는 원금과 이자의 합계가 감소</li>
+                                    <li>체증식 분할상환 : 대출일부터 만기일까지 매월 상환하는 원금과 이자의 합계가 증가<br><span class="gray">(채무자가 만 40세 미만이고 공사가 사전심사하는 경우에만 가능, 원금상환이 시작되는 고정금리기간 중에만 적용)</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //대출용어 도움말 -->
+
+
+    
+    <div class="com_pop_wrap type11">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">유의사항 안내</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="fieldset">
+                    <div class="form-group none_bg">
+                        <div class="form-list-info info">
+                            <ul class="krds-info-list decimal">
+                                <li>공사상품관련안내(우편물, SMS) 연락처의 변경을 원하시는 분은 변경내역을 입력하시고 확인버튼을 클릭하세요.</li>
+                                <li>주택금융신용보증서를 이용하시는 고객님께서는 대출은행의 연락처도 반드시 변경하시기 바랍니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="com_pop_wrap type26 full full2">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">대출가능여부확인</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="main_tit_area">
+                    <div class="support_btn">
+                        <div class="text">
+                            유의사항 안내
+                            <button type="button" class="tip_btn" data-pop="com_pop11" title="유의사항 안내 팝업 열기"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="exp_chk_cont">
+                    <div class="exp_chk_form">
+                        <div class="icon">
+                            <img src="/resources/images/common/icon/ico_exp.svg" alt="">
+                        </div>
+                        <div class="text_area">
+                            <div class="sub_tit">대출가능여부</div>
+                            <div class="title">대출가능</div>
+                        </div>
+                    </div>
+                    <div class="exp_chk_info_list_area">
+                        <ul class="list">
+                            <li>
+                                <div class="cont">
+                                    <div class="box">
+                                        <div class="tit">최대대출가능금액</div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="txt">420,000,000원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cont">
+                                    <div class="box">
+                                        <div class="tit">대출금액</div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="txt">200,000,000원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cont">
+                                    <div class="box">
+                                        <div class="tit">적용우대금리</div>
+                                        <div class="txt">(아낌e 보금자리론 선택 시 0.1% 자동적용)</div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="txt">16,218원</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cont">
+                                    <div class="box">
+                                        <div class="tit">최종금리</div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="txt">3.90%</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cont">
+                                    <div class="box">
+                                        <div class="tit">대출기간</div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="txt">30년</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cont">
+                                    <div class="box">
+                                        <div class="tit">상환방법</div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="txt">원금균등상환</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cont">
+                                    <div class="box">
+                                        <div class="tit">부채상환비율</div>
+                                        <div class="txt">(DTI: 주택담보대출 연간 원리금상환액 및 <br>기타부채 이자상환추정액 / 연소득*100)</div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="txt">15.12%</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cont">
+                                    <div class="box">
+                                        <div class="tit">담보인정비율</div>
+                                        <div class="txt">(LTV: 주택담보가치 대비 대출금액 비율)</div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="txt">37.04%</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn_cont">
+                    <button type="button" data-pop="com_pop18" class="com_btn">대출상환비교</button>
+                    <button type="button" data-pop="com_pop17" class="com_btn">조회결과 보기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="com_pop_wrap type17">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">조회결과 보기</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="table_cont">
+                    <div class="total_area">총 360회차</div>
+                    <div class="table_area">
+                        <table>
+                            <caption>회차, 상환예정일자, 원리금, 원금</caption>
+                            <colgroup>
+                                <col style="width: 10%;">
+                                <col style="width: 30%;">
+                                <col style="width: 30%;">
+                                <col style="width: 30%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>회차</th>
+                                    <th>상환예정일자</th>
+                                    <th>원리금</th>
+                                    <th>원금</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2025-02-07</td>
+                                    <td>1,886,682</td>
+                                    <td>604,481</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2025-02-07</td>
+                                    <td>1,886,682</td>
+                                    <td>604,481</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2025-02-07</td>
+                                    <td>1,886,682</td>
+                                    <td>604,481</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2025-02-07</td>
+                                    <td>1,886,682</td>
+                                    <td>604,481</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2025-02-07</td>
+                                    <td>1,886,682</td>
+                                    <td>604,481</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2025-02-07</td>
+                                    <td>1,886,682</td>
+                                    <td>604,481</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2025-02-07</td>
+                                    <td>1,886,682</td>
+                                    <td>604,481</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2025-02-07</td>
+                                    <td>1,886,682</td>
+                                    <td>604,481</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2025-02-07</td>
+                                    <td>1,886,682</td>
+                                    <td>604,481</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2025-02-07</td>
+                                    <td>1,886,682</td>
+                                    <td>604,481</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2025-02-07</td>
+                                    <td>1,886,682</td>
+                                    <td>604,481</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2025-02-07</td>
+                                    <td>1,886,682</td>
+                                    <td>604,481</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2025-02-07</td>
+                                    <td>1,886,682</td>
+                                    <td>604,481</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2025-02-07</td>
+                                    <td>1,886,682</td>
+                                    <td>604,481</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="btn_cont sub">
+                    <button type="button" class="com_btn">더보기 (30/68)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="com_pop_wrap type18">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">대출상환비교</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="pro_comparison_cont">
+                    <div class="cont">
+                        <img src="/resources/images/common/icon/ico_pro_cont01.svg" alt="(선택) 원리금 균등분할 상환(매달 똑같이) 금액,기간 표시된 예시">
+                        <div class="title_area">
+                            <div class="title">원리금 균등분할 상환(매달 똑같이)</div>
+                            <div class="text_list_area">
+                                <ul class="list">
+                                    <li>
+                                        월 납입금 : 1,196,650원 ~ 557,590원
+                                    </li>
+                                    <li>
+                                        총이자 : 117,333,212원
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="cont">
+                        <img src="/resources/images/common/icon/ico_pro_cont02.svg" alt="체감식(가장 적은 이자) 금액,기간 표시된 예시">
+                        <div class="title_area">
+                            <div class="title">체감식(가장 적은 이자)</div>
+                            <div class="text_list_area">
+                                <ul class="list">
+                                    <li>
+                                        월 납입금 : 1,196,650원 ~ 557,590원
+                                    </li>
+                                    <li>
+                                        총이자 : 117,333,212원
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="cont">
+                        <img src="/resources/images/common/icon/ico_pro_cont03.svg" alt="체증식(처음에 부담없이) 금액,기간 표시된 예시">
+                        <div class="title_area">
+                            <div class="title">체증식(처음에 부담없이)</div>
+                            <div class="text_list_area">
+                                <ul class="list">
+                                    <li>
+                                        월 납입금 : 1,196,650원 ~ 557,590원
+                                    </li>
+                                    <li>
+                                        총이자 : 117,333,212원
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+
+    <div class="com_pop_wrap type12 full">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">주소검색</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="com_sch_cont padding type1">
+                    <button type="button" data-pop="com_pop14" title="광역시/도 팝업 열기" class="slt_btn" value="광역시/도">광역시/도</button>
+                    <button type="button" data-pop="com_pop15" title="시/군/구 팝업 열기" class="slt_btn" value="시/군/구" disabled>시/군/구</button>
+                    <div class="inp_area">
+                        <!-- 접근성 준수를 위한 label제공 외 title속성으로 대체 -->
+                        <input type="text" placeholder="건물명, 도로명, 지번을 검색하세요." title="우측 검색(버튼)을 통해 건물명, 도로명, 지번을 검색하세요." class="inparea">
+                        <button type="button" class="sch_btn" title="검색"></button>
+                    </div>
+                </div>
+
+                <div class="bg_line none"></div>
+
+                <div class="area_sch_data_list_area">
+                    <div class="total_cont">
+                        검색 결과 <span class="blue">2</span>건
+                    </div>
+                    <div class="list_area">
+                        <ul class="list">
+                            <li>
+                                <button type="button" class="cont"  data-pop="com_pop13">
+                                    <div class="code">
+                                        <div class="txt">06142</div>
+                                        <div class="icon"></div>
+                                    </div>
+                                    <div class="txt_list_area">
+                                        <div class="txt"><span class="blue">[도로명]</span> 서울특별시 강남구 테헤란로 223(큰길타워)</div>
+                                        <div class="txt"><span class="blue">[지번]</span> 서울특별시 강남구 역삼동 677-25</div>
+                                    </div>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sch_tip_list_area">
+                    <h2 class="title">주소 검색 팁</h2>
+                    <ul class="list">
+                        <li>· 건물명</li>
+                        <li>· 건물 명칭 입력</li>
+                        <li>· 예) 코엑스</li>
+                        <li>· 도로명</li>
+                        <li>· 도로명+건물번호</li>
+                        <li>· 예) 영동대로502</li>
+                        <li>· 지번주소</li>
+                        <li>· 동(읍/면/리/가)</li>
+                        <li>· 예) 삼성동 168-6</li>
+                    </ul>
+                </div>
+
+                <!--div class="market_info_cont">
+                    <div class="cont">
+                        <div class="sub_main_tit_area">
+                            <div class="title">시세조회</div>
+                        </div>
+                        <div class="fieldset">
+                            <div class="form-group none_bg">
+                                <div class="table_cont">
+                                    <div class="title_area">
+                                        <div class="title">한국부동산원</div>
+                                    </div>
+                                    <div class="table_area">
+                                        <table>
+                                            <caption>한국부동산원 : 전용(m²) (타입), 하한평균가, 일반평균가 내용이 포함된 표</caption>
+                                            <colgroup>
+                                                <col style="width: 33.3333%;">
+                                                <col style="width: 33.3333%;">
+                                                <col style="width: 33.3333%;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>전용(m²) (타입)</th>
+                                                    <th>하한평균가</th>
+                                                    <th>일반평균가</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>59.94(A)</td>
+                                                    <td>83,000</td>
+                                                    <td>89,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>59.99(B)</td>
+                                                    <td>83,000</td>
+                                                    <td>89,000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group none_bg">
+                                <div class="form-conts">
+                                    <div class="krds-check-area chk-column">
+                                        <div class="krds-form-check ">
+                                            <input type="checkbox" id="chk_additional_1" checked="">
+                                            <label for="chk_additional_1">시세없음</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-list-info info">
+                                    <ul class="krds-info-list decimal">
+                                        <li><span class="num">*</span> 해당 면적에 대한 KB, 부동산원 시세가 없는 경우, 아래 예상주택가격을 입력하세요.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-group none_bg">
+                                <div class="form-tit-cont">
+                                    <div class="form-tit">
+                                        <label for="consult_name">예상주택가격</label>
+                                    </div>
+                                </div>
+                                <div class="form-conts is-error">
+                                    <div class="form-text">
+                                        <div class="text">
+                                            <div class="num">영</div>
+                                            <div class="txt">원</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-inp">
+                                        <input type="text" id="consult_name" class="krds-input padding-right" placeholder="0" title="주택가격을 입력해 주세요.">
+                                        <div class="txt">원</div>
+                                    </div>
+                                    <p class="form-hint-invalid">에러 메시지</p>
+                                    <p class="form-hint-success">성공 메시지</p>
+                                    <p class="form-hint-information">정보 메시지</p>
+                                </div>
+                            </div>
+                            <div class="form-group none_bg">
+                                <div class="market_data">
+                                    <div class="market_data_info">
+                                        <div class="text">
+                                            시세가 없는 경우 개별주택 공시가격<br>
+                                            (<a href="http://www.realtyprice.kr" target="_blank" title="새창열림" class="blue">http://www.realtyprice.kr</a>)을 확인하여 각 지자체에서<br>
+                                            확인된 개별주택 공시가격을 입력하거나,<br>
+                                            본인이 알고 있는 시세를 입력하세요.
+                                        </div>
+                                        <div class="text">
+                                            단, 대출심사 시 실제 감정평가금액으로<br>
+                                            담보주택을 평가할 수 있습니다.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn_cont sub">
+                                    <button type="button" class="com_btn blue2">확인</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div-->
+
+                <!--
+                없을때 유형
+                div class="market_info_cont">
+                    <div class="cont">
+                        <div class="sub_main_tit_area">
+                            <div class="title">시세조회</div>
+                        </div>
+                        <div class="market_data">
+                            <div class="icon">
+                                <img src="/resources/images/common/icon/ico_market.svg" alt="">
+                            </div>
+                            <div class="text_area">
+                                <div class="title">시세가 존재하지 않습니다.</div>
+                                <div class="text">주소를 다시 입력하고 [시세조회]를 하시기 바랍니다.</div>
+                            </div>
+                            <div class="market_data_info">
+                                <div class="text">
+                                    시세가 없는 경우 개별주택 공시가격<br>
+                                    (<a href="http://www.realtyprice.kr" target="_blank" title="새창열림" class="blue">http://www.realtyprice.kr</a>)을 확인하여 각 지자체에서<br>
+                                    확인된 개별주택 공시가격을 입력하거나,<br>
+                                    본인이 알고 있는 시세를 입력하세요.
+                                </div>
+                                <div class="text">
+                                    단, 대출심사 시 실제 감정평가금액으로<br>
+                                    담보주택을 평가할 수 있습니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg_line"></div>
+                    <div class="cont">
+                        <div class="fieldset">
+                            <div class="form-group none_bg">
+                                <div class="form-tit-cont">
+                                    <div class="form-tit">
+                                        <label for="consult_name">예상주택가격</label>
+                                    </div>
+                                </div>
+                                <div class="form-conts is-error">
+                                    <div class="form-text">
+                                        <div class="text">
+                                            <div class="num">영</div>
+                                            <div class="txt">원</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-inp">
+                                        <input type="text" id="consult_name" class="krds-input padding-right" placeholder="0" title="주택가격을 입력해 주세요.">
+                                        <div class="txt">원</div>
+                                    </div>
+                                    <p class="form-hint-invalid">에러 메시지</p>
+                                    <p class="form-hint-success">성공 메시지</p>
+                                    <p class="form-hint-information">정보 메시지</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <div class="btn_cont sub">
+                            <button type="button" class="com_btn blue2">확인</button>
+                        </div>
+                    </div>
+                </div-->
+
+                <div class="btn_cont page type1 none">
+                    <div class="area_sch_data_cont">
+                        <div class="inp_area">
+                            <input type="text" class="krds-input" placeholder="상세 주소를 입력하세요." title="상세 주소를 입력하세요.">
+                        </div>
+                    </div>
+                    <button type="button" class="com_btn blue2">확인</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="com_pop_wrap type13">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">상세 입력</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="area_list_cont">
+                    <ul class="list">
+                        <li>
+                            <div class="fieldset gap_none">
+                                <div class="form-group none_bg">
+                                    <div class="form-conts is-error">
+                                        <div class="area"><span class="blue">[도로명]</span> 서울특별시 강남구 테헤란로 223(큰길타워)</div>
+                                        <div class="area"><span class="blue">[지번]</span> 서울특별시 강남구 역삼동 677-25</div>
+                                        <div class="form-inp">
+                                            <input type="text" id="consult_name_10" class="krds-input p0" placeholder="상세 주소를 입력해 주세요." title="상세 주소를 입력해 주세요.">
+                                        </div>
+                                        <!--<p class="form-hint-invalid">에러 메시지</p>
+                                        <p class="form-hint-success">성공 메시지</p>
+                                        <p class="form-hint-information">정보 메시지</p>-->
+                                    </div>
+                                </div>
+                                <div class="form-group none_bg">
+                                    <div class="form-tit-cont">
+                                        <div class="form-tit">
+                                            <label>최저층 여부</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-conts">
+                                        <div class="chip-wrap cunt auto">
+                                            <div class="krds-form-chip type1">
+                                                <input type="radio" name="rdo_0" id="rdo_1" checked="" class="radio">
+                                                <label for="rdo_1">아니오</label>
+                                            </div>
+                                            <div class="krds-form-chip type1">
+                                                <input type="radio" name="rdo_0" id="rdo_2" class="radio">
+                                                <label for="rdo_2">예</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-list-info">
+                                        <ul class="krds-info-list decimal">
+                                            <li>담보주택이 최저층(1호, 101호)이면 예를 선택하세요.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn_cont sub2">
+                    <button type="button" class="com_btn blue2">시세 조회</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="com_pop_wrap type14">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">광역시/도 구분 선택</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="sort_list_area">
+                    <ul class="list">
+                        <li>
+                            <button type="button" class="chk_btn active">
+                                <div class="txt">서울특별시</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">부산광역시</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">대구광역시</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">인천광역시</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">광주광역시</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">대전광역시</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">울산광역시</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">세종특별자치시</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">경기도</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">강원특별자치도</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">충청북도</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">충청남도</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">전북특별자치도</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">전라남도</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">경상북도</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">경상남도</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">제주특별자치도</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="com_pop_wrap type15">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">시/군/구 구분 선택</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="sort_list_area">
+                    <ul class="list">
+                        <li>
+                            <button type="button" class="chk_btn active">
+                                <div class="txt">시/군/구</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    
+    <div class="com_pop_wrap type25 full full2">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">우대금리</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="sub_main_tit_area">
+                    <div class="title">우대항목</div>
+                </div>
+                <div class="great_list_cont">
+                    <ul class="list type1">
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group none_bg">
+                                        <div class="form-conts">
+                                            <div class="form-chk-cont has_guide">
+                                                <div class="krds-check-area chk-column">
+                                                    <div class="krds-form-check ">
+                                                        <input type="checkbox" id="chk_additional_1" checked="">
+                                                        <label for="chk_additional_1">저소득청년</label>
+                                                    </div>
+                                                </div>
+                                                <div class="text">0.1%p
+                                            </div>
+                                                <div class="guide_link"><button type="button" data-pop="com_pop36" class="link_btn">저소득청년 대출 요건</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group none_bg">
+                                        <div class="form-tit">
+                                            <label for="consult_name21">
+                                                저출생 해소 지원층
+                                            </label>
+                                        </div>
+                                        <div class="form-conts">
+                                            <div class="form-chk-cont has_guide">
+                                                <div class="krds-check-area chk-column">
+                                                    <div class="krds-form-check ">
+                                                        <input type="checkbox" id="chk_additional_2" >
+                                                        <label for="chk_additional_2">
+                                                            신혼가구
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="text">0.3%p</div>
+                                                <div class="guide_link"><button type="button" data-pop="com_pop28" class="link_btn">신혼가구 소득·혼인요건</button></div>
+                                            </div>
+                                            <div class="form-chk-cont has_guide">
+                                                <div class="krds-check-area chk-column">
+                                                    <div class="krds-form-check ">
+                                                        <input type="checkbox" id="chk_additional_3" >
+                                                        <label for="chk_additional_3">
+                                                            신생아출산가구
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="text">0.2%p
+                                            </div>
+                                                <div class="guide_link"><button type="button" data-pop="com_pop29" class="link_btn">출산가구 우대요건</button></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-conts">
+                                            <div class="form-chk-cont has_guide">
+                                                <div class="krds-check-area chk-column">
+                                                    <div class="krds-form-check ">
+                                                        <input type="checkbox" id="chk_additional_2_2" >
+                                                        <label for="chk_additional_2_2">
+                                                            다자녀가구 <span class="sub_txt">(2자녀)</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="text">0.5%p</div>
+                                                <div class="guide_link"><button type="button" data-pop="com_pop30" class="link_btn">다자녀 가구요건</button></div>
+                                            </div>
+                                            <div class="form-chk-cont has_guide">
+                                                <div class="krds-check-area chk-column">
+                                                    <div class="krds-form-check ">
+                                                        <input type="checkbox" id="chk_additional_3_2" >
+                                                        <label for="chk_additional_3_2">
+                                                            다자녀가구 <span class="sub_txt">(3자녀 이상)</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="text">0.7%p
+                                            </div>
+                                                <div class="guide_link"><button type="button" data-pop="com_pop31" class="link_btn">3자녀 이상 요건</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont">
+                                <div class="fieldset">
+                                    <div class="form-group none_bg">
+                                        <div class="form-tit">
+                                            <label for="consult_name21">사회적 배려층</label>
+                                        </div>
+                                                <div class="guide_link"><button type="button" data-pop="com_pop32" class="link_btn">사회적 배려층 우대요건</button></div>
+                                        <div class="form-conts">
+                                            <div class="form-chk-cont">
+                                                <div class="krds-check-area chk-column">
+                                                    <div class="krds-form-check ">
+                                                        <input type="checkbox" id="chk_additional_4">
+                                                        <label for="chk_additional_4">
+                                                            한부모가구
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="text">0.7%p</div>
+                                            </div>
+                                            <div class="form-chk-cont">
+                                                <div class="krds-check-area chk-column">
+                                                    <div class="krds-form-check ">
+                                                        <input type="checkbox" id="chk_additional_4_2">
+                                                        <label for="chk_additional_4_2">
+                                                            장애인가구
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="text">0.7%p</div>
+                                            </div>
+                                            <div class="form-chk-cont">
+                                                <div class="krds-check-area chk-column">
+                                                    <div class="krds-form-check ">
+                                                        <input type="checkbox" id="chk_additional_4_3">
+                                                        <label for="chk_additional_4_3">
+                                                            다문화가구
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="text">0.7%p</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-conts">
+                                            <div class="form-chk-cont has_guide">
+                                                <div class="krds-check-area chk-column">
+                                                    <div class="krds-form-check ">
+                                                        <input type="checkbox" id="chk_additional_5">
+                                                        <label for="chk_additional_5">
+                                                            미분양관리지역 내 미분양 아파트 입주자
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="text">0.2%p
+                                            </div>
+                                                <div class="guide_link"><button type="button" data-pop="com_pop33" class="link_btn">미분양아파트 우대요건</button></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-conts">
+                                            <div class="form-chk-cont has_guide">
+                                                <div class="krds-check-area chk-column">
+                                                    <div class="krds-form-check ">
+                                                        <input type="checkbox" id="chk_additional_6">
+                                                        <label for="chk_additional_6">
+                                                            녹색건축물
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="text">0.1%p
+                                            </div>
+                                                <div class="guide_link"><button type="button" data-pop="com_pop34" class="link_btn">녹색·제로에너지 인증요건</button></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-conts">
+                                            <div class="form-chk-cont has_guide">
+                                                <div class="krds-check-area chk-column">
+                                                    <div class="krds-form-check ">
+                                                        <input type="checkbox" id="chk_additional_7">
+                                                        <label for="chk_additional_7">
+                                                            전세사기피해자
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="text">1.0%p</div>
+                                                <div class="guide_link"><button type="button" data-pop="com_pop35" class="link_btn">전세사기피해자 요건</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn_cont type1">
+                    <div class="great_data">
+                        <div class="fieldset">
+                            <div class="form-group">
+                                <div class="form-tit-cont">
+                                    <div class="form-tit">
+                                        <label for="consult_name_11">최종 우대금리<br><span class="blue">(최대 1.0%p)</span></label>
+                                    </div>
+                                </div>
+                                <div class="form-conts">
+                                    <div class="form-inp">
+                                        <input type="text" id="consult_name_11" class="krds-input padding-right" placeholder="0" title="우대금리를 입력해 주세요.">
+                                        <div class="txt">%p</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="com_btn blue2">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div> <!-- //wrap -->
+
+
+
+</body>
+<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+<script type="text/javascript" src="/resources/js/include.js"></script>
+<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</html>

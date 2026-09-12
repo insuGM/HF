@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko">
+    <meta property="og:site_name" content="한국주택금융공사">
+    <meta property="og:updated_time" content="">
+    <meta name="twitter:card" content="summary">
+    <title>한국주택금융공사</title>
+    
+    <!-- CSS 파일들 -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+
+    <!-- JavaScript 파일들 -->
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+    
+    <!-- !추가부분 -->
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+
+    <!--// !추가부분 -->
+</head>
+<body>
+
+<div class="wrapper sub" id="app">
+    <div data-include="../inc/header.html"></div>
+
+    <div id="container">
+        <div class="container_in">
+
+            <div class="contents com_sub">
+
+                <div class="auth_form_cont">
+                    <div class="title_area">
+                        <div class="logo_area">
+                            <img src="/resources/images/sub/auth_ico_kb.svg" alt="KB">
+                        </div>
+                        <!-- <div class="logo_area">
+                            <img src="/resources/images/sub/auth_ico_kabank.svg" alt="카카오뱅크">
+                        </div>
+                        <div class="logo_area">
+                            <img src="/resources/images/sub/auth_ico_katalk.svg" alt="카카오톡">
+                        </div>
+                        <div class="logo_area">
+                            <img src="/resources/images/sub/auth_ico_naver.svg" alt="네이버">
+                        </div>
+                        <div class="logo_area">
+                            <img src="/resources/images/sub/auth_ico_pass.svg" alt="통신사 PASS">
+                        </div>
+                        <div class="logo_area">
+                            <img src="/resources/images/sub/auth_ico_finance.svg" alt="금융인증서">
+                        </div>
+                        <div class="logo_area">
+                            <img src="/resources/images/sub/auth_ico_cavity.svg" alt="공동인증서">
+                        </div>
+                        <div class="logo_area">
+                            <img src="/resources/images/sub/auth_ico_mobid.svg" alt="모바일 신분증">
+                        </div> -->
+                        <h2 class="title">KB국민 인증서를 호출하기 위해 <br>아래 정보를 입력해 주세요.</h2>
+                    </div>
+                    <div class="fieldset">
+                        <!-- 폼그룹 -->
+                        <div class="form-group">
+                            <div class="form-tit">
+                                <label for="consult_name21">
+                                    <span class="point">*</span>
+                                    이름
+                                </label>
+                            </div>
+                            <div class="form-conts is-error">
+                                <!-- 인풋 추가하면됨 -->
+                                <input type="text" id="consult_name21" class="krds-input" placeholder="사용자명" value="에러">
+                            </div>
+                            <!-- 실패메시지 -->
+                            <p class="form-hint-invalid">이름을 정확하게 입력해 주세요</p>
+                        </div>
+                        <!-- //폼그룹 -->
+                        <!-- 폼그룹 -->
+                        <div class="form-group">
+                            <div class="form-tit">
+                                <label for="consult_name22">
+                                    <span class="point">*</span>
+                                    생년월일
+                                </label>
+                            </div>
+                            <div class="form-conts is-success">
+                                <input type="text" id="consult_name22" class="krds-input" placeholder="생년월일 8자리" value="성공">
+                            </div>
+                            <!--p class="form-hint-success">성공 메시지</p-->
+                            <!-- 실패메시지 -->
+                            <p class="form-hint-success">생년월일을 정확하게 입력해 주세요</p>
+                        </div>
+                        <!-- //폼그룹 -->
+                        <!-- 폼그룹 -->
+                        <div class="form-group">
+                            <div class="form-tit">
+                                <label for="consult_name22">
+                                    <span class="point">*</span>
+                                    휴대폰전화번호
+                                </label>
+                            </div>
+                            <div class="form-conts is-information">
+                                <input type="text" id="consult_name23" class="krds-input" placeholder="-없이 숫자만" value="정보">
+                            </div>
+                            <!--p class="form-hint-information">정보 메시지</p-->
+                            <!-- 실패메시지 -->
+                            <!-- <p class="form-hint-invalid">휴대폰번호를 정확하게 입력해 주세요</p> -->
+                        </div>
+                        <!-- //폼그룹 -->
+                    </div>
+                    <div class="btn_cont">
+                        <a href="#" class="com_btn blue2">확인</a>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- //sub_con -->
+        </div> <!-- //container_in -->
+    </div>
+
+    <div data-include="../inc/footer.html"></div>
+</div> <!-- //wrap -->
+
+
+
+</body>
+<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+<script type="text/javascript" src="/resources/js/include.js"></script>
+<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</html>

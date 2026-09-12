@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="ko">
+        <meta property="og:site_name" content="한국주택금융공사">
+        <meta property="og:updated_time" content="">
+        <meta name="twitter:card" content="summary">
+        <title>한국주택금융공사</title>
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+        <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+        <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+        <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/hf_loan_apply.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/hf_loan_info.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/hf_bojeung.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/hf_yeongeum.css">
+        <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+        <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+    </head>
+    <body>
+        <div class="wrapper sub" id="app">
+            <div data-include="../inc/header.html"></div>
+            <div id="container">
+                <div class="container_in">
+                    <div class="contents">
+                        <div class="krds-tab-area layer list">
+                            <div class="tab line pl">
+                                <ul role="tablist">
+                                    <li id="tabYg01" aria-controls="tabpanelYg01">
+                                        <button type="button" class="btn-tab">연금신청내역</button>
+                                    </li>
+                                    <li id="tabYg02" aria-controls="tabpanelYg02">
+                                        <button type="button" class="btn-tab">신청정보·안내사항 확인</button>
+                                    </li>
+                                    <li id="tabYg03" aria-controls="tabpanelYg03">
+                                        <button type="button" class="btn-tab">연금정보조회</button>
+                                    </li>
+                                    <li id="tabYg04" class="active" aria-controls="tabpanelYg04" aria-selected="true">
+                                        <button type="button" class="btn-tab">연금 재가입 가능여부</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-conts-wrap type1">
+                                <div id="tabpanelYg01" aria-labelledby="tabYg01" class="tab-conts" role="tabpanel"></div>
+                                <div id="tabpanelYg02" aria-labelledby="tabYg02" class="tab-conts" role="tabpanel"></div>
+                                <div id="tabpanelYg03" aria-labelledby="tabYg03" class="tab-conts" role="tabpanel"></div>
+                                <div id="tabpanelYg04" aria-labelledby="tabYg04" class="tab-conts active" role="tabpanel">
+                                    <div class="pro_anagement_cont gap">
+                                        <div class="hf-jeonse-result danger">
+                                            <img class="ico" src="/resources/images/common/icon/ico_loan_mark_chk2.svg" alt="">
+                                            <span class="hf-jeonse-result-status">재가입 불가능</span>
+                                        </div>
+                                        <div class="fieldset">
+                                            <div class="form-group none_bg">
+                                                <div class="form-tit-cont"><div class="form-tit"><label>동일주택여부</label></div></div>
+                                                <div class="form-conts">
+                                                    <div class="chip-wrap cunt auto">
+                                                        <div class="krds-form-chip type1"><input type="radio" name="rdo_same" id="rdo_same1" checked class="radio"><label for="rdo_same1">동일하지 않음</label></div>
+                                                        <div class="krds-form-chip type1"><input type="radio" name="rdo_same" id="rdo_same2" class="radio"><label for="rdo_same2">동일함</label></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info_group">
+                                            <div class="main_tit_area m0"><div class="title medium">대상 담보주택 정보</div></div>
+                                            <div class="fieldset cont_line">
+                                                <div class="form-group none_bg">
+                                                    <div class="form-tit-cont">
+                                                        <div class="form-tit"><label for="ygAddr">가입주택주소</label><div class="point">*</div></div>
+                                                        <button type="button" class="com_label_btn">주소 및 시세 검색</button>
+                                                    </div>
+                                                    <div class="form-conts">
+                                                        <input type="text" class="krds-input" title="가입주택주소" readonly>
+                                                        <input type="text" id="ygAddr" class="krds-input" placeholder="입력해 주세요" title="상세주소를 입력해 주세요.">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group none_bg">
+                                                    <div class="form-tit-cont"><div class="form-tit"><label for="ygPrice">주택가격</label></div></div>
+                                                    <div class="form-conts">
+                                                        <div class="form-text"><div class="text"><div class="num">영</div><div class="txt">원</div></div></div>
+                                                        <div class="form-inp">
+                                                            <input type="text" id="ygPrice" class="krds-input padding-right" placeholder="0" title="주택가격을 입력해 주세요.">
+                                                            <div class="txt">원</div>
+                                                        </div>
+                                                        <ul class="krds-info-list type2"><li class="gray"><span class="num">*</span>시세가 조회되지 않는 경우에는 예상주택가격을 입력하십시오. 주택가격은 향후 감정평가 금액에 따라 달라질 수 있으며 그에 따라 월지급금도 변동될 수 있습니다.</li></ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main_tit_area m0"><div class="title medium">기보증 내역</div></div>
+                                            <div class="com_info_list_cont bg">
+                                                <ul class="list">
+                                                    <li>
+                                                        <div class="cont">
+                                                            <div class="box">
+                                                                <div class="tit">보증신청일</div>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div class="txt">2020-08-14</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cont">
+                                                            <div class="box">
+                                                                <div class="tit">담보주택주소</div>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div class="txt">인천광역시 연수구 옥련동<br>642-1번지 한국아파트 101동 2003호</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cont">
+                                                            <div class="box">
+                                                                <div class="tit">보증해지일</div>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div class="txt">-</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cont">
+                                                            <div class="box">
+                                                                <div class="tit">대출상환일</div>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div class="txt">-</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="cont">
+                                                            <div class="box">
+                                                                <div class="tit">상환 후 경과일</div>
+                                                            </div>
+                                                            <div class="box">
+                                                                <div class="txt">- 일</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn_cont page">
+                                        <button type="button" class="com_btn blue2">재가입 가능 여부 조회</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-include="../inc/footer.html"></div>
+        </div>
+        <script type="text/javascript" src="/resources/js/include.js"></script>
+    </body>
+</html>

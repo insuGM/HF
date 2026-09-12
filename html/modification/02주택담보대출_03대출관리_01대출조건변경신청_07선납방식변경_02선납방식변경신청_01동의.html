@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko">
+    <meta property="og:site_name" content="한국주택금융공사">
+    <meta property="og:updated_time" content="">
+    <meta name="twitter:card" content="summary">
+    <title>한국주택금융공사</title>
+    
+    <!-- CSS 파일들 -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+
+    <!-- JavaScript 파일들 -->
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+    
+    <!-- !추가부분 -->
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+
+    <!--// !추가부분 -->
+</head>
+<body>
+
+<div class="wrapper sub" id="app">
+    <div data-include="../inc/header.html"></div>
+
+    <div id="container">
+        <div class="container_in">
+
+            <div class="contents">
+                <div class="pro_anagement_cont">
+                    <div class="pro_anagement_list_area">
+                        <ul class="list">
+                            <li>
+                                <div class="cont">
+                                    <div class="main_tit_area m0">
+                                        <div class="title">
+                                            <h2>선납방식 선택</h2>
+                                            <a href="#" class="link_btn">선납방식 변경 안내</a>
+                                        </div>
+                                    </div>
+                                    <div class="chip-wrap cunt auto">
+                                        <div class="krds-form-chip type1">
+                                            <input type="radio" class="radio" name="prepayType" id="prepayType_0" disabled>
+                                            <label for="prepayType_0">
+                                                (A)형<br>조기상환수수료 면제방식 (현재 적용방식)
+                                            </label>
+                                        </div>
+                                        <div class="krds-form-chip type1">
+                                            <input type="radio" class="radio" name="prepayType" id="prepayType_1" checked>
+                                            <label for="prepayType_1">(B)형</label>
+                                            <div class="krds-form-check-cnt">
+                                                <p class="krds-form-check-p">선납이자 면제방식</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg_line"></div>
+                <div class="pro_anagement_cont gap down">
+                    <div class="pro_anagement_chk_list_area">
+                        <div class="fieldset">
+                            <div class="form-group none_bg">
+                                <div class="form-conts">
+                                    <div class="krds-check-area chk-column">
+                                        <div class="krds-form-check all">
+                                            <input type="checkbox" id="agreeAll" checked>
+                                            <label for="agreeAll">전체동의</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group none_bg">
+                                <div class="form-conts gap_none">
+                                    <div class="krds-check-area chk-column cont_line">
+                                        <div class="krds-form-check">
+                                            <input type="checkbox" id="agree_0" checked>
+                                            <label for="agree_0">[필수] 선납이자, 조기상환수수료 관련 내용을 확인합니다.<br>(A형): 선납이자 부과, 조기상환수수료 면제<br>(B형): 선납이자 면제, 조기상환수수료 부과</label>
+                                        </div>
+                                        <div class="krds-form-check">
+                                            <input type="checkbox" id="agree_1" checked>
+                                            <label for="agree_1">[필수] 선납방식 변경이 본 대출 원리금상환액의 변동을 가져옴을 잘 숙지하고 있으며 이로 인해 면제에 따른 불이익이 발생하더라도 이의를 제기하지 않겠습니다.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro_anagement_cont gap down">
+                    <div class="fieldset">
+                        <div class="form-group none_bg">
+                            <div class="form-conts">
+                                <div class="com_list_bg_cont p0">
+                                    <div class="com_list_bg_area gap">
+                                        <ul class="krds-info-list decimal">
+                                            <li>선납방식 변경은 신청 및 승인완료일 기준 차회분(다음 달)부터 적용되며, 상환스케줄 미리보기는 실제 원리금상환액과 다소 상이할 수 있습니다.</li>
+                                        </ul>
+                                        <div class="btn_cont">
+                                            <button type="button" class="com_btn blue org m0">상환스케줄 미리보기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_cont page">
+                <button type="button" class="com_btn blue2">전자서명</button>
+            </div>
+        </div>
+    </div>
+
+    <div data-include="../inc/footer.html"></div>
+            <!-- 원금상환유예 신청 가능 년월은<br>2025 -->
+            <div class="com_pop_wrap w_min type41">
+                <div class="com_pop_cont">
+                    <div class="title_area">
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="main_tit_area">
+                            <div class="title small">알림</div>
+                            <div class="title">원금상환유예 신청 가능 년월은<br>202512부터 입니다.</div>
+                            <div class="text">(원금분납된 회차가 존재하는 경우, 해당 회차는 유예신청 불가)</div>
+                        </div>
+                        <div class="btn_cont direction">
+                            <button type="button" class="com_btn blue2">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //원금상환유예 신청 가능 년월은<br>2025 -->
+
+
+</div>
+
+<script type="text/javascript" src="/resources/js/include.js"></script>
+</body>
+</html>

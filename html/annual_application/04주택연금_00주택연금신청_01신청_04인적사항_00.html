@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko">
+    <meta property="og:site_name" content="한국주택금융공사">
+    <meta property="og:updated_time" content="">
+    <meta name="twitter:card" content="summary">
+    <title>한국주택금융공사</title>
+
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+</head>
+<body>
+
+<div class="wrapper sub" id="app">
+    <div data-include="../inc/header.html"></div>
+
+    <div id="container">
+        <div class="container_in">
+
+            <div class="contents">
+                <div class="pro_anagement_cont">
+                    <div class="step_cont">
+                        <span class="blue">5단계</span> / 8단계
+                    </div>
+                    <div class="step_list_cont type1 step2 hf-step-list-cont">
+                        <ol class="krds-step-wrap">
+                            <li class="done">
+                                <span>
+                                    <span class="tit">설명사항 확인</span>
+                                </span>
+                            </li>
+                            <li class="active">
+                                <span>
+                                    <em class="sr-only">현재단계</em>
+                                    <span class="tit">인적사항</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <span class="tit">대상 담보주택 정보</span>
+                                </span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg_line"></div>
+
+            <div class="contents">
+                <div class="hf-form-section">
+                    <div class="fieldset">
+                        <!-- 휴대전화 -->
+                        <div class="form-group">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label for="mobileTel">휴대전화<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="form-inp">
+                                    <input type="text" id="mobileTel" class="krds-input p0" value="01012345678">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 자택전화 -->
+                        <div class="form-group">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label for="homeTel">자택전화<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="form-inp">
+                                    <input type="text" id="homeTel" class="krds-input p0" value="0212345678">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 주소 -->
+                        <div class="form-group">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>주소<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="form-inp type2">
+                                    <input type="text" class="krds-input p0 disabled type1" value="00000" title="우편번호" disabled>
+                                    <button type="button" data-pop="com_pop11" class="area_btn blue">주소검색</button>
+                                </div>
+                                <div class="form-inp">
+                                    <input type="text" class="krds-input p0 disabled" value="서울특별시 강남구 테헤란로233 큰길타워" title="기본주소" disabled>
+                                </div>
+                                <div class="form-inp">
+                                    <input type="text" class="krds-input p0" placeholder="입력해 주세요" title="상세주소">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 이메일 -->
+                        <div class="form-group">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>이메일<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <div class="form-inp">
+                                    <input type="text" class="krds-input p0" value="hf@hf.go.kr" title="이메일">
+                                </div>
+                                <div class="form-inp">
+                                    <input type="text" class="krds-input p0" title="이메일 도메인 직접입력">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 상담 동기 -->
+                        <div class="form-group">
+                            <div class="form-tit-cont">
+                                <div class="form-tit"><label>상담 동기<span class="point">*</span></label></div>
+                            </div>
+                            <div class="form-conts">
+                                <button type="button" data-pop="com_pop13" class="slt_btn krds-select" title="상담 동기 선택 팝업 열기">선택해 주세요.</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_cont page hf-btn-area">
+                <button type="button" class="com_btn blue2">다음</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div data-include="../inc/footer.html"></div>
+
+    <!-- 주소 검색 -->
+    <div class="com_pop_wrap type11 full full2">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">주소 검색</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="slt_btn_area">
+                    <button type="button" class="slt_btn" title="광역시/도 선택">광역시/도</button>
+                    <button type="button" class="slt_btn" title="시/군/구 선택" disabled>시/군/구</button>
+                </div>
+                <div class="form-inp">
+                    <input type="text" class="krds-input p0" placeholder="입력해 주세요." title="건물명, 도로명, 지번 입력">
+                    <button type="button" class="sch_btn" title="주소 검색"><i class="svg-icon ico-search"></i></button>
+                </div>
+                <div class="gray_txt_box">
+                    <div class="main_tit_area type2 m0">
+                        <div class="title medium">주소 검색 팁</div>
+                    </div>
+                    <dl class="pg_dl">
+                        <div class="row"><dt class="k">건물명</dt><dd class="v">건물 명칭 입력 &nbsp;예) 코엑스</dd></div>
+                        <div class="row"><dt class="k">도로명</dt><dd class="v">도로명+건물번호 &nbsp;예) 영동대로 502</dd></div>
+                        <div class="row"><dt class="k">지번주소</dt><dd class="v">동(읍/면/리/가) &nbsp;예) 삼성동 168-6</dd></div>
+                    </dl>
+                </div>
+                <div class="total_page">
+                    <div>검색 결과 <span class="blue">4</span>건</div>
+                </div>
+                <div class="com_info_list_cont divide type1">
+                    <ul class="list">
+                        <li><div class="cont"><div class="box"><div class="tit medium">06142</div><div class="txt">[도로명] 서울특별시 강남구 테헤란로 223 (큰길타워빌딩)<br>[지번] 서울특별시 강남구 역삼동 677-25</div></div></div></li>
+                        <li><div class="cont"><div class="box"><div class="tit medium">06142</div><div class="txt">[도로명] 서울특별시 강남구 테헤란로 224 (타워빌딩)<br>[지번] 서울특별시 강남구 역삼동 677-25</div></div></div></li>
+                        <li><div class="cont"><div class="box"><div class="tit medium">06142</div><div class="txt">[도로명] 서울특별시 강남구 테헤란로 225 (타워빌딩)<br>[지번] 서울특별시 강남구 역삼동 677-25</div></div></div></li>
+                        <li><div class="cont"><div class="box"><div class="tit medium">06142</div><div class="txt">[도로명] 서울특별시 강남구 테헤란로 226 (타워빌딩)<br>[지번] 서울특별시 강남구 역삼동 677-25</div></div></div></li>
+                    </ul>
+                </div>
+                <div class="main_tit_area type2 m0">
+                    <div class="title medium">선택한 주소</div>
+                    <div class="text">06142 [도로명] 서울특별시 강남구 테헤란로 223 (큰길타워빌딩)</div>
+                </div>
+                <div class="fieldset gap_none">
+                    <div class="form-group none_bg">
+                        <div class="form-tit-cont">
+                            <div class="form-tit"><label for="addrDetail">상세주소 (건물명 · 동 · 호)</label></div>
+                        </div>
+                        <div class="form-conts">
+                            <div class="form-inp">
+                                <input type="text" id="addrDetail" class="krds-input p0" placeholder="입력해 주세요." title="상세주소 - 건물명, 동, 호">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn_cont">
+                    <button type="button" data-close-pop class="com_btn blue2">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 이메일 도메인 -->
+    <div class="com_pop_wrap type12">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">이메일 도메인</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="sort_list_area">
+                    <ul class="list">
+                        <li>
+                            <button type="button" class="chk_btn active">
+                                <div class="txt">직접입력</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">naver.com</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">daum.net</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">gmail.com</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">hanmail.net</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">nate.com</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">kakao.com</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn_cont">
+                    <button type="button" data-close-pop class="com_btn blue2">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 상담 동기 -->
+    <div class="com_pop_wrap type13">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">상담 동기</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="sort_list_area">
+                    <ul class="list">
+                        <li>
+                            <button type="button" class="chk_btn active">
+                                <div class="txt">금융기관(주택담보대출상환)</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">국민연금공단연계</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">재가입</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">공사홍보</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">신문/방송등</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">금융회사</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">자녀권유</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">기이용자권유</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">공사직원추천</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">노인복지관등</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">명예홍보대사(미이용자)</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">주택연금전환(가교형주택연금)</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">은퇴금융아카데미</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">기타</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn_cont">
+                    <button type="button" data-close-pop class="com_btn blue2">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<script type="text/javascript" src="/resources/js/include.js"></script>
+</body>
+</html>

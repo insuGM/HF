@@ -1,0 +1,131 @@
+/* bn-list-faq01 type01 */
+.bn-list-faq01.type01 .adm-chk{margin:0 0 10px 0;}
+.bn-list-faq01.type01 .adm-chk input{margin:-3px 0 0 0;}
+.bn-list-faq01.type01 .adm-chk label{font-size:16px;}
+.bn-list-faq01.type01 .article-chk{position:absolute;top:0;left:0;z-index:10;}
+.bn-list-faq01.type01 > ul{border-top:2px solid #000;}
+.bn-list-faq01.type01 > ul > li{position:relative;border-bottom:1px solid #e7e7e7;}
+.bn-list-faq01.type01 .b-quest-box{display:table;position:relative;width:100%;box-sizing:border-box;}
+/*.bn-list-faq01.type01 .b-quest-box > span:nth-of-type(1){display:table-cell;width:120px;height:100%;background-color:#f5f5f5;font-weight:700;text-align:center;vertical-align:middle;}*/
+.bn-list-faq01.type01 .b-quest-box > span{display:none;}
+.bn-list-faq01.type01 .b-title-box{display:table-cell;     position: relative; background:url(../img/board/btn_faq_open.gif) no-repeat right 20px center;vertical-align:middle;}
+.bn-list-faq01.type01 .b-title-box:after{ position: absolute;  content: 'Q';  background: #fff;  color: #5f5b5a;  width: 41px;   height: 41px;
+    letter-spacing: -1px;
+    text-align: center;
+    border: 1px solid #d5d5d5;
+    border-radius: 50%;
+    line-height: 41px;
+    top: 25px;
+    left: 28px;
+    font-family: Arial;
+    font-size: 23px;
+    font-weight: 600;}
+
+.bn-list-faq01.type01 .b-quest-box.faq-close .b-title-box{background:url(../img/board/btn_faq_close.png) no-repeat right 20px center;}
+.bn-list-faq01.type01 .b-title-box a{display:block;padding: 30px 70px 30px 85px;font-size:18px;color:#333;line-height:1.8em; font-weight: 500;}
+.bn-list-faq01.type01 .b-title-box a > span:nth-of-type(2){margin-right: 25px; color: #003875;}
+.bn-list-faq01.type01 .b-title-box a > span:nth-of-type(1){display:none;}
+
+/*추가작업 20221220 시작*/
+.bn-list-faq01.type01 .b-title-box_noqna{display:table-cell;     position: relative; background:url(../img/board/btn_faq_open.gif) no-repeat right 20px center;vertical-align:middle;}
+.bn-list-faq01.type01 .b-title-box_noqna:after{ content: ''; position: absolute; top: 37px;  left: 28px; width: 30px; height: 23px; background: url(../../ko/img/bul_h3.png) no-repeat 0 0; background-size:100%;}
+
+.bn-list-faq01.type01 .b-quest-box.faq-close .b-title-box_noqna{background:url(../img/board/btn_faq_close.png) no-repeat right 20px center;}
+.bn-list-faq01.type01 .b-title-box_noqna a{display:block;padding: 30px 70px 30px 70px;font-size:18px;color:#333;line-height:1.8em; font-weight: 500;}
+.bn-list-faq01.type01 .b-title-box_noqna a > span:nth-of-type(2){margin-right: 25px; color: #003875;}
+.bn-list-faq01.type01 .b-title-box_noqna a > span:nth-of-type(1){display:none;}
+/*추가작업 20221220 끝*/
+
+.bn-list-faq01.type01 .b-quest-box > div{display:table-cell;width:40px;vertical-align:middle;}
+.bn-list-faq01.type01 .b-quest-box > div .b-btn-modify{display:inline-block;padding:8px 5px;min-width:40px;background-color:#d2d2d2;font-size:13px;color:#fff;text-align:center;box-sizing:border-box;border-radius:5px;line-height:1;vertical-align:middle;}
+.bn-list-faq01.type01 .b-ans-box{display:none;}
+.bn-list-faq01.type01 .b-ans-box > div{position: relative; padding: 30px 95px 30px 95px; border-top:1px solid #e7e7e7;background:#f9f9f9;}
+.bn-list-faq01.type01 .b-ans-box > div:after{POSITION: absolute;  content: 'A';
+    background: #0054a4;
+    color: #fff;
+    width: 41px;
+    height: 41px;
+    letter-spacing: -1px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 41px;
+    top: 30px;
+    left: 30px;
+    font-family: Arial;
+    font-size: 23px;
+    font-weight: 600;
+    border: 1px solid #0054a4;
+	
+}
+.bn-list-faq01.type01 .b-ans-box > div span{display:none;}
+.bn-list-faq01.type01 .b-ans-box > div p{font-size:18px; line-height: 30px;}
+
+/*추가작업 20221220 시작*/
+.bn-list-faq01.type01 .b-ans-box_noqna {display:none;}
+.bn-list-faq01.type01 .b-ans-box_noqna  > div{position: relative; padding: 30px 40px; border-top:1px solid #e7e7e7;background:#f9f9f9;}
+.bn-list-faq01.type01 .b-ans-box_noqna  > div span{display:none;}
+.bn-list-faq01.type01 .b-ans-box_noqna  > div p{font-size:18px; line-height: 30px;}
+/*추가작업 20221220 끝*/
+
+/* bn-write-common01 type01 */
+.bn-write-common01.type01 .b-table-wrap{border-top:2px solid #000;}
+.bn-write-common01.type01 .b-table-box .b-row-box .b-title-box{text-align:center;}
+.bn-write-common01.type01 .b-input.datepicker{background:#fff url(../img/board/ico-datepicker01.gif) no-repeat right 10px top 50%;}
+.bn-write-common01.type01 .b-radio{display:none;}
+.bn-write-common01.type01 .b-radio + label{display:inline-block;position:relative;margin-right:30px;padding-left:30px;font-weight:400;cursor:pointer;}
+.bn-write-common01.type01 .b-radio + label:before{content:"";display:inline-block;position:absolute;top:50%;left:0;padding:0 0 0 3px;width:15px;height:15px;border:1px solid #959595;background-color:#ebebeb;font-size:13px;border-radius:24px;box-sizing:border-box;transform:translateY(-50%);-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-o-transform:translateY(-50%);-ms-transform:translateY(-50%);}
+.bn-write-common01.type01 .b-radio:checked + label:before{background-color:#fff;}
+.bn-write-common01.type01 .b-radio:checked + label:after{content:"";display:block;position:absolute;top:50%;left:4px;width:7px;height:7px;background-color:#095d3b;border-radius:12px;transform:translateY(-50%);-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-o-transform:translateY(-50%);-ms-transform:translateY(-50%);}
+.bn-write-common01.type01 .b-chk{display:none;}
+.bn-write-common01.type01 .b-chk + label{display:inline-block;position:relative;margin:0 23px 0 0;padding:0 0 0 34px;font-weight:400;font-size:16px;line-height:27px;vertical-align:middle;cursor:pointer;}
+.bn-write-common01.type01 .b-chk + label:before{content:"";display:inline-block;position:absolute;top:0;left:0;width:27px;height:27px;border:1px solid #959595;box-sizing:border-box;}
+.bn-write-common01.type01 .b-chk:checked + label:before{background:url(../img/board/ico-check01.png) no-repeat 50% 50%;}
+
+
+#content.annuity_layout .bn-list-faq01.type01 .b-title-box a{font-size:23px}
+#content.annuity_layout .bn-list-faq01.type01 .b-ans-box > div p{font-size:23px; line-height: 34px;}
+#content.annuity_layout .bn-list-faq01.type01 .b-title-box:after{top:30px;}
+
+@media screen and (max-width: 1150px) {
+	
+	#content.annuity_layout .bn-list-faq01.type01 .b-title-box a{font-size:18px}
+	#content.annuity_layout .bn-list-faq01.type01 .b-ans-box > div p{font-size:18px; line-height: 30px;}
+	#content.annuity_layout .bn-list-faq01.type01 .b-title-box:after{top:25px;}
+}
+
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+	/* bn-list-faq01 type01 */
+	.bn-list-faq01.type01 .b-quest-box > span:nth-of-type(1){width:80px;font-size:14px;}
+	.bn-list-faq01.type01 .b-quest-box{padding:0 10px 0 0;}
+	.bn-list-faq01.type01 .b-title-box{background-size:15px;}
+	.bn-list-faq01.type01 .b-quest-box.faq-close .b-title-box{background-size:15px;}
+	.bn-list-faq01.type01 .b-title-box a{padding: 15px 50px;}
+	.bn-list-faq01.type01 .b-title-box a > span:nth-of-type(2){display:block;}
+	.bn-list-faq01.type01 .b-title-box:after{width: 27px;height: 27px;font-size: 15px; line-height: 27px;left: 10px;}
+	.bn-list-faq01.type01 .b-ans-box > div{padding: 27px 50px;}
+	.bn-list-faq01.type01 .b-ans-box > div p{}
+	.bn-list-faq01.type01 .b-ans-box > div:after{left: 10px;width: 28px;height: 29px;font-size: 15px;line-height: 28px;}
+	
+	
+	
+	/* bn-write-common01 type01 */
+	.bn-write-common01.type01 .b-radio + label{margin-right:10px;padding-left:20px;font-size:14px;}
+	.bn-write-common01.type01 .b-chk + label{margin:0 10px 0 0;padding:0 0 0 25px;font-size:14px;line-height:25px;}
+	.bn-write-common01.type01 .b-radio + label:before{width:15px;height:15px;}
+	.bn-write-common01.type01 .b-radio:hover + label:after, .bn-write-common01.type01 .b-radio:checked + label:after{left:5px;width:5px;height:5px;}
+	.bn-write-common01.type01 .b-chk + label:before{margin:3px 0 0 0;width:20px;height:20px;}
+	.bn-write-common01.type01 .b-chk:hover + label:before, .bn-write-common01.type01 .b-chk:checked + label:before{padding:2px 0 0 3px;background-size:9px;font-size:10px;}
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}

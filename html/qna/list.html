@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko">
+    <meta property="og:site_name" content="한국주택금융공사">
+    <meta property="og:updated_time" content="">
+    <meta name="twitter:card" content="summary">
+    <title>한국주택금융공사</title>
+    
+    <!-- CSS 파일들 -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+
+    <!-- JavaScript 파일들 -->
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+    
+    <!-- !추가부분 -->
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/krds.custom.home.js"></script>
+
+    <!--// !추가부분 -->
+</head>
+<body>
+
+<div class="wrapper sub" id="app">
+    <div data-include="../inc/header.html"></div>
+
+    <div id="container">
+        <div class="container_in">
+
+            <div class="contents">
+
+                <div class="krds-tab-area layer list">
+                    <div class="tab fill full">
+                        <ul role="tablist">
+                            <li id="tabInfo01" class="active" aria-selected="true" aria-controls="tabpanelInfo01">
+                                <button type="button" class="btn-tab">주택담보대출</button>
+                            </li>
+                            <li id="tabInfo02" aria-controls="tabpanelInfo02">
+                                <button type="button" class="btn-tab">주택보증</button>
+                            </li>
+                            <li id="tabInfo03" aria-controls="tabpanelInfo03">
+                                <button type="button" class="btn-tab">주택연금</button>
+                            </li>
+                            <li id="tabInfo04" aria-controls="tabpanelInfo04">
+                                <button type="button" class="btn-tab">기타</button>
+                            </li>
+                        </ul>
+                        <div class="bg_line"></div>
+                    </div>
+
+                    <div class="tab-conts-wrap">
+                        <!-- 주택담보대출 -->
+                        <div id="tabpanelInfo01" aria-labelledby="tabInfo01" class="tab-conts active" role="tabpanel">
+                            <div class="com_sch_cont">
+                                <div class="krds_select_box" id="krds-sel-1">
+                                    <div class="select_tit">
+                                        <button type="button" id="appl-sch-sel1" aria-haspopup="listbox" aria-expanded="false" aria-controls="list-krds-sel-1" title="제목+내용"><span class="opt_txt">제목+내용</span></button>
+                                    </div>
+                                    <div class="select_list" style="display: none;">
+                                        <ul role="listbox" id="list-krds-sel-1">
+                                            <li>
+                                                <button type="button" value="제목+내용" title="제목+내용" role="option" aria-selected="true" class="selected"><span class="opt_txt">제목+내용</span></button>
+                                            </li>
+                                            <li>
+                                                <button type="button" value="제목" title="제목" role="option" aria-selected="false"><span class="opt_txt">제목</span></button>
+                                            </li>
+                                            <li>
+                                                <button type="button" value="내용" title="내용" role="option" aria-selected="false"><span class="opt_txt">내용</span></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="inp_area">
+                                    <!-- 접근성 준수를 위한 label제공 외 title속성으로 대체 -->
+                                    <input type="text" placeholder="검색어를 입력해주세요" title="검색어를 입력해주세요">
+                                    <button type="button" class="sch_btn" title="검색"></button>
+                                </div>
+                            </div>
+
+                            <div class="total_page">
+                                <div>전체 <span class="blue">114</span>건</div>
+
+                                <button type="button" class="krds-btn text" data-pop="com_pop11" title="주택담보대출 유형 선택"><i class="svg-icon ico-filter"></i></button>
+                            </div>
+
+                            <div class="faq_list_cont krds_board_view">
+                                <ul class="list">
+                                    <li class="active">
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">디딤돌대출</div>
+                                                <div class="title">디딤돌대출을 신청하려고 합니다. 며칠전에 해야 하나요?</div>
+                                                <div class="data">조회수 158,392</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>디딤돌 대출은 인터넷 접수일로부터 60일안으로 심사를 완료해야 해요. 또, 60일이 넘을 경우에는 대출이 취소되니 유의해 주세요.</li>
+                                                    <li>디딤돌 대출은 대출 승인일로부터 30일안으로 대출을 실행해야 해요.</li>
+                                                    <li>따라서 인터넷 접수일로부터 최대 90일 전에 대출을 신청할 수 있어요.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">디딤돌대출</div>
+                                                <div class="title">디딤돌 대출 한도는 얼마인가요?</div>
+                                                <div class="data">조회수 113,765</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">보금자리론</div>
+                                                <div class="title">보금자리론 신청에서 실행까지의 전반적인 절차에 대해 알고싶습니다</div>
+                                                <div class="data">조회수 109,240</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">보금자리론</div>
+                                                <div class="title">보금자리론 채무를 중도상환 시 중도상환수수료는 어떻게 되나요?</div>
+                                                <div class="data">조회수 91,548</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">디딤돌대출</div>
+                                                <div class="title">디딤돌대출을 신청하려고 합니다. 며칠전에 해야 하나요?</div>
+                                                <div class="data">조회수 158,392</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>디딤돌 대출은 인터넷 접수일로부터 60일안으로 심사를 완료해야 해요. 또, 60일이 넘을 경우에는 대출이 취소되니 유의해 주세요.</li>
+                                                    <li>디딤돌 대출은 대출 승인일로부터 30일안으로 대출을 실행해야 해요.</li>
+                                                    <li>따라서 인터넷 접수일로부터 최대 90일 전에 대출을 신청할 수 있어요.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">디딤돌대출</div>
+                                                <div class="title">디딤돌 대출 한도는 얼마인가요?</div>
+                                                <div class="data">조회수 113,765</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">보금자리론</div>
+                                                <div class="title">보금자리론 신청에서 실행까지의 전반적인 절차에 대해 알고싶습니다</div>
+                                                <div class="data">조회수 109,240</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">보금자리론</div>
+                                                <div class="title">보금자리론 채무를 중도상환 시 중도상환수수료는 어떻게 되나요?</div>
+                                                <div class="data">조회수 91,548</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="btn_cont page fixed">
+                                <button type="button" class="com_btn">더보기 (1/114)</button>
+                            </div>
+                        </div>
+                        <!-- 주택보증 -->
+                        <div id="tabpanelInfo02" aria-labelledby="tabInfo02" class="tab-conts" role="tabpanel">
+                            <div class="com_sch_cont">
+                                <div class="krds_select_box" id="krds-sel-2">
+                                    <div class="select_tit">
+                                        <button type="button" id="appl-sch-sel2" aria-haspopup="listbox" aria-expanded="false" aria-controls="list-krds-sel-2" title="제목+내용"><span class="opt_txt">제목+내용</span></button>
+                                    </div>
+                                    <div class="select_list" style="display: none;">
+                                        <ul role="listbox" id="list-krds-sel-2">
+                                            <li>
+                                                <button type="button" value="제목+내용" title="제목+내용" role="option" aria-selected="true" class="selected"><span class="opt_txt">제목+내용</span></button>
+                                            </li>
+                                            <li>
+                                                <button type="button" value="제목" title="제목" role="option" aria-selected="false"><span class="opt_txt">제목</span></button>
+                                            </li>
+                                            <li>
+                                                <button type="button" value="내용" title="내용" role="option" aria-selected="false"><span class="opt_txt">내용</span></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="inp_area">
+                                    <!-- 접근성 준수를 위한 label제공 외 title속성으로 대체 -->
+                                    <input type="text" placeholder="검색어를 입력해주세요" title="검색어를 입력해주세요">
+                                    <button type="button" class="sch_btn" title="검색"></button>
+                                </div>
+                            </div>
+
+                            <div class="total_page">
+                                <div>전체 <span class="blue">88</span>건</div>
+
+                                <button type="button" class="krds-btn text" data-pop="com_pop12" title="주택보증 유형 선택"><i class="svg-icon ico-filter"></i></button>
+                            </div>
+
+                            <div class="faq_list_cont krds_board_view">
+                                <ul class="list">
+                                    <li class="active">
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">개인보증</div>
+                                                <div class="title">전세자금보증을 이용하고 있는데 이사를 갈 경우 어떻게 해야 하나요?</div>
+                                                <div class="data">조회수 9,168</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">전세지킴보증</div>
+                                                <div class="title">보증을 가입하면 무조건 전세금을 돌려받을 수 있나요?</div>
+                                                <div class="data">조회수 8,618</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">개인보증</div>
+                                                <div class="title">소득이 낮아 경제적으로 어려운 계층에 대한 혜택은 없나요?</div>
+                                                <div class="data">조회수 7,239</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">개인보증</div>
+                                                <div class="title">보증서 발급시 공사를 방문해야 하나요?</div>
+                                                <div class="data">조회수 4,751</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">개인보증</div>
+                                                <div class="title">전세자금보증을 이용하고 있는데 이사를 갈 경우 어떻게 해야 하나요?</div>
+                                                <div class="data">조회수 9,168</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">전세지킴보증</div>
+                                                <div class="title">보증을 가입하면 무조건 전세금을 돌려받을 수 있나요?</div>
+                                                <div class="data">조회수 8,618</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">개인보증</div>
+                                                <div class="title">소득이 낮아 경제적으로 어려운 계층에 대한 혜택은 없나요?</div>
+                                                <div class="data">조회수 7,239</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">개인보증</div>
+                                                <div class="title">보증서 발급시 공사를 방문해야 하나요?</div>
+                                                <div class="data">조회수 4,751</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="btn_cont page fixed">
+                                <button type="button" class="com_btn">더보기 (1/88)</button>
+                            </div>
+                        </div>
+                        <!-- 주택연금 -->
+                        <div id="tabpanelInfo03" aria-labelledby="tabInfo03" class="tab-conts" role="tabpanel">
+                            <div class="com_sch_cont">
+                                <div class="krds_select_box" id="krds-sel-3">
+                                    <div class="select_tit">
+                                        <button type="button" id="appl-sch-sel3" aria-haspopup="listbox" aria-expanded="false" aria-controls="list-krds-sel-3" title="제목+내용"><span class="opt_txt">제목+내용</span></button>
+                                    </div>
+                                    <div class="select_list" style="display: none;">
+                                        <ul role="listbox" id="list-krds-sel-3">
+                                            <li>
+                                                <button type="button" value="제목+내용" title="제목+내용" role="option" aria-selected="true" class="selected"><span class="opt_txt">제목+내용</span></button>
+                                            </li>
+                                            <li>
+                                                <button type="button" value="제목" title="제목" role="option" aria-selected="false"><span class="opt_txt">제목</span></button>
+                                            </li>
+                                            <li>
+                                                <button type="button" value="내용" title="내용" role="option" aria-selected="false"><span class="opt_txt">내용</span></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="inp_area">
+                                    <!-- 접근성 준수를 위한 label제공 외 title속성으로 대체 -->
+                                    <input type="text" placeholder="검색어를 입력해주세요" title="검색어를 입력해주세요">
+                                    <button type="button" class="sch_btn" title="검색"></button>
+                                </div>
+                            </div>
+
+                            <div class="total_page">
+                                <div>전체 <span class="blue">59</span>건</div>
+
+                                <button type="button" class="krds-btn text" data-pop="com_pop13" title="주택연금 유형 선택"><i class="svg-icon ico-filter"></i></button>
+                            </div>
+
+                            <div class="main_tit_area type2 m0">
+                                <div class="title medium">주택연금 백문백답</div>
+                            </div>
+                            <div class="krds-file-upload line">
+                                <div class="file-list">
+                                    <ul class="upload-list">
+                                        <li>
+                                            <div class="file-info m-column">
+                                                <div class="file-name">주택연금 백문백답 [pdf, 3.5MB]</div>
+                                                <div class="btn-wrap">
+                                                    <button type="button" class="krds-btn medium text">다운로드 <i class="svg-icon ico-down"></i></button>
+                                                    <button type="button" class="krds-btn medium text">바로보기 <i class="svg-icon ico-new-window"></i></button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="faq_list_cont krds_board_view">
+                                <ul class="list">
+                                    <li class="active">
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">주택연금</div>
+                                                <div class="title">가입자가 이용도중 사망하면 어떻게 되나요?(근저당권방식)</div>
+                                                <div class="data">조회수 46,075</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">주택연금</div>
+                                                <div class="title">주택가격이 변동되면 연금 지급액이 변동되나요?</div>
+                                                <div class="data">조회수 42,662</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">주택연금</div>
+                                                <div class="title">주택연금 대출금리는 얼마인가요?</div>
+                                                <div class="data">조회수 38,265</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">주택연금</div>
+                                                <div class="title">자녀 소유의 주택으로 주택연금 이용이 가능한가요?</div>
+                                                <div class="data">조회수 32,934</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">주택연금</div>
+                                                <div class="title">가입자가 이용도중 사망하면 어떻게 되나요?(근저당권방식)</div>
+                                                <div class="data">조회수 46,075</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">주택연금</div>
+                                                <div class="title">주택가격이 변동되면 연금 지급액이 변동되나요?</div>
+                                                <div class="data">조회수 42,662</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">주택연금</div>
+                                                <div class="title">주택연금 대출금리는 얼마인가요?</div>
+                                                <div class="data">조회수 38,265</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">주택연금</div>
+                                                <div class="title">자녀 소유의 주택으로 주택연금 이용이 가능한가요?</div>
+                                                <div class="data">조회수 32,934</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="btn_cont page fixed">
+                                <button type="button" class="com_btn">더보기 (1/59)</button>
+                            </div>
+                        </div>
+                        <!-- 기타 -->
+                        <div id="tabpanelInfo04" aria-labelledby="tabInfo04" class="tab-conts" role="tabpanel">
+                            <div class="com_sch_cont">
+                                <div class="krds_select_box" id="krds-sel-4">
+                                    <div class="select_tit">
+                                        <button type="button" id="appl-sch-sel4" aria-haspopup="listbox" aria-expanded="false" aria-controls="list-krds-sel-4" title="제목+내용"><span class="opt_txt">제목+내용</span></button>
+                                    </div>
+                                    <div class="select_list" style="display: none;">
+                                        <ul role="listbox" id="list-krds-sel-4">
+                                            <li>
+                                                <button type="button" value="제목+내용" title="제목+내용" role="option" aria-selected="true" class="selected"><span class="opt_txt">제목+내용</span></button>
+                                            </li>
+                                            <li>
+                                                <button type="button" value="제목" title="제목" role="option" aria-selected="false"><span class="opt_txt">제목</span></button>
+                                            </li>
+                                            <li>
+                                                <button type="button" value="내용" title="내용" role="option" aria-selected="false"><span class="opt_txt">내용</span></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="inp_area">
+                                    <!-- 접근성 준수를 위한 label제공 외 title속성으로 대체 -->
+                                    <input type="text" placeholder="검색어를 입력해주세요" title="검색어를 입력해주세요">
+                                    <button type="button" class="sch_btn" title="검색"></button>
+                                </div>
+                            </div>
+
+                            <div class="total_page">
+                                <div>전체 <span class="blue">59</span>건</div>
+
+                                <button type="button" class="krds-btn text" data-pop="com_pop14" title="기타 유형 선택"><i class="svg-icon ico-filter"></i></button>
+                            </div>
+
+                            <div class="faq_list_cont krds_board_view">
+                                <ul class="list">
+                                    <li class="active">
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">홈페이지</div>
+                                                <div class="title">공동인증서가 무엇인가요?</div>
+                                                <div class="data">조회수 23,766</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">민원서식</div>
+                                                <div class="title">우편으로 민원 신청 시, 참고하시기 바랍니다.</div>
+                                                <div class="data">조회수 19,211</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">홈페이지</div>
+                                                <div class="title">실명인증 에러가 발생하는 경우는 어떻게 해야 하나요?</div>
+                                                <div class="data">조회수 38,265</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">MBS</div>
+                                                <div class="title">MBS란 무엇인가요?</div>
+                                                <div class="data">조회수 32,934</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">홈페이지</div>
+                                                <div class="title">공동인증서가 무엇인가요?</div>
+                                                <div class="data">조회수 23,766</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">민원서식</div>
+                                                <div class="title">우편으로 민원 신청 시, 참고하시기 바랍니다.</div>
+                                                <div class="data">조회수 19,211</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">홈페이지</div>
+                                                <div class="title">실명인증 에러가 발생하는 경우는 어떻게 해야 하나요?</div>
+                                                <div class="data">조회수 38,265</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="cont">
+                                            <div class="title_area">
+                                                <div class="q_txt"><span class="sr-only">질문</span></div>
+                                                <div class="krds-badge bg-light-primary">MBS</div>
+                                                <div class="title">MBS란 무엇인가요?</div>
+                                                <div class="data">조회수 32,934</div>
+                                            </div>
+                                            <i class="svg-icon ico-angle"></i>
+                                        </button>
+                                        <div class="faq_content">
+                                            <div class="faq_text">
+                                                <div class="a_txt"><span class="sr-only">답변</span></div>
+                                                <ul class="krds-info-list dash">
+                                                    <li>담보 주택의 가치, 소득 수준, 지역 규제(LTV·DTI·DSR)에 따라 한도가 달라집니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="btn_cont page fixed">
+                                <button type="button" class="com_btn">더보기 (1/59)</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- //sub_con -->
+        </div> <!-- //container_in -->
+    </div>
+
+    <div data-include="../inc/footer.html"></div>
+
+    <!-- 주택담보대출 유형 선택 -->
+    <div class="com_pop_wrap type11">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">주택담보대출 유형 선택</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="sort_list_area">
+                    <ul class="list">
+                        <li>
+                            <button type="button" class="chk_btn active">
+                                <div class="txt">전체</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">보금자리론</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">디딤돌대출</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 주택보증 유형 선택 -->
+    <div class="com_pop_wrap type12">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">주택보증 유형 선택</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="sort_list_area">
+                    <ul class="list">
+                        <li>
+                            <button type="button" class="chk_btn active">
+                                <div class="txt">전체</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">전세지킴보증</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">개인보증</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">사업자보증</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 주택연금 유형 선택 -->
+    <div class="com_pop_wrap type13">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">주택연금 유형 선택</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="sort_list_area">
+                    <ul class="list">
+                        <li>
+                            <button type="button" class="chk_btn active">
+                                <div class="txt">전체</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">주택연금</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">주택연금 (신탁방식)</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">주택연금 오해와 진실</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 기타 유형 선택 -->
+    <div class="com_pop_wrap type14">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">기타 유형 선택</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="sort_list_area">
+                    <ul class="list">
+                        <li>
+                            <button type="button" class="chk_btn active">
+                                <div class="txt">전체</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">신용회복</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">MBS</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">홈페이지</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">민원서식</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">인증서비스</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">스크래핑</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">필수 프로그램</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- //wrap -->
+
+
+
+</body>
+<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+<script type="text/javascript" src="/resources/js/include.js"></script>
+<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</html>

@@ -1,0 +1,457 @@
+
+<div class="krds_calendar_set" style="display: none;">
+<div class="krds-calendar-area">
+        <div class="calendar-wrap bottom single" aria-label="달력">
+    <div class="calendar-head">
+        <button type="button" class="btn-cal-move prev"><span class="sr-only">이전 달</span></button>
+        <div class="calendar-switch-wrap">
+        <div class="calendar-drop-down">
+            <button type="button" class="btn-cal-switch year" aria-label="연도 선택"></button>
+            <div class="calendar-select calendar-year-wrap">
+            <ul class="sel year">
+                <!-- 년도 목록은 JavaScript로 동적 생성 -->
+            </ul>
+            </div>
+        </div>
+        <div class="calendar-drop-down">
+            <button type="button" class="btn-cal-switch month" aria-label="월 선택"></button>
+            <div class="calendar-select calendar-mon-wrap">
+            <ul class="sel month">
+                <li><button type="button" data-month="0">01월</button></li>
+                <li><button type="button" data-month="1">02월</button></li>
+                <li><button type="button" data-month="2">03월</button></li>
+                <li><button type="button" data-month="3">04월</button></li>
+                <li><button type="button" data-month="4">05월</button></li>
+                <li><button type="button" data-month="5">06월</button></li>
+                <li><button type="button" data-month="6">07월</button></li>
+                <li><button type="button" data-month="7">08월</button></li>
+                <li><button type="button" data-month="8">09월</button></li>
+                <li><button type="button" data-month="9">10월</button></li>
+                <li><button type="button" data-month="10">11월</button></li>
+                <li><button type="button" data-month="11">12월</button></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+        <button type="button" class="btn-cal-move next"><span class="sr-only">다음 달</span></button>
+    </div>
+    <div class="calendar-body">
+        <div class="calendar-table-wrap">
+        <table class="calendar-tbl">
+            <caption></caption>
+            <thead>
+            <tr>
+                <th>일</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+                <th>토</th>
+            </tr>
+            </thead>
+            <tbody>
+                <!-- 달력 날짜는 JavaScript로 동적 생성 -->
+            </tbody>
+        </table>
+        </div>
+    </div>
+    <div class="calendar-footer">
+        <div class="calendar-btn-wrap">
+        <button type="button" class="krds-btn small text" id="get-today">오늘</button>
+        <button type="button" class="krds-btn small tertiary">취소</button>
+        <button type="button" class="krds-btn small primary">확인</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="dimmed mobile"></div>
+</div>
+
+<script>
+(function() {
+    'use strict';
+
+    if (window.__hfCalendarGlobalInit) {
+        initLocalCalendar();
+        return;
+    }
+    window.__hfCalendarGlobalInit = true;
+
+    function initLocalCalendar() {
+        const script = document.currentScript;
+        const container = script ? script.parentElement : document.body;
+        const localSet = container ? container.querySelector('.krds_calendar_set') : null;
+        if (localSet) {
+            initCalendarInstance(localSet);
+        }
+    }
+
+    function initCalendarInstance(calendarSet) {
+        if (calendarSet.dataset.calendarInited === 'true') return;
+        calendarSet.dataset.calendarInited = 'true';
+
+        const calendarArea = calendarSet.querySelector('.krds-calendar-area');
+        if (!calendarArea) return;
+
+        const yearBtn = calendarArea.querySelector('.btn-cal-switch.year');
+        const monthBtn = calendarArea.querySelector('.btn-cal-switch.month');
+        const yearList = calendarArea.querySelector('.sel.year');
+        const monthList = calendarArea.querySelector('.sel.month');
+        const prevBtn = calendarArea.querySelector('.btn-cal-move.prev');
+        const nextBtn = calendarArea.querySelector('.btn-cal-move.next');
+        const caption = calendarArea.querySelector('.calendar-tbl caption');
+        const tbody = calendarArea.querySelector('.calendar-tbl tbody');
+        const todayBtn = calendarArea.querySelector('#get-today');
+
+        const today = new Date();
+        const currentYear = today.getFullYear();
+        const currentMonth = today.getMonth();
+        const currentDate = today.getDate();
+
+        let selectedYear = currentYear;
+        let selectedMonth = currentMonth;
+        let selectedDateObj = null;
+
+        function formatDate(year, monthIndex, day) {
+            const month = String(monthIndex + 1).padStart(2, '0');
+            const date = String(day).padStart(2, '0');
+            return `${year}.${month}.${date}`;
+        }
+
+        function getSelectedDateString() {
+            if (selectedDateObj) {
+                return formatDate(selectedDateObj.year, selectedDateObj.month, selectedDateObj.date);
+            }
+            return formatDate(currentYear, currentMonth, currentDate);
+        }
+
+        function toggleDropdown(dropdown) {
+            const selectMenu = dropdown.querySelector('.calendar-select');
+            if (!selectMenu) return;
+            const isActive = selectMenu.classList.contains('active');
+            calendarArea.querySelectorAll('.calendar-select').forEach(menu => menu.classList.remove('active'));
+            if (!isActive) selectMenu.classList.add('active');
+        }
+
+        function closeDropdowns() {
+            calendarArea.querySelectorAll('.calendar-select').forEach(select => {
+                select.classList.remove('active');
+            });
+        }
+
+        function initYearList() {
+            if (!yearList) return;
+            yearList.innerHTML = '';
+            const startYear = 1930;
+            for (let year = startYear; year <= currentYear; year++) {
+                const li = document.createElement('li');
+                const button = document.createElement('button');
+                button.type = 'button';
+                button.textContent = `${year}년`;
+                button.dataset.year = year;
+                if (year === selectedYear) button.classList.add('active');
+                button.addEventListener('click', function() {
+                    selectedYear = parseInt(this.dataset.year, 10);
+                    updateYearButton();
+                    updateCalendar();
+                    closeDropdowns();
+                });
+                li.appendChild(button);
+                yearList.appendChild(li);
+            }
+        }
+
+        function updateYearButton() {
+            if (!yearBtn) return;
+            yearBtn.textContent = `${selectedYear}년`;
+            yearList.querySelectorAll('button').forEach(btn => {
+                btn.classList.toggle('active', parseInt(btn.dataset.year, 10) === selectedYear);
+            });
+        }
+
+        function updateMonthButton() {
+            if (!monthBtn) return;
+            const monthNames = ['01월', '02월', '03월', '04월', '05월', '06월',
+                '07월', '08월', '09월', '10월', '11월', '12월'];
+            monthBtn.textContent = monthNames[selectedMonth];
+            monthList.querySelectorAll('button').forEach(btn => {
+                btn.classList.toggle('active', parseInt(btn.dataset.month, 10) === selectedMonth);
+            });
+        }
+
+        function updateCalendar() {
+            if (!tbody || !caption) return;
+
+            const firstDay = new Date(selectedYear, selectedMonth, 1);
+            const lastDay = new Date(selectedYear, selectedMonth + 1, 0);
+            const daysInMonth = lastDay.getDate();
+            const startingDayOfWeek = firstDay.getDay();
+
+            const monthNames = ['1월', '2월', '3월', '4월', '5월', '6월',
+                '7월', '8월', '9월', '10월', '11월', '12월'];
+            caption.textContent = `${selectedYear}년 ${monthNames[selectedMonth]}`;
+
+            tbody.innerHTML = '';
+            let row = document.createElement('tr');
+
+            const prevMonthLastDay = new Date(selectedYear, selectedMonth, 0).getDate();
+            const prevMonthDate = new Date(selectedYear, selectedMonth, 0);
+            const prevMonthYear = prevMonthDate.getFullYear();
+            const prevMonthIndex = prevMonthDate.getMonth();
+            for (let i = startingDayOfWeek - 1; i >= 0; i--) {
+                const td = document.createElement('td');
+                td.className = 'old';
+                if (i === 0) td.classList.add('day-off');
+                const button = document.createElement('button');
+                button.type = 'button';
+                button.className = 'btn-set-date';
+                const span = document.createElement('span');
+                const prevDay = prevMonthLastDay - i;
+                span.textContent = prevDay;
+                button.appendChild(span);
+                td.appendChild(button);
+                td.dataset.date = formatDate(prevMonthYear, prevMonthIndex, prevDay);
+                row.appendChild(td);
+            }
+
+            for (let i = 1; i <= daysInMonth; i++) {
+                if (row.children.length === 7) {
+                    tbody.appendChild(row);
+                    row = document.createElement('tr');
+                }
+
+                const td = document.createElement('td');
+                const dayOfWeek = new Date(selectedYear, selectedMonth, i).getDay();
+                if (dayOfWeek === 0) td.classList.add('day-off');
+
+                const isToday = selectedYear === currentYear &&
+                    selectedMonth === currentMonth &&
+                    i === currentDate;
+                const isSelected = selectedDateObj !== null &&
+                    selectedYear === selectedDateObj.year &&
+                    selectedMonth === selectedDateObj.month &&
+                    i === selectedDateObj.date;
+
+                if (selectedDateObj === null && isToday) {
+                    td.classList.add('period', 'start', 'end');
+                } else if (isSelected) {
+                    td.classList.add('period', 'start', 'end');
+                }
+
+                const button = document.createElement('button');
+                button.type = 'button';
+                button.className = 'btn-set-date';
+                button.dataset.date = i;
+                button.dataset.year = selectedYear;
+                button.dataset.month = selectedMonth;
+                const span = document.createElement('span');
+                span.textContent = i;
+                button.appendChild(span);
+                button.addEventListener('click', function(event) {
+                    event.stopPropagation();
+                    event.stopImmediatePropagation();
+                    const clickedDate = parseInt(this.dataset.date, 10);
+                    const clickedYear = parseInt(this.dataset.year, 10);
+                    const clickedMonth = parseInt(this.dataset.month, 10);
+
+                    if (selectedDateObj !== null &&
+                        selectedDateObj.year === clickedYear &&
+                        selectedDateObj.month === clickedMonth &&
+                        selectedDateObj.date === clickedDate) {
+                        selectedDateObj = null;
+                    } else {
+                        selectedDateObj = { year: clickedYear, month: clickedMonth, date: clickedDate };
+                    }
+
+                    selectedYear = clickedYear;
+                    selectedMonth = clickedMonth;
+                    updateYearButton();
+                    updateMonthButton();
+                    updateCalendar();
+                });
+
+                td.appendChild(button);
+                td.dataset.date = formatDate(selectedYear, selectedMonth, i);
+                row.appendChild(td);
+            }
+
+            let nextMonthDate = 1;
+            const nextMonthDateObj = new Date(selectedYear, selectedMonth + 1, 1);
+            const nextMonthYear = nextMonthDateObj.getFullYear();
+            const nextMonthIndex = nextMonthDateObj.getMonth();
+            while (row.children.length < 7) {
+                const td = document.createElement('td');
+                td.className = 'new';
+                if (row.children.length === 0) td.classList.add('day-off');
+                const button = document.createElement('button');
+                button.type = 'button';
+                button.className = 'btn-set-date';
+                const span = document.createElement('span');
+                span.textContent = nextMonthDate++;
+                button.appendChild(span);
+                td.appendChild(button);
+                td.dataset.date = formatDate(nextMonthYear, nextMonthIndex, nextMonthDate - 1);
+                row.appendChild(td);
+            }
+
+            if (row.children.length > 0) {
+                tbody.appendChild(row);
+            }
+
+            calendarArea.dataset.selectedDate = getSelectedDateString();
+        }
+
+        function goToPrevMonth() {
+            selectedMonth--;
+            if (selectedMonth < 0) {
+                selectedMonth = 11;
+                selectedYear--;
+                if (selectedYear < 1930) {
+                    selectedYear = 1930;
+                    selectedMonth = 0;
+                }
+            }
+            updateYearButton();
+            updateMonthButton();
+            updateCalendar();
+        }
+
+        function goToNextMonth() {
+            selectedMonth++;
+            if (selectedMonth > 11) {
+                selectedMonth = 0;
+                selectedYear++;
+                if (selectedYear > currentYear) {
+                    selectedYear = currentYear;
+                    selectedMonth = currentMonth;
+                }
+            }
+            updateYearButton();
+            updateMonthButton();
+            updateCalendar();
+        }
+
+        function goToToday() {
+            selectedYear = currentYear;
+            selectedMonth = currentMonth;
+            selectedDateObj = null;
+            updateYearButton();
+            updateMonthButton();
+            updateCalendar();
+        }
+
+        if (prevBtn) prevBtn.addEventListener('click', goToPrevMonth);
+        if (nextBtn) nextBtn.addEventListener('click', goToNextMonth);
+        if (todayBtn) todayBtn.addEventListener('click', goToToday);
+
+        if (monthList) {
+            monthList.querySelectorAll('button').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    selectedMonth = parseInt(this.dataset.month, 10);
+                    updateMonthButton();
+                    updateCalendar();
+                    closeDropdowns();
+                });
+            });
+        }
+
+        if (yearBtn) {
+            const yearDropdown = yearBtn.closest('.calendar-drop-down');
+            if (yearDropdown) {
+                yearBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    toggleDropdown(yearDropdown);
+                });
+            }
+        }
+
+        if (monthBtn) {
+            const monthDropdown = monthBtn.closest('.calendar-drop-down');
+            if (monthDropdown) {
+                monthBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    toggleDropdown(monthDropdown);
+                });
+            }
+        }
+
+        calendarSet.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!calendarArea.contains(e.target)) {
+                closeDropdowns();
+            }
+        });
+
+        initYearList();
+        updateYearButton();
+        updateMonthButton();
+        updateCalendar();
+    }
+
+    function openCalendarForButton(btn) {
+        const calendarConts = btn.closest('.calendar-conts');
+        if (!calendarConts) return;
+
+        const calendarSet = calendarConts.querySelector('.krds_calendar_set');
+        if (!calendarSet) return;
+
+        document.querySelectorAll('.krds_calendar_set').forEach((set) => {
+            if (set !== calendarSet) set.style.display = 'none';
+        });
+
+        initCalendarInstance(calendarSet);
+        calendarSet.style.display = 'block';
+        calendarSet.dataset.targetInput = btn.getAttribute('data-target') || '';
+        const area = calendarSet.querySelector('.krds-calendar-area');
+        if (area) area.classList.add('active');
+    }
+
+    document.addEventListener('click', function(e) {
+        const btn = e.target.closest('.form-btn-datepicker');
+        if (!btn) return;
+        openCalendarForButton(btn);
+    });
+
+    document.addEventListener('click', function(e) {
+        const confirmBtn = e.target.closest('.krds_calendar_set .calendar-btn-wrap .krds-btn.small.primary');
+        if (!confirmBtn) return;
+
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+
+        const calendarSet = confirmBtn.closest('.krds_calendar_set');
+        const calendarArea = calendarSet ? calendarSet.querySelector('.krds-calendar-area') : null;
+        const targetId = calendarSet ? calendarSet.dataset.targetInput : '';
+        const selectedValue = calendarArea ? calendarArea.dataset.selectedDate : '';
+        if (!targetId || !selectedValue) return;
+
+        const input = document.getElementById(targetId);
+        if (input) {
+            input.value = selectedValue;
+            input.dispatchEvent(new Event('change', { bubbles: true }));
+        }
+        calendarSet.style.display = 'none';
+        const area = calendarSet.querySelector('.krds-calendar-area');
+        if (area) area.classList.remove('active');
+    }, true);
+
+    document.addEventListener('click', function(e) {
+        const cancelBtn = e.target.closest('.krds_calendar_set .calendar-btn-wrap .krds-btn.small.tertiary');
+        if (!cancelBtn) return;
+        const calendarSet = cancelBtn.closest('.krds_calendar_set');
+        if (!calendarSet) return;
+        calendarSet.style.display = 'none';
+        const area = calendarSet.querySelector('.krds-calendar-area');
+        if (area) area.classList.remove('active');
+    }, true);
+
+    initLocalCalendar();
+    document.querySelectorAll('.krds_calendar_set').forEach(initCalendarInstance);
+})();
+</script>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko">
+    <meta property="og:site_name" content="한국주택금융공사">
+    <meta property="og:updated_time" content="">
+    <meta name="twitter:card" content="summary">
+    <title>한국주택금융공사</title>
+    
+    <!-- CSS 파일들 -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+
+    <!-- JavaScript 파일들 -->
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+    
+    <!-- !추가부분 -->
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+
+    <!--// !추가부분 -->
+</head>
+<body>
+
+<div class="wrapper sub" id="app">
+    <div data-include="../inc/header.html"></div>
+
+    <div id="container">
+        <div class="container_in">
+
+            <div class="contents">
+                    <div class="pro_anagement_cont">
+                        <div class="step_cont">
+                            <span class="blue">2단계</span> / 4단계
+                        </div>
+                        <div class="step_list_cont type1">
+                            <ol class="krds-step-wrap">
+                                <li class="done">
+                                    <span>
+                                        <span class="tit">계좌변경신청</span>
+                                    </span>
+                                </li>
+                                <li class="active">
+                                    <span>
+                                        <em class="sr-only">현재단계</em>
+                                        <span class="tit">정보동의</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <span class="tit">변경내역 확인</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <span class="tit">변경결과 확인</span>
+                                    </span>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="bg_line"></div>
+                    <div class="pro_anagement_cont">
+                        <div class="pro_anagement_chk_list_area">
+                            <div class="fieldset">
+                                <div class="form-group none_bg">
+                                    <div class="form-conts">
+                                        <div class="krds-check-area chk-column">
+                                            <div class="krds-form-check all">
+                                                <input type="checkbox" id="chk_additional_1">
+                                                <label for="chk_additional_1">
+                                                    [전체] 자동이체계좌 변경 동의
+                                                    <button type="button" data-pop="com_pop11" class="btn">전체보기</button>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group none_bg">
+                                    <div class="form-conts">
+                                        <div class="krds-check-area chk-column">
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="chk_additional_2">
+                                                <label for="chk_additional_2">
+                                                    [필수] 자동이체 계좌번호는 본인 명의 계좌로만 변경할 수 있습니다.
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="krds-check-area chk-column">
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="chk_additional_3">
+                                                <label for="chk_additional_3">
+                                                    [필수] 출금은 아래 신청 접수 이후 최초 약정납일일에 개시되며, 출금예정금액은 상환스케줄을 참고하시기 바랍니다.
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="krds-check-area chk-column">
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" id="chk_additional_4">
+                                                <label for="chk_additional_4">
+                                                    [필수] 자동이체 변경_정보제공동의
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_cont page2">
+                        <button type="button" class="com_btn" disabled>다음</button>
+                    </div>
+                
+
+                
+
+                
+            </div>
+            <!-- //sub_con -->
+        </div> <!-- //container_in -->
+    </div>
+
+    <div data-include="../inc/footer.html"></div>
+            <!-- 계좌번호 은(는)<br>필수 입력 사항입니다 -->
+            <div class="com_pop_wrap w_min type21">
+                <div class="com_pop_cont">
+                    <div class="title_area">
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="main_tit_area">
+                            <div class="title small">알림</div>
+                            <div class="title">계좌번호 은(는)<br>필수 입력 사항입니다</div>
+                        </div>
+                        <div class="btn_cont direction">
+                            <button type="button" class="com_btn blue2">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //계좌번호 은(는)<br>필수 입력 사항입니다 -->
+
+            <!-- 계좌번호의<br>최소길이는 11 입니다 -->
+            <div class="com_pop_wrap w_min type22 active">
+                <div class="com_pop_cont active">
+                    <div class="title_area">
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="main_tit_area">
+                            <div class="title small">알림</div>
+                            <div class="title">계좌번호의<br>최소길이는 11 입니다</div>
+                        </div>
+                        <div class="btn_cont direction">
+                            <button type="button" class="com_btn blue2">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //계좌번호의<br>최소길이는 11 입니다 -->
+
+            <!-- 계좌번호의<br>최대길이는 14 입니다 -->
+            <div class="com_pop_wrap w_min type23">
+                <div class="com_pop_cont">
+                    <div class="title_area">
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="main_tit_area">
+                            <div class="title small">알림</div>
+                            <div class="title">계좌번호의<br>최대길이는 14 입니다</div>
+                        </div>
+                        <div class="btn_cont direction">
+                            <button type="button" class="com_btn blue2">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //계좌번호의<br>최대길이는 14 입니다 -->
+
+            <!-- 평생계좌번호는 자동이체<br>출금이 불가하니 -->
+            <div class="com_pop_wrap w_min type24">
+                <div class="com_pop_cont">
+                    <div class="title_area">
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="main_tit_area">
+                            <div class="title small">알림</div>
+                            <div class="title">평생계좌번호는 자동이체<br>출금이 불가하니 원계좌번호를<br>등록하시길 바랍니다.</div>
+                            <div class="text">유의하시어 변경 처리하십시오</div>
+                        </div>
+                        <div class="btn_cont direction">
+                            <button type="button" class="com_btn blue2">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //평생계좌번호는 자동이체<br>출금이 불가하니 -->
+
+
+    
+    <div class="com_pop_wrap type11">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">전체보기</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                내용
+                <div class="btn_cont page">
+                    <button type="button" class="com_btn blue2">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="com_pop_wrap w_min type12">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="text_area">
+                    <h2 class="sub_tit">알림</h2>
+                    <div class="tit">
+                        동의하지 않을 경우<br>
+                        자동이체 계좌 변경이 불가합니다.
+                    </div>
+                </div>
+                <div class="btn_cont page">
+                    <button type="button" class="com_btn blue2 end">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div> <!-- //wrap -->
+
+
+
+</body>
+<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+<script type="text/javascript" src="/resources/js/include.js"></script>
+<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</html>

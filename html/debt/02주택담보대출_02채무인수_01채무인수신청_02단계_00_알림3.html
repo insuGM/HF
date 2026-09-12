@@ -1,0 +1,931 @@
+ <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko">
+    <meta property="og:site_name" content="한국주택금융공사">
+    <meta property="og:updated_time" content="">
+    <meta name="twitter:card" content="summary">
+    <title>한국주택금융공사</title>
+    
+    <!-- CSS 파일들 -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/cms.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/breadcrumb.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/dictionary-of-terms-sub.widget.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/cms-common.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/layout.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/font.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/board.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_common/voc.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/common01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/faq01.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/_share/thumb01.css">
+
+    <!-- JavaScript 파일들 -->
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script defer type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+    
+    <!-- !추가부분 -->
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+
+    <!--// !추가부분 -->
+</head>
+<body>
+
+<div class="wrapper sub" id="app">
+    <div data-include="../inc/header.html"></div>
+
+    <div id="container">
+        <div class="container_in">
+
+            <div class="contents">
+
+              <div class="pro_anagement_cont">
+                  <div class="step_cont">
+                      <span class="blue">2단계</span> / 8단계
+                  </div>
+                  <div class="step_list_cont type1">
+                      <ol class="krds-step-wrap">
+                          <li class="done">
+                              <span>
+                                  <span class="tit">고객정보확인</span>
+                              </span>
+                          </li>
+                          <li class="active">
+                              <span>
+                                  <em class="sr-only">현재단계</em>
+                                  <span class="tit">정보제공동의</span>
+                              </span>
+                          </li>
+                          <li>
+                              <span>
+                                  <span class="tit">스마트서류제출</span>
+                              </span>
+                          </li>
+                      </ol>
+                  </div>
+              </div>
+              <div class="bg_line"></div>
+              <div class="pro_anagement_cont">
+                    <div class="sub_tit_area">
+                    <h2 class="tit">정보제공동의</h2>
+                  </div>
+                  <div class="com_info_inp_list_cont">
+                        <ul class="list">
+                            <li>
+                                <div class="cont">
+                                    <div class="fieldset">
+                                        <div class="form-group">
+                                            <div class="form-tit-cont">
+                                                <div class="form-tit">
+                                                    <label for="consult_name">국적</label>
+                                                    <div class="point">*</div>
+                                                </div>
+                                            </div>
+                                            <div class="form-conts">
+                                                <button type="button" class="slt_btn krds-slt-btn" data-pop="com_pop1">
+                                                선택해 주세요
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cont">
+                                    <div class="fieldset">
+                                        <div class="form-group">
+                                            <div class="form-tit-cont type1">
+                                                <div class="form-tit">
+                                                    <label for="consult_name">주민등록번호 변경여부</label>
+                                                    <div class="point">*</div>
+                                                </div>
+                                                <button type="button" data-pop="com_pop1" class="link_btn">제목</button>
+                                            </div>
+                                            <div class="form-conts">
+                                                <div class="chip-wrap cunt auto">
+                                                    <div class="krds-form-chip type1">
+                                                        <input type="radio" name="rdo_1" id="rdo_1_1" checked class="radio">
+                                                        <label for="rdo_1_1">아니요</label>
+                                                    </div>
+                                                    <div class="krds-form-chip type1">
+                                                        <input type="radio" name="rdo_1" id="rdo_1_2" class="radio">
+                                                        <label for="rdo_1_2">예</label>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 주민등록번호 변경여부 > '예' 선택 시 노출 -->
+                            <li>
+                                <div class="cont">
+                                    <div class="fieldset">
+                                        <div class="form-group">
+                                            <div class="form-tit-cont">
+                                                <div class="form-tit">
+                                                    <label>변경 전 주민등록번호</label>
+                                                    <div class="point">*</div>
+                                                </div>
+                                                <button type="button" class="btn">추가</button>
+                                            </div>
+                                            <div class="form-conts">
+                                                <div class="inp_add_area">
+                                                    <ul class="list">
+                                                        <li>
+                                                            <div class="number_area">
+                                                                <div class="inp_area">
+                                                                    <input type="text" id="prev_rrn1_1" class="krds-input" placeholder="앞자리" title="변경 전 주민등록번호 앞자리" maxlength="6">
+                                                                </div>
+                                                                <span class="txt">-</span>
+                                                                <div class="inp_area">
+                                                                    <input type="password" id="prev_rrn1_2" class="krds-input" placeholder="뒷자리" title="변경 전 주민등록번호 뒷자리" maxlength="7">
+                                                                </div>
+                                                            </div>
+                                                            <div class="btn_cont">
+                                                                <button type="button" class="com_btn">삭제</button>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- //주민등록번호 변경여부 > '예' 선택 시 노출 -->
+                            <li>
+                                <div class="cont">
+                                    <div class="fieldset">
+                                        <div class="form-group">
+                                            <div class="form-tit-cont type1">
+                                                <div class="form-tit">
+                                                    <label for="consult_name">결혼구분</label>
+                                                    <div class="point">*</div>
+                                                </div>
+                                                <button type="button" data-pop="com_pop1" class="link_btn">제목</button>
+                                            </div>
+                                            <div class="form-conts">
+                                                <button type="button" class="slt_btn krds-slt-btn" data-pop="com_pop11">
+                                                    선택해 주세요
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>                       
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cont">
+                                    <div class="fieldset">
+                                        <div class="form-group">
+                                            <div class="form-tit-cont type1">
+                                                <div class="form-tit">
+                                                    <label for="consult_name">배우자 소득</label>
+                                                    <div class="point">*</div>
+                                                </div>
+                                                <button type="button" data-pop="com_pop1" class="link_btn">제목</button>
+                                            </div>
+                                            <div class="form-conts">
+                                                <div class="chip-wrap cunt auto">
+                                                    <div class="krds-form-chip type1">
+                                                        <input type="radio" name="rdo_2" id="rdo_2_1" checked class="radio">
+                                                        <label for="rdo_2_1">소득 있음</label>
+                                                    </div>
+                                                    <div class="krds-form-chip type1">
+                                                        <input type="radio" name="rdo_2" id="rdo_2_2" class="radio">
+                                                        <label for="rdo_2_2">소득 없음</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cont">
+                                    <div class="fieldset">
+                                        <div class="form-group">
+                                            <div class="form-tit-cont">
+                                                <div class="form-tit">
+                                                    <label for="consult_name">결혼예정일</label>
+                                                    <div class="point">*</div>
+                                                </div>
+                                            </div>
+                                            <div class="form-conts calendar-conts">
+                                                <div class="form-sub">
+                                                    <div class="text">대출신청일로부터 3개월 이내</div>
+                                                    <div class="calendar-input">
+                                                        <input type="number" class="krds-input datepicker cal" placeholder="YYYY.MM.DD" id="cal" />
+                                                        <button type="button" class="krds-btn medium icon form-btn-datepicker">
+                                                            <span class="sr-only">달력 열기</span>
+                                                            <i class="svg-icon ico-calendar"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cont">
+                                    <div class="fieldset">
+                                        <div class="form-group">
+                                            <div class="form-tit-cont">
+                                            <div class="form-tit">
+                                                    <label for="consult_name">부채</label>
+                                                    <div class="point">*</div>
+                                                </div>
+                                            </div>
+                                            <div class="form-conts">
+                                                <button type="button" class="slt_btn krds-slt-btn" data-pop="com_pop11">
+                                                    선택해 주세요
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>                       
+                                </div>
+                            </li>
+                        </ul>
+                  </div>
+              </div>
+              <div class="bg_line"></div>
+              <div class="pro_anagement_cont">
+                <div class="debt_list_area">
+                    <ul class="list">
+                        <li>
+                            <div class="pro_anagement_chk_list_area">
+                                <div class="fieldset">
+                                    <div class="form-group none_bg">
+                                        <div class="form-conts">
+                                            <div class="krds-check-area chk-column">
+                                                <div class="krds-form-check all">
+                                                    <input type="checkbox" id="chk_additional_1">
+                                                    <label for="chk_additional_1">
+                                                        [전체] 보금자리론 설명서(주택연금 사전예약 보금자리론 포함)
+                                                        <button type="button" data-pop="com_pop12" class="btn">전체보기</button>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- text list -->
+                            <!-- krds-info-list -->
+                            <div class="krds_info_list_area mt bg">
+                                <ul class="krds-info-list importance">
+                                    <li>본 설명서는 고객님의 채무인수 신청시점 기준 보금자리론 설명서입니다.</li>
+                                    <li>[유의사항] 설명서의 설명을 제대로 이해하지 못한 상태에서 설명을 이해했다는 서명을 하거나 녹취기록을 남기는 경우 추후 권리구제가 어려울 수 있습니다.</li>
+                                </ul>
+                            </div>
+                            <!-- //krds-info-list -->
+                            <!-- //text list -->
+                            <!-- text list -->
+                            <!-- krds-info-list -->
+                            <div class="krds_info_list_area mt">
+                                <ul class="krds-info-list decimal">
+                                    <li class="title">아래 중요사항을 확인하여 주시기 바랍니다.</li>
+                                    <li>본인 및 배우자의 주택 소유여부, 부부합산소득, 주택이 위치한 지역, 시세 등에 따라 대출이 다르게 적용될 수 있습니다.</li>
+                                    <li>대출과 관련하여 체결한 약정을 위반하는 경우 기한의 이익이 상실되며, 고객님께서는 대출받은 금액을 즉시 상황하여야 합니다. 확인 선택.</li>
+                                    <li>기한의 이익이 상실되었음에도 채무가 상환되지 않는 경우 담보로 제공된 주택을 처분하여 대출금을 상환하는데 이를 사용할 수 있으며, 이 경우 고객님께서 담보르 제공된 주택의 소유권을 상실할 수 있습니다.</li>
+                                </ul>
+                            </div>
+                            <!-- //krds-info-list -->
+                            <!-- //text list -->
+                        </li>
+                        <li>
+                            <div class="pro_anagement_chk_list_area">
+                                <div class="fieldset">
+                                    <div class="form-group none_bg">
+                                        <div class="form-conts">
+                                            <div class="krds-check-area chk-column">
+                                                <div class="krds-form-check all">
+                                                    <input type="checkbox" id="chk_additiona2_1">
+                                                    <label for="chk_additiona2_1">
+                                                        전체동의
+                                                        <button type="button" data-pop="com_pop14" class="btn">전체보기</button>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group none_bg">
+                                        <div class="form-conts">
+                                            <div class="krds-check-area chk-column">
+                                                <div class="krds-form-check">
+                                                    <input type="checkbox" id="chk_additiona2_2">
+                                                    <label for="chk_additiona2_2">
+                                                        [필수] 개인(신용)정보 수정·이용·조회·제공 동의서 
+                                                    </label>
+                                                </div>
+                                                <div class="krds-form-check">
+                                                    <input type="checkbox" id="chk_additiona2_3">
+                                                    <label for="chk_additiona2_3">
+                                                        [필수] 행정정보 공동이용 사전 동의서
+                                                    </label>
+                                                </div>
+                                                <div class="krds-form-check">
+                                                    <input type="checkbox" id="chk_additiona2_4">
+                                                    <label for="chk_additiona2_4">
+                                                        [필수] 스크래핑(서류 제출 자동화) 서비스 이용 동의서
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- text list -->
+                            <!-- krds-info-list -->
+                            <div class="krds_info_list_area mt">
+                                <ul class="krds-info-list importance">
+                                    <li>
+                                        스크래핑 서비스란 별도의 서류발급 및 제출 절차 없이 공동/금융인증서를 통해 기본적인 대출심사서류를 자동으로 제출하는 서비스입니다. <br>
+                                        스크래핑 서비스 이용 미동의시 대출심사서류를 별도로 발급 및 제출하셔야 합니다.
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //krds-info-list -->
+                            <!-- //text list -->
+                        </li>
+                        <li>
+                            <div class="pro_anagement_chk_list_area">
+                                <div class="fieldset">
+                                    <div class="form-group none_bg">
+                                        <div class="form-conts">
+                                            <div class="krds-check-area chk-column">
+                                                <div class="krds-form-check all">
+                                                    <input type="checkbox" id="chk_additiona3_1">
+                                                    <label for="chk_additiona3_1">
+                                                        [선택] 전체동의
+                                                        <button type="button" data-pop="com_pop14" class="btn">전체보기</button>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group none_bg">
+                                        <div class="form-conts">
+                                            <div class="krds-check-area chk-column">
+                                                <div class="krds-form-check">
+                                                    <input type="checkbox" id="chk_additiona3_2">
+                                                    <label for="chk_additiona3_2">
+                                                        [선택] 행정정보 공동이용 사전동의서
+                                                    </label>
+                                                </div>
+                                                <div class="inp_col_area">
+                                                    <div class="krds-form-check">
+                                                        <input type="checkbox" id="chk_additiona3_3">
+                                                        <label for="chk_additiona3_3">
+                                                            [선택] 개인(민감)정보 수집·이용 동의서
+                                                        </label>
+                                                    </div>
+                                                    <!-- text list -->
+                                                    <!-- krds-info-list -->
+                                                    <div class="krds_info_list_area">
+                                                        <ul class="krds-info-list importance">
+                                                            <li>
+                                                                본인께서 장애인 보증한도 보증료 우대 대상자로, 해당 우대를 받고자 하는 경우 개인(민감)정보 수집 · 이용 · 조회 · 제공 동의서에 필수로 동의하셔야 합니다.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- //krds-info-list -->
+                                                    <!-- //text list -->
+                                                </div>
+                                                <div class="krds-form-check">
+                                                    <input type="checkbox" id="chk_additiona3_4">
+                                                    <label for="chk_additiona3_4">
+                                                        [선택] 개인(신용)정보 수정·이용·조회·제공 동의서(상품서비스 안내 등)
+                                                    </label>
+                                                </div>
+                                                <div class="krds-form-check">
+                                                    <input type="checkbox" id="chk_additiona3_5">
+                                                    <label for="chk_additiona3_5">
+                                                        [선택] 행정정보 공동이용 사전동의서
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+              <div class="btn_cont page2 type1">
+                  <button type="button" class="com_btn" disabled>확인</button>
+              </div>
+                
+            </div>
+            <!-- //sub_con -->
+        </div> <!-- //container_in -->
+    </div>
+
+    <div data-include="../inc/footer.html"></div>
+            <!-- 알림 -->
+            <div class="com_pop_wrap type23 active">
+                <div class="com_pop_cont type_bottom_sheet active">
+                    <div class="title_area">
+                        <div class="title">알림</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="main_tit_area m0">
+                            <div class="text">스크래핑(서류 제출 자동화) 서비스 및 주택금융상품 이용 미동의 시 대출심사에 필요한 서류를 별도로 발급 · 제출하셔야 합니다.</div>
+                            <div class="text">선택 동의 사항에 동의하시면 간편하게 서류 제출이 가능합니다.</div>
+                        </div>
+                        <div class="com_info_box">
+                            <div class="tit">동의하시고 계속 진행 하시겠습니까?</div>
+                            <ul class="krds-info-list note">
+                                <li>네(동의)를 선택하실 경우 선택 동의 사항에 모두 동의 처리됩니다.</li>
+                            </ul>
+                        </div>
+                        <div class="btn_cont direction row">
+                            <button type="button" class="com_btn gray3" data-close-pop>아니오(미동의)</button>
+                            <button type="button" class="com_btn blue2">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //알림 -->
+
+            <!-- 위 선택사항을<br>모두 선택해주시기 바랍니 -->
+            <div class="com_pop_wrap w_min type22">
+                <div class="com_pop_cont">
+                    <div class="title_area">
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="main_tit_area">
+                            <div class="title small">알림</div>
+                            <div class="title">위 선택사항을<br>모두 선택해주시기 바랍니다.</div>
+                        </div>
+                        <div class="btn_cont direction">
+                            <button type="button" class="com_btn blue2">네 (동의)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //위 선택사항을<br>모두 선택해주시기 바랍니 -->
+
+            <!-- [전체보기]로 동의서 내용을<br>확인 후  -->
+            <div class="com_pop_wrap w_min type21">
+                <div class="com_pop_cont">
+                    <div class="title_area">
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="main_tit_area">
+                            <div class="title small">알림</div>
+                            <div class="title">[전체보기]로 동의서 내용을<br>확인 후 동의여부에<br>체크해주시기 바랍니다</div>
+                        </div>
+                        <div class="btn_cont direction">
+                            <button type="button" class="com_btn blue2">네 (동의)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //[전체보기]로 동의서 내용을<br>확인 후  -->
+
+
+    <div class="com_pop_wrap type1">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">제목</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="fieldset">
+                    <div class="form-group none_bg">
+                        <div class="form-list-info info">
+                            <ul class="krds-info-list decimal">
+                                <li>텍스트 목록 레벨1</li>
+                                <li>
+                                    텍스트 목록 레벨1
+                                    <ul class="krds-info-list dash">
+                                    <li>텍스트 목록 레벨2</li>
+                                    <li>
+                                        텍스트 목록 레벨2
+                                        <ul class="krds-info-list hollow">
+                                        <li>텍스트 목록 레벨3</li>
+                                        <li>텍스트 목록 레벨3</li>
+                                        </ul>
+                                    </li>
+                                    <li>텍스트 목록 레벨2</li>
+                                    </ul>
+                                </li>
+                                <li>텍스트 목록 레벨1</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="com_pop_wrap type11">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">제목</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content">
+                <div class="sort_list_area">
+                    <ul class="list">
+                        <li>
+                            <button type="button" class="chk_btn active">
+                                <div class="txt">기타</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">기타</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="chk_btn">
+                                <div class="txt">기타</div>
+                                <div class="icon"></div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+            <!-- 보금자리론 설명서 전체보기 -->
+            <div class="com_pop_wrap full type12">
+                <div class="com_pop_cont">
+                    <div class="title_area">
+                        <div class="title">보금자리론 설명서 전체보기</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="doc_call_area">설명서 전체 이미지</div>
+                        <div class="btn_cont page">
+                            <button type="button" class="com_btn end blue2">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //보금자리론 설명서 전체보기 -->
+
+            <!-- 약관 전체보기 -->
+            <div class="com_pop_wrap full type14">
+                <div class="com_pop_cont">
+                    <div class="title_area">
+                        <div class="title">약관 전체보기</div>
+                        <button type="button" class="close" title="팝업 닫기"></button>
+                    </div>
+                    <div class="com_pop_content">
+                        <div class="doc_call_area">설명서 전체 이미지</div>
+                        <div class="btn_cont page">
+                            <button type="button" class="com_btn end blue2">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //약관 전체보기 -->
+
+
+    <div class="com_pop_wrap datepicker type13">
+        <div class="com_pop_cont">
+            <div class="title_area">
+                <div class="title">대출일자</div>
+                <button type="button" class="close" title="팝업 닫기"></button>
+            </div>
+            <div class="com_pop_content calendar-conts">
+                <div class="krds-calendar-area">
+                    <div class="calendar-wrap bottom single" aria-label="달력">
+                    <div class="calendar-head">
+                        <button type="button" class="btn-cal-move prev"><span class="sr-only">이전 달</span></button>
+                        <div class="calendar-switch-wrap">
+                        <div class="calendar-drop-down">
+                            <button type="button" class="btn-cal-switch year" aria-label="연도 선택">2024년</button>
+                            <div class="calendar-select calendar-year-wrap">
+                                <ul class="sel year">
+                                    <li>
+                                    <button type="button">2001년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button" class="active">2002년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button" disabled>2003년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">2004년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">2005년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">2006년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">2007년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">2008년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">2009년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">2010년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">2011년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">2012년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">2013년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">2014년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">2015년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">2016년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">2017년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">2018년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">2019년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">2020년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">2021년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">2022년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">2023년</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">2024년</button>
+                                    </li>
+                                </ul>
+                                </div>
+                            </div>
+                            <div class="calendar-drop-down">
+                                <button type="button" class="btn-cal-switch month" aria-label="월 선택">12월</button>
+                                <div class="calendar-select calendar-mon-wrap">
+                                <ul class="sel month">
+                                    <li>
+                                    <button type="button" disabled>01월</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">02월</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">03월</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">04월</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">05월</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">06월</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">07월</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">08월</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">09월</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">10월</button>
+                                    </li>
+                                    <li>
+                                    <button type="button">11월</button>
+                                    </li>
+                                    <li>
+                                    <button type="button" class="active">12월</button>
+                                    </li>
+                                </ul>
+                                </div>
+                            </div>
+                            </div>
+                            <button type="button" class="btn-cal-move next"><span class="sr-only">다음 달</span></button>
+                        </div>
+                        <div class="calendar-body">
+                            <div class="calendar-table-wrap">
+                            <table class="calendar-tbl">
+                                <caption>
+                                2024년 12월
+                                </caption>
+                                <thead>
+                                <tr>
+                                    <th>일</th>
+                                    <th>월</th>
+                                    <th>화</th>
+                                    <th>수</th>
+                                    <th>목</th>
+                                    <th>금</th>
+                                    <th>토</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="old day-off">
+                                    <button type="button" class="btn-set-date"><span>26</span></button>
+                                    </td>
+                                    <td class="old">
+                                    <button type="button" class="btn-set-date"><span>27</span></button>
+                                    </td>
+                                    <td class="old">
+                                    <button type="button" class="btn-set-date"><span>28</span></button>
+                                    </td>
+                                    <td class="old">
+                                    <button type="button" class="btn-set-date"><span>29</span></button>
+                                    </td>
+                                    <td class="old">
+                                    <button type="button" class="btn-set-date"><span>30</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>1</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>2</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="day-off">
+                                    <button type="button" class="btn-set-date"><span>3</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>4</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>5</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>6</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>7</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>8</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>9</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>10</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>11</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>12</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>13</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>14</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>15</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>16</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="day-off">
+                                    <button type="button" class="btn-set-date"><span>17</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>18</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>19</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>20</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>21</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>22</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>23</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="day-off">
+                                    <button type="button" class="btn-set-date"><span>24</span></button>
+                                    </td>
+                                    <td class="today">
+                                    <button type="button" class="btn-set-date"><span>25</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>26</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>27</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>28</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>29</span></button>
+                                    </td>
+                                    <td>
+                                    <button type="button" class="btn-set-date"><span>30</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="day-off">
+                                    <button type="button" class="btn-set-date"><span>31</span></button>
+                                    </td>
+                                    <td class="new">
+                                    <button type="button" class="btn-set-date"><span>1</span></button>
+                                    </td>
+                                    <td class="new">
+                                    <button type="button" class="btn-set-date"><span>2</span></button>
+                                    </td>
+                                    <td class="new">
+                                    <button type="button" class="btn-set-date"><span>3</span></button>
+                                    </td>
+                                    <td class="new">
+                                    <button type="button" class="btn-set-date"><span>4</span></button>
+                                    </td>
+                                    <td class="new">
+                                    <button type="button" class="btn-set-date"><span>5</span></button>
+                                    </td>
+                                    <td class="new">
+                                    <button type="button" class="btn-set-date"><span>6</span></button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn_cont sub">
+                    <button type="button" class="com_btn blue2 krds-btn primary">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div> <!-- //wrap -->
+
+
+
+</body>
+<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+<script type="text/javascript" src="/resources/js/include.js"></script>
+<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</html>
