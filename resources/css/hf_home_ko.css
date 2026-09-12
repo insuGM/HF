@@ -1158,6 +1158,7 @@ nav.tab_bar {
     width: 100%;
     padding: var(--hf-number-4) var(--hf-number-3);
     border-radius: 1.6rem;
+    gap: var(--hf-gap-1);
   }
 
   nav.tab_bar .nav_list li .hf_btn.on {
@@ -1198,7 +1199,7 @@ nav.tab_bar {
   }
 
   nav.tab_bar .nav_list li .hf_btn .icon.issue:before {
-    mask-image: url('/resources/js/krds/img/component/icon/ico_tab_ft_icon03.svg');
+    mask-image: url('/resources/js/krds/img/component/icon/ico_tab_ft_icon06.svg');
   }
 
   nav.tab_bar .nav_list li .hf_btn .icon.menu:before {
@@ -1221,11 +1222,12 @@ nav.tab_bar {
 .krds-identifier {
   background-color: var(--krds-light-color-surface-inverse);
   border-radius: initial;
+  min-height: auto;
 }
 
 .krds-identifier .inner {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-start;
   padding: 0;
   max-width: var(--hf-layout-width);
@@ -1240,8 +1242,9 @@ nav.tab_bar {
 }
 
 .krds-identifier .inner .ban-txt {
-
   color: var(--hf-color-text-basic-inverse);
+  font-size: var(--hf-font-size-body-xxsmall);
+  line-height: 1.3;
 }
 
 
@@ -11573,9 +11576,6 @@ nav.tab_bar {
   --krds-table--data-tbody-mobile-font-size: var(--hf-font-size-label-medium);
 }
 
-.krds-table-wrap.scroll-y {
-  ov
-}
 
 @media (min-width: 0) and (max-width: 767px) {
   .krds-table-wrap .tbl {
