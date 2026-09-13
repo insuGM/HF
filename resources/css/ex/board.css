@@ -150,7 +150,7 @@ button {
   height: 4.8rem;
   border: 1px solid var(--hf-color-light-gray-20);
   padding: 0 var(--hf-padding-6);
-  background-color: #ffffff;
+  background-color: var(--hf-color-surface-white);
   background-image: url('/resources/images/common/icon/ico_arr_down.svg');
   background-position: center right 1.6rem;
   background-repeat: no-repeat;
@@ -686,7 +686,7 @@ body .krds-btn.text {
   right: 0;
   left: 0;
   padding: var(--hf-padding-6);
-  background-color: #ffffff;
+  background-color: var(--hf-color-surface-white);
   z-index: 70;
 }
 
@@ -740,7 +740,7 @@ body .krds-btn.text {
   right: 0;
   width: 100%;
   height: 3rem;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+  background: linear-gradient(180deg, var(--hf-color-light-alpha-white0) 0%, var(--hf-color-surface-white) 100%);
 }
 
 .btn_cont.sub:before {
@@ -897,7 +897,7 @@ body .krds-btn.text {
   background-color: var(--hf-color-background-inverse);
   font-weight: 700;
   font-size: var(--hf-font-size-body-xsmall);
-  color: #ffffff;
+  color: var(--hf-color-text-basic-inverse);
   text-align: center;
   border-radius: var(--hf-number-max);
 }
@@ -1248,7 +1248,7 @@ body .krds-btn.text {
 .btn_cont .com_btn.blue2 {
   border: initial;
   background-color: var(--hf-color-button-primary-fill);
-  color: #ffffff;
+  color: var(--hf-color-text-basic-inverse);
 }
 
 .btn_cont .com_btn.gray {
@@ -1353,7 +1353,7 @@ body .krds-btn.text {
 }
 
 .btn_cont .com_btn.link.type2 i {
-  background-color: #ffffff;
+  background-color: var(--hf-color-surface-white);
   transform: translateY(-50%) rotate(-90deg);
 }
 
@@ -1409,7 +1409,7 @@ body .krds-btn.text {
 }
 
 .btn_cont .com_btn.blue3 {
-  background-color: #f5f8ff;
+  background-color: var(--hf-color-surface-primary-subtler);
   font-weight: 500;
   color: var(--hf-color-text-primary);
 }
@@ -1474,7 +1474,7 @@ body .krds-btn.text {
 .jconfirm-buttons .btn.btn-primary {
   border: initial;
   background-color: var(--hf-color-button-primary-fill);
-  color: #ffffff;
+  color: var(--hf-color-text-basic-inverse);
 }
 
 .jconfirm-buttons .btn.btn-cancel {
@@ -1602,7 +1602,7 @@ body .krds-btn.text {
   position: sticky;
   top: 0;
   padding: var(--hf-padding-9) var(--hf-padding-8) var(--hf-padding-6);
-  background-color: #ffffff;
+  background-color: var(--hf-color-surface-white);
   z-index: 5;
 }
 
@@ -2314,9 +2314,9 @@ body .krds-btn.text {
   height: 2.4rem;
   border: 0;
   border-radius: var(--hf-radius-max);
-  background: conic-gradient(var(--hf-color-element-primary) var(--gauge, 0deg), #cdd1d5 var(--gauge, 0deg));
-  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 0.4rem), #000 calc(100% - 0.38rem));
-  mask: radial-gradient(farthest-side, #0000 calc(100% - 0.4rem), #000 calc(100% - 0.38rem));
+  background: conic-gradient(var(--hf-color-element-primary) var(--gauge, 0deg), var(--hf-color-button-disabled) var(--gauge, 0deg));
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 0.4rem), var(--hf-color-light-gray-100) calc(100% - 0.38rem));
+  mask: radial-gradient(farthest-side, #0000 calc(100% - 0.4rem), var(--hf-color-light-gray-100) calc(100% - 0.38rem));
   animation: docGaugeFill 1s linear forwards;
 }
 
@@ -3684,7 +3684,7 @@ body .krds-btn.text {
   top: 0;
   left: 0;
   height: 1.2rem;
-  background: linear-gradient(90deg, #4C87F6 19.42%, #3675ED 87.38%);
+  background: linear-gradient(90deg, var(--hf-color-light-primary-40) 19.42%, #3675ED 87.38%);
   border-radius: var(--hf-radius-large1);
 }
 
@@ -3698,7 +3698,7 @@ body .krds-btn.text {
   width: 5.8rem;
   height: 3.2rem;
   border: 1px solid var(--hf-color-border-secondary-light);
-  background-color: #ffffff;
+  background-color: var(--hf-color-surface-white);
   box-shadow: 0 0 0.2rem 0 var(--hf-light-color-alpha-shadow2);
   border-radius: var(--hf-radius-max);
   transform: translateY(-50%);
@@ -4006,7 +4006,7 @@ body .krds-btn.text {
   justify-content: center;
   height: 22rem;
   padding: var(--hf-padding-9) 0 0;
-  background-color: #e5f2fd;
+  background-color: var(--hf-color-light-information-5);
   background-image: url('/resources/images/common/icon/ico_simulation_bg8.svg');
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -4441,7 +4441,7 @@ body .krds-btn.text {
   font-weight: 700;
   font-size: var(--hf-font-size-heading-small);
   line-height: 3.2rem;
-  color: #ffffff;
+  color: var(--hf-color-text-basic-inverse);
 }
 
 .check_order_list.type_radio .check_order_chip input:checked+label .chip_num {
