@@ -8,14 +8,14 @@
 
 .voc .reply {padding-top:3.67em;}
 .voc .reply button{display:block; }
-.voc .reply li{position:relative;padding:17px 0 17px 17px;border-bottom:1px solid #e6e6e6;color:#4d4d4d;}
+.voc .reply li{position:relative;padding:17px 0 17px 17px;border-bottom:var(--hf-border-width-static-regular) solid var(--hf-color-border-gray-light);color:var(--hf-color-text-subtle);}
 .voc .reply .write-area{overflow:hidden;padding-top:0.67em;}
 .voc .reply .write-area textarea,
 .voc .reply .write-area button{display:block;float:left;}
-.voc .reply textarea { width:90%;height:88px; border: 1px solid #ccc; }
+.voc .reply textarea { width:90%;height:88px; border: var(--hf-border-width-static-regular) solid var(--hf-color-light-gray-extended-20); }
 .voc .reply textarea { border-right:0; }
 .voc .reply li textarea{width:729px;}
-.voc .reply button.write{width:90px;height:90px;border:1px solid #ccc}
+.voc .reply button.write{width:90px;height:90px;border:var(--hf-border-width-static-regular) solid var(--hf-color-light-gray-extended-20)}
 
 /* paging
 .modal-body  .paging-comm {overflow:hidden;width:100%;text-align:center;margin-top:4em;}
@@ -32,9 +32,9 @@
 .modal-body .comment-data .writer {
 	margin-right: 75px;
     font-size: 18px;
-    color: #737373;
+    color: var(--hf-color-text-muted);
 }
-.modal-body .comment-data li{position:relative;padding:17px 0 17px 17px;border-bottom:1px solid #e6e6e6;color:#4d4d4d;}
+.modal-body .comment-data li{position:relative;padding:17px 0 17px 17px;border-bottom:var(--hf-border-width-static-regular) solid var(--hf-color-border-gray-light);color:var(--hf-color-text-subtle);}
 .modal-body .comment-data pre {
     font-family: 'Nanum Gothic', '나눔고딕', 'Malgun Gothic', '맑은고딕', '애플고딕', '돋움', '굴림';
     font-size: 18px;
@@ -42,20 +42,20 @@
     line-height: 24px;
     letter-spacing: -0.045em;
 }
-.voc .reply .txt{padding:10px 17px 0 0;}
+.voc .reply .txt{padding:var(--hf-padding-4) 17px 0 0;}
 .btn-area{min-width:100px;background-position:64% 4px;}
 .voc .reply .write-area div.cmt-input {  display: block;  float: left; }
-.voc .reply div.cmt-input { width: 749px;  height: 88px;  border: 1px solid #ccc;  border-right: 0; }
+.voc .reply div.cmt-input { width: 749px;  height: 88px;  border: var(--hf-border-width-static-regular) solid var(--hf-color-light-gray-extended-20);  border-right: 0; }
 
-.voc .reply .title { float:left; background:url('../img/bg_voc.gif') no-repeat; padding:0 0 10px 35px; }
+.voc .reply .title { float:left; background:url('../img/bg_voc.gif') no-repeat; padding:0 0 var(--hf-padding-4) 35px; }
 .voc .reply .title span{ font-size:20px; color:#1b7a73 }
 .voc .reply .rating { float:right; }
 
-.voc .reply .result { padding: 20px 0; text-align:right; }
-.voc .reply .result button, .modal-body button { border : 1px solid #ccc; padding:10px; }
+.voc .reply .result { padding: var(--hf-padding-7) 0; text-align:right; }
+.voc .reply .result button, .modal-body button { border : var(--hf-border-width-static-regular) solid var(--hf-color-light-gray-extended-20); padding:var(--hf-padding-4); }
 .voc .reply .result .btn, .modal-footer .btn, .modal-body .btn {
 	display: inline-block;
-    padding: 6px 12px;
+    padding: var(--hf-number-4) var(--hf-padding-5);
     margin-bottom: 0;
     font-size: 14px;
     font-weight: 400;
@@ -71,15 +71,15 @@
     -ms-user-select: none;
     user-select: none;
     background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
+    border: var(--hf-border-width-static-regular) solid transparent;
+    border-radius: var(--hf-radius-small1);
 
 }
 
 .voc .reply .result .btn-default, .modal-body .btn-default {
-    color: #333;
-    background-color: #fff;
-    border-color: #ccc;
+    color: var(--hf-color-light-gray-80);
+    background-color: var(--hf-color-surface-white);
+    border-color: var(--hf-color-light-gray-extended-20);
 }
 
 .modal-body .comment-data {
@@ -96,7 +96,7 @@
 
 .btn-warning {
 	font-family: inherit;
-    color: #fff;
+    color: var(--hf-color-light-gray-0);
     background-color: #f0ad4e;
     border-color: #eea236;
 }
@@ -139,19 +139,19 @@
 .modal-dialog {
     position: relative;
     width: auto;
-    margin: 10px
+    margin: var(--hf-number-6)
 }
 .modal-content {
     position: relative;
-    background-color: #fff;
+    background-color: var(--hf-color-surface-white);
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    border: 1px solid #999;
-    border: 1px solid rgba(0, 0, 0, .2);
-    border-radius: 6px;
+    border: var(--hf-border-width-static-regular) solid var(--hf-color-light-gray-40);
+    border: var(--hf-border-width-static-regular) solid rgba(0, 0, 0, .2);
+    border-radius: var(--hf-radius-medium1);
     outline: 0;
     -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
-    box-shadow: 0 3px 9px rgba(0, 0, 0, .5)
+    box-shadow: 0 3px 9px var(--hf-color-light-alpha-black50)
 }
 .modal-backdrop {
     position: fixed;
@@ -160,7 +160,7 @@
     bottom: 0;
     left: 0;
     z-index: 1040;
-    background-color: #000
+    background-color: var(--hf-color-light-gray-100)
 }
 .modal-backdrop.fade {
     filter: alpha(opacity=0);
@@ -172,10 +172,10 @@
 }
 .modal-header {
     padding: 15px;
-    border-bottom: 1px solid #e5e5e5
+    border-bottom: var(--hf-border-width-static-regular) solid var(--hf-color-border-gray-light)
 }
 .modal-header .close {
-    margin-top: -2px
+    margin-top: calc(var(--hf-gap-1) * -1)
 }
 .modal-title {
     margin: 0;
@@ -188,14 +188,14 @@
 .modal-footer {
     padding: 15px;
     text-align: right;
-    border-top: 1px solid #e5e5e5
+    border-top: var(--hf-border-width-static-regular) solid var(--hf-color-border-gray-light)
 }
 .modal-footer .btn+.btn {
     margin-bottom: 0;
     margin-left: 5px
 }
 .modal-footer .btn-group .btn+.btn {
-    margin-left: -1px
+    margin-left: calc(var(--hf-number-1) * -1)
 }
 .modal-footer .btn-block+.btn-block {
     margin-left: 0
@@ -214,7 +214,7 @@
     }
     .modal-content {
         -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
+        box-shadow: 0 5px 15px var(--hf-color-light-alpha-black50)
     }
     .modal-sm {
         width: 300px
@@ -235,7 +235,7 @@
  /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
  @media print{
  	*,:after,:before{
- 		color:#000!important;
+ 		color:var(--hf-color-light-gray-100)!important;
  		text-shadow:none!important;
  		background:0 0!important;
  		-webkit-box-shadow:none!important;

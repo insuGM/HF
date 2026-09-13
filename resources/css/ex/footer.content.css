@@ -8,7 +8,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     width: 350px;
-    background: #fff;    
+    background: var(--hf-color-surface-white);    
     box-shadow: 3px 3px 15px rgb(0 0 0 / 12%);
     border-radius: 5px 5px 5px 5px;
 }
@@ -19,18 +19,18 @@
 .layer-pop-product-inner {
     position: relative;
     height: 100%;
-    border-radius: .4rem;
-    background-color: #fff;
-    box-shadow: rgba(0,0,0,.1) .5rem .5rem .5rem;
+    border-radius: var(--hf-radius-small1);
+    background-color: var(--hf-color-surface-white);
+    box-shadow: var(--hf-color-light-alpha-black10) .5rem .5rem .5rem;
     box-sizing: border-box;
 }
 .layer-pop-dictionary-inner, .layer-pop-dictionary-sub-inner {
     position: relative;
     overflow-y: auto;
     height: 100%;
-    border-radius: .4rem;
-    background-color: #fff;
-    box-shadow: rgba(0,0,0,.1) .5rem .5rem .5rem;
+    border-radius: var(--hf-radius-small1);
+    background-color: var(--hf-color-surface-white);
+    box-shadow: var(--hf-color-light-alpha-black10) .5rem .5rem .5rem;
     box-sizing: border-box;
 }
 .layer-pop-dictionary-close {
@@ -38,14 +38,14 @@
 	margin-left: auto;
 }
 
-.layer-pop-dictionary .layer-pop-dictionary-inner .head,.layer-pop-dictionary-sub .layer-pop-dictionary-sub-inner .head{padding:25px; background:#000; border-radius:5px 5px 0 0; position: relative; background: linear-gradient(to bottom, #43586b, #2c3e4f);}
-.layer-pop-dictionary .layer-pop-dictionary-inner .head .title, .layer-pop-dictionary-sub .layer-pop-dictionary-sub-inner .head .title, .layer-pop-product .layer-pop-product-inner .head .title{color:#fff; font-size:22px; margin-bottom:20px; font-weight:600}
+.layer-pop-dictionary .layer-pop-dictionary-inner .head,.layer-pop-dictionary-sub .layer-pop-dictionary-sub-inner .head{padding:25px; background:var(--hf-color-light-gray-100); border-radius:5px 5px 0 0; position: relative; background: linear-gradient(to bottom, var(--hf-color-light-graphic-70), #2c3e4f);}
+.layer-pop-dictionary .layer-pop-dictionary-inner .head .title, .layer-pop-dictionary-sub .layer-pop-dictionary-sub-inner .head .title, .layer-pop-product .layer-pop-product-inner .head .title{color:var(--hf-color-light-gray-0); font-size:22px; margin-bottom:var(--hf-gap-6); font-weight:600}
 .layer-pop-dictionary .layer-pop-dictionary-inner .head div input, .layer-pop-dictionary-sub .layer-pop-dictionary-sub-inner .head div input, .layer-pop-product.layer-pop-product-inner .head div input{height:37px; width:calc(100% - 41px);}
 .layer-pop-dictionary .layer-pop-dictionary-inner .head div img, .layer-pop-dictionary-sub .layer-pop-dictionary-sub-inner .head div img, .layer-pop-product .layer-pop-product-inner .head div img{vertical-align: middle;}
 .layer-pop-dictionary .layer-pop-dictionary-inner .dictionary_con, .layer-pop-dictionary-sub .layer-pop-dictionary-sub-inner .dictionary_con{padding:25px; border-radius:0 0 5px 5px; height:400px; overflow-y: auto;} 
-.layer-pop-dictionary .layer-pop-dictionary-inner .dictionary_con dt, .layer-pop-dictionary-sub .layer-pop-dictionary-sub-inner .dictionary_con dt{font-size:18px; color:#333; padding-bottom:10px; font-weight:600}
-.layer-pop-dictionary .layer-pop-dictionary-inner .dictionary_con dd, .layer-pop-dictionary-sub .layer-pop-dictionary-sub-inner .dictionary_con dd{font-size:14px; padding-bottom:35px; margin-bottom:35px; border-bottom:1px solid #ddd;}
-.layer-pop-dictionary .layer-pop-dictionary-inner .dictionary_con dd span, .layer-pop-dictionary-sub .layer-pop-dictionary-sub-inner .dictionary_con dd span{display:block; padding-bottom:10px;}
+.layer-pop-dictionary .layer-pop-dictionary-inner .dictionary_con dt, .layer-pop-dictionary-sub .layer-pop-dictionary-sub-inner .dictionary_con dt{font-size:18px; color:var(--hf-color-light-gray-80); padding-bottom:var(--hf-padding-4); font-weight:600}
+.layer-pop-dictionary .layer-pop-dictionary-inner .dictionary_con dd, .layer-pop-dictionary-sub .layer-pop-dictionary-sub-inner .dictionary_con dd{font-size:14px; padding-bottom:35px; margin-bottom:35px; border-bottom:var(--hf-border-width-static-regular) solid var(--hf-color-light-gray-extended-10);}
+.layer-pop-dictionary .layer-pop-dictionary-inner .dictionary_con dd span, .layer-pop-dictionary-sub .layer-pop-dictionary-sub-inner .dictionary_con dd span{display:block; padding-bottom:var(--hf-padding-4);}
 .layer-pop-dictionary .layer-pop-dictionary-inner .head .btn_close,.layer-pop-dictionary-sub .layer-pop-dictionary-sub-inner .head .btn_close{position: absolute; right:25px; top:23px; }
 
 /*.scroll-off { overflow-y: hidden !important; }*/
