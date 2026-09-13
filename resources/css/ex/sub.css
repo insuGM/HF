@@ -448,7 +448,7 @@
 #app .table_cont .title_area {display: flex; align-items: center; justify-content: space-between; width: 100%;}
 #app .table_cont .title_area .title {font-weight: 700; font-size: var(--hf-font-size-navigation-depth-medium); color: var(--hf-color-text-basic);}
 #app .table_cont .title_area .text {font-weight: 400; font-size: var(--hf-font-size-body-small); color: var(--hf-color-text-subtle);}
-#app .table_cont .table_area {border-top: 1px solid var(--hf-color-border-darker);}
+#app .table_cont .table_area {border-top: 1px solid var(--hf-color-border-gray-darker);}
 #app .table_cont .table_area table {width: 100%; table-layout: fixed; text-align: center;}
 #app .table_cont .table_area table caption {position: absolute; left: -9999px; overflow: hidden; width: 1px; height: 1px; line-height: 1px; font-size: 1px;}
 #app .table_cont .table_area table colgroup {}
@@ -698,7 +698,7 @@ nav.tab_bar {display: none !important;}
 .ver_cont .text_area {display: block; align-items: flex-start; justify-content: flex-start; gap: var(--hf-gap-7); width: 100%;}
 .ver_cont .text_area .title {font-weight: 500; font-size: var(--hf-font-size-body-large); color: var(--hf-color-text-basic);}
 .ver_cont .text_area .text {font-weight: 400; font-size: var(--hf-font-size-body-small); color: var(--hf-color-text-subtle);}
-.ver_cont .ver_btn {margin: var(--hf-gap-7) auto 0; border: 1px solid var(--hf-color-button-teriary-border); padding: var(--hf-padding-3) var(--hf-padding-5); font-weight: 500; font-size: var(--hf-font-size-label-small); color: var(--hf-color-text-basic); border-radius: var(--hf-radius-medium3);}
+.ver_cont .ver_btn {margin: var(--hf-gap-7) auto 0; border: 1px solid var(--hf-color-button-tertiary-border); padding: var(--hf-padding-3) var(--hf-padding-5); font-weight: 500; font-size: var(--hf-font-size-label-small); color: var(--hf-color-text-basic); border-radius: var(--hf-radius-medium3);}
 .ver_cont .ver_btn.gray {border: initial; background-color: var(--hf-color-light-gray-5); color: var(--hf-color-text-basic);}
 
 

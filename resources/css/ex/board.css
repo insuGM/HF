@@ -1223,7 +1223,7 @@ body .krds-btn.text {
   align-items: center;
   justify-content: center;
   width: 100%;
-  border: 1px solid var(--hf-color-button-teriary-border);
+  border: 1px solid var(--hf-color-button-tertiary-border);
   padding: var(--hf-padding-5) var(--hf-padding-6);
   font-weight: 500;
   font-size: var(--hf-font-size-body-medium);
@@ -1358,12 +1358,12 @@ body .krds-btn.text {
 }
 
 .btn_cont .com_btn.link.type2.org i {
-  background-color: var(--hf-color-button-teriary-border);
+  background-color: var(--hf-color-button-tertiary-border);
   transform: translateY(-50%) rotate(-90deg);
 }
 
 .btn_cont .com_btn.link.org i {
-  background-color: var(--hf-color-button-teriary-border);
+  background-color: var(--hf-color-button-tertiary-border);
   transform: translateY(-50%) rotate(-90deg);
 }
 
@@ -1449,7 +1449,7 @@ body .krds-btn.text {
 .jconfirm-buttons .btn {
   display: block;
   width: 100%;
-  border: 1px solid var(--hf-color-button-teriary-border);
+  border: 1px solid var(--hf-color-button-tertiary-border);
   padding: var(--hf-padding-5) var(--hf-padding-6);
   font-weight: 500;
   font-size: var(--hf-font-size-body-medium);
