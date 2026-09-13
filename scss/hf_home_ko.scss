@@ -1,8 +1,0 @@
-@charset "utf-8";
-@use './base';
-@use './mixin' as *;
-@use './layout'; // 레이아웃, 공통
-@use './main'; // 메인
-@use './contents1'; // 게시판 , 공사소개 연혁/CI
-@use './contents2'; // 통합검색
-@use './contents3'; // 
