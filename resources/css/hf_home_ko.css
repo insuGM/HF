@@ -605,6 +605,7 @@ html {
   --hf-color-element-disabled-light: #cdd1d5;
   --hf-color-input-border-error: #de3412;
   --hf-font-family-gov: "Pretendard GOV";
+  --hf-color-light-information-70: #085691;
   --hf-color-light-danger-10: #fcdfd9;
   --hf-color-light-danger-5: #fdefec;
   --hf-color-light-graphic-10: #e5ecf9;
@@ -1180,7 +1181,7 @@ nav.tab_bar {
     transform: translate(-50%, -50%);
     width: 2.4rem;
     height: 2.4rem;
-    background-color: #c1cbdd;
+    background-color: var(--hf-color-light-secondary-10);
     mask-position: center;
     mask-size: contain;
     mask-repeat: no-repeat;
@@ -2068,7 +2069,7 @@ nav.tab_bar {
   overflow: hidden;
   margin: 0 0 var(--hf-padding-8);
   padding: 0.3rem;
-  background: linear-gradient(90deg, #175fca 0%, #17b171 100%);
+  background: linear-gradient(90deg, var(--hf-color-light-primary-60) 0%, #17b171 100%);
   border-radius: 1.6rem;
   box-shadow: 0 0.2rem 1.6rem 0 var(--hf-color-alpha-shadow2);
 }
@@ -2319,7 +2320,7 @@ nav.tab_bar {
 
 .product_info_list_cont .product_list_area>.list>li .product_info_cont .pro_list>li .product_data_cont .pro_data_info_cont .pro_data_area .box .mark.blue {
   background-color: var(--hf-color-light-primary-5);
-  color: #3E7BFF;
+  color: var(--hf-color-light-primary-40);
 }
 
 .product_info_list_cont .product_list_area>.list>li .product_info_cont .pro_list>li .product_data_cont .pro_data_cont {
@@ -10801,19 +10802,19 @@ nav.tab_bar {
 }
 
 .ci_content .txt-box .color_box .color_item:nth-child(1) .swatch {
-  background-color: #0054A0;
+  background-color: var(--hf-color-light-information-70);
 }
 
 .ci_content .txt-box .color_box .color_item:nth-child(1) strong {
-  color: #0054A0;
+  color: var(--hf-color-light-information-70);
 }
 
 .ci_content .txt-box .color_box .color_item:nth-child(2) .swatch {
-  background-color: #0EA74F;
+  background-color: var(--hf-color-light-support-green-70);
 }
 
 .ci_content .txt-box .color_box .color_item:nth-child(2) strong {
-  color: #0EA74F;
+  color: var(--hf-color-light-support-green-70);
 }
 
 .ci_content .txt-box .color_box .color_item:nth-child(3) .swatch {
@@ -29993,7 +29994,7 @@ HF 소식
 
 .nmain_form_tit .point {
   margin-left: .2rem;
-  color: #C8394B;
+  color: var(--hf-color-light-point-50);
 }
 
 .nmain_field+.nmain_field {

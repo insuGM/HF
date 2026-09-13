@@ -4577,7 +4577,7 @@ body .krds-btn.text {
 }
 
 .hf-prod-hero .hf-prod-hero-tit .blue {
-  color: #3E7BFF;
+  color: var(--hf-color-light-primary-40);
 }
 
 .hf-prod-hero .hf-prod-hero-txt {
@@ -4686,7 +4686,7 @@ body .krds-btn.text {
 }
 
 .hf-prod-feature .hf-prod-feature-txt .tit .blue {
-  color: #3E7BFF;
+  color: var(--hf-color-light-primary-40);
 }
 
 .hf-prod-feature .hf-prod-feature-txt .desc {
