@@ -1,0 +1,11 @@
+{
+  "name": "hf-homepage-build",
+  "version": "1.0.0",
+  "description": "HTML 빌드 스크립트",
+  "scripts": {
+    "start": "node server.js & timeout /t 1 && start chrome http://localhost:8084"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="ko">
+	<meta property="og:site_name" content="한국주택금융공사">
+	<meta property="og:updated_time" content="">
+	<meta name="twitter:card" content="summary">
+	<title>한국주택금융공사</title>
+
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub3.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/hf_pup_style2.css">
+
+	<!-- JavaScript 파일들 -->
+	<script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+
+	<script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.custom.home.js"></script>
+</head>
+<body>
+	<div data-include="../inc/header.html"></div>
+
+	<div id="container">
+		<div class="container_in">
+
+			<!-- contents -->
+			<div class="contents">
+				<div class="sub_con hf_loan">
+
+					<!-- breadcrumb -->
+					<nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="home"><a href="#" class="txt">홈</a></li>
+							<li><a href="#" class="txt">MyHF</a></li>
+							<li><a href="#" class="txt">증명서 관리</a></li>
+							<li><a href="#" class="txt">증명서 발급</a></li>
+						</ol>
+					</nav>
+					<!--// breadcrumb -->
+
+					<div class="title_set">
+						<div class="page-title-wrap">
+							<h2 class="h-tit">증명서 발급</h2>
+						</div>
+
+						<div class="title_etc_menu">
+							<ul>
+								<li class="print_li">
+									<a href="#">
+										<i class="svg-icon ico-down"></i>
+										<span class="txt">뷰어 다운로드</span>
+									</a>
+								</li>
+								<li class="print_li">
+									<a href="#">
+										<i class="svg-icon ico-print"></i>
+										<span class="txt">인쇄</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- 컨텐츠 -->
+					<div class="debt_cont">
+						<div class="debt_body">
+							<button type="button" class="btn-help-panel expand btn-help-exec">입력 도움말<i class="svg-icon ico-angle left" aria-hidden="true"></i></button>
+
+							<div class="hf_info_field_cont myhf">
+								<div class="exclamation myhf">
+									<span class="text"><i class="svg-icon ico_exclamation" aria-hidden="true"></i>모든 입력항목은 필수입니다.</span>
+								</div>
+								<ul class="list">
+									<li>
+										<div class="main_title_cont">
+											<h4 class="title">증명서 정보</h4>
+										</div>
+										<div class="fieldset">
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title"><label for="c13Kind">발급 증명서</label></h5>
+												</div>
+												<div class="form-group select">
+													<div class="form-conts myhf">
+														<div class="inp_row">
+															<div class="krds_select_box">
+																<div class="select_tit"><button type="button" class="selected" id="c13Kind"><span class="opt_txt">주택담보대출</span></button></div>
+																<div class="select_list">
+																	<ul>
+																		<li><button type="button" value="주택담보대출">주택담보대출</button></li>
+																	</ul>
+																</div>
+															</div>
+															<div class="krds_select_box">
+																<div class="select_tit"><button type="button" class="selected" id="c13Cert"><span class="sr-only">증명서 종류</span><span class="opt_txt">장기주택저당차입금 이자상환증명서</span></button></div>
+																<div class="select_list">
+																	<ul>
+																		<li><button type="button" value="장기주택저당차입금 이자상환증명서">장기주택저당차입금 이자상환증명서</button></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="main_title_cont">
+											<h4 class="title">추가 정보<button type="button" class="help" title="도움말 보기"><i class="svg-icon ico_help" aria-hidden="true"></i></button></h4>
+										</div>
+										<div class="fieldset">
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title"><label for="c13Acct">대출 계좌번호</label></h5>
+												</div>
+												<div class="form-group select">
+													<div class="form-conts myhf">
+														<div class="krds_select_box">
+															<div class="select_tit"><button type="button" id="c13Acct"><span class="opt_txt">0118******* u-보금자리론</span></button></div>
+															<div class="select_list">
+																<ul>
+																	<li><button type="button" value="0118******* u-보금자리론">0118******* u-보금자리론</button></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title"><label for="c13Yr">소득공제년도</label></h5>
+												</div>
+												<div class="form-group select">
+													<div class="form-conts myhf">
+														<div class="krds_select_box">
+															<div class="select_tit"><button type="button" id="c13Yr"><span class="opt_txt">선택해 주세요</span></button></div>
+															<div class="select_list">
+																<ul>
+																	<li><button type="button" value="2025년도">2025년도</button></li>
+																	<li><button type="button" value="2024년도">2024년도</button></li>
+																	<li><button type="button" value="2023년도">2023년도</button></li>
+																	<li><button type="button" value="2022년도">2022년도</button></li>
+																	<li><button type="button" value="2021년도">2021년도</button></li>
+																	<li><button type="button" value="2020년도">2020년도</button></li>
+																	<li><button type="button" value="2019년도">2019년도</button></li>
+																	<li><button type="button" value="2018년도">2018년도</button></li>
+																	<li><button type="button" value="2017년도">2017년도</button></li>
+																	<li><button type="button" value="2016년도">2016년도</button></li>
+																	<li><button type="button" value="2015년도">2015년도</button></li>
+																	<li><button type="button" value="2014년도">2014년도</button></li>
+																	<li><button type="button" value="2013년도">2013년도</button></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title"><label for="c13Rsc">발급사유</label></h5>
+												</div>
+												<div class="form-group select">
+													<div class="form-conts myhf">
+														<div class="krds_select_box">
+															<div class="select_tit"><button type="button" class="selected" id="c13Rsc"><span class="opt_txt">기타</span></button></div>
+															<div class="select_list">
+																<ul>
+																	<li><button type="button" value="기타">기타</button></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title"><label for="c13Rsn">사유 입력</label></h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="textarea-wrap">
+															<textarea id="c13Rsn" class="krds-input" placeholder="내용을 입력하세요" maxlength="100"></textarea>
+															<div class="textarea-count"><span class="count-now">1</span>/100</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<div class="field_btn_cont mt">
+								<div class="field_btn_area page">
+									<button type="button" class="field_btn black myhf">이전</button>
+									<button type="button" class="field_btn blue myhf">발급</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// 컨텐츠 -->
+
+				</div>
+			</div>
+			<!--// contents -->
+
+		</div>
+	</div>
+
+	<div class="krds-help-panel expand myhf">
+		<div class="help-panel-wrap">
+			<div class="help-conts-area">
+				<button type="button" class="btn-help-panel fold">접어두기<i class="svg-icon ico-angle right" aria-hidden="true"></i></button>
+				<div class="help-conts-area-inner">
+					<div class="conts-area help-conts">
+						<h3 class="help-title">입력 도움말</h3>
+						<div class="conts-wrap">
+							<p class="help-desc">물음표를 누르면 항목별 설명을 볼 수 있습니다.</p>
+							<div class="hf-panel-accordion">
+								<div class="hf-panel-accordion__item">
+									<h4><button type="button" id="c13Pnl" class="hf-panel-accordion__btn" aria-expanded="true" aria-controls="c13PnlC">안내사항<i class="svg-icon ico-angle up" aria-hidden="true"></i></button></h4>
+									<div id="c13PnlC" class="hf-panel-accordion__body">
+										<div class="hf-explain-box small">
+											<ul class="krds-info-list decimal">
+												<li>발급서류에 표기되는 기본 정보는 고객님께서 대출 신청 당시 입력하신 정보와 대출 실행기관에서 회신한 정보를 토대로 작성된 것입니다. 입력된 정보가 정확한지 확인하시고 틀린 내용이 있을 경우 관련지식에 등록자료를 제출하여 수정 관련 이차상환증명서를 발급받으시기 바랍니다. 주택취득이 공공인 경우 부동산등기부등본 상의 소유권이전(보존)등기일을 기입하시고, 기존시가는 국세청기준시가 조회화면에서 확인 후 해당 시가를 기입하시기 바랍니다. (기준시가가 없는 경우 주택 분양일 기재 입력)</li>
+												<li>공사는 자료 제공기관에 불과하오니 고객님 책임 하에 소득공제 대상 해당 여부 및 연말정산 절차를 진행하시기 바랍니다.</li>
+												<li>현금은 연말정산에 포함되지 않으니 이자만 나오는 게 정상입니다.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+	<script type="text/javascript" src="/resources/js/include.js"></script>
+	<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</body>
+
+</html>

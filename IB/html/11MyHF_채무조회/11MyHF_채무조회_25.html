@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="ko">
+	<meta property="og:site_name" content="한국주택금융공사">
+	<meta property="og:updated_time" content="">
+	<meta name="twitter:card" content="summary">
+	<title>한국주택금융공사</title>
+
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub3.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/hf_pup_style2.css">
+
+	<!-- JavaScript 파일들 -->
+	<script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+
+	<script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.custom.home.js"></script>
+</head>
+<body>
+	<div data-include="../inc/header.html"></div>
+
+	<div id="container">
+		<div class="container_in">
+
+			<!-- contents -->
+			<div class="contents">
+				<div class="sub_con hf_loan">
+
+					<!-- breadcrumb -->
+					<nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="home"><a href="#" class="txt">홈</a></li>
+							<li><a href="#" class="txt">MyHF</a></li>
+							<li><a href="#" class="txt">채무조회</a></li>
+							<li><a href="#" class="txt">채무조정 진행상태</a></li>
+						</ol>
+					</nav>
+					<!--// breadcrumb -->
+
+					<div class="title_set">
+						<div class="page-title-wrap">
+							<h2 class="h-tit">채무조회</h2>
+						</div>
+
+						<div class="title_etc_menu">
+							<ul>
+								<li class="print_li">
+									<a href="#">
+										<i class="svg-icon ico-down"></i>
+										<span class="txt">뷰어 다운로드</span>
+									</a>
+								</li>
+								<li class="print_li">
+									<a href="#">
+										<i class="svg-icon ico-print"></i>
+										<span class="txt">인쇄</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- 컨텐츠 -->
+					<div class="debt_cont">
+						<div class="krds-tab-area tab_page layer list myhf" id="tabMyhfDebt">
+							<div class="tab fill full line">
+								<ul>
+									<li data-listener-attached="true"><a href="#" class="btn-tab">채무기본정보</a></li>
+									<li data-listener-attached="true"><a href="#" class="btn-tab">채무승인내역</a></li>
+									<li data-listener-attached="true"><a href="#" class="btn-tab">채무상환내역</a></li>
+									<li data-listener-attached="true"><a href="#" class="btn-tab">분할상환스케줄</a></li>
+									<li class="active" data-listener-attached="true"><a href="#" class="btn-tab">채무조정 진행상태</a></li>
+									<li data-listener-attached="true"><a href="#" class="btn-tab">소각정보 조회</a></li>
+								</ul>
+							</div>
+							<div class="tab-conts-wrap type1">
+								<section class="tab-conts active">
+									<div class="debt_body">
+										<div class="com_pop_cont active" id="popDebtAdjDetail">
+											<div class="pop_cont_area myhf">
+												<div class="title_area">
+													<h2 class="title">채무조정 진행상태 상세정보</h2>
+													<button type="button" class="close"><span class="sr-only">팝업 닫기</span></button>
+												</div>
+												<div class="pop_info_cont">
+													<div class="dt_list myhf">
+														<div class="dl_text"><span class="tit">신청인</span><span class="txt">홍길동 (790301-1******)</span></div>
+														<div class="dl_text"><span class="tit">진행상태</span><span class="txt">심사중</span></div>
+													</div>
+													<div class="field_btn_cont w100">
+														<div class="field_btn_area">
+															<button type="button" class="field_btn blue">확인</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+					<!--// 컨텐츠 -->
+
+				</div>
+			</div>
+			<!--// contents -->
+
+		</div>
+	</div>
+
+	<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+	<script type="text/javascript" src="/resources/js/include.js"></script>
+	<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</body>
+
+</html>

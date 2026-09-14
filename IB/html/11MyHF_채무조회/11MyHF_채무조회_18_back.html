@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="ko">
+	<meta property="og:site_name" content="한국주택금융공사">
+	<meta property="og:updated_time" content="">
+	<meta name="twitter:card" content="summary">
+	<title>한국주택금융공사</title>
+
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub3.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/hf_pup_style2.css">
+
+	<!-- JavaScript 파일들 -->
+	<script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+
+	<script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.custom.home.js"></script>
+</head>
+<body>
+	<div data-include="../inc/header.html"></div>
+
+	<div id="container">
+		<div class="container_in">
+
+			<!-- contents -->
+			<div class="contents">
+				<div class="sub_con hf_loan">
+
+					<!-- breadcrumb -->
+					<nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="home"><a href="#" class="txt">홈</a></li>
+							<li><a href="#" class="txt">MyHF</a></li>
+							<li><a href="#" class="txt">채무조회</a></li>
+							<li><a href="#" class="txt">분할상환스케줄</a></li>
+						</ol>
+					</nav>
+					<!--// breadcrumb -->
+
+					<div class="title_set">
+						<div class="page-title-wrap">
+							<h2 class="h-tit">채무조회</h2>
+						</div>
+
+						<div class="title_etc_menu">
+							<ul>
+								<li class="print_li">
+									<a href="#">
+										<i class="svg-icon ico-down"></i>
+										<span class="txt">뷰어 다운로드</span>
+									</a>
+								</li>
+								<li class="print_li">
+									<a href="#">
+										<i class="svg-icon ico-print"></i>
+										<span class="txt">인쇄</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- 컨텐츠 -->
+					<div class="debt_cont">
+						<div class="krds-tab-area tab_page layer list myhf" id="tabMyhfDebt">
+							<div class="tab fill full line">
+								<ul>
+									<li data-listener-attached="true"><a href="#" class="btn-tab">채무기본정보</a></li>
+									<li data-listener-attached="true"><a href="#" class="btn-tab">채무승인내역</a></li>
+									<li data-listener-attached="true"><a href="#" class="btn-tab">채무상환내역</a></li>
+									<li class="active" data-listener-attached="true"><a href="#" class="btn-tab">분할상환스케줄</a></li>
+									<li data-listener-attached="true"><a href="#" class="btn-tab">채무조정 진행상태</a></li>
+									<li data-listener-attached="true"><a href="#" class="btn-tab">소각정보 조회</a></li>
+								</ul>
+							</div>
+							<div class="tab-conts-wrap type1">
+								<section class="tab-conts active">
+									<div class="debt_body">
+										<div class="hf_info_field_cont myhf">
+											<ul class="list">
+												<li>
+													<div class="main_title_cont">
+														<h4 class="title">대출계좌 선택</h4>
+													</div>
+													<div class="fieldset">
+														<div class="hf_group">
+															<div class="sub_title_cont">
+																<h5 class="title"><label for="d18Acct">대출계좌</label></h5>
+															</div>
+															<div class="form-group select">
+																<div class="form-conts myhf">
+																	<div class="krds_select_box">
+																		<div class="select_tit"><button type="button" id="d18Acct"><span class="opt_txt">0118******* U-보금자리론</span></button></div>
+																		<div class="select_list">
+																			<ul>
+																				<li><button type="button" value="0118******* U-보금자리론">0118******* U-보금자리론</button></li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<ul class="krds-info-list importance">
+														<li class="gray">대출계좌 상세내역은 “대출정보상세조회”화면에서 확인하실 수 있습니다.</li>
+													</ul>
+													<div class="link_out_cont"><a href="#" class="link_out">대출정보상세 조회 바로가기<i aria-hidden="true"></i></a></div>
+												</li>
+												<li>
+													<div class="main_title_cont">
+														<h4 class="title">상환 스케줄</h4>
+													</div>
+													<div class="guide_box_cont">
+														<div class="dt_list plain">
+															<div class="dl_text"><span class="tit auto">상환예정금액 합계</span><span class="txt strong">349,264,198원</span></div>
+														</div>
+														<ul class="krds-info-list">
+															<li class="small gray no_bullet no_indent">* ‘상환예정금액 합계’는 조기상환한 금액을 제외한 합계 금액임</li>
+														</ul>
+													</div>
+													<div class="table_top_area">
+														<span class="tit">총 29회차</span>
+														<div class="right">
+															<button type="button" class="field_btn small black"><img src="/resources/images/component/ico_excel.svg" alt="">엑셀 내려받기</button>
+														</div>
+													</div>
+													<div class="hf_table_cont tal">
+														<div class="krds-table-wrap">
+															<table class="tbl col data">
+																<caption>회차별 상환예정일, 상환예정금액, 상환 후 예정 잔액 상환 스케줄 표</caption>
+																<colgroup>
+																	<col style="width:14.08%;">
+																	<col style="width:22.89%;">
+																	<col style="width:31.51%;">
+																	<col style="width:31.51%;">
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col">회차</th>
+																		<th scope="col">상환예정일</th>
+																		<th scope="col">상환예정금액 (원)</th>
+																		<th scope="col">상환 후 예정 잔액 (원)</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td><button type="button" class="link_out" data-pop-open="popSchedDetail">26 회차</button></td>
+																		<td>2026-04-12</td>
+																		<td>502,279</td>
+																		<td>248,70,494</td>
+																	</tr>
+																	<tr>
+																		<td><button type="button" class="link_out" data-pop-open="popSchedDetail">25 회차</button></td>
+																		<td>2026-04-12</td>
+																		<td>502,279</td>
+																		<td>248,70,494</td>
+																	</tr>
+																	<tr>
+																		<td><button type="button" class="link_out" data-pop-open="popSchedDetail">24 회차</button></td>
+																		<td>2026-04-12</td>
+																		<td>502,279</td>
+																		<td>248,70,494</td>
+																	</tr>
+																	<tr>
+																		<td><button type="button" class="link_out" data-pop-open="popSchedDetail">23 회차</button></td>
+																		<td>2026-04-12</td>
+																		<td>502,279</td>
+																		<td>248,70,494</td>
+																	</tr>
+																	<tr>
+																		<td><button type="button" class="link_out" data-pop-open="popSchedDetail">22 회차</button></td>
+																		<td>2026-04-12</td>
+																		<td>502,279</td>
+																		<td>248,70,494</td>
+																	</tr>
+																	<tr>
+																		<td><button type="button" class="link_out" data-pop-open="popSchedDetail">21 회차</button></td>
+																		<td>2026-04-12</td>
+																		<td>502,279</td>
+																		<td>248,70,494</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+													<div class="field_btn_cont mt">
+														<div class="field_btn_area page">
+															<button type="button" class="field_btn black myhf">더보기 (30/360)<i class="svg-icon ico-angle" aria-hidden="true"></i></button>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+					<!--// 컨텐츠 -->
+
+				</div>
+			</div>
+			<!--// contents -->
+
+		</div>
+	</div>
+
+	<div class="com_pop_cont" id="popSchedDetail">
+		<div class="pop_cont_area">
+			<div class="title_area">
+				<h2 class="title">26회차 상환스케줄</h2>
+				<button type="button" class="close"><span class="sr-only">팝업 닫기</span></button>
+			</div>
+			<div class="pop_info_cont">
+				<div class="dt_list myhf">
+					<div class="dl_text"><span class="tit">상환예정일자</span><span class="txt">2026-04-21</span></div>
+					<div class="dl_text"><span class="tit">원금</span><span class="txt">16,218 원</span></div>
+					<div class="dl_text"><span class="tit">이자</span><span class="txt">486,555 원</span></div>
+					<div class="dl_text"><span class="tit">상환후 예정잔액</span><span class="txt">3,829,921 원</span></div>
+				</div>
+				<div class="field_btn_cont w100">
+					<div class="field_btn_area">
+						<button type="button" class="field_btn blue">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+	<script type="text/javascript" src="/resources/js/include.js"></script>
+	<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</body>
+
+</html>

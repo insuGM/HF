@@ -1,0 +1,41 @@
+{
+  // 에디터 기본 설정
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.wordWrap": "on",
+
+  // 파일 설정
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "files.autoSave": "onFocusChange",
+
+  // Live Server 설정 (server.js와 동일하게 port 8084)
+  "liveServer.settings.port": 8085,
+  "liveServer.settings.root": "/",
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  // Emmet 설정
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
+  // SCSS 설정
+  "css.validate": true,
+  "scss.validate": true,
+
+  // 파일 탐색기에서 숨길 파일
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/__MACOSX": true,
+    "**/node_modules": true
+  },
+
+  // 검색에서 제외
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/__MACOSX": true
+  }
+}

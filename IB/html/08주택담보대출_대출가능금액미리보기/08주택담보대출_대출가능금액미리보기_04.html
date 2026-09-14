@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="ko">
+	<meta property="og:site_name" content="한국주택금융공사">
+	<meta property="og:updated_time" content="">
+	<meta name="twitter:card" content="summary">
+	<title>한국주택금융공사</title>
+
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub3.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/hf_pup_style2.css">
+
+	<!-- JavaScript 파일들 -->
+	<script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+
+	<script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.custom.home.js"></script>
+</head>
+<body>
+	<div data-include="../inc/header.html"></div>
+
+	<div id="container">
+		<div class="container_in inner help-panel-flexible help-panel-expanded">
+
+			<!-- contents -->
+			<div class="contents">
+
+				<div class="sub_con hf_loan">
+
+					<!-- breadcrumb -->
+					<nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="home"><a href="#" class="txt">홈</a></li>
+							<li><a href="#" class="txt">주택담보대출</a></li>
+							<li><a href="#" class="txt">대출가능금액 미리보기</a></li>
+							<li><a href="#" class="txt">우대금리 계산하기</a></li>
+						</ol>
+					</nav>
+					<!--// breadcrumb -->
+
+					<div class="title_set">
+						<div class="page-title-wrap">
+							<h2 class="h-tit">우대금리 계산하기</h2>
+						</div>
+
+					</div>
+
+					<!-- 컨텐츠 -->
+					<div class="rate_cont">
+
+						<div class="rate_body calc">
+							<!-- 최종 우대금리 -->
+							<div class="rate_calc_cont">
+								<div class="result_card">
+									<strong class="tit">최종 우대금리 (최대 1.0%p)</strong>
+									<p class="txt">선택한 우대항목이 합산된 최종 적용 금리입니다.</p>
+									<div class="form-group">
+										<div class="form-conts">
+											<div class="form-inp">
+												<label for="inp_total_rate" class="sr-only">최종 우대금리</label>
+												<input type="text" id="inp_total_rate" class="krds-input" value="" readonly>
+												<span class="unit">%</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="notice_card">
+									<strong class="tit">유의사항</strong>
+									<ul class="krds-info-list decimal">
+										<li>각 항목별 최대 2가지 항목 중복적용 가능</li>
+										<li>우대요건을 반드시 확인하고 선택바랍니다.</li>
+										<li>실제 적용가능여부와 관계없이 우대금리 선택이 가능하므로, 계산금리와 실제금리가 다를 수 있음을 유의하시기 바랍니다.</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- 우대항목 -->
+							<div class="rate_item_cont">
+								<h3 class="card_tit">우대항목</h3>
+								<div class="chk_group_panel">
+									<div class="chk_group">
+										<div class="group_body">
+											<ul class="chk_list">
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk01"><label for="rate_chk01">저소득 청년</label></div>
+														<button type="button" class="help" title="도움말 보기"><i class="svg-icon ico_help" aria-hidden="true"></i></button>
+														<span class="num">0.1%p</span>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="chk_group">
+										<div class="group_label">
+											<strong class="tit">저출생 해소 지원층</strong>
+										</div>
+										<div class="group_body">
+											<ul class="chk_list">
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk02"><label for="rate_chk02">신혼가구</label></div>
+														<button type="button" class="help" title="도움말 보기"><i class="svg-icon ico_help" aria-hidden="true"></i></button>
+														<span class="num">0.3%p</span>
+													</div>
+												</li>
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk03"><label for="rate_chk03">신생아 출산가구</label></div>
+														<button type="button" class="help" title="도움말 보기"><i class="svg-icon ico_help" aria-hidden="true"></i></button>
+														<span class="num">0.2%p</span>
+													</div>
+												</li>
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk04"><label for="rate_chk04">다자녀가구 (2자녀)</label></div>
+														<button type="button" class="help" title="도움말 보기"><i class="svg-icon ico_help" aria-hidden="true"></i></button>
+														<span class="num">0.5%p</span>
+													</div>
+												</li>
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk05"><label for="rate_chk05">다자녀가구 (3자녀 이상)</label></div>
+														<button type="button" class="help" title="도움말 보기"><i class="svg-icon ico_help" aria-hidden="true"></i></button>
+														<span class="num">0.7%p</span>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="chk_group">
+										<div class="group_label">
+											<strong class="tit">사회적 배려층</strong>
+											<button type="button" class="help" title="도움말 보기"><i class="svg-icon ico_help" aria-hidden="true"></i></button>
+										</div>
+										<div class="group_body">
+											<ul class="chk_list">
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk06"><label for="rate_chk06">한부모가구</label></div>
+														<span class="num">0.7%p</span>
+													</div>
+												</li>
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk07"><label for="rate_chk07">장애인가구</label></div>
+														<span class="num">0.7%p</span>
+													</div>
+												</li>
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk08"><label for="rate_chk08">다문화가구</label></div>
+														<span class="num">0.7%p</span>
+													</div>
+												</li>
+											</ul>
+											<div class="chk_divider"></div>
+											<ul class="chk_list">
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk09"><label for="rate_chk09">미분양관리지역 내 미분양 아파트 입주자</label></div>
+														<button type="button" class="help" title="도움말 보기"><i class="svg-icon ico_help" aria-hidden="true"></i></button>
+														<span class="num">0.2%p</span>
+													</div>
+												</li>
+											</ul>
+											<div class="chk_divider"></div>
+											<ul class="chk_list">
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk10"><label for="rate_chk10">녹색건축물</label></div>
+														<button type="button" class="help" title="도움말 보기"><i class="svg-icon ico_help" aria-hidden="true"></i></button>
+														<span class="num">0.1%p</span>
+													</div>
+												</li>
+											</ul>
+											<div class="chk_divider"></div>
+											<ul class="chk_list">
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk11"><label for="rate_chk11">전세사기피해자</label></div>
+														<button type="button" class="help" title="도움말 보기"><i class="svg-icon ico_help" aria-hidden="true"></i></button>
+														<span class="num">0.1%p</span>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="chk_group">
+										<div class="group_label">
+											<strong class="tit">가산금리(우대금리 최대 한도와 별도 계산)</strong>
+										</div>
+										<div class="group_body">
+											<ul class="chk_list">
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk12"><label for="rate_chk12">규제지역</label></div>
+														<button type="button" class="help" title="도움말 보기"><i class="svg-icon ico_help" aria-hidden="true"></i></button>
+														<span class="num">0.1%p</span>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!--// 컨텐츠 -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<button type="button" class="btn-help-panel expand btn-help-exec">입력 도움말<i class="svg-icon ico-angle left" aria-hidden="true"></i></button>
+	<div class="krds-help-panel expand">
+		<div class="help-panel-wrap">
+			<div class="help-conts-area">
+				<button type="button" class="btn-help-panel fold">접어두기<i class="svg-icon ico-angle right" aria-hidden="true"></i></button>
+				<div class="help-conts-area-inner">
+					<div class="conts-area help-conts">
+						<h3 class="help-title">입력 도움말</h3>
+						<div class="conts-wrap">
+							<p class="help-desc">물음표를 누르면 항목별 설명을 볼 수 있습니다.</p>
+							<ul class="krds-accordion" data-type="multiOpen">
+								<li class="accordion-item active">
+									<h4 class="accordion-header">
+										<button type="button" class="btn-accordion active" aria-expanded="true" aria-controls="helpAcc1">
+											<span class="tit">저소득청년 대출 요건</span>
+										</button>
+									</h4>
+									<div id="helpAcc1" class="accordion-collapse">
+										<div class="accordion-body">
+											<ul class="krds-info-list decimal">
+												<li>대출 신청일 기준 소득요건 부부합산연소득7천만원 이하</li>
+												<li>대출 신청일 기준 연령 만 40세 미만</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="accordion-item active">
+									<h4 class="accordion-header">
+										<button type="button" class="btn-accordion active" aria-expanded="true" aria-controls="helpAcc2">
+											<span class="tit">신혼가구 소득·혼인요건</span>
+										</button>
+									</h4>
+									<div id="helpAcc2" class="accordion-collapse">
+										<div class="accordion-body">
+											<ul class="krds-info-list decimal">
+												<li>대출 신청일 기준 부부합산연소득7천만원 이하(우대금리 :7천만원 이하, 대출신청 : 8,500만원 이하)</li>
+												<li>대출 신청일 기준 혼인관계증명서상 혼인신고일이 신청일로부터 7년 이내인 가구(결혼예정 가구 포함)</li>
+												<li>배우자가 외국인인 경우 외국인등록 필수</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="accordion-item active">
+									<h4 class="accordion-header">
+										<button type="button" class="btn-accordion active" aria-expanded="true" aria-controls="helpAcc3">
+											<span class="tit">출산가구</span>
+										</button>
+									</h4>
+									<div id="helpAcc3" class="accordion-collapse">
+										<div class="accordion-body">
+											<ul class="krds-info-list decimal">
+												<li>대출 신청일 기준 부부합산연소득7천만원 이하</li>
+												<li>대출신청일 기준 2년 내에 출산한 가구</li>
+												<li>신혼가구 우대금리와 중복적용 불가</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="accordion-item active">
+									<h4 class="accordion-header">
+										<button type="button" class="btn-accordion active" aria-expanded="true" aria-controls="helpAcc4">
+											<span class="tit">다자녀 가구요건</span>
+										</button>
+									</h4>
+									<div id="helpAcc4" class="accordion-collapse">
+										<div class="accordion-body">
+											<ul class="krds-info-list decimal">
+												<li>대출 신청일 기준 신청인(배우자)의 만 19세 미만 자녀가 2인(세대 분리된 자녀 포함)인 가구</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="accordion-item active">
+									<h4 class="accordion-header">
+										<button type="button" class="btn-accordion active" aria-expanded="true" aria-controls="helpAcc5">
+											<span class="tit">3자녀 이상 요건</span>
+										</button>
+									</h4>
+									<div id="helpAcc5" class="accordion-collapse">
+										<div class="accordion-body">
+											<ul class="krds-info-list decimal">
+												<li>대출 신청일 기준 신청인(배우자)의 만 19세 미만 자녀가 3인 이상(세대 분리된 자녀 포함)인 가구</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="accordion-item active">
+									<h4 class="accordion-header">
+										<button type="button" class="btn-accordion active" aria-expanded="true" aria-controls="helpAcc6">
+											<span class="tit">사회적 배려층 우대요건</span>
+										</button>
+									</h4>
+									<div id="helpAcc6" class="accordion-collapse">
+										<div class="accordion-body">
+											<ul class="krds-info-list decimal">
+												<li>대출 신청일 기준 부부합산연소득7천만원 이하 및 개별 요건을 충족하는 경우 적용</li>
+												<li>최대 2가지 항목 적용 가능</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="accordion-item active">
+									<h4 class="accordion-header">
+										<button type="button" class="btn-accordion active" aria-expanded="true" aria-controls="helpAcc7">
+											<span class="tit">미분양아파트 우대요건</span>
+										</button>
+									</h4>
+									<div id="helpAcc7" class="accordion-collapse">
+										<div class="accordion-body">
+											<ul class="krds-info-list decimal">
+												<li>부부합산연소득7천만원 이하</li>
+												<li>구입용도</li>
+												<li>신청일 현재 무주택자</li>
+												<li>최초 수분양자</li>
+												<li>신청일 현재 서울특별시·인천광역시·경기도를 제외한 미분양관리지역에 소재하는 미분양 아파트</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="accordion-item active">
+									<h4 class="accordion-header">
+										<button type="button" class="btn-accordion active" aria-expanded="true" aria-controls="helpAcc8">
+											<span class="tit">녹색·제로에너지 인증요건</span>
+										</button>
+									</h4>
+									<div id="helpAcc8" class="accordion-collapse">
+										<div class="accordion-body">
+											<ul class="krds-info-list decimal">
+												<li>아래 ① 또는 ②에 해당할 경우
+													<ul class="krds-info-list dash">
+														<li>① 대출신청일 현재 지정된 인증기관*에서「녹색건축예비인증서」또는「녹색건축인증서」를 받고 녹색건축인증등급이 2등급인 이상인 경우<br><span class="sub_note">* 녹색건축인증제G-SEED통합운영시스템(www.gseed.or.kr)에서 인증기관 확인 가능</span></li>
+														<li>② 대출신청일 현재 지정된 인증기관*에서 「제로에너지 건축물 예비인증서」또는「제로에너지 건축물 인증서」를 발급받은 경우<br><span class="sub_note">* 제로에너지 건축물 통합 인증시스템</span></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="accordion-item active">
+									<h4 class="accordion-header">
+										<button type="button" class="btn-accordion active" aria-expanded="true" aria-controls="helpAcc9">
+											<span class="tit">전세사기피해자 요건</span>
+										</button>
+									</h4>
+									<div id="helpAcc9" class="accordion-collapse">
+										<div class="accordion-body">
+											<ul class="krds-info-list decimal">
+												<li>전세사기피해자(전세사기피해자 결정문 정본 등으로 확인)</li>
+												<li>구입용도, 상환용도<br><span class="sub_note">※ 상환용도의 경우 전세사기피해자등으로 결정되기 전에 전세사기피해주택 낙찰 시 이용한 주택담보대출을 상환하기 위하여 기존 대출의 잔액 범위 내 신청한 경우 해당(배우자 이용건도 포함)</span></li>
+												<li>소득상한 제한 없음</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="accordion-item active">
+									<h4 class="accordion-header">
+										<button type="button" class="btn-accordion active" aria-expanded="true" aria-controls="helpAcc10">
+											<span class="tit">규제지역 가산금리</span>
+										</button>
+									</h4>
+									<div id="helpAcc10" class="accordion-collapse">
+										<div class="accordion-body">
+											<ul class="krds-info-list decimal">
+												<li>우대금리 최대 한도와 별도 계산 (0.1%p 가산금리)</li>
+												<li>신청일 기준 담보주택이 규제지역에 소재한 경우<br><span class="sub_note">※ 규제지역을 체크한 경우 자동 반영</span><br><span class="sub_note">※ 전세사기피해자인 경우 미적용</span><br><span class="sub_note">※ 매매계약일이나 입주자모집공고일이 '25.10.16 이전인 경우도 가산금리 적용</span></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+	<script type="text/javascript" src="/resources/js/include.js"></script>
+	<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</body>
+
+</html>

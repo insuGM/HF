@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="ko">
+	<meta property="og:site_name" content="한국주택금융공사">
+	<meta property="og:updated_time" content="">
+	<meta name="twitter:card" content="summary">
+	<title>한국주택금융공사</title>
+
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub3.css">
+
+	<!-- JavaScript 파일들 -->
+	<script type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+	<script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+
+	<script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.custom.home.js"></script>
+</head>
+<body>
+	<div data-include="../inc/header.html"></div>
+
+	<div id="container">
+		<div class="container_in">
+
+			<!-- contents -->
+			<div class="contents">
+
+				<div class="sub_con">
+					<!-- sub_title -->
+					<div class="sub_title">
+						<div class="sub_title_in">
+							<!-- breadcrumb -->
+							<nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+								<ol class="breadcrumb">
+									<li class="home"><a href="#" class="txt">홈</a></li>
+									<li><a href="#" class="txt">서비스 신청</a></li>
+									<li><a href="#" class="txt">서비스 신청2</a></li>
+								</ol>
+							</nav>
+						</div>
+					</div>
+					<!-- //sub_title -->
+
+					<div class="user-register">
+						<div class="container">
+							<div class="page-title-wrap">
+								<h1 class="h-tit">사용자 등록</h1>
+							</div>
+							<ol class="krds-step-wrap li4">
+								<li class="done">
+									<span>
+										<i class="step">3단계</i>
+										<span class="step-tit">실명확인</span>
+									</span>
+								</li>
+								<li class="active">
+									<span>
+										<i class="step">4단계</i>
+										<span class="step-tit">고객정보<br> 입력 및 확인</span>
+										<span class="sr-only">현재단계</span>
+									</span>
+								</li>
+							</ol>
+							<div class="total-step">
+								<ul>
+									<li class="on">2단계</li>
+									<li>/ 2단계</li>
+								</ul>
+							</div>
+							<p class="sub-tit">고객정보 입력 및 확인</p>
+
+							<div class="write-form-box">
+								<ul>
+									<li class="write-form">
+										<div class="conts-box">
+											<div class="inner">
+												<p class="title">고객정보</p>
+												<div class="form-wrap">
+													<ul>
+														<li>
+															<div class="form-item">
+																<div class="form-group">
+																	<div class="form-tit">
+																		<label>법인명<span>(필수)</span></label>
+																	</div>
+																	<div class="form-conts">
+																		<input type="text" readonly="" placeholder="입력해 주세요.">
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="form-item reg-num ">
+																<div class="form-group">
+																	<div class="form-tit">
+																		<label>법인등록번호</label>
+																	</div>
+																	<div class="form-conts-wrap">
+																		<div class="form-conts">
+																			<input type="text" readonly="" placeholder="입력해 주세요.">
+																		</div>
+																		<span class="hyphen">-</span>
+																		<div class="form-conts">
+																			<input type="text" readonly="" placeholder="입력해 주세요.">
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="form-item sel_rad">
+																<div class="form-group">
+																	<div class="form-tit">
+																		<label>기업형태구분<span>(필수)</span></label>
+																	</div>
+																	<div class="form-conts">
+																		<div class="auth-field sel">
+																			<div class="krds_select_box">
+																				<div class="select_tit">
+																					<button type="button" id="search_select">전체</button>
+																				</div>
+																				<div class="select_list">
+																					<ul>
+																						<li>
+																							<button type="button" value="전체">전체</button>
+																						</li>
+																						<li>
+																							<button type="button" value="항목1">항목1</button>
+																						</li>
+																						<li>
+																							<button type="button" value="항목2">항목2</button>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																			<div class="form-conts">
+																				<div class="krds-check-area">
+																					<div class="krds-form-chip">
+																						<input type="radio" class="radio" name="rdo_merit" id="rdo_merit_1" checked>
+																						<label class="krds-form-chip-outline" for="rdo_merit_1">아니오</label>
+																					</div>
+																					<div class="krds-form-chip">
+																						<input type="radio" class="radio" name="rdo_merit" id="rdo_merit_2">
+																						<label class="krds-form-chip-outline" for="rdo_merit_2">예</label>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="form-item">
+																<div class="form-group">
+																	<div class="form-tit">
+																		<label>업체명<span>(필수)</span></label>
+																	</div>
+																	<div class="form-conts">
+																		<input type="text" placeholder="입력해 주세요.">
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li class="finish">
+															<div class="form-item">
+																<div class="form-group">
+																	<div class="form-tit">
+																		<label>사업자등록번호<span>(필수)</span></label>
+																	</div>
+																	<div class="form-conts">
+																		<input type="text" readonly="" placeholder="입력해 주세요.">
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="form-item half">
+																<div class="form-group">
+																	<div class="form-tit">
+																		<label>기업규모 구분<span>(필수)</span></label>
+																	</div>
+																	<div class="form-conts">
+																		<div class="auth-field sel">
+																			<div class="krds_select_box">
+																				<div class="select_tit">
+																					<button type="button" id="search_select">전체</button>
+																				</div>
+																				<div class="select_list">
+																					<ul>
+																						<li>
+																							<button type="button" value="전체">전체</button>
+																						</li>
+																						<li>
+																							<button type="button" value="항목1">항목1</button>
+																						</li>
+																						<li>
+																							<button type="button" value="항목2">항목2</button>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="form-item half">
+																<div class="form-group">
+																	<div class="form-tit">
+																		<label>설립일자</label>
+																	</div>
+																	<div class="form-conts">
+																		<div class="form-conts calendar-conts">
+																			<div class="calendar-input">
+																				<input type="number" class="krds-input datepicker cal" placeholder="YYYY.MM.DD" id="cal">
+																				<button type="button" class="krds-btn medium icon form-btn-datepicker" aria-expanded="false">
+																					<span class="sr-only">달력 열기</span>
+																					<i class="svg-icon ico-calendar"></i>
+																				</button>
+																			</div>
+																			<div class="krds-calendar-area">
+																				<div class="calendar-wrap bottom" aria-label="달력" tabindex="0"></div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li class="half int">
+															<div class="form-item">
+																<div class="form-group">
+																	<div class="form-tit">
+																		<label>상시종업원수</label>
+																	</div>
+																	<div class="form-conts">
+																		<input type="text" placeholder="입력해 주세요.">
+																		<span>명</span>
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="form-item">
+																<div class="form-group">
+																	<div class="form-tit">
+																		<label>공공주택사업자</label>
+																	</div>
+																	<div class="form-conts">
+																		<div class="form-conts">
+																			<div class="krds-check-area">
+																				<div class="krds-form-chip">
+																					<input type="radio" class="radio" name="rdo_merit" id="rdo_merit_1" checked>
+																					<label class="krds-form-chip-outline" for="rdo_merit_1">아니오</label>
+																				</div>
+																				<div class="krds-form-chip">
+																					<input type="radio" class="radio" name="rdo_merit" id="rdo_merit_2">
+																					<label class="krds-form-chip-outline" for="rdo_merit_2">예</label>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="write-form">
+										<div class="conts-box">
+											<div class="inner">
+												<div class="top-box">
+													<p class="title">본사주소</p>
+													<button type="button" class="krds-btn tertiary small add-btn">주소 추가</button>
+												</div>
+												<div class="form-wrap item">
+													<ul>
+														<li>
+															<div class="form-item half">
+																<div class="form-group">
+																	<div class="form-tit">
+																		<label>주소구분</label>
+																	</div>
+																	<div class="form-conts">
+																		<div class="auth-field sel">
+																			<div class="krds_select_box">
+																				<div class="select_tit">
+																					<button type="button" id="search_select">전체</button>
+																				</div>
+																				<div class="select_list">
+																					<ul>
+																						<li>
+																							<button type="button" value="전체">전체</button>
+																						</li>
+																						<li>
+																							<button type="button" value="항목1">항목1</button>
+																						</li>
+																						<li>
+																							<button type="button" value="항목2">항목2</button>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="form-item">
+																<div class="form-group">
+																	<div class="form-tit">
+																		<label>주소검색</label>
+																	</div>
+																	<div class="form-conts">
+																		<div class="address-box">
+																			<input type="text" placeholder="주소 검색 버튼을 눌러주세요" readonly>
+																			<button type="button" class="address-search-btn">주소검색</button>
+																		</div>
+																		<input type="text" placeholder="상세주소를 입력해 주세요.">
+																	</div>
+																</div>
+															</div>
+														</li>
+													</ul>
+													<button type="button" class="remove-btn"><span>삭제</span></button>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="write-form">
+										<div class="conts-box">
+											<div class="inner">
+												<div class="top-box">
+													<p class="title">본사연락처</p>
+													<button type="button" class="krds-btn tertiary small add-btn">연락처 추가</button>
+												</div>
+												<div class="form-wrap item">
+													<ul>
+														<li>
+															<div class="form-item half">
+																<div class="form-group">
+																	<div class="form-tit">
+																		<label>연락처구분</label>
+																	</div>
+																	<div class="form-conts">
+																		<div class="auth-field sel">
+																			<div class="krds_select_box">
+																				<div class="select_tit">
+																					<button type="button" id="search_select">전체</button>
+																				</div>
+																				<div class="select_list">
+																					<ul>
+																						<li>
+																							<button type="button" value="전체">전체</button>
+																						</li>
+																						<li>
+																							<button type="button" value="항목1">항목1</button>
+																						</li>
+																						<li>
+																							<button type="button" value="항목2">항목2</button>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="form-item">
+																<div class="form-group">
+																	<div class="form-tit">
+																		<label>연락처</label>
+																	</div>
+																	<div class="form-conts">
+																		<input type="text" placeholder="-없이 숫자만">
+																	</div>
+																</div>
+															</div>
+														</li>
+													</ul>
+													<button type="button" class="remove-btn"><span>삭제</span></button>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="btn-wrap">
+								<ul>
+									<li>
+										<a href="/html/user/user_type2/user-register02_1.html" class="krds-btn tertiary col2"><span>이전</span></a>
+									</li>
+									<li>
+										<a href="#;" class="krds-btn col3"><span>등록</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div data-include="../inc/footer.html"></div>
+
+	<!-- 확대/축소 팝업 -->
+	<div data-include="../inc/krds-popup-resize.html"></div>
+
+	<!-- 통합검색 모달 -->
+	<div data-include="../inc/modal-search-total.html"></div>
+
+	<!-- 용어사전 모달 -->
+	<div data-include="../inc/modal-glossary.html"></div>
+
+	<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+	<script type="text/javascript" src="/resources/js/include.js"></script>
+	<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</body>
+
+</html>

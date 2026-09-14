@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="ko">
+	<meta property="og:site_name" content="한국주택금융공사">
+	<meta name="twitter:card" content="summary">
+	<title>한국주택금융공사</title>
+
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub3.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/hf_pup_style2.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/hf_gieop.css">
+
+	<script type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+	<script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.custom.home.js"></script>
+</head>
+<body>
+	<div data-include="../inc/header.html"></div>
+	<div id="container">
+		<div class="container_in">
+			<div class="contents">
+				<div class="sub_con">
+
+					<!-- breadcrumb -->
+					<nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="home"><a href="#" class="txt">홈</a></li>
+							<li><a href="#" class="txt">주택보증(사업자)</a></li>
+							<li><a href="#" class="txt">기업실태표</a></li>
+						</ol>
+					</nav>
+					<!--// breadcrumb -->
+
+					<div class="title_set">
+						<div class="page-title-wrap">
+							<h2 class="h-tit">기업실태표 작성</h2>
+						</div>
+						<div class="title_etc_menu">
+							<ul>
+								<li class="print_li"><a href="#"><i class="svg-icon ico-down"></i><span class="txt">뷰어 다운로드</span></a></li>
+								<li class="print_li"><a href="#"><i class="svg-icon ico-print"></i><span class="txt">인쇄</span></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- 컨텐츠 -->
+					<div class="debt_cont">
+						<div class="krds-tab-area tab_page layer list" id="tabEsateType">
+							<div class="tab fill full line">
+								<ul>
+									<li><a href="#" class="btn-tab">기업체 개요</a></li>
+									<li><a href="#" class="btn-tab">대표자 및 경영진 정보</a></li>
+									<li><a href="#" class="btn-tab">금융기관 거래상황</a></li>
+									<li class="active"><a href="#" class="btn-tab">재무 상황(간략)</a></li>
+									<li><a href="#" class="btn-tab">시공능력/공사현황</a></li>
+									<li><a href="#" class="btn-tab">도급공사/수상실적</a></li>
+								</ul>
+							</div>
+							<div class="tab-conts-wrap type1">
+								<section class="tab-conts active">
+									<div class="debt_body">
+
+										<div class="hf-infobox hf-infobox--gray">
+											<div class="hf-infobox__body">
+												<ul class="krds-info-list decimal">
+													<li>간편장부대상업체는 '간편장부' 버튼을 클릭하고 본 재무정보 입력을 생략 가능합니다</li>
+													<li>연도추가 버튼을 누르면 결산기준일 가장 왼쪽 열부터 추가되며 가장 오른쪽열의 입력자료는 삭제됩니다.</li>
+													<li>아래 작성되는 모든 값은 '백만원' 단위로 작성하여 주시기 바랍니다.</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="hf_info_field_cont info_block_cont">
+											<ul class="list">
+												<li>
+													<div class="fieldset">
+														<div class="hf_group">
+															<div class="sub_title_cont">
+																<h5 class="title">귀사는 간편장부 대상 업체입니까?</h5>
+															</div>
+															<div class="form-group">
+																<div class="form-conts">
+																	<div class="krds-check-area">
+																		<div class="krds-form-chip"><input type="radio" class="radio" name="rdo_simple" id="rdo_simple_n" checked><label class="krds-form-chip-outline" for="rdo_simple_n">아니오</label></div>
+																		<div class="krds-form-chip"><input type="radio" class="radio" name="rdo_simple" id="rdo_simple_y"><label class="krds-form-chip-outline" for="rdo_simple_y">예</label></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+
+										<div class="hf_info_field_cont info_block_cont">
+											<ul class="list">
+												<li>
+													<div class="main_title_cont">
+														<h4 class="title">결산정보<span class="btn_right"><button type="button" class="field_btn black">삭제</button><button type="button" class="field_btn black">연도 추가</button></span></h4>
+													</div>
+													<div class="hf_table_cont income_tbl type2">
+														<div class="krds-table-wrap">
+															<table class="tbl col data">
+																<caption>결산정보 - 구분별 당기/전기/전전기/전전전기 입력</caption>
+																<colgroup>
+																	<col style="width:26%">
+																	<col>
+																	<col>
+																	<col>
+																	<col>
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col" class="title">구분</th>
+																		<th scope="col">당기</th>
+																		<th scope="col">전기</th>
+																		<th scope="col">전전기</th>
+																		<th scope="col">전전전기</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<th scope="row" class="title">결산기준일</th>
+																		<td>
+																			<div class="calendar-input"><input type="text" class="krds-input" value="2026-01-01" title="결산기준일"><button type="button" class="form-btn-datepicker"><i class="svg-icon ico_calendar" aria-hidden="true"></i><span class="sr-only">날짜 선택</span></button></div>
+																		</td>
+																		<td>
+																			<div class="calendar-input"><input type="text" class="krds-input" placeholder="YYYY-MM-DD" readonly title="결산기준일"><button type="button" class="form-btn-datepicker"><i class="svg-icon ico_calendar" aria-hidden="true"></i><span class="sr-only">날짜 선택</span></button></div>
+																		</td>
+																		<td>
+																			<div class="calendar-input"><input type="text" class="krds-input" placeholder="YYYY-MM-DD" readonly title="결산기준일"><button type="button" class="form-btn-datepicker"><i class="svg-icon ico_calendar" aria-hidden="true"></i><span class="sr-only">날짜 선택</span></button></div>
+																		</td>
+																		<td>
+																			<div class="calendar-input"><input type="text" class="krds-input" placeholder="YYYY-MM-DD" readonly title="결산기준일"><button type="button" class="form-btn-datepicker"><i class="svg-icon ico_calendar" aria-hidden="true"></i><span class="sr-only">날짜 선택</span></button></div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">기업회계기준</th>
+																		<td>
+																			<div class="krds_select_box">
+																				<div class="select_tit"><button type="button">K-IFRS</button></div>
+																			</div>
+																		</td>
+																		<td>
+																			<div class="krds_select_box">
+																				<div class="select_tit"><button type="button">선택</button></div>
+																			</div>
+																		</td>
+																		<td>
+																			<div class="krds_select_box">
+																				<div class="select_tit"><button type="button">선택</button></div>
+																			</div>
+																		</td>
+																		<td>
+																			<div class="krds_select_box">
+																				<div class="select_tit"><button type="button">선택</button></div>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">외감여부</th>
+																		<td>
+																			<div class="krds_select_box">
+																				<div class="select_tit"><button type="button">여</button></div>
+																			</div>
+																		</td>
+																		<td>
+																			<div class="krds_select_box">
+																				<div class="select_tit"><button type="button">선택</button></div>
+																			</div>
+																		</td>
+																		<td>
+																			<div class="krds_select_box">
+																				<div class="select_tit"><button type="button">선택</button></div>
+																			</div>
+																		</td>
+																		<td>
+																			<div class="krds_select_box">
+																				<div class="select_tit"><button type="button">선택</button></div>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">외부감사인종류</th>
+																		<td>
+																			<div class="krds_select_box">
+																				<div class="select_tit"><button type="button">주요회계법인</button></div>
+																			</div>
+																		</td>
+																		<td>
+																			<div class="krds_select_box">
+																				<div class="select_tit"><button type="button">선택</button></div>
+																			</div>
+																		</td>
+																		<td>
+																			<div class="krds_select_box">
+																				<div class="select_tit"><button type="button">선택</button></div>
+																			</div>
+																		</td>
+																		<td>
+																			<div class="krds_select_box">
+																				<div class="select_tit"><button type="button">선택</button></div>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">감사의견</th>
+																		<td>
+																			<div class="krds_select_box">
+																				<div class="select_tit"><button type="button">적정의견</button></div>
+																			</div>
+																		</td>
+																		<td>
+																			<div class="krds_select_box">
+																				<div class="select_tit"><button type="button">선택</button></div>
+																			</div>
+																		</td>
+																		<td>
+																			<div class="krds_select_box">
+																				<div class="select_tit"><button type="button">선택</button></div>
+																			</div>
+																		</td>
+																		<td>
+																			<div class="krds_select_box">
+																				<div class="select_tit"><button type="button">선택</button></div>
+																			</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+
+										<div class="hf_info_field_cont info_block_cont">
+											<ul class="list">
+												<li>
+													<div class="main_title_cont">
+														<h4 class="title">재무상태표 (자산)<span class="btn_right"><span class="unit">(단위: 백만원)</span></span></h4>
+													</div>
+													<div class="hf_table_cont income_tbl type2">
+														<div class="krds-table-wrap">
+															<table class="tbl col data">
+																<caption>재무상태표 자산 - 계정과목별 당기/전기/전전기/전전전기 금액(단위 백만원)</caption>
+																<colgroup>
+																	<col style="width:26%">
+																	<col>
+																	<col>
+																	<col>
+																	<col>
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col" class="title">계정과목</th>
+																		<th scope="col">당기</th>
+																		<th scope="col">전기</th>
+																		<th scope="col">전전기</th>
+																		<th scope="col">전전전기</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr class="sum">
+																		<th scope="row" class="title">자산총계</th>
+																		<td>78,200</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">유동자산</th>
+																		<td>45,800</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">당좌자산</th>
+																		<td>28,300</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">현금및현금성자산</th>
+																		<td>6,200</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">매출채권</th>
+																		<td>9,800</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="point">
+																		<th scope="row" class="title">(받을어음)</th>
+																		<td>3,100</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">공사미수금</th>
+																		<td>7,400</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">분양(임대)미수금</th>
+																		<td>2,600</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">단기대여금</th>
+																		<td>1,200</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="point">
+																		<th scope="row" class="title">(주임종단기대여금)</th>
+																		<td>400</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">미수금</th>
+																		<td>800</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="sum">
+																		<th scope="row" class="title">당좌자산기타</th>
+																		<td>300</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="sum">
+																		<th scope="row" class="title">재고자산</th>
+																		<td>15,500</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">임대주택자산</th>
+																		<td>2,000</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">비유동자산</th>
+																		<td>32,400</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">투자자산</th>
+																		<td>5,600</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">장기대여금</th>
+																		<td>1,800</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="point">
+																		<th scope="row" class="title">(주임종장기대여금)</th>
+																		<td>600</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="sum">
+																		<th scope="row" class="title">투자자산기타</th>
+																		<td>3,800</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">유형자산</th>
+																		<td>21,300</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">토지</th>
+																		<td>14,000</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="sum">
+																		<th scope="row" class="title">유형자산기타</th>
+																		<td>7,300</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">무형자산</th>
+																		<td>1,200</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="sum">
+																		<th scope="row" class="title">기타비유동자산</th>
+																		<td>4,300</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+
+										<div class="hf_info_field_cont info_block_cont">
+											<ul class="list">
+												<li>
+													<div class="main_title_cont">
+														<h4 class="title">재무상태표 (부채)<span class="btn_right"><span class="unit">(단위: 백만원)</span></span></h4>
+													</div>
+													<div class="hf_table_cont income_tbl type2">
+														<div class="krds-table-wrap">
+															<table class="tbl col data">
+																<caption>재무상태표 부채 - 계정과목별 당기/전기/전전기/전전전기 금액(단위 백만원)</caption>
+																<colgroup>
+																	<col style="width:26%">
+																	<col>
+																	<col>
+																	<col>
+																	<col>
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col" class="title">계정과목</th>
+																		<th scope="col">당기</th>
+																		<th scope="col">전기</th>
+																		<th scope="col">전전기</th>
+																		<th scope="col">전전전기</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr class="sum">
+																		<th scope="row" class="title">부채총계</th>
+																		<td>49,800</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">유동부채</th>
+																		<td>31,200</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">매입채무</th>
+																		<td>8,400</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="point">
+																		<th scope="row" class="title">(지급어음)</th>
+																		<td>2,200</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">단기차입금</th>
+																		<td>12,000</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="point">
+																		<th scope="row" class="title">(금융기관단기차입금)</th>
+																		<td>10,000</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">유동성장기부채</th>
+																		<td>5,000</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="sum">
+																		<th scope="row" class="title">유동부채기타</th>
+																		<td>5,800</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">비유동부채</th>
+																		<td>18,600</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">사채</th>
+																		<td>4,000</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">장기차입금</th>
+																		<td>11,500</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="point">
+																		<th scope="row" class="title">(금융기관장기차입금)</th>
+																		<td>9,500</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">직급여충당부채(순확정급여)</th>
+																		<td>1,900</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="sum">
+																		<th scope="row" class="title">비유동부채기타</th>
+																		<td>1,200</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+
+										<div class="hf_info_field_cont info_block_cont">
+											<ul class="list">
+												<li>
+													<div class="main_title_cont">
+														<h4 class="title">재무상태표 (자본)<span class="btn_right"><span class="unit">(단위: 백만원)</span></span></h4>
+													</div>
+													<div class="hf_table_cont income_tbl type2">
+														<div class="krds-table-wrap">
+															<table class="tbl col data">
+																<caption>재무상태표 자본 - 계정과목별 당기/전기/전전기/전전전기 금액(단위 백만원)</caption>
+																<colgroup>
+																	<col style="width:26%">
+																	<col>
+																	<col>
+																	<col>
+																	<col>
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col" class="title">계정과목</th>
+																		<th scope="col">당기</th>
+																		<th scope="col">전기</th>
+																		<th scope="col">전전기</th>
+																		<th scope="col">전전전기</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr class="sum">
+																		<th scope="row" class="title">자본총계</th>
+																		<td>28,400</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">자본금</th>
+																		<td>10,000</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">자본잉여금</th>
+																		<td>6,500</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">자본조정</th>
+																		<td>-1,200</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">기타포괄손익누계액</th>
+																		<td>800</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">이익잉여금</th>
+																		<td>12,300</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">부채와자본총계</th>
+																		<td>78,200</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+
+										<div class="hf_info_field_cont info_block_cont">
+											<ul class="list">
+												<li>
+													<div class="main_title_cont">
+														<h4 class="title">손익계산서<span class="btn_right"><span class="unit">(단위: 백만원)</span></span></h4>
+													</div>
+													<div class="hf_table_cont income_tbl type2">
+														<div class="krds-table-wrap">
+															<table class="tbl col data">
+																<caption>손익계산서 - 계정과목별 당기/전기/전전기/전전전기 금액(단위 백만원)</caption>
+																<colgroup>
+																	<col style="width:26%">
+																	<col>
+																	<col>
+																	<col>
+																	<col>
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col" class="title">계정과목</th>
+																		<th scope="col">당기</th>
+																		<th scope="col">전기</th>
+																		<th scope="col">전전기</th>
+																		<th scope="col">전전전기</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr class="sum">
+																		<th scope="row" class="title">매출액</th>
+																		<td>86,500</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">매출원가</th>
+																		<td>68,200</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="sum">
+																		<th scope="row" class="title">매출총이익</th>
+																		<td>18,300</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">판매비와관리비</th>
+																		<td>11,400</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">급여</th>
+																		<td>5,200</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">감가상각비</th>
+																		<td>1,100</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">대손상각비</th>
+																		<td>600</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="sum">
+																		<th scope="row" class="title">판매비와관리비기타</th>
+																		<td>4,500</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="sum">
+																		<th scope="row" class="title">영업이익</th>
+																		<td>6,900</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">영업외수익</th>
+																		<td>1,200</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">영업외비용</th>
+																		<td>3,100</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">이자비용</th>
+																		<td>2,400</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="sum">
+																		<th scope="row" class="title">영업외비용기타</th>
+																		<td>700</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="sum">
+																		<th scope="row" class="title">법인세차감전계속사업이익</th>
+																		<td>5,000</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">계속사업이익법인세비용</th>
+																		<td>1,100</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="sum">
+																		<th scope="row" class="title">계속사업이익</th>
+																		<td>3,900</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">중단사업이익</th>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="sum">
+																		<th scope="row" class="title">당기순이익</th>
+																		<td>3,900</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">주당순이익</th>
+																		<td class="off">0</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+
+										<div class="hf_info_field_cont info_block_cont">
+											<ul class="list">
+												<li>
+													<div class="main_title_cont">
+														<h4 class="title">현금흐름표<span class="btn_right"><span class="unit">(단위: 백만원)</span></span></h4>
+													</div>
+													<div class="hf_table_cont income_tbl type2">
+														<div class="krds-table-wrap">
+															<table class="tbl col data">
+																<caption>현금흐름표 - 계정과목별 당기/전기/전전기/전전전기 금액(단위 백만원)</caption>
+																<colgroup>
+																	<col style="width:26%">
+																	<col>
+																	<col>
+																	<col>
+																	<col>
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col" class="title">계정과목</th>
+																		<th scope="col">당기</th>
+																		<th scope="col">전기</th>
+																		<th scope="col">전전기</th>
+																		<th scope="col">전전전기</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<th scope="row" class="title">영업활동으로인한현금흐름</th>
+																		<td>7,200</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">투자활동으로인한현금흐름</th>
+																		<td>-4,500</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">재무활동으로인한현금흐름</th>
+																		<td>-1,800</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="sum">
+																		<th scope="row" class="title">현금의증가</th>
+																		<td>900</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr>
+																		<th scope="row" class="title">기초의현금</th>
+																		<td>5,300</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																	<tr class="sum">
+																		<th scope="row" class="title">기말의현금</th>
+																		<td>6,200</td>
+																		<td>0</td>
+																		<td>0</td>
+																		<td>0</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+
+									</div>
+
+									<div class="field_btn_cont mt">
+										<div class="field_btn_area page">
+											<button type="button" class="field_btn black">이전</button>
+											<button type="button" class="field_btn blue2">임시저장</button>
+											<button type="button" class="field_btn blue">다음</button>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+					<!--// 컨텐츠 -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+	<script type="text/javascript" src="/resources/js/include.js"></script>
+	<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="ko">
+	<meta property="og:site_name" content="한국주택금융공사">
+	<meta property="og:updated_time" content="">
+	<meta name="twitter:card" content="summary">
+	<title>한국주택금융공사</title>
+
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub3.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/hf_pup_style2.css">
+
+	<!-- JavaScript 파일들 -->
+	<script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+
+	<script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.custom.home.js"></script>
+</head>
+<body>
+	<div data-include="../inc/header.html"></div>
+
+	<div id="container">
+		<div class="container_in">
+
+			<!-- contents -->
+			<div class="contents">
+
+				<div class="sub_con hf_loan">
+
+					<!-- breadcrumb -->
+					<nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="home"><a href="#" class="txt">홈</a></li>
+							<li><a href="#" class="txt">주택담보대출</a></li>
+							<li><a href="#" class="txt">대출 관리</a></li>
+						</ol>
+					</nav>
+					<!--// breadcrumb -->
+
+					<div class="title_set">
+						<div class="page-title-wrap">
+							<h2 class="h-tit">대출조건 변경 신청</h2>
+						</div>
+
+						<div class="title_etc_menu">
+							<ul>
+								<li class="print_li">
+									<a href="#">
+										<i class="svg-icon ico-down"></i>
+										<span class="txt">뷰어 다운로드</span>
+									</a>
+								</li>
+								<li class="print_li">
+									<a href="#">
+										<i class="svg-icon ico-print"></i>
+										<span class="txt">인쇄</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- 컨텐츠 -->
+					<div class="debt_cont">
+						<div class="krds-tab-area tab_page layer list" id="tabLoanChange">
+							<div class="tab fill full line tab_slide">
+								<ul>
+									<li data-listener-attached="true">
+										<a href="#" class="btn-tab">담보대출 우대금리</a>
+									</li>
+									<li data-listener-attached="true">
+										<a href="#" class="btn-tab">금리우대 보금자리론</a>
+									</li>
+									<li data-listener-attached="true">
+										<a href="#" class="btn-tab">우대금리 신청 내역</a>
+									</li>
+									<li data-listener-attached="true">
+										<a href="#" class="btn-tab">처분기한유예 신청</a>
+									</li>
+									<li class="active" data-listener-attached="true">
+										<a href="#" class="btn-tab">주택처분 확인·통지</a>
+									</li>
+									<li data-listener-attached="true">
+										<a href="#" class="btn-tab">대출계약 철회</a>
+									</li>
+									<li data-listener-attached="true">
+										<a href="#" class="btn-tab">내집마련디딤돌대출 금리방식 변경 신청</a>
+									</li>
+									<li data-listener-attached="true">
+										<a href="#" class="btn-tab">선납방식 변경 신청</a>
+									</li>
+									<li data-listener-attached="true">
+										<a href="#" class="btn-tab">선납방식 변경 신청 내역</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tab-conts-wrap type1">
+								<section class="tab-conts active">
+
+									<div class="debt_body">
+
+										<div class="etc_cont">
+											<div class="exclamation">
+												<div class="text"><i class="svg-icon ico_exclamation" aria-hidden="true"></i>모든 입력항목은 필수입니다.</div>
+											</div>
+
+											<div class="loan_card_cont">
+												<div class="hf_info_field_cont">
+													<div class="fieldset">
+														<div class="hf_group">
+															<div class="sub_title_cont">
+																<h4 class="title"><label for="sel_acct">대출계좌 선택</label></h4>
+															</div>
+															<div class="form-group select">
+																<div class="form-conts">
+																	<div class="krds_select_box">
+																		<div class="select_tit"><button type="button" id="sel_acct">선택해주세요</button></div>
+																		<div class="select_list">
+																			<ul>
+																				<li><button type="button" value="1311233123123">아낌e보금자리론 1311233123123</button></li>
+																				<li><button type="button" value="1311233123123">아낌e보금자리론 1311233123123</button></li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="hf_info_field_cont">
+											<div class="step_cont">
+												<h3 class="title">대출금리 및 주택처분 내역</h3>
+											</div>
+											<div class="sect_step_cont">
+												<div class="hf-infobox">
+													<div class="hf-infobox__head"><i class="svg-icon ico_caution" aria-hidden="true"></i><strong class="tit">일시적 2주택 처분통지</strong></div>
+													<div class="hf-infobox__body">
+														<p class="lead">23.03.07 이후 신청완료분</p>
+														<p class="desc">일시적 2주택자로 보금자리론을 이용 중인 고객이 주택처분사실을 확인 및 통지하는 서비스입니다. 대출거래약정서 상 처분기한을 경과한 경우 기한의 이익이 상실되며, 향후 3년 간 보금자리론 이용이 제한됩니다.</p>
+														<p class="lead">기존주택</p>
+														<p class="desc">대출실행일로부터 3년간 처분기한이며 경과한 경우 기한이익싱실됩니다.</p>
+														<p class="lead">추가주택</p>
+														<p class="desc">검증기준일로부터 6개월간 처분기한이며 경과한 경우 향후 3년 간 보금자리론 이용제한됩니다.</p>
+														<ul class="krds-info-list decimal note">
+															<li>분양권(조합원 입검증기준일로부터 6개월간 처분기한이며 경과한 경우 향후 3년 간 보금자리론 이용제한됩니다.주권 포함) 또는 상속으로 취득한 주택의 처분기한(추가주택) 검증기준일로부터 3년</li>
+														</ul>
+													</div>
+												</div>
+												<div class="loan_card_cont">
+													<div class="loan_head">
+														<strong class="tit">아낌e보금자리론</strong>
+														<div class="dt_list in_box">
+															<div class="dl_text"><span class="tit"><span class="num">0116407055441</span></span><span class="txt tar"><strong>신청일자</strong> 2026-05-07</span></div>
+														</div>
+													</div>
+													<div class="loan_box">
+														<div class="dt_list in_box">
+															<div class="dt_row">
+																<div class="dt_col">
+																	<div class="dl_text"><span class="tit">기본금리</span><span class="txt tar">4.45%</span></div>
+																	<div class="dl_text"><span class="tit">부가금리</span><span class="txt tar">0%</span></div>
+																	<div class="dl_text"><span class="tit">최종금리</span><span class="txt tar">4.45%</span></div>
+																	<div class="dl_text"><span class="tit">기한이익상실여부</span><span class="txt tar">해당</span></div>
+																</div>
+																<div class="dt_col">
+																	<div class="dl_text"><span class="tit">처분기한</span><span class="txt tar">2026-04-05</span></div>
+																	<div class="dl_text"><span class="tit">처분기한(유예 후)</span><span class="txt tar">2026-04-05</span></div>
+																	<div class="dl_text"><span class="tit">처분여부</span><span class="txt tar">미처분</span></div>
+																	<div class="dl_text"><span class="tit">처분통지 상태</span><span class="txt tar">신청</span></div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<ul class="krds-info-list decimal note_list">
+														<li>‘23년 3월 7일부터 처분조건부 보금자리론 기존주택 처분기한이 대출실행일로부터 3년(‘23년 3월 7일 이전 신청 건에도 소급 적용)으로 연장되었습니다.</li>
+														<li>다만, 양수 전 계좌인 경우 양수 이후에 처분기한 소급연장, 문자 발송이 예정되어 있습니다.</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="hf_info_field_cont">
+											<ul class="list">
+												<li>
+													<div class="main_title_cont">
+														<h4 class="title">주택처분사실 통지</h4>
+													</div>
+													<div class="fieldset">
+														<div class="hf_group">
+															<div class="sub_title_cont">
+																<h5 class="title">주소<span class="point">(필수)</span></h5>
+															</div>
+															<div class="form-group">
+																<div class="form-conts area">
+																	<label for="inp_addr" class="sr-only">주소</label>
+																	<input type="text" id="inp_addr" class="krds-input inp_view" value="(02049) 서울특별시 중랑구 봉화산로 **길" readonly>
+																	<label for="inp_addr_d" class="sr-only">상세주소</label>
+																	<input type="text" id="inp_addr_d" class="krds-input inp_view" value="가동 ***호 (중화동, 장미빌라타운)" readonly>
+																</div>
+															</div>
+														</div>
+														<div class="hf_group">
+															<div class="sub_title_cont">
+																<h5 class="title">처분(소유권이전) 여부<span class="point">(필수)</span></h5>
+															</div>
+															<div class="form-group">
+																<div class="form-conts">
+																	<div class="krds-check-area chip_fill">
+																		<legend class="sr-only">처분(소유권이전) 여부 선택</legend>
+																		<div class="krds-form-chip"><input type="radio" class="radio" name="rdo_disp" id="rdo_disp_n" checked><label class="krds-form-chip-outline" for="rdo_disp_n">처분안함</label></div>
+																		<div class="krds-form-chip"><input type="radio" class="radio" name="rdo_disp" id="rdo_disp_y"><label class="krds-form-chip-outline" for="rdo_disp_y">처분함</label></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="hf_group">
+															<div class="sub_title_cont">
+																<h5 class="title">처분통지일</h5>
+															</div>
+															<div class="form-group">
+																<div class="form-conts">
+																	<span class="txt">2026.04.09</span>
+																</div>
+															</div>
+														</div>
+														<div class="hf_group">
+															<div class="sub_title_cont">
+																<h5 class="title">처분 상세</h5>
+															</div>
+															<div class="form-group">
+																<div class="form-conts">
+																	<div class="krds-check-area chip_fill">
+																		<legend class="sr-only">처분 상세 선택</legend>
+																		<div class="krds-form-chip"><input type="radio" class="radio" name="rdo_detail" id="rdo_detail_1" checked><label class="krds-form-chip-outline" for="rdo_detail_1">소유권이전(등기부)</label></div>
+																		<div class="krds-form-chip"><input type="radio" class="radio" name="rdo_detail" id="rdo_detail_2"><label class="krds-form-chip-outline" for="rdo_detail_2">분양권</label></div>
+																		<div class="krds-form-chip"><input type="radio" class="radio" name="rdo_detail" id="rdo_detail_3"><label class="krds-form-chip-outline" for="rdo_detail_3">임대사업자등록</label></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="hf_group">
+															<div class="sub_title_cont">
+																<h5 class="title">위의 주소가 처분약정주소와 동일합니까?</h5>
+															</div>
+															<div class="form-group">
+																<div class="form-conts">
+																	<div class="krds-check-area chip_fill">
+																		<legend class="sr-only">위의 주소가 처분약정주소와 동일한지 선택</legend>
+																		<div class="krds-form-chip"><input type="radio" class="radio" name="rdo_same" id="rdo_same_n"><label class="krds-form-chip-outline" for="rdo_same_n">아니오</label></div>
+																		<div class="krds-form-chip"><input type="radio" class="radio" name="rdo_same" id="rdo_same_y" checked><label class="krds-form-chip-outline" for="rdo_same_y">예</label></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+
+										<div class="hf-infobox">
+											<div class="hf-infobox__head"><i class="svg-icon ico_caution" aria-hidden="true"></i><strong class="tit">주의사항</strong></div>
+											<div class="hf-infobox__body">
+												<ul class="krds-info-list decimal">
+													<li>기존주택 처분사실 확인 작업 및 금리인상 등의 조치를 위하여 처분사실 접수는 처분한 날의 해당월 마지막 영업일 16:00까지 공사로 주택처분사실을 통지해야 합니다.</li>
+													<li>예시 : 2017.01.02.(월) 주택 처분 시 2017.01.31.(화) 16:00까지 통지</li>
+													<li>통지방법 : 공사 홈페이지(본화면), 콜센터(1688-8114)</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="field_btn_cont">
+											<div class="field_btn_area page">
+												<button type="button" class="field_btn blue">확인</button>
+											</div>
+										</div>
+
+									</div>
+
+								</section>
+							</div>
+						</div>
+					</div>
+					<!--// 컨텐츠 -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+	<script type="text/javascript" src="/resources/js/include.js"></script>
+	<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</body>
+
+</html>

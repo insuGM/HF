@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="ko">
+	<meta property="og:site_name" content="한국주택금융공사">
+	<meta name="twitter:card" content="summary">
+	<title>한국주택금융공사</title>
+
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub3.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/hf_pup_style2.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/hf_gieop.css">
+
+	<script type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+	<script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.custom.home.js"></script>
+</head>
+<body>
+	<div data-include="../inc/header.html"></div>
+	<div id="container">
+		<div class="container_in">
+			<div class="contents">
+				<div class="sub_con">
+
+					<nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="home"><a href="#" class="txt">홈</a></li>
+							<li><a href="#" class="txt">주택보증(사업자)</a></li>
+							<li><a href="#" class="txt">기업실태표</a></li>
+						</ol>
+					</nav>
+
+					<div class="title_set">
+						<div class="page-title-wrap">
+							<h2 class="h-tit">기업실태표 작성안내</h2>
+						</div>
+						<div class="title_etc_menu">
+							<ul>
+								<li class="print_li"><a href="#"><i class="svg-icon ico-down"></i><span class="txt">뷰어 다운로드</span></a></li>
+								<li class="print_li"><a href="#"><i class="svg-icon ico-print"></i><span class="txt">인쇄</span></a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 주채권금융기관 검색 팝업 -->
+	<div class="com_pop_cont srch_pop active" id="pop_main_bank">
+		<div class="pop_cont_area pop_medium">
+			<div class="title_area">
+				<h2 class="title">주채권금융기관 검색</h2>
+				<button type="button" class="close"><span class="sr-only">팝업 닫기</span></button>
+			</div>
+			<div class="pop_info_cont">
+				<div class="pop_notice_box">
+					<div class="form-group srch">
+						<div class="form-conts">
+							<div class="inp_row">
+								<div class="form-inp">
+									<div class="form-tit"><label for="mb_bank">금융기관명</label></div>
+									<input type="text" id="mb_bank" class="krds-input" placeholder="금융기관명을 입력해주세요." title="금융기관명">
+								</div>
+								<div class="form-inp">
+									<div class="form-tit"><label for="mb_branch">지점명</label></div>
+									<input type="text" id="mb_branch" class="krds-input" placeholder="업체명을 입력하세요" title="지점명">
+								</div>
+							</div>
+						</div>
+						<div class="field_btn_cont">
+							<div class="field_btn_area right">
+								<button type="button" class="field_btn blue2">조회</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pop_result_cont" data-search-result>
+					<div class="hf_table_cont">
+						<div class="krds-table-wrap">
+							<table class="tbl col data">
+								<caption>주채권금융기관 검색 결과 - 선택, 상태, 금융기관명, 지점명</caption>
+								<colgroup>
+									<col style="width:80px">
+									<col style="width:120px">
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">선택</th>
+										<th scope="col">상태</th>
+										<th scope="col">금융기관명</th>
+										<th scope="col">지점명</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="krds-form-check"><input type="radio" name="rdo_mbank" id="rmb1" checked><label for="rmb1"><span class="sr-only">1번 항목 선택</span></label></div>
+										</td>
+										<td>정상</td>
+										<td>국민은행</td>
+										<td>본부총괄</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="krds-form-check"><input type="radio" name="rdo_mbank" id="rmb2"><label for="rmb2"><span class="sr-only">2번 항목 선택</span></label></div>
+										</td>
+										<td>정상</td>
+										<td>국민은행</td>
+										<td>본부총괄</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="krds-form-check"><input type="radio" name="rdo_mbank" id="rmb3"><label for="rmb3"><span class="sr-only">3번 항목 선택</span></label></div>
+										</td>
+										<td>정상</td>
+										<td>국민은행</td>
+										<td>본부총괄</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="krds-form-check"><input type="radio" name="rdo_mbank" id="rmb4"><label for="rmb4"><span class="sr-only">4번 항목 선택</span></label></div>
+										</td>
+										<td>정상</td>
+										<td>국민은행</td>
+										<td>본부총괄</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<p class="result_empty" data-search-empty hidden>금융기관명 또는 지점명으로 검색해주세요</p>
+				<div class="field_btn_cont w100 mt">
+					<div class="field_btn_area">
+						<button type="button" class="field_btn blue">선택</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 주채권금융기관 검색 팝업 -->
+
+	<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+	<script type="text/javascript" src="/resources/js/include.js"></script>
+	<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</body>
+</html>

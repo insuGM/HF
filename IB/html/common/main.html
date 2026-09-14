@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko">
+    <meta property="og:site_name" content="한국주택금융공사">
+    <meta property="og:updated_time" content="">
+    <meta name="twitter:card" content="summary">
+    <title>한국주택금융공사</title>
+
+    <link rel="stylesheet" type="text/css" href="/resources/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ex/sub3.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+    <link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+
+    <!-- JavaScript 파일들 -->
+    <script type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+    <script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="/resources/js/jquery/common.js"></script>
+
+    <script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+    <script type="text/javascript" src="/resources/js/krds/krds.custom.home.js"></script>
+</head>
+<body>
+
+<div class="wrap" id="wrap">
+    <div data-include="../inc/header.html"></div>
+
+    <div id="container">
+        <div class="container_in">
+
+            <!-- sub_con -->
+            <div class="sub_con page_main">
+                <section class="sec1">
+                    <!-- TODO: 웹, 모바일 배경 이미지 추가 alt="" 빈값은 꼭 넣어주세요 (웹접근성)-->
+                    <div class="sec1_bg">
+                        <img src="/resources/images/main/hero_img01_w.png" alt="" class="web">
+                        <img src="/resources/images/main/hero_img01_m.png" alt="" class="mobile">
+                        <!-- 
+                         이미지 경로
+                        /resources/images/main/hero_img01_w.png
+                        /resources/images/main/hero_img01_m.png
+                        ~
+                        /resources/images/main/hero_img08_w.png
+                        /resources/images/main/hero_img08_w.png
+                        까지
+                        -->
+                    </div>
+                    <div class="sec_in">
+                        <div class="title_txt_box">
+                            <p class="txt">
+                                당신과 내일의 <br>
+                                집을 잇는, <br>
+                                한국주택금융공사
+                            </p>
+                            <div class="sch-form-wrap main_search">
+                                <div class="sch-input">
+                                    <input type="text" id="main-search-input" class="krds-input xlarge" placeholder="궁금한 서비스를 검색해보세요." value="">
+                                    <button type="button" class="btn_search_clear" style="display: none;">
+                                        <span class="sr-only">검색어 삭제</span>
+                                        <i class="svg-icon ico-delete-fill"></i>
+                                    </button>
+                                    <button type="button" class="krds-btn xlarge icon ico-search">
+                                        <span class="sr-only">검색</span>
+                                        <i class="svg-icon ico-sch"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- //검색 상단 -->
+                            <script>
+                                (function() {
+                                    const input = document.getElementById('main-search-input');
+                                    const clearBtn = document.querySelector('.main_search .btn_search_clear');
+
+                                    if (!input || !clearBtn) return;
+
+                                    const toggleClearBtn = () => {
+                                        if (input.value.trim().length > 0) {
+                                            clearBtn.style.display = 'inline-flex';
+                                        } else {
+                                            clearBtn.style.display = 'none';
+                                        }
+                                    };
+
+                                    input.addEventListener('input', toggleClearBtn);
+
+                                    clearBtn.addEventListener('click', () => {
+                                        input.value = '';
+                                        toggleClearBtn();
+                                        input.focus();
+                                    });
+                                })();
+                            </script>
+                        </div> <!-- //txt_box -->
+
+
+                        <div class="hero_menu_box">
+                            <div class="hero_menu_top">
+                                <ul>
+                                    <li>
+                                        <a href="#n">
+                                            <div class="box">
+                                                <span class="ico ico-menu1"></span>
+                                                <span class="txt">
+                                                    오시는길
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <div class="box">
+                                                <span class="ico ico-menu2"></span>
+                                                <span class="txt">
+                                                    채용공고
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <div class="box">
+                                                <span class="ico ico-menu3"></span>
+                                                <span class="txt">
+                                                    클린신고센터
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="hero_menu_bottom">
+                                <div class="left_div">
+                                    <ul>
+                                        <li class="menu4_li">
+                                            <a href="#n">
+                                                <div class="box">
+                                                    <div class="txt_box">
+                                                        <p class="tit">
+                                                            국민제안
+                                                        </p>
+                                                        <p class="txt">
+                                                            국민 여러분의 아이디어를 
+                                                            <br>
+                                                            기다리고 있습니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="menu5_li">
+                                            <a href="#n">
+                                                <div class="box">
+                                                    <div class="txt_box">
+                                                        <p class="tit">
+                                                            공모전
+                                                        </p>
+                                                        <p class="txt">
+                                                            당신의 생각이 
+                                                            <br>
+                                                            내일의 기준이 됩니다
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="right_div">
+                                    <ul>
+                                        <li class="menu6_li">
+                                            <a href="#n">
+                                                <div class="box">
+                                                    <div class="txt_box">
+                                                        <p class="tit">
+                                                            금융교육
+                                                        </p>
+                                                        <p class="txt mobile">
+                                                            미래를 준비하는 힘,
+                                                            <br>
+                                                            올바른 금융 이해교육
+                                                        </p>
+                                                        <div class="mn_list web">
+                                                            <span>은퇴금융아케데미</span>
+                                                            <span>온라인재밌지예(才美之例)</span>
+                                                            <span>HF 금융경제 오픈캠퍼스</span>
+                                                            <span>BIFC금융강좌</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="menu7_li">
+                                            <a href="#n">
+                                                <div class="box">
+                                                    <div class="txt_box">
+                                                        <p class="tit">
+                                                            고객의소리 <br> <span>(VOC)</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> <!-- //hero_menu_bottom -->
+                    </div>
+
+
+                    <div class="sc_down">
+                         <p>Scroll Down</p>
+                        <i class="svg-icon ico-sc_down"></i>
+                    </div>
+                </section>
+                 <!-- //sec1 -->
+
+                 <section class="sec2">
+                    <div class="sec_in">
+                        <div class="main_title">
+                            <p class="so_tit">Key Business Areas</p>
+                            <h2><img src="/resources/images/main/title_sec02.svg" alt="HF 사업소개"></h2>
+                        </div>
+    
+                        <div class="sec2_box_set">
+                            <ul>
+                                <li>
+                                    <a href="#n">
+                                    <div class="box box1">
+                                        <div class="txt_box">
+                                            <h3>유동화증권</h3>
+                                            <p class="txt">
+                                                대한민국 주택금융을 움직이는 <br/>
+                                                보이지 않는 거대한 엔진
+                                            </p>
+                                        </div>
+                                        <div class="btm">
+                                            <div class="sp_set">
+                                                <span>금융의 선순환</span>
+                                                <div>
+                                                    <span>금융허브</span>
+                                                    <span>시장활력소</span>
+                                                </div>
+                                            </div>
+                                            <p class="link_more">자세히 알아보기</p>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#n">
+                                        <div class="box box2">
+                                            <div class="txt_box">
+                                                <h3>주택신용보증</h3>
+                                                <p class="txt">
+                                                    당신의 신용에 HF의 신뢰를 더해, <br/>
+                                                    집으로 가는 문을 넓힙니다.
+                                                </p>
+                                            </div>
+                                            <div class="btm">
+                                                <div class="sp_set">
+                                                    <span>주거사다리</span>
+                                                    <div>
+                                                        <span>신용파트너</span>
+                                                        <span>든든한보증</span>
+                                                    </div>
+                                                </div>
+                                                <p class="link_more">자세히 알아보기</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#n">
+                                        <div class="box box3">
+                                            <div class="txt_box">
+                                                <h3>주택연금보증</h3>
+                                                <p class="txt">
+                                                    내 집에서 누리는 평생의 권리, <br/>
+                                                    흔들림 없는 노후의 완성
+                                                </p>
+                                            </div>
+                                            <div class="btm">
+                                                <div class="sp_set">
+                                                    <span>노후의 방패</span>
+                                                    <div>
+                                                        <span>평생안심</span>
+                                                        <span>국가보증</span>
+                                                    </div>
+                                                </div>
+                                                <p class="link_more">자세히 알아보기</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- //sec2 -->
+
+                <section class="sec3">
+                    <div class="sec_in">
+                        <div class="main_title">
+                            <h2><img src="/resources/images/main/title_sec03.svg" alt="HF NEWS"></h2>
+                        </div>
+
+                        <div class="sec3_box_set tab_set">
+
+                            <div class="tab_fc">
+                                <ul>
+                                    <li>
+                                        <button type="button" data-index="1">공지사항</button>
+                                    </li>
+                                    <li>
+                                        <button type="button" data-index="2">보도자료</button>
+                                    </li>
+                                    <li>
+                                        <button type="button" data-index="3">채용공고</button>
+                                    </li>
+                                </ul>
+                                <a href="#n" class="link_more">더보기</a>
+                            </div>
+
+                            <div class="tab_area">
+                                <div class="tab1">
+                                    <div class="swiper news_swiper1">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="#n">
+                                                    <div class="box">
+                                                        <span class="tip">공지사항</span>
+                                                        <div class="pic">
+                                                            <img src="/resources/images/temp/main_temp01.png" alt="">
+                                                        </div>
+                                                        <div class="txt_box">
+                                                            <p class="tit">한국주택금융공사,고객의경제적 회복과 재기 돕는다 </p>
+                                                            <p class="txt">
+                                                                한국주택금융공사(사장 김경환)는 최근 기록적인 집중호우로 피해를 입은 공사 고객들의 금융부담을 덜어주기 위해 오는 4월까지 이자 무변제 대출 조건을 확대하는 등 현금 흐름을 유지할 수 있도록 지원한다.
+                                                            </p>
+                                                            <p class="date">2026.03.03</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#n">
+                                                    <div class="box">
+                                                        <span class="tip">공지사항</span>
+                                                        <div class="pic">
+                                                            <img src="/resources/images/temp/main_temp02.png" alt="">
+                                                        </div>
+                                                        <div class="txt_box">
+                                                            <p class="tit">한국주택금융공사,고객의경제적 회복과 재기 돕는다 </p>
+                                                            <p class="txt">
+                                                                한국주택금융공사(사장 김경환)는 최근 기록적인 집중호우로 피해를 입은 공사 고객들의 금융부담을 덜어주기 위해 오는 4월까지 이자 무변제 대출 조건을 확대하는 등 현금 흐름을 유지할 수 있도록 지원한다.
+                                                            </p>
+                                                            <p class="date">2026.03.03</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#n">
+                                                    <div class="box">
+                                                        <span class="tip">공지사항</span>
+                                                        <div class="pic">
+                                                            <img src="/resources/images/temp/main_temp03.png" alt="">
+                                                        </div>
+                                                        <div class="txt_box">
+                                                            <p class="tit">한국주택금융공사,고객의경제적 회복과 재기 돕는다 </p>
+                                                            <p class="txt">
+                                                                한국주택금융공사(사장 김경환)는 최근 기록적인 집중호우로 피해를 입은 공사 고객들의 금융부담을 덜어주기 위해 오는 4월까지 이자 무변제 대출 조건을 확대하는 등 현금 흐름을 유지할 수 있도록 지원한다.
+                                                            </p>
+                                                            <p class="date">2026.03.03</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#n">
+                                                    <div class="box">
+                                                        <span class="tip">공지사항</span>
+                                                        <div class="pic">  <!-- 이미지 없을때 -->
+                                                        </div>
+                                                        <div class="txt_box">
+                                                            <p class="tit">한국주택금융공사,고객의경제적 회복과 재기 돕는다 </p>
+                                                            <p class="txt">
+                                                                한국주택금융공사(사장 김경환)는 최근 기록적인 집중호우로 피해를 입은 공사 고객들의 금융부담을 덜어주기 위해 오는 4월까지 이자 무변제 대출 조건을 확대하는 등 현금 흐름을 유지할 수 있도록 지원한다.
+                                                            </p>
+                                                            <p class="date">2026.03.03</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#n">
+                                                    <div class="box">
+                                                        <span class="tip">공지사항</span>
+                                                        <div class="pic">
+                                                            <img src="/resources/images/temp/main_temp03.png" alt="">
+                                                        </div>
+                                                        <div class="txt_box">
+                                                            <p class="tit">한국주택금융공사,고객의경제적 회복과 재기 돕는다 </p>
+                                                            <p class="txt">
+                                                                한국주택금융공사(사장 김경환)는 최근 기록적인 집중호우로 피해를 입은 공사 고객들의 금융부담을 덜어주기 위해 오는 4월까지 이자 무변제 대출 조건을 확대하는 등 현금 흐름을 유지할 수 있도록 지원한다.
+                                                            </p>
+                                                            <p class="date">2026.03.03</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#n">
+                                                    <div class="box">
+                                                        <span class="tip">공지사항</span>
+                                                        <div class="pic">
+                                                            <img src="/resources/images/temp/main_temp03.png" alt="">
+                                                        </div>
+                                                        <div class="txt_box">
+                                                            <p class="tit">한국주택금융공사,고객의경제적 회복과 재기 돕는다 </p>
+                                                            <p class="txt">
+                                                                한국주택금융공사(사장 김경환)는 최근 기록적인 집중호우로 피해를 입은 공사 고객들의 금융부담을 덜어주기 위해 오는 4월까지 이자 무변제 대출 조건을 확대하는 등 현금 흐름을 유지할 수 있도록 지원한다.
+                                                            </p>
+                                                            <p class="date">2026.03.03</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide empty_slide">
+                                                <!-- 필요 공백 슬라이드 -->
+                                            </div>
+                                            <div class="swiper-slide empty_slide">
+                                                 <!-- 필요 공백 슬라이드 -->
+                                            </div>
+                                            <div class="swiper-slide empty_slide">
+                                                 <!-- 필요 공백 슬라이드 -->
+                                            </div>
+                                        </div> <!-- //swiper-wrapper -->
+                                        <div class="sw_nav_set">
+                                            <div class="sw_nav_set_in">
+                                                <button type="button" class="swiper-button-prev">
+                                                    이전
+                                                </button>
+                                                <div class="swiper-pagination"></div>
+                                                <button type="button" class="swiper-button-next">
+                                                    다음
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div><!-- //swiper -->
+                                    <script>
+                                        (function() {
+                                            const newsSwiper1 = new Swiper('.news_swiper1', {
+                                                slidesPerView: "auto",
+                                                centeredSlides: true,
+                                                spaceBetween: 16,
+                                                pagination: {
+                                                    el: '.news_swiper1 .swiper-pagination',
+                                                },
+                                                navigation: {
+                                                    nextEl: '.news_swiper1 .swiper-button-next',
+                                                    prevEl: '.news_swiper1 .swiper-button-prev',
+                                                },
+                                                breakpoints: {
+                                                    768: {
+                                                        slidesPerView: "auto",
+                                                        spaceBetween: 24,
+                                                        centeredSlides: false,
+                                                    },
+                                                },
+
+                                            });
+                                        })();
+                                    </script>
+                                </div>
+                                <!-- // tab1 -->
+                                <div class="tab2">
+                                    <div class="swiper news_swiper2">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="#n">
+                                                    <div class="box">
+                                                        <span class="tip">보도자료</span>
+                                                        <div class="pic">
+                                                            <img src="/resources/images/temp/main_temp02.png" alt="">
+                                                        </div>
+                                                        <div class="txt_box">
+                                                            <p class="tit">한국주택금융공사,고객의경제적 회복과 재기 돕는다 </p>
+                                                            <p class="txt">
+                                                                한국주택금융공사(사장 김경환)는 최근 기록적인 집중호우로 피해를 입은 공사 고객들의 금융부담을 덜어주기 위해 오는 4월까지 이자 무변제 대출 조건을 확대하는 등 현금 흐름을 유지할 수 있도록 지원한다.
+                                                            </p>
+                                                            <p class="date">2026.03.03</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#n">
+                                                    <div class="box">
+                                                        <span class="tip">보도자료</span>
+                                                        <div class="pic">
+                                                            <img src="/resources/images/temp/main_temp02.png" alt="">
+                                                        </div>
+                                                        <div class="txt_box">
+                                                            <p class="tit">한국주택금융공사,고객의경제적 회복과 재기 돕는다 </p>
+                                                            <p class="txt">
+                                                                한국주택금융공사(사장 김경환)는 최근 기록적인 집중호우로 피해를 입은 공사 고객들의 금융부담을 덜어주기 위해 오는 4월까지 이자 무변제 대출 조건을 확대하는 등 현금 흐름을 유지할 수 있도록 지원한다.
+                                                            </p>
+                                                            <p class="date">2026.03.03</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#n">
+                                                    <div class="box">
+                                                        <span class="tip">보도자료</span>
+                                                        <div class="pic">
+                                                            <img src="/resources/images/temp/main_temp03.png" alt="">
+                                                        </div>
+                                                        <div class="txt_box">
+                                                            <p class="tit">한국주택금융공사,고객의경제적 회복과 재기 돕는다 </p>
+                                                            <p class="txt">
+                                                                한국주택금융공사(사장 김경환)는 최근 기록적인 집중호우로 피해를 입은 공사 고객들의 금융부담을 덜어주기 위해 오는 4월까지 이자 무변제 대출 조건을 확대하는 등 현금 흐름을 유지할 수 있도록 지원한다.
+                                                            </p>
+                                                            <p class="date">2026.03.03</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#n">
+                                                    <div class="box">
+                                                        <span class="tip">보도자료</span>
+                                                        <div class="pic">  <!-- 이미지 없을때 -->
+                                                        </div>
+                                                        <div class="txt_box">
+                                                            <p class="tit">한국주택금융공사,고객의경제적 회복과 재기 돕는다 </p>
+                                                            <p class="txt">
+                                                                한국주택금융공사(사장 김경환)는 최근 기록적인 집중호우로 피해를 입은 공사 고객들의 금융부담을 덜어주기 위해 오는 4월까지 이자 무변제 대출 조건을 확대하는 등 현금 흐름을 유지할 수 있도록 지원한다.
+                                                            </p>
+                                                            <p class="date">2026.03.03</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#n">
+                                                    <div class="box">
+                                                        <span class="tip">보도자료</span>
+                                                        <div class="pic">
+                                                            <img src="/resources/images/temp/main_temp03.png" alt="">
+                                                        </div>
+                                                        <div class="txt_box">
+                                                            <p class="tit">한국주택금융공사,고객의경제적 회복과 재기 돕는다 </p>
+                                                            <p class="txt">
+                                                                한국주택금융공사(사장 김경환)는 최근 기록적인 집중호우로 피해를 입은 공사 고객들의 금융부담을 덜어주기 위해 오는 4월까지 이자 무변제 대출 조건을 확대하는 등 현금 흐름을 유지할 수 있도록 지원한다.
+                                                            </p>
+                                                            <p class="date">2026.03.03</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#n">
+                                                    <div class="box">
+                                                        <span class="tip">보도자료</span>
+                                                        <div class="pic">
+                                                            <img src="/resources/images/temp/main_temp03.png" alt="">
+                                                        </div>
+                                                        <div class="txt_box">
+                                                            <p class="tit">한국주택금융공사,고객의경제적 회복과 재기 돕는다 </p>
+                                                            <p class="txt">
+                                                                한국주택금융공사(사장 김경환)는 최근 기록적인 집중호우로 피해를 입은 공사 고객들의 금융부담을 덜어주기 위해 오는 4월까지 이자 무변제 대출 조건을 확대하는 등 현금 흐름을 유지할 수 있도록 지원한다.
+                                                            </p>
+                                                            <p class="date">2026.03.03</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide empty_slide">
+                                                <!-- 필요 공백 슬라이드 -->
+                                            </div>
+                                            <div class="swiper-slide empty_slide">
+                                                 <!-- 필요 공백 슬라이드 -->
+                                            </div>
+                                            <div class="swiper-slide empty_slide">
+                                                 <!-- 필요 공백 슬라이드 -->
+                                            </div>
+                                        </div> <!-- //swiper-wrapper -->
+                                        <div class="sw_nav_set">
+                                            <div class="sw_nav_set_in">
+                                                <button type="button" class="swiper-button-prev">
+                                                    이전
+                                                </button>
+                                                <div class="swiper-pagination"></div>
+                                                <button type="button" class="swiper-button-next">
+                                                    다음
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div><!-- //swiper -->
+                                    <script>
+                                        (function() {
+                                            const newsSwiper2 = new Swiper('.news_swiper2', {
+                                                slidesPerView: "auto",
+                                                centeredSlides: true,
+                                                spaceBetween: 16,
+                                                pagination: {
+                                                    el: '.news_swiper2 .swiper-pagination',
+                                                },
+                                                navigation: {
+                                                    nextEl: '.news_swiper2 .swiper-button-next',
+                                                    prevEl: '.news_swiper2 .swiper-button-prev',
+                                                },
+                                                breakpoints: {
+                                                    768: {
+                                                        slidesPerView: "auto",
+                                                        spaceBetween: 24,
+                                                        centeredSlides: false,
+                                                    },
+                                                },
+
+                                            });
+                                        })();
+                                    </script>
+                                </div>
+                                <!-- // tab2 -->
+                                <div class="tab3">
+                                    <div class="swiper news_swiper3">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="#n">
+                                                    <div class="box">
+                                                        <span class="tip">채용공고</span>
+                                                        <div class="pic">
+                                                        </div>
+                                                        <div class="txt_box">
+                                                            <p class="tit">한국주택금융공사,고객의경제적 회복과 재기 돕는다 </p>
+                                                            <p class="txt">
+                                                                한국주택금융공사(사장 김경환)는 최근 기록적인 집중호우로 피해를 입은 공사 고객들의 금융부담을 덜어주기 위해 오는 4월까지 이자 무변제 대출 조건을 확대하는 등 현금 흐름을 유지할 수 있도록 지원한다.
+                                                            </p>
+                                                            <p class="date">2026.03.03</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#n">
+                                                    <div class="box">
+                                                        <span class="tip">채용공고</span>
+                                                        <div class="pic">
+                                                        </div>
+                                                        <div class="txt_box">
+                                                            <p class="tit">한국주택금융공사,고객의경제적 회복과 재기 돕는다 </p>
+                                                            <p class="txt">
+                                                                한국주택금융공사(사장 김경환)는 최근 기록적인 집중호우로 피해를 입은 공사 고객들의 금융부담을 덜어주기 위해 오는 4월까지 이자 무변제 대출 조건을 확대하는 등 현금 흐름을 유지할 수 있도록 지원한다.
+                                                            </p>
+                                                            <p class="date">2026.03.03</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#n">
+                                                    <div class="box">
+                                                        <span class="tip">채용공고</span>
+                                                        <div class="pic">
+                                                        </div>
+                                                        <div class="txt_box">
+                                                            <p class="tit">한국주택금융공사,고객의경제적 회복과 재기 돕는다 </p>
+                                                            <p class="txt">
+                                                                한국주택금융공사(사장 김경환)는 최근 기록적인 집중호우로 피해를 입은 공사 고객들의 금융부담을 덜어주기 위해 오는 4월까지 이자 무변제 대출 조건을 확대하는 등 현금 흐름을 유지할 수 있도록 지원한다.
+                                                            </p>
+                                                            <p class="date">2026.03.03</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#n">
+                                                    <div class="box">
+                                                        <span class="tip">채용공고</span>
+                                                        <div class="pic">  <!-- 이미지 없을때 -->
+                                                        </div>
+                                                        <div class="txt_box">
+                                                            <p class="tit">한국주택금융공사,고객의경제적 회복과 재기 돕는다 </p>
+                                                            <p class="txt">
+                                                                한국주택금융공사(사장 김경환)는 최근 기록적인 집중호우로 피해를 입은 공사 고객들의 금융부담을 덜어주기 위해 오는 4월까지 이자 무변제 대출 조건을 확대하는 등 현금 흐름을 유지할 수 있도록 지원한다.
+                                                            </p>
+                                                            <p class="date">2026.03.03</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#n">
+                                                    <div class="box">
+                                                        <span class="tip">채용공고</span>
+                                                        <div class="pic">
+                                                            <img src="/resources/images/temp/main_temp03.png" alt="">
+                                                        </div>
+                                                        <div class="txt_box">
+                                                            <p class="tit">한국주택금융공사,고객의경제적 회복과 재기 돕는다 </p>
+                                                            <p class="txt">
+                                                                한국주택금융공사(사장 김경환)는 최근 기록적인 집중호우로 피해를 입은 공사 고객들의 금융부담을 덜어주기 위해 오는 4월까지 이자 무변제 대출 조건을 확대하는 등 현금 흐름을 유지할 수 있도록 지원한다.
+                                                            </p>
+                                                            <p class="date">2026.03.03</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#n">
+                                                    <div class="box">
+                                                        <span class="tip">채용공고</span>
+                                                        <div class="pic">
+                                                            <img src="/resources/images/temp/main_temp03.png" alt="">
+                                                        </div>
+                                                        <div class="txt_box">
+                                                            <p class="tit">한국주택금융공사,고객의경제적 회복과 재기 돕는다 </p>
+                                                            <p class="txt">
+                                                                한국주택금융공사(사장 김경환)는 최근 기록적인 집중호우로 피해를 입은 공사 고객들의 금융부담을 덜어주기 위해 오는 4월까지 이자 무변제 대출 조건을 확대하는 등 현금 흐름을 유지할 수 있도록 지원한다.
+                                                            </p>
+                                                            <p class="date">2026.03.03</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide empty_slide">
+                                                <!-- 필요 공백 슬라이드 -->
+                                            </div>
+                                            <div class="swiper-slide empty_slide">
+                                                 <!-- 필요 공백 슬라이드 -->
+                                            </div>
+                                            <div class="swiper-slide empty_slide">
+                                                 <!-- 필요 공백 슬라이드 -->
+                                            </div>
+                                        </div> <!-- //swiper-wrapper -->
+                                        <div class="sw_nav_set">
+                                            <div class="sw_nav_set_in">
+                                                <button type="button" class="swiper-button-prev">
+                                                    이전
+                                                </button>
+                                                <div class="swiper-pagination"></div>
+                                                <button type="button" class="swiper-button-next">
+                                                    다음
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div><!-- //swiper -->
+                                    <script>
+                                        (function() {
+                                            const newsSwiper3 = new Swiper('.news_swiper3', {
+                                                slidesPerView: "auto",
+                                                centeredSlides: true,
+                                                spaceBetween: 16,
+                                                pagination: {
+                                                    el: '.news_swiper3 .swiper-pagination',
+                                                },
+                                                navigation: {
+                                                    nextEl: '.news_swiper3 .swiper-button-next',
+                                                    prevEl: '.news_swiper3 .swiper-button-prev',
+                                                },
+                                                breakpoints: {
+                                                    768: {
+                                                        slidesPerView: "auto",
+                                                        spaceBetween: 24,
+                                                        centeredSlides: false,
+                                                    },
+                                                },
+
+
+                                            });
+                                        })();
+                                    </script>
+                                    
+                                </div>
+                                <!-- // tab3 -->
+                            </div><!-- //tab_area -->
+
+                        </div> <!-- // sec3_box_set -->
+                    </div>
+                </section>
+
+
+                <section class="sec4">
+                    <div class="sec_in">
+                        <div class="main_title">
+                            <h2>
+                                <img src="/resources/images/main/title_sec04.svg" alt="HF SNS"/>
+                            </h2>
+                        </div>
+                        <div class="sec4_box_set">
+                            <div class="sns_swiper swiper-container">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="box_div">
+                                                <div class="pic">
+                                                    <img src="/resources/images/temp/main_temp04.png" alt="한국주택금융공사 popup store 집들이에 초대합니다">
+                                                    <span class="sns instagram"></span>
+                                                </div>
+                                                <div class="txt_box">
+                                                    <p class="tit">HF~ 좋다! 한국주택금융공사 팝업스토어 | 집들이에 초대합니다💕</p>
+                                                    <p class="txt">안녕하세요! 한국주택금융공사 팝업스토어에 초대합니다!</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="box_div">
+                                                <div class="pic">
+                                                    <img src="/resources/images/temp/main_temp05.png" alt="MBS는 왜 어떻게 만들어질까 MBS를 알아보자 1편">
+                                                    <span class="sns youtube"></span>
+                                                </div>
+                                                <div class="txt_box">
+                                                    <p class="tit">HF | MBS는 왜, 어떻게 만들어질까? (MBS를 알아보자! 1편)</p>
+                                                    <p class="txt">한국주택금융공사는 무주택 서민을 위해 장기 고정금리 '정책모기지'를 공급하는데요 그럼, 공사는 이런 정책모기지 공급을 위해 자금을 어떻게 마련할까요?</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="box_div">
+                                                <div class="pic">
+                                                    <img src="/resources/images/temp/main_temp06.png" alt="[HF 주택연금툰] 5화 주택연금 가입 후 우리 가족 근황">
+                                                    <span class="sns youtube"></span>
+                                                </div>
+                                                <div class="txt_box">
+                                                    <p class="tit">[HF 주택연금툰] 5화) 주택연금 가입 후 우리 가족 근황</p>
+                                                    <p class="txt">한국주택금융공사는 무주택 서민을 위해 장기 고정금리 '정책모기지'를 공급하는데요 그럼, 공사는 이런 정책모기지 공급을 위해 자금을 어떻게 마련할까요?</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="box_div">
+                                                <div class="pic">
+                                                    <img src="/resources/images/temp/main_temp04.png" alt="한국주택금융공사 popup store 집들이에 초대합니다">
+                                                    <span class="sns instagram"></span>
+                                                </div>
+                                                <div class="txt_box">
+                                                    <p class="tit">HF~ 좋다! 한국주택금융공사 팝업스토어 | 집들이에 초대합니다💕</p>
+                                                    <p class="txt">안녕하세요! 한국주택금융공사 팝업스토어에 초대합니다!</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="box_div">
+                                                <div class="pic">
+                                                    <img src="/resources/images/temp/main_temp05.png" alt="MBS는 왜 어떻게 만들어질까 MBS를 알아보자 1편">
+                                                    <span class="sns youtube"></span>
+                                                </div>
+                                                <div class="txt_box">
+                                                    <p class="tit">HF | MBS는 왜, 어떻게 만들어질까? (MBS를 알아보자! 1편)</p>
+                                                    <p class="txt">한국주택금융공사는 무주택 서민을 위해 장기 고정금리 '정책모기지'를 공급하는데요 그럼, 공사는 이런 정책모기지 공급을 위해 자금을 어떻게 마련할까요?</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="box_div">
+                                                <div class="pic">
+                                                    <img src="/resources/images/temp/main_temp06.png" alt="[HF 주택연금툰] 5화 주택연금 가입 후 우리 가족 근황">
+                                                    <span class="sns youtube"></span>
+                                                </div>
+                                                <div class="txt_box">
+                                                    <p class="tit">[HF 주택연금툰] 5화) 주택연금 가입 후 우리 가족 근황</p>
+                                                    <p class="txt">한국주택금융공사는 무주택 서민을 위해 장기 고정금리 '정책모기지'를 공급하는데요 그럼, 공사는 이런 정책모기지 공급을 위해 자금을 어떻게 마련할까요?</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="sw_nav_set">
+                                    <div class="sw_nav_set_in">
+                                        <button type="button" class="swiper-button-prev sns_prev">
+                                            이전
+                                        </button>
+                                        <div class="swiper-pagination"></div>
+                                        <button type="button" class="swiper-button-next sns_next">
+                                            다음
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script>
+                                     (function() {
+                                        sns_swiper = new Swiper('.sns_swiper', {
+                                                spaceBetween: 16,
+                                                slidesPerView: 1,
+                                                centeredSlides: true,
+                                                roundLengths: true,
+                                                loop: true,
+                                                loopedSlides: 3,
+                                                pagination: {
+                                                    el: '.sns_swiper .swiper-pagination',
+                                                },
+                                                navigation: {
+                                                        nextEl: ".sns_next",
+                                                        prevEl: ".sns_prev",
+                                                },
+                                                a11y: { 
+                                                    enabled: true, 
+                                                    prevSlideMessage: '이전 슬라이드', 
+                                                    nextSlideMessage: '다음 슬라이드', 
+                                                },
+                                                // 복제된 슬라이드가 초점을 잡지 않도록 설정
+                                                        watchSlidesProgress: true, 
+                                                        slidesOffsetBefore: 0,
+                                                breakpoints: {
+
+                                                    768: {
+                                                        spaceBetween: 16,
+                                                        slidesPerView: 3,
+                                                    },
+                                                },
+
+
+                                        });
+                                    })();
+
+                                    // 탭 이동으로 포커스가 슬라이드로 이동했을 때 슬라이드를 활성화 
+                                    $('.sns_swiper .swiper-slide > a').on('focus', function() { 
+                                        var index = $(this).parent().index(); 
+                                        sns_swiper.slideTo(index); 
+                                    });
+
+                            </script>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="sec5">
+                    <div class="sec_in">
+                        <div class="main_title">
+                            <h2>
+                                <img src="/resources/images/main/title_sec05.svg" alt="HF 더 알아보기"/>
+                            </h2>
+                        </div>
+                        <div class="sec5_box_set">
+                            <div class="menu_set">
+                                <ul>
+                                    <li>
+                                        <a href="#n" target="_blank" title="새 창 열기">
+                                            <div class="box box1">
+                                                <div class="txt_box">
+                                                    <p class="tit">인터넷뱅킹<br class="mobile"/>서비스<i class="svg-icon ico-go"></i></p>
+                                                    <p class="txt web">내 손 안의 주택금융, <br/>
+                                                        기다림 없는 스마트 뱅킹</p>
+                                                    <p class="txt mobile">
+                                                        내 손 안의 주택금융
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n" target="_blank" title="새 창 열기">
+                                            <div class="box box2">
+                                                <div class="txt_box">
+                                                    <p class="tit">K-MBS<i class="svg-icon ico-go"></i></p>
+                                                    <p class="txt web">한국형 주택저당증권, K-MBS로 <br/>안정적인 주택금융을 만나다</p>
+                                                    <p class="txt mobile">안정적인 <br> 주택금융을 만나다</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n" target="_blank" title="새 창 열기">
+                                            <div class="box box3">
+                                                <div class="txt_box">
+                                                    <p class="tit">주택금융통계<br class="mobile"/>시스템<i class="svg-icon ico-go"></i></p>
+                                                    <p class="txt web">숫자로 소통하는 주택금융 파트너,
+                                                        <br/>주택금융통계시스템</p>
+                                                    <p class="txt mobile">숫자로 소통하는 <br> 주택금융 파트너</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n" target="_blank" title="새 창 열기">
+                                            <div class="box box4">
+                                                <div class="txt_box">
+                                                    <p class="tit">HF채용<i class="svg-icon ico-go"></i></p>
+                                                    <p class="txt">주택금융의
+                                                        <br class="web"/>미래를 <br class="mobile"/>이끌 인재 채용</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n" target="_blank" title="새 창 열기">
+                                            <div class="box box5">
+                                                <div class="txt_box">
+                                                    <p class="tit">고객의소리 <br class="mobile"/> VOC<i class="svg-icon ico-go"></i></p>
+                                                    <p class="txt web">고객님의 소중한
+                                                        <br/>목소리를 기다립니다</p>
+                                                    <p class="txt mobile">소중한 목소리를 <br> 기다립니다</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n" target="_blank" title="새 창 열기">
+                                            <div class="box box6">
+                                                <div class="txt_box">
+                                                    <p class="tit">주택금융<br class="mobile"/>연구원<i class="svg-icon ico-go"></i></p>
+                                                    <p class="txt web">주거 안정을 위한 연구, 
+                                                        <br/>미래를 준비합니다</p>
+                                                    <p class="txt mobile">미래를 준비합니다</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> <!-- // menu_set -->
+
+                            <div class="popup_zone">
+                                <h3>
+                                    <img src="/resources/images/main/title_popup_zone01.svg" alt="팝업존"/>
+                                </h3>
+                                <div class="pz_swiper swiper-container">
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <a href="#n">
+                                                <div class="pic">
+                                                    <img src="/resources/images/temp/popup_zone01_w.png" alt="2026공공기관 채용정보 박람회 일시: 2026. 1. 27(화) ~ 1. 29(목) 장소: 서울 양재 aT센터 제1,2전시장 / 세계로룸 A,B" class="web" />
+                                                    <img src="/resources/images/temp/popup_zone01_m.png" alt="2026공공기관 채용정보 박람회 일시: 2026. 1. 27(화) ~ 1. 29(목) 장소: 서울 양재 aT센터 제1,2전시장 / 세계로룸 A,B" class="mobile" />
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#n">
+                                                <div class="pic">
+                                                    <img src="/resources/images/temp/popup_zone01_w.png" alt="2026공공기관 채용정보 박람회 일시: 2026. 1. 27(화) ~ 1. 29(목) 장소: 서울 양재 aT센터 제1,2전시장 / 세계로룸 A,B" class="web" />
+                                                    <img src="/resources/images/temp/popup_zone01_m.png" alt="2026공공기관 채용정보 박람회 일시: 2026. 1. 27(화) ~ 1. 29(목) 장소: 서울 양재 aT센터 제1,2전시장 / 세계로룸 A,B" class="mobile" />
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#n">
+                                                <div class="pic">
+                                                    <img src="/resources/images/temp/popup_zone01_w.png" alt="2026공공기관 채용정보 박람회 일시: 2026. 1. 27(화) ~ 1. 29(목) 장소: 서울 양재 aT센터 제1,2전시장 / 세계로룸 A,B" class="web" />
+                                                    <img src="/resources/images/temp/popup_zone01_m.png" alt="2026공공기관 채용정보 박람회 일시: 2026. 1. 27(화) ~ 1. 29(목) 장소: 서울 양재 aT센터 제1,2전시장 / 세계로룸 A,B" class="mobile" />
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="sw_nav_set">
+                                        <div class="sw_nav_set_in">
+                                            <div class="swiper-pagination"></div>
+                                            <button type="button" class="swiper-button-prev pz_prev">
+                                                이전
+                                            </button>
+                                            <button type="button" class="swiper-button-next pz_next">
+                                                다음
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <script>
+                                        (function() {
+                                            pz_swiper = new Swiper('.pz_swiper', {
+                                                    spaceBetween: 16,
+                                                    slidesPerView: 1,
+                                                    pagination: {
+                                                        el: '.pz_swiper .swiper-pagination',
+                                                    },
+                                                    navigation: {
+                                                            nextEl: ".pz_next",
+                                                            prevEl: ".pz_prev",
+                                                    },
+        
+                                            });
+                                        })();
+        
+                                </script>
+                            </div> <!-- // popup_zone -->
+
+                        </div><!-- //sec5_box_set -->
+                    </div> <!-- // sec_in -->
+                </section><!-- //sec5 -->
+
+            </div>
+            <!-- //sub_con page_main-->
+
+        </div> <!-- //container_in -->
+    </div>
+
+    <div data-include="../inc/footer.html"></div>
+</div> <!-- //wrap -->
+
+<!-- 확대/축소 팝업 -->
+<div data-include="../inc/krds-popup-resize.html"></div>
+
+<!-- 통합검색 모달 -->
+<div data-include="../inc/modal-search-total.html"></div>
+
+<!-- 용어사전 모달 -->
+<div data-include="../inc/modal-glossary.html"></div>
+
+
+</body>
+<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+<script type="text/javascript" src="/resources/js/include.js"></script>
+<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</html>

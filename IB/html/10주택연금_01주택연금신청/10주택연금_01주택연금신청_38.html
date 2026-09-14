@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="ko">
+	<meta property="og:site_name" content="한국주택금융공사">
+	<meta name="twitter:card" content="summary">
+	<title>한국주택금융공사</title>
+
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub3.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/hf_pup_style2.css">
+
+	<script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.custom.home.js"></script>
+</head>
+<body>
+	<div data-include="../inc/header.html"></div>
+
+	<div id="container">
+		<div class="container_in">
+
+			<!-- contents -->
+			<div class="contents">
+				<div class="sub_con hf_loan">
+
+					<!-- breadcrumb -->
+					<nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="home"><a href="#" class="txt">홈</a></li>
+							<li><a href="#" class="txt">주택연금</a></li>
+							<li><a href="#" class="txt">주택연금 신청</a></li>
+						</ol>
+					</nav>
+					<!--// breadcrumb -->
+
+					<div class="title_set">
+						<div class="page-title-wrap">
+							<h2 class="h-tit">주택연금 신청</h2>
+						</div>
+
+						<div class="title_etc_menu">
+							<ul>
+								<li class="print_li">
+									<a href="#">
+										<i class="svg-icon ico-down"></i>
+										<span class="txt">뷰어 다운로드</span>
+									</a>
+								</li>
+								<li class="print_li">
+									<a href="#">
+										<i class="svg-icon ico-print"></i>
+										<span class="txt">인쇄</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- 컨텐츠 -->
+					<div class="debt_cont">
+						<div class="debt_body hfp">
+
+							<div class="step_list_cont type1 step8 hfp">
+								<ol class="krds-step-wrap">
+									<li class="done"><span><i class="step">1단계</i><span class="step-tit">신청 방법 선택</span></span></li>
+									<li class="done"><span><i class="step">2단계</i><span class="step-tit">정보제공동의</span></span></li>
+									<li class="done"><span><i class="step">3단계</i><span class="step-tit">스마트서류제출</span></span></li>
+									<li class="done"><span><i class="step">4단계</i><span class="step-tit">설명사항 확인</span></span></li>
+									<li class="done"><span><i class="step">5단계</i><span class="step-tit">인적사항</span></span></li>
+									<li class="done"><span><i class="step">6단계</i><span class="step-tit">대상 담보주택 정보</span></span></li>
+									<li class="active"><span><em class="sr-only">현재단계</em><i class="step">7단계</i><span class="step-tit">신청내용</span></span></li>
+									<li><span><i class="step">8단계</i><span class="step-tit">신청정보확인</span></span></li>
+								</ol>
+							</div>
+
+							<div class="step_cont hfp">
+								<span><span class="blue">7단계</span> / 8단계</span>
+								<h3 class="title">신청내용</h3>
+							</div>
+
+							<div class="hf_info_field_cont">
+								<div class="exclamation"><span class="text"><i class="svg-icon ico_exclamation" aria-hidden="true"></i>모든 입력항목은 필수입니다.</span></div>
+								<ul class="list">
+									<li>
+										<div class="fieldset">
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">주택연금 지급방식<button type="button" class="help" title="도움말 보기"><i class="svg-icon ico_help" aria-hidden="true"></i></button></h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds_select_box">
+															<div class="select_tit"><button type="button" id="p38_pay">확정혼합방식</button></div>
+															<div class="select_list">
+																<ul></ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">분납금 납부용도</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area chip_fill hfp">
+															<legend class="sr-only">분납금 납부용도 선택</legend>
+															<div class="krds-form-chip"><input type="radio" class="radio" name="p38_use" id="p38_use1" checked><label class="krds-form-chip-outline" for="p38_use1">아니오</label></div>
+															<div class="krds-form-chip"><input type="radio" class="radio" name="p38_use" id="p38_use2"><label class="krds-form-chip-outline" for="p38_use2">예</label></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">지급기간<button type="button" class="help" title="도움말 보기"><i class="svg-icon ico_help" aria-hidden="true"></i></button></h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds_select_box">
+															<div class="select_tit"><button type="button" id="p38_period">선택해주세요.</button></div>
+															<div class="select_list">
+																<ul></ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">선순위채권상환 인출한도 설정금액<button type="button" class="help" title="도움말 보기"><i class="svg-icon ico_help" aria-hidden="true"></i></button></h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts data hfp">
+														<div class="form-text">
+															<div class="text">
+																<div class="num">영</div>
+																<div class="txt">원</div>
+															</div>
+														</div>
+														<div class="form-inp"><input type="text" id="p38_pri" class="krds-input" placeholder="0" title="선순위채권상환 인출한도 설정금액">
+															<div class="txt">원</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">기타용도 인출한도 설정금액<button type="button" class="help" title="도움말 보기"><i class="svg-icon ico_help" aria-hidden="true"></i></button></h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts data hfp">
+														<div class="form-text">
+															<div class="text">
+																<div class="num">영</div>
+																<div class="txt">원</div>
+															</div>
+														</div>
+														<div class="form-inp"><input type="text" id="p38_etc" class="krds-input" placeholder="0" title="기타용도 인출한도 설정금액">
+															<div class="txt">원</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">근저당권/신탁등기 설정희망일</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts calendar-conts">
+														<div class="calendar-input">
+															<input type="text" id="p38_wdate" class="krds-input datepicker cal" placeholder="YYYY-MM-DD" title="근저당권/신탁등기 설정희망일">
+															<button type="button" class="krds-btn medium icon form-btn-datepicker"><span class="sr-only">달력 열기</span><i class="svg-icon ico-calendar"></i></button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">월지급금 지급유형</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<input type="text" id="p38_ptype" class="krds-input" value="정액형" title="월지급금 지급유형" readonly>
+														<button type="button" class="field_btn blue2 hfp" data-pop-open="pop_pension">예상연금조회하기</button>
+													</div>
+													<ul class="krds-info-list">
+														<li class="small gray">지급유형은 [예상연금조회하기] 확인 후, 선택할 수 있습니다.</li>
+														<li class="small gray">"예상연금조회하기" 버튼을 눌러 월지급금을 선택하세요.</li>
+														<li class="small gray">연금 신청을 위해 반드시 조회가 필요합니다.</li>
+														<li class="small gray">예상월지급금은 참고용으로만 확인하며, 실제 연금실행 시의 월지급금과 다를 수 있습니다.</li>
+													</ul>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">금융기관(연금수령은행)</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<input type="text" id="p38_bank" class="krds-input" value="" title="금융기관(연금수령은행)" readonly>
+														<button type="button" class="field_btn blue2 hfp" data-pop-open="pop_branch">영업점 검색</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="main_title_cont">
+											<h4 class="title">문자메시지 등 수신여부</h4>
+										</div>
+										<div class="fieldset">
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">보증서 발급 시 문자메시지를 받으시겠습니까?</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area chip_fill hfp">
+															<legend class="sr-only">보증서 발급 시 문자메시지 수신 여부 선택</legend>
+															<div class="krds-form-chip"><input type="radio" class="radio" name="p38_sms1" id="p38_sms11"><label class="krds-form-chip-outline" for="p38_sms11">아니오</label></div>
+															<div class="krds-form-chip"><input type="radio" class="radio" name="p38_sms1" id="p38_sms12"><label class="krds-form-chip-outline" for="p38_sms12">예</label></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">매월 월지급금을 지급받을 때 문자메시지를 받으시겠습니까?</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area chip_fill hfp">
+															<legend class="sr-only">월지급금 지급 시 문자메시지 수신 여부 선택</legend>
+															<div class="krds-form-chip"><input type="radio" class="radio" name="p38_sms2" id="p38_sms21"><label class="krds-form-chip-outline" for="p38_sms21">아니오</label></div>
+															<div class="krds-form-chip"><input type="radio" class="radio" name="p38_sms2" id="p38_sms22"><label class="krds-form-chip-outline" for="p38_sms22">예</label></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">연 1회 주택연금 보증잔액통지서를 받으시겠습니까?</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area chip_fill hfp">
+															<legend class="sr-only">보증잔액통지서 수신 여부 선택</legend>
+															<div class="krds-form-chip"><input type="radio" class="radio" name="p38_sms3" id="p38_sms31"><label class="krds-form-chip-outline" for="p38_sms31">아니오</label></div>
+															<div class="krds-form-chip"><input type="radio" class="radio" name="p38_sms3" id="p38_sms32"><label class="krds-form-chip-outline" for="p38_sms32">예</label></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">희망하는 수신방식을 선택해 주세요. (택1)</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area chip_fill hfp">
+															<legend class="sr-only">희망 수신방식 선택</legend>
+															<div class="krds-form-chip"><input type="radio" class="radio" name="p38_sms4" id="p38_sms41"><label class="krds-form-chip-outline" for="p38_sms41">문자</label></div>
+															<div class="krds-form-chip"><input type="radio" class="radio" name="p38_sms4" id="p38_sms42"><label class="krds-form-chip-outline" for="p38_sms42">우편</label></div>
+															<div class="krds-form-chip"><input type="radio" class="radio" name="p38_sms4" id="p38_sms43"><label class="krds-form-chip-outline" for="p38_sms43">이메일</label></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">공공기관 고객만족도조사를 허락하십니까?</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area chip_fill hfp">
+															<legend class="sr-only">공공기관 고객만족도조사 허용 여부 선택</legend>
+															<div class="krds-form-chip"><input type="radio" class="radio" name="p38_sms5" id="p38_sms51"><label class="krds-form-chip-outline" for="p38_sms51">아니오</label></div>
+															<div class="krds-form-chip"><input type="radio" class="radio" name="p38_sms5" id="p38_sms52"><label class="krds-form-chip-outline" for="p38_sms52">예</label></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<div class="field_btn_cont">
+								<div class="field_btn_area page">
+									<button type="button" class="field_btn black">이전</button>
+									<button type="button" class="field_btn blue">다음</button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!--// 컨텐츠 -->
+
+				</div>
+			</div>
+			<!--// contents -->
+
+		</div>
+	</div>
+
+	<div class="com_pop_cont active" id="pop_pension">
+		<div class="pop_cont_area hfp pop_guide2">
+			<div class="title_area">
+				<h2 class="title">예상연금(월지급금) 조회하기</h2>
+				<button type="button" class="close"><span class="sr-only">팝업 닫기</span></button>
+			</div>
+			<div class="pop_info_cont">
+				<div class="fieldset">
+					<div class="form-group">
+						<div class="sub_title_cont">
+							<h2 class="title">배우자 생년월일<span class="point">(필수)</span></h2>
+						</div>
+						<div class="form-conts hfp doc_none">
+							<div class="calendar-conts">
+								<div class="calendar-input">
+									<input type="text" id="p38_sbirth" class="krds-input datepicker cal w37_3" placeholder="YYYY-MM-DD" title="배우자 생년월일">
+									<button type="button" class="krds-btn medium icon form-btn-datepicker"><span class="sr-only">달력 열기</span><i class="svg-icon ico-calendar"></i></button>
+								</div>
+							</div>
+							<button type="button" class="field_btn blue2 auto">조회</button>
+						</div>
+					</div>
+					<div class="form-group">
+							<div class="sub_title_cont">
+								<h2 class="title">조회결과</h2>
+							</div>
+								<div class="hf_table_cont tal hfp">
+									<div class="krds-table-wrap scroll-x">
+										<table class="tbl col data">
+											<caption>예상연금(월지급금) 조회결과 - 구분, 정액형, 초기증액형(3년), 초기증액형(5년), 초기증액형(7년), 초기증액형(10년), 정기증가형</caption>
+											<colgroup>
+												<col style="width:16%">
+												<col>
+												<col>
+												<col>
+												<col>
+												<col>
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">구분</th>
+													<th scope="col">정액형</th>
+													<th scope="col">초기증액형(3년)</th>
+													<th scope="col">초기증액형(5년)</th>
+													<th scope="col">초기증액형(7년)</th>
+													<th scope="col">초기증액형(10년)</th>
+													<th scope="col">정기증가형</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td colspan="7">예상연금을 조회해주세요.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							<ul class="krds-info-list decimal">
+								<li class="small gray">아래의 예상월지급금은 참고용으로만 사용하며, 실제 연금실행 시의 월지급금과 다를 수 있습니다.</li>
+								<li class="small gray">배우자 개인정보동의를 하지 않은 경우, 정확한 예상월지급금 조회를 위해 배우자의 생년월일을 입력 후 조회 버튼을 눌러 확인하시기 바랍니다.</li>
+							</ul>
+					</div>
+					<div class="form-group">
+						<div class="sub_title_cont">
+							<h2 class="title">지급유형<span class="point">(필수)</span></h2>
+						</div>
+						<div class="form-conts">
+							<div class="krds_select_box">
+								<div class="select_tit"><button type="button" id="p38_poptype">선택해주세요.</button></div>
+								<div class="select_list">
+									<ul></ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="field_btn_cont w100 mt">
+					<div class="field_btn_area">
+						<button type="button" class="field_btn blue small" disabled>선택</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="/resources/js/include.js"></script>
+</body>
+</html>

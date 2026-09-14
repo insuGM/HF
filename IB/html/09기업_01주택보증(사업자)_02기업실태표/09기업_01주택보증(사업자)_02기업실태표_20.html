@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="ko">
+	<meta property="og:site_name" content="한국주택금융공사">
+	<meta name="twitter:card" content="summary">
+	<title>한국주택금융공사</title>
+
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub3.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/hf_pup_style2.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/hf_gieop.css">
+
+	<script type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+	<script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.custom.home.js"></script>
+</head>
+<body>
+	<div data-include="../inc/header.html"></div>
+	<div id="container">
+		<div class="container_in">
+			<div class="contents">
+				<div class="sub_con">
+
+					<nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="home"><a href="#" class="txt">홈</a></li>
+							<li><a href="#" class="txt">주택보증(사업자)</a></li>
+							<li><a href="#" class="txt">기업실태표</a></li>
+						</ol>
+					</nav>
+
+					<div class="title_set">
+						<div class="page-title-wrap">
+							<h2 class="h-tit">기업실태표 작성안내</h2>
+						</div>
+						<div class="title_etc_menu">
+							<ul>
+								<li class="print_li"><a href="#"><i class="svg-icon ico-down"></i><span class="txt">뷰어 다운로드</span></a></li>
+								<li class="print_li"><a href="#"><i class="svg-icon ico-print"></i><span class="txt">인쇄</span></a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 팝업 -->
+	<div class="com_pop_cont active" id="pop_ongoing">
+		<div class="pop_cont_area pop_medium">
+			<div class="title_area">
+				<h2 class="title">진행중인 사업장(본 건 신청기업 시행사) 등록/수정</h2>
+				<button type="button" class="close"><span class="sr-only">팝업 닫기</span></button>
+			</div>
+			<div class="pop_info_cont">
+				<div class="title_area">
+					<strong class="sub_tit">준공실적 추가</strong>
+					<div class="exclamation">
+						<div class="text"><i class="svg-icon ico_exclamation" aria-hidden="true"></i>모든 입력항목은 필수입니다.</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form-tit"><label for="p20_type">구분</label></div>
+					<div class="form-conts">
+						<div class="krds_select_box">
+							<div class="select_tit"><button type="button" id="p20_type">선택</button></div>
+							<div class="select_list">
+								<ul>
+									<li><button type="button" value="1">항목1</button></li>
+									<li><button type="button" value="2">항목2</button></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form-tit"><label for="p20_house">세대수</label></div>
+					<div class="form-conts">
+						<div class="form-inp"><input type="text" id="p20_house" class="krds-input p0" placeholder="0" title="세대수">
+							<div class="txt">세대</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form-tit"><label for="p20_d1">착공년월</label></div>
+					<div class="form-conts">
+						<div class="calendar-input">
+							<input type="text" class="krds-input datepicker cal" placeholder="YYYY-MM" id="p20_d1" title="착공년월">
+							<button type="button" class="krds-btn medium icon form-btn-datepicker"><span class="sr-only">달력 열기</span><i class="svg-icon ico-calendar"></i></button>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form-tit"><label for="p20_sales">총분양매출액</label></div>
+					<div class="form-conts">
+						<div class="form-inp"><input type="text" id="p20_sales" class="krds-input p0" placeholder="0" title="총분양매출액">
+							<div class="txt">백만원</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form-tit"><label for="p20_d2">준공년월</label></div>
+					<div class="form-conts">
+						<div class="calendar-input">
+							<input type="text" class="krds-input datepicker cal" placeholder="YYYY-MM" id="p20_d2" title="준공년월">
+							<button type="button" class="krds-btn medium icon form-btn-datepicker"><span class="sr-only">달력 열기</span><i class="svg-icon ico-calendar"></i></button>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form-tit"><label for="p20_cost">총사업비</label></div>
+					<div class="form-conts">
+						<div class="form-inp"><input type="text" id="p20_cost" class="krds-input p0" placeholder="0" title="총사업비">
+							<div class="txt">백만원</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form-tit"><label for="p20_term">사업기간</label></div>
+					<div class="form-conts">
+						<div class="inp_row">
+							<div class="calendar-input">
+								<input type="text" class="krds-input datepicker cal" placeholder="YYYY-MM" id="p20_term_s" title="사업기간 시작">
+								<button type="button" class="krds-btn medium icon form-btn-datepicker"><span class="sr-only">시작 달력 열기</span><i class="svg-icon ico-calendar"></i></button>
+							</div>
+							<span class="txt">~</span>
+							<div class="calendar-input">
+								<input type="text" class="krds-input datepicker cal" placeholder="YYYY-MM" id="p20_term_e" title="사업기간 종료">
+								<button type="button" class="krds-btn medium icon form-btn-datepicker"><span class="sr-only">종료 달력 열기</span><i class="svg-icon ico-calendar"></i></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form-tit"><label for="p20_in">기투입비</label></div>
+					<div class="form-conts">
+						<div class="form-inp"><input type="text" id="p20_in" class="krds-input p0" placeholder="0" title="기투입비">
+							<div class="txt">백만원</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form-tit"><label for="p20_rate">기준공정률</label></div>
+					<div class="form-conts">
+						<div class="form-inp"><input type="text" id="p20_rate" class="krds-input p0" placeholder="0" title="기준공정률">
+							<div class="txt">%</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form-tit"><label for="p20_add">추가소요자금</label></div>
+					<div class="form-conts">
+						<div class="form-inp"><input type="text" id="p20_add" class="krds-input p0" placeholder="0" title="추가소요자금">
+							<div class="txt">백만원</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form-tit"><label for="p20_srate">분양률</label></div>
+					<div class="form-conts">
+						<div class="form-inp"><input type="text" id="p20_srate" class="krds-input p0" placeholder="0" title="분양률">
+							<div class="txt">%</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form-tit"><label for="p20_addr">사업지</label></div>
+					<div class="form-conts area">
+						<div class="area_box">
+							<input type="text" id="p20_addr" class="krds-input" title="우측 주소검색 버튼을 통해 검색해주세요." readonly>
+							<button type="button" class="field_btn black">주소검색</button>
+						</div>
+						<input type="text" class="krds-input" placeholder="주소 검색 버튼을 눌러주세요." title="주소" readonly>
+						<input type="text" class="krds-input" placeholder="상세주소를 입력해 주세요" title="상세주소">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form-tit"><label for="p20_dev">시행사</label></div>
+					<div class="form-conts">
+						<input type="text" id="p20_dev" class="krds-input" placeholder="시행사를 입력해주세요" title="시행사">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form-tit"><label for="p20_con">시공사</label></div>
+					<div class="form-conts">
+						<input type="text" id="p20_con" class="krds-input" placeholder="시공사를 입력해주세요" title="시공사">
+					</div>
+				</div>
+				<ul class="hf-list-note">
+					<li>상가분양분 세대수는 제외하고 기입(주택부분만 기입)</li>
+					<li>기준공정률, 분양률은 소수점 둘째자리까지만 입력</li>
+				</ul>
+				<div class="field_btn_cont mt">
+					<div class="field_btn_area right">
+						<button type="button" class="field_btn black">닫기</button>
+						<button type="button" class="field_btn blue">등록</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+	<script type="text/javascript" src="/resources/js/include.js"></script>
+	<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</body>
+</html>
