@@ -592,7 +592,7 @@
 .rdo-label-wrap {display:flex; flex-direction:column; gap:var(--hf-gap-2);}
 .rdo-label-wrap .hf-radio-label-title {font-weight:500; font-size:var(--hf-font-size-label-medium); color:var(--hf-color-text-bolder); letter-spacing:-0.032em; line-height:1.5;}
 .rdo-label-wrap .hf-radio-label-desc {font-weight:500; font-size:var(--hf-font-size-label-small); color:var(--hf-color-text-subtle); letter-spacing:-0.03em; line-height:1.5;}
-.btn_cont.page.hf-btn-area {padding:var(--hf-padding-7) var(--hf-padding-6) var(--hf-padding-8);}
+.btn_cont.page.hf-btn-area {padding:var(--hf-padding-7) var(--hf-padding-6) calc(var(--hf-padding-8) + env(safe-area-inset-bottom, 0px));}
 .btn_cont.page.hf-btn-area.fixed {background-color: initial;}
 .btn_cont.page.hf-btn-area.fixed:before {display: none;}
 .btn_cont .com_btn.blue2.hf-btn-primary {height:var(--hf-number-17); font-size:var(--hf-font-size-label-large); font-weight:500; letter-spacing:-0.038em; border-radius:var(--hf-radius-large1); display:flex; align-items:center; justify-content:center;}
@@ -728,7 +728,7 @@
 .hf-proc-box-list p {flex:1; min-width:0; font-weight:400; font-size:var(--hf-font-size-body-small); line-height:1.5; letter-spacing:-0.02em; color:var(--hf-color-text-subtle);}
 
 .hf-form-section {display:flex; flex-direction:column; gap:var(--hf-gap-6);}
-.hf-form-section-tit {display: flex; align-items: center; justify-content: flex-start; gap: var(--hf-gap-2); font-weight:700; font-size:var(--hf-font-size-body-large); line-height:1.5; letter-spacing:-0.02em; color:var(--hf-color-text-basic);}
+.hf-form-section-tit {display: flex; align-items: center; justify-content: flex-start; gap: var(--hf-gap-2); font-weight:700; font-size:var(--hf-font-size-heading-xsmall); line-height:1.5; letter-spacing:-0.02em; color:var(--hf-color-text-basic);}
 .hf-form-info-list {display:flex; flex-direction:column; gap:var(--hf-gap-5);}
 .hf-form-info {display:flex; flex-direction:column; gap:var(--hf-gap-4); padding:var(--hf-padding-7); background-color:var(--hf-color-surface-gray-subtler); border-radius:var(--hf-radius-xlarge1);}
 .hf-form-info-label {font-weight:700; font-size:var(--hf-font-size-body-medium); line-height:1.5; letter-spacing:-0.02em; color:var(--hf-color-text-basic);}
