@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="ko">
+	<meta property="og:site_name" content="한국주택금융공사">
+	<meta property="og:updated_time" content="">
+	<meta name="twitter:card" content="summary">
+	<title>한국주택금융공사</title>
+
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub3.css">
+
+	<!-- JavaScript 파일들 -->
+	<script type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+	<script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+
+	<script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.custom.home.js"></script>
+</head>
+<body>
+	<div data-include="../inc/header.html"></div>
+
+	<div id="container">
+		<div class="container_in">
+
+			<!-- contents -->
+			<div class="contents">
+
+				<div class="sub_con">
+
+					<div class="hf_info_field_cont">
+						<div class="exclamation">
+							<div class="text"><i class="svg-icon ico_exclamation"></i>모든 입력항목은 필수입니다.</div>
+						</div>
+						<ul class="list">
+							<li>
+								<!-- 메인 타이틀 -->
+								<div class="main_title_cont">
+									<h1 class="title">기본정보</h1>
+								</div>
+								<!-- 메인 타이틀 -->
+
+								<!-- 메인 타이틀 + 전체보기 버튼 있을 경우 -->
+								<div class="main_title_cont">
+									<h1 class="title">
+										기본정보
+										<button type="button" class="btn">전체보기</button>
+									</h1>
+								</div>
+								<!-- 메인 타이틀 + 전체보기 버튼 있을 경우 -->
+
+								<div class="fieldset">
+
+									<!-- 인풋 readonly 유형 -->
+									<div class="hf_group">
+										<div class="sub_title_cont">
+											<h2 class="title">제목<span class="point">(필수)</span></h2>
+										</div>
+										<div class="form-group">
+											<div class="form-conts">
+												<input type="text" id="" class="krds-input" value="김주택" title="성명을 입력해주세요." readonly>
+											</div>
+										</div>
+									</div>
+									<!-- 성명 readonly 유형 -->
+
+									<!-- 인풋 + 버튼 유형 -->
+									<div class="hf_group">
+										<div class="sub_title_cont">
+											<h2 class="title">인풋 + 버튼<span class="point">(필수)</span></h2>
+										</div>
+										<div class="form-group">
+											<div class="form-conts">
+												<input type="text" id="" class="krds-input" value="김주택" title="성명을 입력해주세요.">
+												<button type="button" class="field_btn black">텍스트</button>
+											</div>
+										</div>
+									</div>
+									<!-- 영업점 유형 -->
+
+									<!-- 주소 유형 -->
+									<div class="hf_group">
+										<div class="sub_title_cont">
+											<h2 class="title">주소</h2>
+										</div>
+										<div class="form-group">
+											<div class="form-conts area">
+												<div class="area_box">
+													<input type="text" id="" class="krds-input" title="우측 주소검색 버튼을 통해 검색해주세요." readonly>
+													<button type="button" class="field_btn black">주소검색</button>
+												</div>
+												<input type="text" id="" class="krds-input" placeholder="주소를 입력해주세요." title="주소를 입력해주세요." readonly>
+												<input type="text" id="" class="krds-input" placeholder="상세주소를 입력해 주세요." title="상세주소를 입력해 주세요.">
+											</div>
+										</div>
+									</div>
+									<!-- 주소 유형 -->
+
+									<!-- 주민등록번호 유형 -->
+									<div class="hf_group">
+										<div class="sub_title_cont">
+											<h2 class="title">주민등록번호<span class="point">(필수)</span></h2>
+										</div>
+										<div class="form-group">
+											<div class="form-conts down">
+												<input type="text" id="consult_name" class="krds-input" value="801212" title="주민등록번호 앞 6자리를 입력해주세요." readonly>
+												<span class="hyphen">-</span>
+												<input type="text" id="consult_name" class="krds-input" value="2******" title="주민등록번호 뒤 7자리를 레이블 입력해주세요." readonly>
+											</div>
+										</div>
+									</div>
+									<!-- 주민등록번호 유형 -->
+
+									<!-- 변경 전 주민등록번호 유형 -->
+									<div class="hf_group">
+										<div class="sub_title_cont">
+											<h2 class="title">변경 전 주민등록번호</h2>
+										</div>
+										<div class="form-group">
+											<div class="form-conts down down2">
+												<div class="form-inp">
+													<div class="form-tit">
+														<label for="cal">주민등록번호 앞 6자리</label>
+													</div>
+													<input type="text" id="consult_name" class="krds-input" title="변경 전 주민등록번호 앞 6자리를 입력해주세요.">
+												</div>
+												<span class="hyphen">-</span>
+												<div class="form-inp">
+													<div class="form-tit">
+														<label for="cal">주민등록번호 뒤 7자리</label>
+													</div>
+													<div class="form-conts btn-ico-wrap">
+														<input type="text" id="" class="krds-input pw_mouse" placeholder="" value="●●●●●●●" readonly>
+														<button type="button" class="krds-btn medium icon">
+															<span class="sr-only">입력한 비밀번호 가리기</span>
+															<i class="svg-icon ico_pw_mouse"></i>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 변경 전 주민등록번호 유형 -->
+
+									<!-- 예금주 유형 -->
+									<div class="hf_group">
+										<div class="sub_title_cont">
+											<h2 class="title">예금주</h2>
+										</div>
+										<div class="form-group">
+											<div class="form-conts end">
+												<div class="form-inp">
+													<div class="form-tit">
+														<label for="cal">계좌번호</label>
+													</div>
+													<input type="text" id="" class="krds-input" placeholder="계좌번호를 입력해주세요." title="계좌번호를 입력해주세요.">
+												</div>
+												<div class="form-inp">
+													<div class="form-tit">
+														<label for="cal">예금주</label>
+													</div>
+													<div class="form-conts btn-ico-wrap">
+														<input type="text" id="" class="krds-input pw_mouse" placeholder="" value="예금주" readonly>
+													</div>
+												</div>
+												<button type="button" class="field_btn black">예금주 조회</button>
+											</div>
+										</div>
+									</div>
+									<!-- 예금주 유형 -->
+
+									<!-- 사업자등록번호 유형 -->
+									<div class="hf_group">
+										<div class="sub_title_cont">
+											<h2 class="title">사업자등록번호</h2>
+										</div>
+										<div class="form-group">
+											<div class="form-tit">
+												<label for="consult_name">-없이 숫자만 입력해 주세요.</label>
+											</div>
+											<div class="form-conts">
+												<input type="text" id="consult_name" class="krds-input" title="사업자등록번호 -없이 숫자만 입력해 주세요.">
+											</div>
+										</div>
+									</div>
+									<!-- 사업자등록번호 유형 -->
+
+									<!-- 금액 입력 유형 -->
+									<div class="hf_group">
+										<div class="sub_title_cont">
+											<h2 class="title">
+												금액 입력 유형
+												<button type="button" class="help" title="도움말 보기">
+													<i class="svg-icon ico_help"></i>
+												</button>
+											</h2>
+										</div>
+										<div class="form-group">
+											<div class="form-conts data">
+												<div class="form-text">
+													<div class="text">
+														<div class="num">영</div>
+														<div class="txt">원</div>
+													</div>
+												</div>
+												<div class="form-inp">
+													<input type="text" id="" class="krds-input p0" placeholder="0">
+													<div class="txt">원</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 금액 입력 유형 -->
+
+									<!-- 금액 입력 + 버튼 유형 -->
+									<div class="hf_group">
+										<div class="sub_title_cont">
+											<h2 class="title">
+												금액 입력 + 버튼 유형
+												<button type="button" class="help" title="도움말 보기">
+													<i class="svg-icon ico_help"></i>
+												</button>
+											</h2>
+										</div>
+										<div class="form-group">
+											<div class="form-conts data type1">
+												<div class="data_inp">
+													<div class="form-text">
+														<div class="text">
+															<div class="num">영</div>
+															<div class="txt">원</div>
+														</div>
+													</div>
+													<div class="form-inp">
+														<input type="text" id="" class="krds-input p0" placeholder="0">
+														<div class="txt">원</div>
+													</div>
+												</div>
+												<button type="button" class="field_btn black">버튼</button>
+											</div>
+										</div>
+									</div>
+									<!-- 금액 입력 유형 -->
+
+									<!-- 면적 입력 유형 -->
+									<div class="hf_group">
+										<div class="sub_title_cont">
+											<h2 class="title">면적 입력 유형</h2>
+										</div>
+										<div class="form-group">
+											<div class="form-conts data">
+												<div class="form-inp">
+													<input type="text" id="" class="krds-input p0" placeholder="0">
+													<div class="txt">㎡</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 면적 입력 유형 -->
+
+									<!-- 캘린더 유형 -->
+									<div class="hf_group">
+										<div class="sub_title_cont">
+											<h2 class="title">캘린더 유형</h2>
+										</div>
+										<div class="form-group">
+											<div class="form-conts calendar-conts">
+												<div class="calendar-input">
+													<input type="number" class="krds-input datepicker cal" placeholder="YYYY.MM.DD" id="cal" />
+													<button type="button" class="krds-btn medium icon form-btn-datepicker">
+														<span class="sr-only">달력 열기</span>
+														<i class="svg-icon ico-calendar"></i>
+													</button>
+												</div>
+												<div class="krds-calendar-area">
+													<div class="calendar-wrap bottom" aria-label="달력">
+														<div class="calendar-head">
+															<button type="button" class="btn-cal-move prev"><span class="sr-only">이전 달</span></button>
+															<div class="calendar-switch-wrap">
+																<div class="calendar-drop-down">
+																	<button type="button" class="btn-cal-switch year" aria-label="연도 선택">2024년</button>
+																	<div class="calendar-select calendar-year-wrap">
+																		<ul class="sel year">
+																			<li>
+																				<button type="button">2001년</button>
+																			</li>
+																			<li>
+																				<button type="button" class="active">2002년</button>
+																			</li>
+																			<li>
+																				<button type="button" disabled>2003년</button>
+																			</li>
+																			<li>
+																				<button type="button">2004년</button>
+																			</li>
+																			<li>
+																				<button type="button">2005년</button>
+																			</li>
+																			<li>
+																				<button type="button">2006년</button>
+																			</li>
+																			<li>
+																				<button type="button">2007년</button>
+																			</li>
+																			<li>
+																				<button type="button">2008년</button>
+																			</li>
+																			<li>
+																				<button type="button">2009년</button>
+																			</li>
+																			<li>
+																				<button type="button">2010년</button>
+																			</li>
+																			<li>
+																				<button type="button">2011년</button>
+																			</li>
+																			<li>
+																				<button type="button">2012년</button>
+																			</li>
+																			<li>
+																				<button type="button">2013년</button>
+																			</li>
+																			<li>
+																				<button type="button">2014년</button>
+																			</li>
+																			<li>
+																				<button type="button">2015년</button>
+																			</li>
+																			<li>
+																				<button type="button">2016년</button>
+																			</li>
+																			<li>
+																				<button type="button">2017년</button>
+																			</li>
+																			<li>
+																				<button type="button">2018년</button>
+																			</li>
+																			<li>
+																				<button type="button">2019년</button>
+																			</li>
+																			<li>
+																				<button type="button">2020년</button>
+																			</li>
+																			<li>
+																				<button type="button">2021년</button>
+																			</li>
+																			<li>
+																				<button type="button">2022년</button>
+																			</li>
+																			<li>
+																				<button type="button">2023년</button>
+																			</li>
+																			<li>
+																				<button type="button">2024년</button>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+																<div class="calendar-drop-down">
+																	<button type="button" class="btn-cal-switch month" aria-label="월 선택">12월</button>
+																	<div class="calendar-select calendar-mon-wrap">
+																		<ul class="sel month">
+																			<li>
+																				<button type="button" disabled>01월</button>
+																			</li>
+																			<li>
+																				<button type="button">02월</button>
+																			</li>
+																			<li>
+																				<button type="button">03월</button>
+																			</li>
+																			<li>
+																				<button type="button">04월</button>
+																			</li>
+																			<li>
+																				<button type="button">05월</button>
+																			</li>
+																			<li>
+																				<button type="button">06월</button>
+																			</li>
+																			<li>
+																				<button type="button">07월</button>
+																			</li>
+																			<li>
+																				<button type="button">08월</button>
+																			</li>
+																			<li>
+																				<button type="button">09월</button>
+																			</li>
+																			<li>
+																				<button type="button">10월</button>
+																			</li>
+																			<li>
+																				<button type="button">11월</button>
+																			</li>
+																			<li>
+																				<button type="button" class="active">12월</button>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+															<button type="button" class="btn-cal-move next"><span class="sr-only">다음 달</span></button>
+														</div>
+														<div class="calendar-body">
+															<div class="calendar-table-wrap">
+																<table class="calendar-tbl">
+																	<caption>
+																		2024년 12월
+																	</caption>
+																	<thead>
+																		<tr>
+																			<th>일</th>
+																			<th>월</th>
+																			<th>화</th>
+																			<th>수</th>
+																			<th>목</th>
+																			<th>금</th>
+																			<th>토</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td class="old day-off">
+																				<button type="button" class="btn-set-date"><span>26</span></button>
+																			</td>
+																			<td class="old">
+																				<button type="button" class="btn-set-date"><span>27</span></button>
+																			</td>
+																			<td class="old">
+																				<button type="button" class="btn-set-date"><span>28</span></button>
+																			</td>
+																			<td class="old">
+																				<button type="button" class="btn-set-date"><span>29</span></button>
+																			</td>
+																			<td class="old">
+																				<button type="button" class="btn-set-date"><span>30</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>1</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>2</span></button>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="day-off">
+																				<button type="button" class="btn-set-date"><span>3</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>4</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>5</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>6</span></button>
+																			</td>
+																			<td class="period start">
+																				<button type="button" class="btn-set-date"><span>7</span></button>
+																			</td>
+																			<td class="period">
+																				<button type="button" class="btn-set-date"><span>8</span></button>
+																			</td>
+																			<td class="period">
+																				<button type="button" class="btn-set-date"><span>9</span></button>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="period day-off">
+																				<button type="button" class="btn-set-date"><span>10</span></button>
+																			</td>
+																			<td class="period">
+																				<button type="button" class="btn-set-date"><span>11</span></button>
+																			</td>
+																			<td class="period">
+																				<button type="button" class="btn-set-date"><span>12</span></button>
+																			</td>
+																			<td class="period">
+																				<button type="button" class="btn-set-date"><span>13</span></button>
+																			</td>
+																			<td class="period">
+																				<button type="button" class="btn-set-date"><span>14</span></button>
+																			</td>
+																			<td class="period">
+																				<button type="button" class="btn-set-date"><span>15</span></button>
+																			</td>
+																			<td class="period end">
+																				<button type="button" class="btn-set-date"><span>16</span></button>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="day-off">
+																				<button type="button" class="btn-set-date"><span>17</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>18</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>19</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>20</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>21</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>22</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>23</span></button>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="day-off">
+																				<button type="button" class="btn-set-date"><span>24</span></button>
+																			</td>
+																			<td class="today">
+																				<button type="button" class="btn-set-date"><span>25</span></button>
+																			</td>
+																			<td class="day-event">
+																				<button type="button" class="btn-set-date"><span>26</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>27</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>28</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>29</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>30</span></button>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="day-off">
+																				<button type="button" class="btn-set-date"><span>31</span></button>
+																			</td>
+																			<td class="new">
+																				<button type="button" class="btn-set-date"><span>1</span></button>
+																			</td>
+																			<td class="new">
+																				<button type="button" class="btn-set-date"><span>2</span></button>
+																			</td>
+																			<td class="new">
+																				<button type="button" class="btn-set-date"><span>3</span></button>
+																			</td>
+																			<td class="new">
+																				<button type="button" class="btn-set-date"><span>4</span></button>
+																			</td>
+																			<td class="new">
+																				<button type="button" class="btn-set-date"><span>5</span></button>
+																			</td>
+																			<td class="new">
+																				<button type="button" class="btn-set-date"><span>6</span></button>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+														<div class="calendar-footer">
+															<div class="calendar-btn-wrap">
+																<button type="button" class="krds-btn small text" id="get-today">오늘</button>
+																<button type="button" class="krds-btn small tertiary">취소</button>
+																<button type="button" class="krds-btn small primary">확인</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 캘린더 유형 -->
+
+									<!-- 캘린더 유형 -->
+									<div class="hf_group">
+										<div class="sub_title_cont">
+											<h2 class="title">캘린더 유형</h2>
+										</div>
+										<div class="form-group">
+											<div class="form-conts calendar-conts down">
+												<div class="calendar-input">
+													<input type="number" class="krds-input datepicker cal" placeholder="YYYY.MM.DD" id="cal" />
+													<button type="button" class="krds-btn medium icon form-btn-datepicker">
+														<span class="sr-only">달력 열기</span>
+														<i class="svg-icon ico-calendar"></i>
+													</button>
+												</div>
+												<span class="hyphen">-</span>
+												<div class="calendar-input">
+													<input type="number" class="krds-input datepicker cal" placeholder="YYYY.MM.DD" id="cal" />
+													<button type="button" class="krds-btn medium icon form-btn-datepicker">
+														<span class="sr-only">달력 열기</span>
+														<i class="svg-icon ico-calendar"></i>
+													</button>
+												</div>
+												<div class="krds-calendar-area">
+													<div class="calendar-wrap bottom" aria-label="달력">
+														<div class="calendar-head">
+															<button type="button" class="btn-cal-move prev"><span class="sr-only">이전 달</span></button>
+															<div class="calendar-switch-wrap">
+																<div class="calendar-drop-down">
+																	<button type="button" class="btn-cal-switch year" aria-label="연도 선택">2024년</button>
+																	<div class="calendar-select calendar-year-wrap">
+																		<ul class="sel year">
+																			<li>
+																				<button type="button">2001년</button>
+																			</li>
+																			<li>
+																				<button type="button" class="active">2002년</button>
+																			</li>
+																			<li>
+																				<button type="button" disabled>2003년</button>
+																			</li>
+																			<li>
+																				<button type="button">2004년</button>
+																			</li>
+																			<li>
+																				<button type="button">2005년</button>
+																			</li>
+																			<li>
+																				<button type="button">2006년</button>
+																			</li>
+																			<li>
+																				<button type="button">2007년</button>
+																			</li>
+																			<li>
+																				<button type="button">2008년</button>
+																			</li>
+																			<li>
+																				<button type="button">2009년</button>
+																			</li>
+																			<li>
+																				<button type="button">2010년</button>
+																			</li>
+																			<li>
+																				<button type="button">2011년</button>
+																			</li>
+																			<li>
+																				<button type="button">2012년</button>
+																			</li>
+																			<li>
+																				<button type="button">2013년</button>
+																			</li>
+																			<li>
+																				<button type="button">2014년</button>
+																			</li>
+																			<li>
+																				<button type="button">2015년</button>
+																			</li>
+																			<li>
+																				<button type="button">2016년</button>
+																			</li>
+																			<li>
+																				<button type="button">2017년</button>
+																			</li>
+																			<li>
+																				<button type="button">2018년</button>
+																			</li>
+																			<li>
+																				<button type="button">2019년</button>
+																			</li>
+																			<li>
+																				<button type="button">2020년</button>
+																			</li>
+																			<li>
+																				<button type="button">2021년</button>
+																			</li>
+																			<li>
+																				<button type="button">2022년</button>
+																			</li>
+																			<li>
+																				<button type="button">2023년</button>
+																			</li>
+																			<li>
+																				<button type="button">2024년</button>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+																<div class="calendar-drop-down">
+																	<button type="button" class="btn-cal-switch month" aria-label="월 선택">12월</button>
+																	<div class="calendar-select calendar-mon-wrap">
+																		<ul class="sel month">
+																			<li>
+																				<button type="button" disabled>01월</button>
+																			</li>
+																			<li>
+																				<button type="button">02월</button>
+																			</li>
+																			<li>
+																				<button type="button">03월</button>
+																			</li>
+																			<li>
+																				<button type="button">04월</button>
+																			</li>
+																			<li>
+																				<button type="button">05월</button>
+																			</li>
+																			<li>
+																				<button type="button">06월</button>
+																			</li>
+																			<li>
+																				<button type="button">07월</button>
+																			</li>
+																			<li>
+																				<button type="button">08월</button>
+																			</li>
+																			<li>
+																				<button type="button">09월</button>
+																			</li>
+																			<li>
+																				<button type="button">10월</button>
+																			</li>
+																			<li>
+																				<button type="button">11월</button>
+																			</li>
+																			<li>
+																				<button type="button" class="active">12월</button>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+															<button type="button" class="btn-cal-move next"><span class="sr-only">다음 달</span></button>
+														</div>
+														<div class="calendar-body">
+															<div class="calendar-table-wrap">
+																<table class="calendar-tbl">
+																	<caption>
+																		2024년 12월
+																	</caption>
+																	<thead>
+																		<tr>
+																			<th>일</th>
+																			<th>월</th>
+																			<th>화</th>
+																			<th>수</th>
+																			<th>목</th>
+																			<th>금</th>
+																			<th>토</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td class="old day-off">
+																				<button type="button" class="btn-set-date"><span>26</span></button>
+																			</td>
+																			<td class="old">
+																				<button type="button" class="btn-set-date"><span>27</span></button>
+																			</td>
+																			<td class="old">
+																				<button type="button" class="btn-set-date"><span>28</span></button>
+																			</td>
+																			<td class="old">
+																				<button type="button" class="btn-set-date"><span>29</span></button>
+																			</td>
+																			<td class="old">
+																				<button type="button" class="btn-set-date"><span>30</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>1</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>2</span></button>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="day-off">
+																				<button type="button" class="btn-set-date"><span>3</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>4</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>5</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>6</span></button>
+																			</td>
+																			<td class="period start">
+																				<button type="button" class="btn-set-date"><span>7</span></button>
+																			</td>
+																			<td class="period">
+																				<button type="button" class="btn-set-date"><span>8</span></button>
+																			</td>
+																			<td class="period">
+																				<button type="button" class="btn-set-date"><span>9</span></button>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="period day-off">
+																				<button type="button" class="btn-set-date"><span>10</span></button>
+																			</td>
+																			<td class="period">
+																				<button type="button" class="btn-set-date"><span>11</span></button>
+																			</td>
+																			<td class="period">
+																				<button type="button" class="btn-set-date"><span>12</span></button>
+																			</td>
+																			<td class="period">
+																				<button type="button" class="btn-set-date"><span>13</span></button>
+																			</td>
+																			<td class="period">
+																				<button type="button" class="btn-set-date"><span>14</span></button>
+																			</td>
+																			<td class="period">
+																				<button type="button" class="btn-set-date"><span>15</span></button>
+																			</td>
+																			<td class="period end">
+																				<button type="button" class="btn-set-date"><span>16</span></button>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="day-off">
+																				<button type="button" class="btn-set-date"><span>17</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>18</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>19</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>20</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>21</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>22</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>23</span></button>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="day-off">
+																				<button type="button" class="btn-set-date"><span>24</span></button>
+																			</td>
+																			<td class="today">
+																				<button type="button" class="btn-set-date"><span>25</span></button>
+																			</td>
+																			<td class="day-event">
+																				<button type="button" class="btn-set-date"><span>26</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>27</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>28</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>29</span></button>
+																			</td>
+																			<td>
+																				<button type="button" class="btn-set-date"><span>30</span></button>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="day-off">
+																				<button type="button" class="btn-set-date"><span>31</span></button>
+																			</td>
+																			<td class="new">
+																				<button type="button" class="btn-set-date"><span>1</span></button>
+																			</td>
+																			<td class="new">
+																				<button type="button" class="btn-set-date"><span>2</span></button>
+																			</td>
+																			<td class="new">
+																				<button type="button" class="btn-set-date"><span>3</span></button>
+																			</td>
+																			<td class="new">
+																				<button type="button" class="btn-set-date"><span>4</span></button>
+																			</td>
+																			<td class="new">
+																				<button type="button" class="btn-set-date"><span>5</span></button>
+																			</td>
+																			<td class="new">
+																				<button type="button" class="btn-set-date"><span>6</span></button>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+														<div class="calendar-footer">
+															<div class="calendar-btn-wrap">
+																<button type="button" class="krds-btn small text" id="get-today">오늘</button>
+																<button type="button" class="krds-btn small tertiary">취소</button>
+																<button type="button" class="krds-btn small primary">확인</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 캘린더 유형 -->
+
+									<!-- 라디오 유형 -->
+									<div class="hf_group">
+										<div class="sub_title_cont">
+											<h2 class="title">라디오 유형</h2>
+										</div>
+										<div class="form-group">
+											<div class="form-conts">
+												<div class="krds-check-area">
+													<div class="krds-form-chip">
+														<input type="radio" class="radio" name="rdo_chip" id="rdo_chip_1">
+														<label class="krds-form-chip-outline" for="rdo_chip_1">아니오 </label>
+													</div>
+													<div class="krds-form-chip">
+														<input type="radio" class="radio" name="rdo_chip" id="rdo_chip_2">
+														<label class="krds-form-chip-outline" for="rdo_chip_2">예 </label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 라디오 유형 -->
+
+									<!-- 라디오 + 입력필드 유형 -->
+									<div class="hf_group">
+										<div class="sub_title_cont">
+											<h2 class="title">라디오 유형</h2>
+										</div>
+										<div class="form-group">
+											<div class="form-conts data">
+												<div class="krds-check-area">
+													<div class="krds-form-chip">
+														<input type="radio" class="radio" name="rdo_chip" id="rdo_chip_1">
+														<label class="krds-form-chip-outline" for="rdo_chip_1">아니오 </label>
+													</div>
+													<div class="krds-form-chip">
+														<input type="radio" class="radio" name="rdo_chip" id="rdo_chip_2">
+														<label class="krds-form-chip-outline" for="rdo_chip_2">예 </label>
+													</div>
+												</div>
+												<input type="text" class="krds-input" placeholder="입력해주세요." title="입력해주세요.">
+											</div>
+										</div>
+									</div>
+									<!-- 라디오 + 입력필드 유형 -->
+
+									<!-- 다중선택 유형 -->
+									<div class="hf_group">
+										<div class="sub_title_cont">
+											<h2 class="title">다중선택 유형</h2>
+										</div>
+										<div class="form-group">
+											<div class="form-conts">
+												<div class="krds-check-area">
+													<div class="krds-form-chip">
+														<input type="checkbox" class="checkbox" name="chk_chip_1" id="chk_chip_1">
+														<label class="krds-form-chip-outline" for="chk_chip_1">아니오 </label>
+													</div>
+													<div class="krds-form-chip">
+														<input type="checkbox" class="checkbox" name="chk_chip_2" id="chk_chip_2">
+														<label class="krds-form-chip-outline" for="chk_chip_2">예 </label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 다중선택 유형 -->
+
+									<!-- 다중선택 + 입력필드 유형 -->
+									<div class="hf_group">
+										<div class="sub_title_cont">
+											<h2 class="title">다중선택 + 입력필드 유형</h2>
+										</div>
+										<div class="form-group">
+											<div class="form-conts data">
+												<div class="krds-check-area">
+													<div class="krds-form-chip">
+														<input type="checkbox" class="checkbox" name="chk_chip_1" id="chk_chip_1">
+														<label class="krds-form-chip-outline" for="chk_chip_1">아니오 </label>
+													</div>
+													<div class="krds-form-chip">
+														<input type="checkbox" class="checkbox" name="chk_chip_2" id="chk_chip_2">
+														<label class="krds-form-chip-outline" for="chk_chip_2">예 </label>
+													</div>
+												</div>
+												<input type="text" class="krds-input" placeholder="입력해주세요." title="입력해주세요.">
+											</div>
+										</div>
+									</div>
+									<!-- 다중선택 + 입력필드 유형 -->
+
+									<!-- 기본 셀렉트 유형 -->
+									<div class="hf_group">
+										<div class="sub_title_cont">
+											<h2 class="title">기본 셀렉트 유형</h2>
+										</div>
+										<div class="form-group select">
+											<div class="form-conts">
+												<div class="krds_select_box">
+													<div class="select_tit">
+														<button type="button" id="search_select">전체</button>
+													</div>
+													<div class="select_list">
+														<ul>
+															<li>
+																<button type="button" value="전체">전체</button>
+															</li>
+															<li>
+																<button type="button" value="항목1">항목1</button>
+															</li>
+															<li>
+																<button type="button" value="항목2">항목2</button>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 기본 셀렉트 유형 -->
+
+									<!-- 기본 셀렉트 + 버튼 유형 -->
+									<div class="hf_group">
+										<div class="sub_title_cont">
+											<h2 class="title">기본 셀렉트 + 버튼 유형</h2>
+										</div>
+										<div class="form-group">
+											<div class="form-conts">
+												<div class="krds_select_box">
+													<div class="select_tit">
+														<button type="button" id="search_select">전체</button>
+													</div>
+													<div class="select_list">
+														<ul>
+															<li>
+																<button type="button" value="전체">전체</button>
+															</li>
+															<li>
+																<button type="button" value="항목1">항목1</button>
+															</li>
+															<li>
+																<button type="button" value="항목2">항목2</button>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<button type="button" class="field_btn black">확인방법</button>
+											</div>
+										</div>
+									</div>
+									<!-- 기본 셀렉트 + 버튼 유형 -->
+
+									<!-- 지역선택 유형 -->
+									<div class="hf_group">
+										<div class="sub_title_cont">
+											<h2 class="title">지역선택 유형</h2>
+										</div>
+										<div class="form-group select">
+											<div class="form-conts">
+												<div class="form-tit">
+													<label for="cal">광역시/도</label>
+												</div>
+												<div class="krds_select_box">
+													<div class="select_tit">
+														<button type="button" id="search_select">전체</button>
+													</div>
+													<div class="select_list">
+														<ul>
+															<li>
+																<button type="button" value="전체">전체</button>
+															</li>
+															<li>
+																<button type="button" value="항목1">항목1</button>
+															</li>
+															<li>
+																<button type="button" value="항목2">항목2</button>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="form-conts">
+												<div class="form-tit">
+													<label for="cal">시/군/구</label>
+												</div>
+												<div class="krds_select_box">
+													<div class="select_tit">
+														<button type="button" id="search_select">전체</button>
+													</div>
+													<div class="select_list">
+														<ul>
+															<li>
+																<button type="button" value="전체">전체</button>
+															</li>
+															<li>
+																<button type="button" value="항목1">항목1</button>
+															</li>
+															<li>
+																<button type="button" value="항목2">항목2</button>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 지역선택 유형 -->
+
+									<!-- 자녀 정보 유형 -->
+									<div class="hf_group">
+										<div class="field_btn_cont w723">
+											<div class="field_btn_area right">
+												<button type="button" class="field_btn red small">삭제</button>
+												<button type="button" class="field_btn black small">추가</button>
+											</div>
+										</div>
+										<div class="sub_title_cont">
+											<h2 class="title">자녀 정보</h2>
+										</div>
+										<div class="form-group">
+											<div class="form-conts down">
+												<div class="user_info_chk_list_area">
+													<ul class="list">
+														<li>
+															<div class="krds-form-check">
+																<input type="checkbox" name="chk_1" id="chk_1">
+																<label for="chk_1"></label>
+															</div>
+															<div class="user_info_cont">
+																<div class="user_info_area">
+																	<input type="text" id="" class="krds-input" title="주민등록번호 앞 6자리를 입력해주세요.">
+																	<span class="hyphen">-</span>
+																	<div class="form-conts btn-ico-wrap">
+																		<input type="text" id="" class="krds-input pw_mouse" placeholder="" value="●●●●●●●" readonly>
+																		<button type="button" class="krds-btn medium icon">
+																			<span class="sr-only">입력한 비밀번호 가리기</span>
+																			<i class="svg-icon ico_pw_mouse"></i>
+																		</button>
+																	</div>
+																</div>
+																<input type="text" id="" class="krds-input" placeholder="성명을 입력해주세요." title="성명을 입력해주세요.">
+															</div>
+														</li>
+														<li>
+															<div class="krds-form-check">
+																<input type="checkbox" name="chk_2" id="chk_2">
+																<label for="chk_2"></label>
+															</div>
+															<div class="user_info_cont">
+																<div class="user_info_area">
+																	<input type="text" id="" class="krds-input" title="주민등록번호 앞 6자리를 입력해주세요.">
+																	<span class="hyphen">-</span>
+																	<div class="form-conts btn-ico-wrap">
+																		<input type="text" id="" class="krds-input pw_mouse" placeholder="" value="●●●●●●●" readonly>
+																		<button type="button" class="krds-btn medium icon">
+																			<span class="sr-only">입력한 비밀번호 가리기</span>
+																			<i class="svg-icon ico_pw_mouse"></i>
+																		</button>
+																	</div>
+																</div>
+																<input type="text" id="" class="krds-input" placeholder="성명을 입력해주세요." title="성명을 입력해주세요.">
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 자녀 정보 유형 -->
+
+									<!-- 절차 유형  -->
+									<div class="step_info_list_cont">
+										<ul class="list">
+											<li>
+												<div class="box">
+													<div class="num">1</div>
+													<div class="text_area">
+														<div class="tit">사유발생</div>
+														<div class="txt">(고객)</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="box">
+													<div class="num">2</div>
+													<div class="text_area">
+														<div class="tit">조건변경신청</div>
+														<div class="txt">(취급은행)</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="box">
+													<div class="num">3</div>
+													<div class="text_area">
+														<div class="tit">심사 및 승인</div>
+														<div class="txt">(취급은행,공사)</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="box">
+													<div class="num">4</div>
+													<div class="text_area">
+														<div class="tit">조건변경 실행</div>
+														<div class="txt">(취급은행)</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<!-- 절차 유형 -->
+
+									<!-- 절차 타입2 유형 -->
+									<div class="step_info_list_cont2">
+										<ul class="list">
+											<li>
+												<div class="sub_step_list_area">
+													<div class="box">
+														<div class="title_area">
+															<div class="title">임대차 계약<br> 종료 전</div>
+														</div>
+													</div>
+													<div class="box">
+														<div class="list_area">
+															<ul class="list">
+																<li>
+																	<div class="box">
+																		<div class="title_area">
+																			<div class="title">
+																				<span class="num">1</span>
+																				임대차계약 갱신 거절 통지(만료 2개월 전)
+																			</div>
+																		</div>
+																	</div>
+																	<div class="box">
+																		<ul class="krds-info-list dash">
+																			<li>내용증명 우편 : 임대인에게 도달 필요</li>
+																			<li>문자 : 임대인이 해당 내용을 인지하였음에 대한 답장 수신 필요</li>
+																		</ul>
+																	</div>
+																</li>
+																<li>
+																	<div class="box">
+																		<div class="title_area">
+																			<div class="title">
+																				<span class="num">2</span>
+																				전세대출(보증) 및 반환보증 기한 연장
+																			</div>
+																		</div>
+																	</div>
+																	<div class="box">
+																		<ul class="krds-info-list dash">
+																			<li>고객이 직접 금융기관 방문 필요</li>
+																		</ul>
+																	</div>
+																</li>
+																<li>
+																	<div class="box">
+																		<div class="title_area">
+																			<div class="title">
+																				<span class="num">3</span>
+																				임차보증금 반환채권 양도
+																			</div>
+																		</div>
+																	</div>
+																	<div class="box">
+																		<ul class="krds-info-list dash">
+																			<li>가입 당시 실시하지 않은 고객은 지사 방문 및 온라인 계약 실시</li>
+																		</ul>
+																	</div>
+																</li>
+																<li>
+																	<div class="box">
+																		<div class="title_area">
+																			<div class="title">
+																				<span class="num">4</span>
+																				임차권 등기명령 신청
+																			</div>
+																		</div>
+																	</div>
+																	<div class="box">
+																		<ul class="krds-info-list dash">
+																			<li>임대차 계약 만료 직후 법원으로 신청</li>
+																		</ul>
+																	</div>
+																</li>
+																<li>
+																	<div class="box">
+																		<div class="title_area">
+																			<div class="title">
+																				<span class="num">5</span>
+																				전세지킴보증 사고 발생 및 신고 이행 청구
+																			</div>
+																		</div>
+																	</div>
+																	<div class="box">
+																		<ul class="krds-info-list dash">
+																			<li>임대차 계약 만료 1개월 후 신청 가능 (온라인 및 지사 방문)</li>
+																		</ul>
+																	</div>
+																</li>
+																<li>
+																	<div class="box">
+																		<div class="title_area">
+																			<div class="title">
+																				<span class="num">6</span>
+																				보증채무 이행 심사 및 승인
+																			</div>
+																		</div>
+																	</div>
+																	<div class="box">
+																		<ul class="krds-info-list dash">
+																			<li>신청내용과 서류를 바탕으로 지급 여부 결정</li>
+																		</ul>
+																	</div>
+																</li>
+																<li>
+																	<div class="box">
+																		<div class="title_area">
+																			<div class="title">
+																				<span class="num">7</span>
+																				보증목적물 명도 및 지급
+																			</div>
+																		</div>
+																	</div>
+																	<div class="box">
+																		<ul class="krds-info-list dash">
+																			<li>명도를 위한 이사 날짜 협의하여 보증채무이행금 지급 실시</li>
+																		</ul>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="sub_step_list_area">
+													<div class="box">
+														<div class="title_area">
+															<div class="title">임대차 계약<br> 종료 전</div>
+														</div>
+													</div>
+													<div class="box">
+														<div class="list_area">
+															<ul class="list">
+																<li>
+																	<div class="box">
+																		<div class="title_area">
+																			<div class="title">
+																				<span class="num">1</span>
+																				임대차계약 갱신 거절 통지(만료 2개월 전)
+																			</div>
+																		</div>
+																	</div>
+																	<div class="box">
+																		<ul class="krds-info-list dash">
+																			<li>내용증명 우편 : 임대인에게 도달 필요</li>
+																			<li>문자 : 임대인이 해당 내용을 인지하였음에 대한 답장 수신 필요</li>
+																		</ul>
+																	</div>
+																</li>
+																<li>
+																	<div class="box">
+																		<div class="title_area">
+																			<div class="title">
+																				<span class="num">2</span>
+																				전세대출(보증) 및 반환보증 기한 연장
+																			</div>
+																		</div>
+																	</div>
+																	<div class="box">
+																		<ul class="krds-info-list dash">
+																			<li>고객이 직접 금융기관 방문 필요</li>
+																		</ul>
+																	</div>
+																</li>
+																<li>
+																	<div class="box">
+																		<div class="title_area">
+																			<div class="title">
+																				<span class="num">3</span>
+																				임차보증금 반환채권 양도
+																			</div>
+																		</div>
+																	</div>
+																	<div class="box">
+																		<ul class="krds-info-list dash">
+																			<li>가입 당시 실시하지 않은 고객은 지사 방문 및 온라인 계약 실시</li>
+																		</ul>
+																	</div>
+																</li>
+																<li>
+																	<div class="box">
+																		<div class="title_area">
+																			<div class="title">
+																				<span class="num">4</span>
+																				임차권 등기명령 신청
+																			</div>
+																		</div>
+																	</div>
+																	<div class="box">
+																		<ul class="krds-info-list dash">
+																			<li>임대차 계약 만료 직후 법원으로 신청</li>
+																		</ul>
+																	</div>
+																</li>
+																<li>
+																	<div class="box">
+																		<div class="title_area">
+																			<div class="title">
+																				<span class="num">5</span>
+																				전세지킴보증 사고 발생 및 신고 이행 청구
+																			</div>
+																		</div>
+																	</div>
+																	<div class="box">
+																		<ul class="krds-info-list dash">
+																			<li>임대차 계약 만료 1개월 후 신청 가능 (온라인 및 지사 방문)</li>
+																		</ul>
+																	</div>
+																</li>
+																<li>
+																	<div class="box">
+																		<div class="title_area">
+																			<div class="title">
+																				<span class="num">6</span>
+																				보증채무 이행 심사 및 승인
+																			</div>
+																		</div>
+																	</div>
+																	<div class="box">
+																		<ul class="krds-info-list dash">
+																			<li>신청내용과 서류를 바탕으로 지급 여부 결정</li>
+																		</ul>
+																	</div>
+																</li>
+																<li>
+																	<div class="box">
+																		<div class="title_area">
+																			<div class="title">
+																				<span class="num">7</span>
+																				보증목적물 명도 및 지급
+																			</div>
+																		</div>
+																	</div>
+																	<div class="box">
+																		<ul class="krds-info-list dash">
+																			<li>명도를 위한 이사 날짜 협의하여 보증채무이행금 지급 실시</li>
+																		</ul>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<!-- 절차 타입2 유형 -->
+
+								</div>
+							</li>
+							<li>
+								<!-- 메인 타이틀 -->
+								<div class="main_title_cont">
+									<h1 class="title">기본정보</h1>
+								</div>
+								<!-- 메인 타이틀 -->
+
+								<!-- 메인 타이틀 + 전체보기 버튼 있을 경우 -->
+								<div class="main_title_cont">
+									<h1 class="title">
+										기본정보
+										<button type="button" class="btn">전체보기</button>
+									</h1>
+								</div>
+								<!-- 메인 타이틀 + 전체보기 버튼 있을 경우 -->
+
+								<!-- 전체 동의 및 선택 유형이 있는경우 // 선택 유형이 없을경우에는 제거되어야함 -->
+								<div class="fieldset">
+									<div class="form-group">
+										<div class="form-conts">
+
+											<div class="consent_chk_cont">
+												<div class="consent_all_chk_area">
+													<div class="krds-check-area">
+														<div class="krds-form-check">
+															<input type="checkbox" name="chk_3" id="chk_3">
+															<label for="chk_3">정보제공동의 전체동의</label>
+														</div>
+													</div>
+												</div>
+												<div class="consent_list_chk_area">
+													<ul class="list">
+														<li>
+															<ul class="list">
+																<li>
+																	<div class="title_area">
+																		<div class="title">동의사항</div>
+																	</div>
+																	<div class="consent_area">
+																		<div class="tit_area">
+																			<div class="tit"><span class="point">[필수]</span> 제목</div>
+																		</div>
+																		<div class="krds-check-area">
+																			<div class="krds-form-check">
+																				<input type="radio" name="rdo_1" id="rdo_1">
+																				<label for="rdo_1">동의안함</label>
+																			</div>
+																			<div class="krds-form-check">
+																				<input type="radio" name="rdo_1" id="rdo_2" checked>
+																				<label for="rdo_2">동의함</label>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="consent_area">
+																		<div class="tit_area">
+																			<div class="tit"><span class="point">[필수]</span> 제목</div>
+																		</div>
+																		<div class="krds-check-area">
+																			<div class="krds-form-check">
+																				<input type="radio" name="rdo_1" id="rdo_1">
+																				<label for="rdo_1">동의안함</label>
+																			</div>
+																			<div class="krds-form-check">
+																				<input type="radio" name="rdo_1" id="rdo_2" checked>
+																				<label for="rdo_2">동의함</label>
+																			</div>
+																		</div>
+																	</div>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<ul class="list">
+																<li>
+																	<div class="title_area">
+																		<div class="title">동의사항</div>
+																	</div>
+																	<div class="consent_area">
+																		<div class="tit_area">
+																			<div class="tit"><span class="gray">[선택]</span> 제목</div>
+																		</div>
+																		<div class="krds-check-area">
+																			<div class="krds-form-check">
+																				<input type="radio" name="rdo_1" id="rdo_1">
+																				<label for="rdo_1">동의안함</label>
+																			</div>
+																			<div class="krds-form-check">
+																				<input type="radio" name="rdo_1" id="rdo_2" checked>
+																				<label for="rdo_2">동의함</label>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="consent_area">
+																		<div class="tit_area">
+																			<div class="tit"><span class="gray">[선택]</span> 제목</div>
+																		</div>
+																		<div class="krds-check-area">
+																			<div class="krds-form-check">
+																				<input type="radio" name="rdo_1" id="rdo_1">
+																				<label for="rdo_1">동의안함</label>
+																			</div>
+																			<div class="krds-form-check">
+																				<input type="radio" name="rdo_1" id="rdo_2" checked>
+																				<label for="rdo_2">동의함</label>
+																			</div>
+																		</div>
+																	</div>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+								<!-- 전체 동의 유형 -->
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+	<script type="text/javascript" src="/resources/js/include.js"></script>
+	<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</body>
+
+</html>

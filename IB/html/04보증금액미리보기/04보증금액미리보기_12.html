@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="ko">
+	<meta property="og:site_name" content="한국주택금융공사">
+	<meta property="og:updated_time" content="">
+	<meta name="twitter:card" content="summary">
+	<title>한국주택금융공사</title>
+
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub3.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/hf_pup_style2.css">
+
+	<!-- JavaScript 파일들 -->
+	<script type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+	<script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+
+	<script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.custom.home.js"></script>
+</head>
+<body>
+	<div data-include="../inc/header.html"></div>
+
+	<div id="container">
+		<div class="container_in">
+
+			<!-- contents -->
+			<div class="contents">
+
+				<div class="sub_con">
+
+					<!-- breadcrumb -->
+					<nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="home"><a href="#" class="txt">홈</a></li>
+							<li><a href="#" class="txt">주택보증</a></li>
+							<li><a href="#" class="txt">보증금액 미리보기</a></li>
+							<li><a href="#" class="txt">개인보증 예상금액 조회</a></li>
+						</ol>
+					</nav>
+					<!--// breadcrumb -->
+
+					<div class="title_set">
+						<div class="page-title-wrap">
+							<h2 class="h-tit">개인보증 예상금액 조회</h2>
+						</div>
+
+						<div class="title_etc_menu">
+							<ul>
+								<li class="print_li">
+									<a href="#">
+										<i class="svg-icon ico-down"></i>
+										<span class="txt">뷰어 다운로드</span>
+									</a>
+								</li>
+								<li class="print_li">
+									<a href="#">
+										<i class="svg-icon ico-print"></i>
+										<span class="txt">인쇄</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- 컨텐츠 -->
+					<div class="debt_cont">
+						<div class="step_list_cont type1 step4">
+							<ol class="krds-step-wrap">
+								<li class="done">
+									<span>
+										<i class="step">1단계</i>
+										<span class="step-tit">보증상품선택</span>
+									</span>
+								</li>
+								<li class="done">
+									<span>
+										<i class="step">2단계</i>
+										<span class="step-tit">개인정보동의</span>
+									</span>
+								</li>
+								<li class="active">
+									<span>
+										<em class="sr-only">현재단계</em>
+										<i class="step">3단계</i>
+										<span class="step-tit">필요정보 입력</span>
+									</span>
+								</li>
+								<li>
+									<span>
+										<i class="step">4단계</i>
+										<span class="step-tit">신청정보 확인</span>
+									</span>
+								</li>
+							</ol>
+						</div>
+						<div class="step_cont">
+							<span><span class="blue">3단계</span> / 4단계</span>
+							<h3 class="title">필요정보 입력</h3>
+						</div>
+						<div class="debt_body">
+							<div class="hf_info_field_cont info_block_cont">
+								<div class="exclamation">
+									<div class="text"><i class="svg-icon ico_exclamation" aria-hidden="true"></i>모든 입력항목은 필수입니다.</div>
+								</div>
+							</div>
+							<div class="hf_info_field_cont info_block_cont">
+								<ul class="list">
+									<li>
+										<div class="main_title_cont">
+											<h4 class="title">선택한 보증상품</h4>
+										</div>
+										<div class="sel_prod_box">
+											<span class="sel_prod_ico"><i class="svg-icon ico-complete-fill" aria-hidden="true"></i></span>
+											<div class="sel_prod_txt">
+												<strong class="tit">전세자금</strong>
+												<p class="txt">전세자금(월세보증금 포함)의 은행대출을 받고자 할 때 공사보증서가 필요할 경우</p>
+											</div>
+										</div>
+										<div class="fieldset">
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">서울시 청년 추천서 징구 여부</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area">
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_seoul_y" id="rdo_seoul_y_1" checked>
+																<label class="krds-form-chip-outline" for="rdo_seoul_y_1">아니오</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_seoul_y" id="rdo_seoul_y_2">
+																<label class="krds-form-chip-outline" for="rdo_seoul_y_2">예</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">서울시 신혼부부 추천서 징구 여부</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area">
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_seoul_m" id="rdo_seoul_m_1" checked>
+																<label class="krds-form-chip-outline" for="rdo_seoul_m_1">아니오</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_seoul_m" id="rdo_seoul_m_2">
+																<label class="krds-form-chip-outline" for="rdo_seoul_m_2">예</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="hf_info_field_cont info_block_cont">
+								<ul class="list">
+									<li>
+										<div class="main_title_cont">
+											<h4 class="title">인적사항</h4>
+										</div>
+										<div class="fieldset">
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">결혼구분</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area">
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_marry2" id="rdo_marry2_1" checked disabled>
+																<label class="krds-form-chip-outline" for="rdo_marry2_1">기혼</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_marry2" id="rdo_marry2_2" disabled>
+																<label class="krds-form-chip-outline" for="rdo_marry2_2">결혼예정</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_marry2" id="rdo_marry2_3" disabled>
+																<label class="krds-form-chip-outline" for="rdo_marry2_3">신혼</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_marry2" id="rdo_marry2_4" disabled>
+																<label class="krds-form-chip-outline" for="rdo_marry2_4">미혼</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">본인 주민번호 변경 여부</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area">
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_jumin_me" id="rdo_jumin_me_1" checked>
+																<label class="krds-form-chip-outline" for="rdo_jumin_me_1">아니오</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_jumin_me" id="rdo_jumin_me_2">
+																<label class="krds-form-chip-outline" for="rdo_jumin_me_2">예</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">배우자 주민번호 변경 여부</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area">
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_jumin_sp" id="rdo_jumin_sp_1" checked>
+																<label class="krds-form-chip-outline" for="rdo_jumin_sp_1">아니오</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_jumin_sp" id="rdo_jumin_sp_2">
+																<label class="krds-form-chip-outline" for="rdo_jumin_sp_2">예</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">세대주 여부<button type="button" class="help" title="도움말 보기"><i class="svg-icon ico_help"></i></button></h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area">
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_head" id="rdo_head_1" checked>
+																<label class="krds-form-chip-outline" for="rdo_head_1">아니오</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_head" id="rdo_head_2">
+																<label class="krds-form-chip-outline" for="rdo_head_2">예</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">본인포함 세대원 수</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts data">
+														<div class="form-inp"><input type="text" class="krds-input p0" title="본인포함 세대원 수">
+															<div class="txt">명</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">자녀 수(만 19세 미만)</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts data">
+														<div class="form-inp"><input type="text" class="krds-input p0" title="자녀 수">
+															<div class="txt">명</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="hf_info_field_cont info_block_cont">
+								<ul class="list">
+									<li>
+										<div class="main_title_cont">
+											<h4 class="title">직장ㆍ소득ㆍ재무사항</h4>
+										</div>
+										<div class="fieldset">
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">보유주택 수<button type="button" class="help" title="도움말 보기"><i class="svg-icon ico_help"></i></button></h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area">
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_house_cnt" id="rdo_house_cnt_1" checked>
+																<label class="krds-form-chip-outline" for="rdo_house_cnt_1">없음</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_house_cnt" id="rdo_house_cnt_2">
+																<label class="krds-form-chip-outline" for="rdo_house_cnt_2">1채</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">규제대상아파트 취득여부</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area">
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_reg_apt" id="rdo_reg_apt_1" checked>
+																<label class="krds-form-chip-outline" for="rdo_reg_apt_1">아니오</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_reg_apt" id="rdo_reg_apt_2">
+																<label class="krds-form-chip-outline" for="rdo_reg_apt_2">예</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">채권보전조치 선택여부</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area">
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_bond" id="rdo_bond_1" checked>
+																<label class="krds-form-chip-outline" for="rdo_bond_1">아니오</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_bond" id="rdo_bond_2">
+																<label class="krds-form-chip-outline" for="rdo_bond_2">예</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">연소득</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts data type1">
+														<div class="form-text">
+															<div class="text">
+																<div class="num">영</div>
+																<div class="txt">원</div>
+															</div>
+														</div>
+														<div class="form-inp">
+															<input type="text" class="krds-input p0" placeholder="0">
+															<div class="txt">원</div>
+														</div>
+														<button type="button" class="field_btn black">추정소득 계산기</button>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">부채금액</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts data type1">
+														<div class="form-text">
+															<div class="text">
+																<div class="num">영</div>
+																<div class="txt">원</div>
+															</div>
+														</div>
+														<div class="form-inp">
+															<input type="text" class="krds-input p0" placeholder="0">
+															<div class="txt">원</div>
+														</div>
+														<button type="button" class="field_btn black">부채금액 조회</button>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">연간소득 환산여부</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area">
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_year_income" id="rdo_year_income_1" checked>
+																<label class="krds-form-chip-outline" for="rdo_year_income_1">아니오</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_year_income" id="rdo_year_income_2">
+																<label class="krds-form-chip-outline" for="rdo_year_income_2">예</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">4대보험 가입여부</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area">
+															<div class="krds-form-chip">
+																<input type="checkbox" class="checkbox" name="chk_ins_1" id="chk_ins_1" checked>
+																<label class="krds-form-chip-outline" for="chk_ins_1">건강보험</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="checkbox" class="checkbox" name="chk_ins_2" id="chk_ins_2">
+																<label class="krds-form-chip-outline" for="chk_ins_2">국민연금</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="checkbox" class="checkbox" name="chk_ins_3" id="chk_ins_3">
+																<label class="krds-form-chip-outline" for="chk_ins_3">고용보험</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="checkbox" class="checkbox" name="chk_ins_4" id="chk_ins_4">
+																<label class="krds-form-chip-outline" for="chk_ins_4">산재보험</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">직업<button type="button" class="help" title="도움말 보기"><i class="svg-icon ico_help"></i></button></h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<input type="text" class="krds-input" placeholder="검색 버튼을 눌러주세요." title="직업" readonly>
+														<button type="button" class="field_btn black">검색</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="hf_info_field_cont info_block_cont">
+								<ul class="list">
+									<li>
+										<div class="main_title_cont">
+											<h4 class="title">보증대상주택 정보</h4>
+										</div>
+										<div class="fieldset">
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">대상주택 주소</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts area">
+														<div class="area_box">
+															<input type="text" class="krds-input" title="우편번호" readonly>
+															<button type="button" class="field_btn black">주소검색</button>
+														</div>
+														<input type="text" class="krds-input" placeholder="주소 검색 버튼을 눌러주세요." title="주소" readonly>
+														<input type="text" class="krds-input" placeholder="상세주소를 입력해 주세요" title="상세주소">
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">대출신청금액</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts data">
+														<div class="form-text">
+															<div class="text">
+																<div class="num">영</div>
+																<div class="txt">원</div>
+															</div>
+														</div>
+														<div class="form-inp">
+															<input type="text" class="krds-input p0" placeholder="0">
+															<div class="txt">원</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">대출금상환방식<button type="button" class="help" title="도움말 보기"><i class="svg-icon ico_help"></i></button></h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area">
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_repay" id="rdo_repay_1" checked>
+																<label class="krds-form-chip-outline" for="rdo_repay_1">일시상환</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_repay" id="rdo_repay_2">
+																<label class="krds-form-chip-outline" for="rdo_repay_2">원금균등상환</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_repay" id="rdo_repay_3">
+																<label class="krds-form-chip-outline" for="rdo_repay_3">원리금균등상환</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">임차보증금</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts data">
+														<div class="form-text">
+															<div class="text">
+																<div class="num">영</div>
+																<div class="txt">원</div>
+															</div>
+														</div>
+														<div class="form-inp">
+															<input type="text" class="krds-input p0" placeholder="0">
+															<div class="txt">원</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">월 임대료</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts data">
+														<div class="form-text">
+															<div class="text">
+																<div class="num">영</div>
+																<div class="txt">원</div>
+															</div>
+														</div>
+														<div class="form-inp">
+															<input type="text" class="krds-input p0" placeholder="0">
+															<div class="txt">원</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">공인중개사 날인 여부</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area">
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_agent" id="rdo_agent_1" checked>
+																<label class="krds-form-chip-outline" for="rdo_agent_1">아니오</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_agent" id="rdo_agent_2">
+																<label class="krds-form-chip-outline" for="rdo_agent_2">예</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="hf_info_field_cont info_block_cont">
+								<ul class="list">
+									<li>
+										<div class="main_title_cont">
+											<h4 class="title">보증한도 우대여부 확인</h4>
+										</div>
+										<div class="fieldset">
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">신청인이 귀화로 인한 국적취득자 또는 배우자가 외국인이거나 귀화로 인한 국적취득자이신가요?</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area">
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_fv1" id="rdo_fv1_1" checked>
+																<label class="krds-form-chip-outline" for="rdo_fv1_1">아니오</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_fv1" id="rdo_fv1_2">
+																<label class="krds-form-chip-outline" for="rdo_fv1_2">예</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">신청인 또는 배우자,신청인(배우자 포함)의 직계존비속 중 1인이 장애인증명서 발급대상자이신가요?</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area">
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_fv2" id="rdo_fv2_1" checked>
+																<label class="krds-form-chip-outline" for="rdo_fv2_1">아니오</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_fv2" id="rdo_fv2_2">
+																<label class="krds-form-chip-outline" for="rdo_fv2_2">예</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">신청인 또는 배우자,신청인(배우자 포함)의 직계존비속 중 1인이 국가유공자(유족)확인원 발급대상자이신가요?</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area">
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_fv3" id="rdo_fv3_1" checked>
+																<label class="krds-form-chip-outline" for="rdo_fv3_1">아니오</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_fv3" id="rdo_fv3_2">
+																<label class="krds-form-chip-outline" for="rdo_fv3_2">예</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">신청인 또는 배우자,신청인(배우자 포함)의 직계존비속 중 1인이 의사상자(유족)확인원 발급대상자이신가요?</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area">
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_fv4" id="rdo_fv4_1" checked>
+																<label class="krds-form-chip-outline" for="rdo_fv4_1">아니오</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_fv4" id="rdo_fv4_2">
+																<label class="krds-form-chip-outline" for="rdo_fv4_2">예</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">신청인 또는 배우자,신청인(배우자 포함)의 직계존비속 중 1인이 피해사실확인서 발급대상자이신가요?</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area">
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_fv5" id="rdo_fv5_1" checked>
+																<label class="krds-form-chip-outline" for="rdo_fv5_1">아니오</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_fv5" id="rdo_fv5_2">
+																<label class="krds-form-chip-outline" for="rdo_fv5_2">예</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">신청인 또는 배우자가 소상공인 확인서 발급대상자이신가요?</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area">
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_fv6" id="rdo_fv6_1" checked>
+																<label class="krds-form-chip-outline" for="rdo_fv6_1">아니오</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_fv6" id="rdo_fv6_2">
+																<label class="krds-form-chip-outline" for="rdo_fv6_2">예</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="hf_group">
+												<div class="sub_title_cont">
+													<h5 class="title">신청인 또는 배우자가 만 65세 직계존비속이 동일세대를 구성한 가구이신가요?</h5>
+												</div>
+												<div class="form-group">
+													<div class="form-conts">
+														<div class="krds-check-area">
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_fv7" id="rdo_fv7_1" checked>
+																<label class="krds-form-chip-outline" for="rdo_fv7_1">아니오</label>
+															</div>
+															<div class="krds-form-chip">
+																<input type="radio" class="radio" name="rdo_fv7" id="rdo_fv7_2">
+																<label class="krds-form-chip-outline" for="rdo_fv7_2">예</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="field_btn_cont">
+							<div class="field_btn_area page">
+								<button type="button" class="field_btn black">이전</button>
+								<button type="button" class="field_btn blue">다음</button>
+							</div>
+						</div>
+					</div>
+					<!--// 컨텐츠 -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="com_pop_cont active">
+		<div class="pop_cont_area pop_contract">
+			<div class="title_area">
+				<h2 class="title">추정소득 계산기 팝업</h2>
+				<button type="button" class="close"><span class="sr-only">팝업 닫기</span></button>
+			</div>
+			<div class="pop_info_cont">
+				<div class="pop_sec">
+					<div class="pop_sec_head">
+						<strong class="pop_sec_tit">추정소득 대상</strong>
+					</div>
+					<div class="pop_notice_box row">
+						<strong class="box_tit">국민건강보험료</strong>
+						<p class="box_txt">최근 3개월 납부한 금액을 입력하세요.(최근 3개월 연속하여 연체없이 납부한 경우에만 인정 가능. 건강보험료의 경우 장기요양 보험료 제외)</p>
+					</div>
+				</div>
+				<div class="pop_sec">
+					<div class="pop_sec_head">
+						<strong class="pop_sec_tit">추정소득 대상</strong>
+					</div>
+					<div class="hf_table_cont income_tbl debt_sum_tbl">
+						<div class="krds-table-wrap">
+							<table class="tbl row data">
+								<caption>추정소득 계산 - 최근 1~3개월 납부액, 추정소득금액</caption>
+								<colgroup>
+									<col style="width:13rem">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">최근 1개월</th>
+										<td>
+											<div class="money_cell">
+												<div class="form-inp"><input type="text" class="krds-input p0" placeholder="0" title="최근 1개월"><span class="txt">원</span></div>
+												<p class="money_txt"><span class="point">영</span>원</p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">최근 2개월</th>
+										<td>
+											<div class="money_cell">
+												<div class="form-inp"><input type="text" class="krds-input p0" placeholder="0" title="최근 2개월"><span class="txt">원</span></div>
+												<p class="money_txt"><span class="point">영</span>원</p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">최근 3개월</th>
+										<td>
+											<div class="money_cell">
+												<div class="form-inp"><input type="text" class="krds-input p0" placeholder="0" title="최근 3개월"><span class="txt">원</span></div>
+												<p class="money_txt"><span class="point">영</span>원</p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">추정소득금액</th>
+										<td>
+											<div class="money_cell">
+												<div class="form-inp"><input type="text" class="krds-input p0" placeholder="0" title="추정소득금액" readonly><span class="txt">원</span></div>
+												<p class="money_txt"><span class="point">영</span>원</p>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="pop_agree_row m0">
+					<p class="agree_tit">위 추정소득 금액을 연소득으로 입력하시겠습니까?</p>
+					<div class="krds-check-area">
+						<div class="krds-form-check medium"><input type="radio" name="rdo_calc" id="rdo_calc_n"><label for="rdo_calc_n">아니오</label></div>
+						<div class="krds-form-check medium"><input type="radio" name="rdo_calc" id="rdo_calc_y"><label for="rdo_calc_y">예</label></div>
+					</div>
+				</div>
+				<p class="pop_foot_txt">추정소득을 이용할 경우 다른 종류(근로, 사업자 소득 등)의 본인 및 배우자 소득 합산이 불가능합니다</p>
+				<div class="field_btn_cont w100">
+					<div class="field_btn_area">
+						<button type="button" class="field_btn blue">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+	<script type="text/javascript" src="/resources/js/include.js"></script>
+	<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</body>
+
+</html>

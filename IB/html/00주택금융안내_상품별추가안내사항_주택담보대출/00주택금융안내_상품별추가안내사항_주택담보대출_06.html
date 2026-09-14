@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="ko">
+	<meta property="og:site_name" content="한국주택금융공사">
+	<meta property="og:updated_time" content="">
+	<meta name="twitter:card" content="summary">
+	<title>한국주택금융공사</title>
+
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub3.css">
+
+	<!-- JavaScript 파일들 -->
+	<script type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+	<script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+
+	<script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.custom.home.js"></script>
+</head>
+<body>
+	<div data-include="../inc/header.html"></div>
+
+	<div id="container">
+		<div class="container_in">
+
+			<!-- contents -->
+			<div class="contents">
+
+				<div class="sub_con">
+
+					<!-- breadcrumb -->
+					<nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="home"><a href="#" class="txt">홈</a></li>
+							<li><a href="#" class="txt">주택금융안내</a></li>
+							<li><a href="#" class="txt">상품별 추가 안내사항</a></li>
+							<li><a href="#" class="txt">생애최초 신혼가구 우대금리 안내</a></li>
+							<li><a href="#" class="txt">우대금리 계산하기</a></li>
+						</ol>
+					</nav>
+					<!--// breadcrumb -->
+
+					<div class="title_set">
+						<div class="page-title-wrap">
+							<h2 class="h-tit">우대금리 계산하기</h2>
+						</div>
+
+					</div>
+
+					<!-- 컨텐츠 -->
+					<div class="rate_cont">
+
+						<div class="rate_body calc">
+							<!-- 최종 우대금리 -->
+							<div class="rate_calc_cont">
+								<div class="result_card">
+									<strong class="tit">최종 우대금리 (최대 1.0%p)</strong>
+									<p class="txt">선택한 우대항목이 합산된 최종 적용 금리입니다.</p>
+									<div class="form-group">
+										<div class="form-conts">
+											<div class="form-inp">
+												<label for="inp_total_rate" class="sr-only">최종 우대금리</label>
+												<input type="text" id="inp_total_rate" class="krds-input" value="" readonly>
+												<span class="unit">%</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="notice_card">
+									<strong class="tit">유의사항</strong>
+									<ul class="krds-info-list decimal">
+										<li>각 항목별 최대 2가지 항목 중복적용 가능</li>
+										<li>우대요건을 반드시 확인하고 선택바랍니다.</li>
+										<li>실제 적용가능여부와 관계없이 우대금리 선택이 가능하므로, 계산금리와 실제금리가 다를 수 있음을 유의하시기 바랍니다.</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- 우대항목 -->
+							<div class="rate_item_cont">
+								<h3 class="card_tit">우대항목</h3>
+								<div class="chk_group_panel">
+									<div class="chk_group">
+										<div class="group_body">
+											<ul class="chk_list">
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk01"><label for="rate_chk01">전자약정 및 전자등기</label></div>
+														<a href="#" class="link_btn">아낌e보금자리론 혜택 확인</a>
+														<span class="num">0.1%p</span>
+													</div>
+												</li>
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk02"><label for="rate_chk02">저소득 청년</label></div>
+														<a href="#" class="link_btn">저소득청년 우대금리 조건 안내</a>
+														<span class="num">0.1%p</span>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="chk_group">
+										<div class="group_label">
+											<strong class="tit">저출생 해소 지원층</strong>
+										</div>
+										<div class="group_body">
+											<ul class="chk_list">
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk03"><label for="rate_chk03">신혼가구</label></div>
+														<a href="#" class="link_btn">신혼가구 우대금리 자격</a>
+														<span class="num">0.3%p</span>
+													</div>
+												</li>
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk04"><label for="rate_chk04">신생아 출산가구</label></div>
+														<a href="#" class="link_btn">신생아 가구 우대금리 조건 안내</a>
+														<span class="num">0.2%p</span>
+													</div>
+												</li>
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk05"><label for="rate_chk05">다자녀가구 (2자녀)</label></div>
+														<a href="#" class="link_btn">다자녀(2자녀) 금리우대 혜택 확인</a>
+														<span class="num">0.5%p</span>
+													</div>
+												</li>
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk06"><label for="rate_chk06">다자녀가구 (3자녀 이상)</label></div>
+														<a href="#" class="link_btn">다자녀(3인 이상) 우대금리 조건 안내</a>
+														<span class="num">0.7%p</span>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="chk_group">
+										<div class="group_label">
+											<strong class="tit">사회적 배려층</strong>
+											<a href="#" class="link_btn">사회적 배려층 우대요건</a>
+										</div>
+										<div class="group_body">
+											<ul class="chk_list">
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk07"><label for="rate_chk07">한부모가구</label></div>
+														<span class="num">0.7%p</span>
+													</div>
+												</li>
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk08"><label for="rate_chk08">장애인가구</label></div>
+														<span class="num">0.7%p</span>
+													</div>
+												</li>
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk09"><label for="rate_chk09">다문화가구</label></div>
+														<span class="num">0.7%p</span>
+													</div>
+												</li>
+											</ul>
+											<div class="chk_divider"></div>
+											<ul class="chk_list">
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk10"><label for="rate_chk10">미분양관리지역 내 미분양 아파트 입주자</label></div>
+														<a href="#" class="link_btn">미분양 아파트 구입 금리우대 조건</a>
+														<span class="num">0.2%p</span>
+													</div>
+												</li>
+											</ul>
+											<div class="chk_divider"></div>
+											<ul class="chk_list">
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk11"><label for="rate_chk11">녹색건축물</label></div>
+														<a href="#" class="link_btn">친환경 건축물 우대금리 조건 안내</a>
+														<span class="num">0.1%p</span>
+													</div>
+												</li>
+											</ul>
+											<div class="chk_divider"></div>
+											<ul class="chk_list">
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk12"><label for="rate_chk12">전세사기피해자</label></div>
+														<a href="#" class="link_btn">전세사기피해자 지원 우대금리 안내</a>
+														<span class="num">0.1%p</span>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="chk_group">
+										<div class="group_label">
+											<strong class="tit">가산금리(우대금리 최대 한도와 별도 계산)</strong>
+										</div>
+										<div class="group_body">
+											<ul class="chk_list">
+												<li>
+													<div class="chk_row">
+														<div class="krds-form-check medium"><input type="checkbox" name="rate_item" id="rate_chk13"><label for="rate_chk13">규제지역</label></div>
+														<a href="#" class="link_btn">규제지역 담보주택 적용 조건</a>
+														<span class="num">0.1%p</span>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="com_pop_cont active">
+						<div class="pop_cont_area pop_alert type2">
+							<div class="title_area">
+								<h2 class="title">알림</h2>
+								<button type="button" class="close"><span class="sr-only">팝업 닫기</span></button>
+							</div>
+							<div class="pop_info_cont">
+								<div class="title_area">
+									<div class="text">신혼가구와 신생아 가구는 한가지만<br>선택 가능합니다.</div>
+								</div>
+								<div class="field_btn_cont w100">
+									<div class="field_btn_area">
+										<button type="button" class="field_btn blue">확인</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// 컨텐츠 -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+	<script type="text/javascript" src="/resources/js/include.js"></script>
+	<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</body>
+
+</html>

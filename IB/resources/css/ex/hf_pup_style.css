@@ -1,0 +1,279 @@
+@charset "UTF-8";
+
+
+.debt_cont .product_list_cont {margin-top: 0;}
+.product_list_cont > .line_cont {flex-direction: row; align-items: center; gap: var(--hf-gap-10); padding: var(--hf-padding-10) var(--hf-padding-7); border-radius: var(--hf-radius-xlarge2);}
+.product_list_cont .prod_vals {display: flex; flex-direction: column; justify-content: center; gap: var(--hf-gap-5); flex: 1 0 0; min-width: 0;}
+.product_list_cont .prod_tit {font-weight: 700; font-size: var(--hf-font-size-body-large); color: var(--hf-color-text-basic);}
+.product_list_cont .prod_tit .term {margin-left: var(--hf-gap-4); font-weight: 700; font-size: var(--hf-font-size-body-small); color: var(--hf-color-text-primary);}
+.product_list_cont .prod_desc {font-weight: 400; font-size: var(--hf-font-size-body-medium); color: var(--hf-color-text-subtle);}
+.product_list_cont .prod_actions {display: flex; align-items: center; gap: var(--hf-gap-3); flex-shrink: 0;}
+.product_list_cont .prod_actions .field_btn {min-width: 7.8rem; height: var(--hf-size-height-7); padding: 0 var(--hf-padding-6); line-height: var(--hf-size-height-7); font-size: var(--hf-font-size-label-medium);}
+
+.choice_card_cont.col2 > .list {flex-direction: row; flex-wrap: wrap; align-items: stretch; gap: var(--hf-gap-5);}
+.choice_card_cont.col2 > .list > li {flex: 0 0 calc((100% - var(--hf-gap-5)) / 2); min-width: 0;}
+.choice_card_cont.col2 > .list > li > label {height: 100%;}
+.choice_card_cont.col2 > .list > li > label .card_body .card_txt {font-weight: 400; font-size: var(--hf-font-size-body-small); color: var(--hf-color-text-subtle);}
+
+#pop_reg_form .pop_info_cont > .title_area {margin: 0 0 var(--hf-gap-5);}
+#pop_reg_form .pop_info_cont > .hf_table_cont + .title_area {margin-top: var(--hf-gap-8);}
+#pop_reg_form .hf_table_cont .badge {display: inline-flex; align-items: center; justify-content: center; height: 2.4rem; padding: 0 var(--hf-padding-2); border-radius: var(--hf-radius-small2); background-color: #FDEFEC; font-weight: 500; font-size: var(--hf-font-size-label-small); color: var(--hf-color-icon-point);}
+#pop_reg_form .hf_table_cont .cell_btn_area {display: flex; align-items: center; justify-content: center;}
+#pop_reg_form .hf_table_cont .cell_btn_area .field_btn {width: auto; gap: var(--hf-gap-2); height: var(--hf-size-height-6); padding: 0 var(--hf-padding-4);}
+#pop_reg_form .hf_table_cont .cell_btn_area .field_btn .svg-icon {width: var(--hf-size-height-3); height: var(--hf-size-height-3); background-color: var(--hf-color-icon-gray); -webkit-mask: url('/resources/images/component/ico_download.svg') no-repeat center / contain; mask: url('/resources/images/component/ico_download.svg') no-repeat center / contain;}
+#pop_reg_form .field_btn_cont .field_btn_area.right .field_btn {width: auto; min-width: 7.8rem;}
+
+.debt_cont .field_btn_cont .field_btn_area.between > .field_btn,
+.debt_cont .field_btn_cont .field_btn_area.between .btn_right > .field_btn {width: 28.8rem; min-width: 9rem; height: var(--hf-size-height-8); line-height: 1.5; padding: 0;}
+.debt_cont .field_btn_cont .field_btn_area.between .btn_right {display: inline-flex; align-items: center; gap: var(--hf-gap-5);}
+
+.debt_cont .hf_table_cont .cell_btn_area {display: flex; align-items: center; justify-content: center;}
+.debt_cont .hf_table_cont .cell_btn_area .btn_ico {display: inline-flex; align-items: center; justify-content: center; width: var(--hf-size-height-4); height: var(--hf-size-height-4);}
+.debt_cont .hf_table_cont .cell_btn_area .btn_ico .svg-icon {width: var(--hf-size-height-4); height: var(--hf-size-height-4); background-color: var(--hf-color-icon-gray); -webkit-mask-image: url('/resources/images/component/ico_trash.svg'); mask-image: url('/resources/images/component/ico_trash.svg'); mask-position: center; mask-size: contain; mask-repeat: no-repeat;}
+
+#pop_partner .pop_info_cont .pop_notice_box {border: 0; background-color: var(--hf-color-surface-gray-subtler);}
+#pop_partner .pop_notice_box .form-group.srch {display: flex; flex-direction: column; gap: var(--hf-gap-5); width: 100%;}
+#pop_partner .pop_notice_box .form-conts .inp_row {display: flex; align-items: flex-end; gap: var(--hf-gap-5); width: 100%;}
+#pop_partner .pop_notice_box .form-conts .inp_row > .form-inp {flex: 1 0 0; min-width: 0;}
+#pop_partner .pop_notice_box .field_btn_cont .field_btn_area.right .field_btn {width: auto; min-width: 10rem; height: var(--hf-size-height-6); padding: 0 var(--hf-padding-5); line-height: 1.5;}
+#pop_partner .pop_info_cont .hf_table_cont {margin-top: var(--hf-gap-7);}
+#pop_partner .pop_info_cont .hf_table_cont .tbl .radio {width: var(--hf-size-height-4); height: var(--hf-size-height-4); margin: 0 auto;}
+#pop_partner .pop_info_cont .result_empty {display: flex; align-items: center; justify-content: center; width: 100%; min-height: 9rem; margin-top: var(--hf-gap-7); font-weight: 400; font-size: var(--hf-font-size-body-medium); color: var(--hf-color-text-subtle);}
+
+.debt_cont .hf_table_cont .money_cell {display: flex; flex-direction: column; gap: var(--hf-gap-3); width: 100%;}
+.debt_cont .hf_table_cont .money_cell .form-inp {position: relative; width: 100%;}
+.debt_cont .hf_table_cont .money_cell .form-inp input {width: 100%; height: 4rem; padding: 0 var(--hf-padding-10) 0 var(--hf-padding-6); text-align: right;}
+.debt_cont .hf_table_cont .money_cell .form-inp .txt {position: absolute; top: 50%; right: var(--hf-padding-6); font-weight: 400; font-size: var(--hf-font-size-body-small); color: var(--hf-color-text-basic); transform: translateY(-50%);}
+.debt_cont .hf_table_cont .inp_row {display: flex; align-items: center; gap: var(--hf-gap-3); width: 100%;}
+.debt_cont .hf_table_cont .inp_row > .krds-input:first-child {flex: 0 0 12rem;}
+.debt_cont .hf_table_cont .inp_row > .krds-input:last-child {flex: 1 1 auto; min-width: 0;}
+
+.debt_cont .hf_table_cont .badge {display: inline-flex; align-items: center; justify-content: center; height: 2.4rem; padding: 0 var(--hf-padding-2); border-radius: var(--hf-radius-small2); background-color: #FDEFEC; font-weight: 500; font-size: var(--hf-font-size-label-small); color: var(--hf-color-icon-point);}
+.debt_cont .hf_table_cont .cell_btn_area .field_btn {width: auto;}
+.debt_cont .hf_table_cont .cell_btn_area .field_btn.small {gap: var(--hf-gap-2); height: var(--hf-size-height-6); padding: 0 var(--hf-padding-4); line-height: 1.5;}
+.debt_cont .hf_table_cont .cell_btn_area .field_btn .ico_download {width: var(--hf-size-height-3); height: var(--hf-size-height-3); background-color: var(--hf-color-icon-gray); -webkit-mask: url('/resources/images/component/ico_download.svg') no-repeat center / contain; mask: url('/resources/images/component/ico_download.svg') no-repeat center / contain;}
+.debt_cont .hf_table_cont .cell_btn_area .btn_ico.view {width: var(--hf-size-height-4); height: var(--hf-size-height-4);}
+.debt_cont .hf_table_cont .cell_btn_area .btn_ico.view .svg-icon.ico-link {width: var(--hf-size-height-4); height: var(--hf-size-height-4); background-color: var(--hf-color-icon-primary); -webkit-mask-image: url(/resources/images/component/ico_go.svg); mask-image: url(/resources/images/component/ico_go.svg);}
+
+.debt_body > .rate_search_cont {justify-content: flex-start;}
+.debt_body > .rate_search_cont .search_group {width: 100%; gap: var(--hf-gap-6);}
+.debt_body > .rate_search_cont .search_group .hf_group {display: flex; flex-direction: column; align-items: flex-start; gap: var(--hf-gap-3); width: 100%;}
+.debt_body > .rate_search_cont .search_group .sort_date {width: auto; flex-wrap: wrap;}
+.debt_body > .rate_search_cont .search_group .sort_date .calendar-input {width: 17.6rem;}
+
+/* 보증상담 상세 팝업: dt_list 값 좌측 정렬 (기존 dt_list 회색박스 유지) */
+#pop_consult_detail .dt_list .dl_text .txt {text-align: left;}
+
+/* 분할보증 신청내역 - 상태 카드(배지+제목 헤더 / 2단 흰색 패널) */
+.apply_status_list .apply_status_card .card_head .tit_box .tit {display: flex; align-items: center; gap: var(--hf-gap-3);}
+.apply_status_list .apply_status_card .badge {display: inline-flex; align-items: center; justify-content: center; height: 2.4rem; padding: 0 var(--hf-padding-3); border-radius: var(--hf-radius-small2); font-weight: 500; font-size: var(--hf-font-size-label-small); color: var(--hf-color-text-basic-inverse); background-color: var(--hf-color-button-primary-fill);}
+.apply_status_list .apply_status_card .badge.navy {background-color: var(--hf-color-action-secondary-active);}
+.apply_status_list .apply_status_card .view_col2 {gap: var(--hf-gap-5);}
+.apply_status_list .apply_status_card.bg .view_col2 > .card_body {flex: 1 0 0; min-width: 0; gap: var(--hf-gap-5); padding: var(--hf-padding-6); border: 1px solid var(--hf-color-border-gray-light); border-radius: var(--hf-radius-large1); background-color: var(--hf-color-background-white);}
+.apply_status_list .apply_status_card .card_body .row .value .field_btn {height: var(--hf-size-height-6); padding: 0 var(--hf-padding-5); line-height: 1.5; font-size: var(--hf-font-size-body-small);}
+
+/* 완료화면 강조(완료) 파랑 복원 - component.css .point{!important} 상쇄 (프로덕션 hf_pup_style2 scoped rule과 동일 의도) */
+.complete_cont .complete_text_area .tit .point {color: var(--hf-color-text-primary) !important;}
+.debt_body > .main_title_cont.no_dot .title .point {color: var(--hf-color-text-primary) !important;}
+
+/* 조건변경 대상선택 - 섹션제목 우측 셀렉트 / 상태카드 부제 구분자 */
+.info_block_cont > .main_title_cont.out.between {display: flex; align-items: center; justify-content: space-between; gap: var(--hf-gap-4);}
+.info_block_cont > .main_title_cont.out.between .krds_select_box {min-width: 22rem;}
+.apply_status_list .apply_status_card .card_head .tit_box .num .bar {margin: 0 var(--hf-gap-3); color: var(--hf-color-border-gray);}
+
+/* 심사서류 등록: doc_head 우측 양식다운로드 버튼 정렬 */
+.doc_item .doc_head .btn_right {margin-left: auto;}
+
+/* 조건변경 신청 팝업 - 변경전/후 textarea */
+#pop_change .pop_info_cont .hf_table_cont {margin-top: var(--hf-gap-5);}
+#pop_change .hf_table_cont .textarea-wrap {display: flex; flex-direction: column; gap: var(--hf-gap-2); width: 100%;}
+#pop_change .hf_table_cont .textarea-wrap textarea.krds-input {width: 100%; max-width: 100%; height: 7rem; padding: var(--hf-padding-3) var(--hf-padding-6); border: 1px solid var(--hf-color-input-border); border-radius: var(--hf-radius-large1); resize: none;}
+#pop_change .hf_table_cont .textarea-wrap .textarea-count {display: flex; justify-content: flex-end; width: 100%; font-weight: 400; font-size: var(--hf-font-size-body-small); color: var(--hf-color-text-primary);}
+
+/* 변경내용입력 - 표 안 입력(검색행/스택/금액+영원) */
+.debt_cont .hf_table_cont td > .form-conts {display: flex; flex-direction: column; gap: var(--hf-gap-3); width: 100%;}
+.debt_cont .hf_table_cont td .area_box {display: flex; align-items: center; gap: var(--hf-gap-3); width: 100%;}
+.debt_cont .hf_table_cont td .area_box > .krds-input {flex: 1 1 auto; min-width: 0;}
+.debt_cont .hf_table_cont td .area_box > .field_btn {flex: 0 0 auto; height: var(--hf-size-height-8); line-height: 1.5;}
+.debt_cont .hf_table_cont .inp_row > .money_cell {flex: 1 1 auto; min-width: 0;}
+.debt_cont .hf_table_cont .inp_row > .unit_ko {flex: 0 0 auto; font-weight: 500; font-size: var(--hf-font-size-body-small);}
+
+/* 기업실태표 팝업: 우측정렬 버튼 컴팩트 — .debt_cont 스코프의 field_btn_area.right 규칙을 팝업 컨텍스트에 동일 적용 */
+.com_pop_cont .pop_info_cont .field_btn_cont .field_btn_area.right .field_btn {width: auto; min-width: 7.8rem;  padding: 0 var(--hf-padding-3);}
+
+/* 기업실태표 등록·수정 세로폼 팝업 (14/18/19/20/21) — pop_info_cont 직속 form-group 스택. srch_pop/pop_change 등 다른 팝업(중첩 form-group/미사용)에는 미적용되도록 직속 선택자로 스코프 */
+.com_pop_cont .pop_info_cont > .title_area {display: flex; align-items: center; justify-content: space-between; gap: var(--hf-gap-4);}
+.com_pop_cont .pop_info_cont > .title_area.doc {align-items: flex-start; flex-direction: column;}
+.com_pop_cont .pop_info_cont > .form-group + .form-group {margin-top: var(--hf-gap-7);}
+.com_pop_cont .pop_info_cont > .form-group > .form-tit label {font-weight: 700; font-size: var(--hf-font-size-body-large); color: var(--hf-color-text-basic);}
+.com_pop_cont .pop_info_cont > .form-group > .form-tit {margin-bottom: var(--hf-gap-5);}
+.com_pop_cont .pop_info_cont > .form-group > .form-conts.area {display: flex; flex-direction: column; gap: var(--hf-gap-5); width: 100%;}
+.com_pop_cont .pop_info_cont > .form-group > .form-conts.area .area_box {display: flex; align-items: center; gap: var(--hf-gap-3); width: 100%;}
+.com_pop_cont .pop_info_cont > .form-group > .form-conts.area .area_box > .krds-input {flex: 1 1 auto; min-width: 0;}
+.com_pop_cont .pop_info_cont > .form-group > .form-conts.area .area_box > .field_btn {flex: 0 0 auto; width: auto; min-width: 9rem; height: var(--hf-size-height-8); padding: 0 var(--hf-padding-6); line-height: 1.5;}
+/* 필수안내(우측 정렬, 빨강 아이콘) — component.css .exclamation 규칙을 팝업 컨텍스트에 동일 적용 */
+.com_pop_cont .pop_info_cont > .title_area .exclamation {display: flex; align-items: center; justify-content: flex-end; margin: 0;}
+.com_pop_cont .pop_info_cont > .title_area .exclamation .text {display: flex; align-items: center; gap: var(--hf-gap-3); font-weight: 500; font-size: var(--hf-font-size-label-small); color: var(--hf-color-text-basic);}
+.com_pop_cont .pop_info_cont > .title_area .exclamation .text i {display: inline-flex; flex-shrink: 0; width: var(--hf-size-height-3); height: var(--hf-size-height-3); background-color: var(--hf-color-icon-point);}
+/* 세로폼 팝업: 단위 접미( form-inp > input.p0 + .txt )를 하나의 입력박스로(단위 우측 내부). .debt_cont 스코프 form-inp 스타일을 팝업 컨텍스트에 재적용 */
+.com_pop_cont .pop_info_cont > .form-group > .form-conts > .form-inp {display: flex; align-items: center; gap: var(--hf-gap-3); width: 100%; height: var(--hf-size-height-8); padding: 0 var(--hf-padding-6); border: 1px solid var(--hf-color-input-border); border-radius: var(--hf-radius-large1); background-color: var(--hf-color-input-surface);}
+.com_pop_cont .pop_info_cont > .form-group > .form-conts > .form-inp > .krds-input {flex: 1 1 auto; min-width: 0; height: auto; padding: 0; border: 0; background-color: transparent;}
+.com_pop_cont .pop_info_cont > .form-group > .form-conts > .form-inp > .krds-input.p0 {text-align: right;}
+.com_pop_cont .pop_info_cont > .form-group > .form-conts > .form-inp > .txt {flex: 0 0 auto; font-weight: 500; font-size: var(--hf-font-size-label-medium); color: var(--hf-color-text-basic);}
+/* 세로폼 팝업 안내리스트(hf-list-note): Figma 디스크 불릿(4px) 재현 — component.css 미로드 대비 최소 규칙 */
+.com_pop_cont .pop_info_cont .hf-list-note {display: flex; flex-direction: column; gap: var(--hf-gap-2); width: 100%;}
+.com_pop_cont .pop_info_cont .hf-list-note > li {position: relative; padding-left: var(--hf-padding-5); font-weight: 400; font-size: var(--hf-font-size-body-medium); color: var(--hf-color-text-subtle);}
+.com_pop_cont .pop_info_cont .hf-list-note > li::before {content: ""; position: absolute; left: var(--hf-padding-2); top: 1rem; width: 0.4rem; height: 0.4rem; border-radius: var(--hf-radius-small2); background-color: var(--hf-color-icon-gray-light);}
+/* 세로폼 팝업: 날짜기간(사업기간) 두 date 인라인(~ 구분) */
+.com_pop_cont .pop_info_cont > .form-group > .form-conts > .inp_row {display: flex; align-items: center; gap: var(--hf-gap-3); width: 100%;}
+.com_pop_cont .pop_info_cont > .form-group > .form-conts > .inp_row > .calendar-input {flex: 1 1 auto; min-width: 0;}
+.com_pop_cont .pop_info_cont > .form-group > .form-conts > .inp_row > .txt {flex: 0 0 auto; font-weight: 500; font-size: var(--hf-font-size-label-medium); color: var(--hf-color-text-basic);}
+/* 세로폼/표 팝업: 필수안내만 있는 title_area(부제 없음)도 우측 정렬되도록 exclamation flex 확장 */
+.com_pop_cont .pop_info_cont > .title_area .exclamation {flex: 1 1 auto;}
+/* 당좌거래은행 등록 등 입력표 팝업: 셀 내 select/date 전체폭, 삭제 아이콘 버튼 */
+.com_pop_cont .pop_info_cont .hf_table_cont td .krds_select_box,
+.com_pop_cont .pop_info_cont .hf_table_cont td .calendar-input {width: 100%;}
+.com_pop_cont .pop_info_cont .hf_table_cont td .cell_btn_area {display: flex; align-items: center; justify-content: center;}
+.com_pop_cont .pop_info_cont .hf_table_cont td .cell_btn_area .btn_ico {display: inline-flex; align-items: center; justify-content: center; width: var(--hf-size-height-4); height: var(--hf-size-height-4);}
+.com_pop_cont .pop_info_cont .hf_table_cont td .cell_btn_area .btn_ico .svg-icon {width: var(--hf-size-height-4); height: var(--hf-size-height-4); background-color: var(--hf-color-icon-gray); -webkit-mask: url('/resources/images/component/ico_trash.svg') no-repeat center / contain; mask: url('/resources/images/component/ico_trash.svg') no-repeat center / contain;}
+/* 기업실태표 재무상황(간편장부): 간편장부 대상업체 재무입력 생략 안내(중앙 정렬) */
+.debt_cont .debt_body > .result_empty {display: flex; align-items: center; justify-content: center; width: 100%; padding: var(--hf-padding-12) 0; font-weight: 400; font-size: var(--hf-font-size-body-medium); color: var(--hf-color-text-subtle); text-align: center;}
+/* 기업실태표 작성내역: 중립 badge(약식/정식) 배경, 조회요약바 우측 신규작성 버튼 */
+.debt_cont .jo_apply_card .ac_badge:not(.red):not(.warning):not(.primary):not(.success) {background-color: var(--hf-color-surface-gray-subtler); color: var(--hf-color-text-subtle);}
+.debt_cont .jo_summary > .field_btn {margin-left: auto; width: auto; min-width: 9rem; padding: 0 var(--hf-padding-7);}
+/* 세로폼 팝업: 금액 입력(한글 금액 표시 '영 원' 우측 상단 + 단위 내장 입력박스) — form-conts.data 세로 스택 */
+.com_pop_cont .pop_info_cont > .form-group > .form-conts.data {display: flex; flex-direction: column; gap: var(--hf-gap-3); width: 100%;}
+.com_pop_cont .pop_info_cont > .form-group > .form-conts.data .form-text {display: flex; align-items: center; justify-content: flex-end; gap: var(--hf-gap-2); width: 100%;}
+.com_pop_cont .pop_info_cont > .form-group > .form-conts.data .form-text .text {display: flex; align-items: center; gap: var(--hf-gap-2); font-weight: 500; font-size: var(--hf-font-size-label-small); color: var(--hf-color-text-subtle);}
+
+
+/* ===== 09기업 전용: component.css / hf_pup_style.css 에서 사용 클래스 규칙 이관 (pup2 미포함분) ===== */
+/* --- from component.css (con_group/agree_bar/hf-list-note/hf_text_list_cont/ico_* 등) --- */
+.svg-icon.ico_help {mask-image: url('/resources/images/component/ico_popover_help.svg');}
+.svg-icon.ico_doc_state {background-image: url('/resources/images/component/ico_doc_state.svg'); background-position: center; background-size: contain; background-repeat: no-repeat;}
+.svg-icon.ico_doc_state2 {background-image: url('/resources/images/component/ico_doc_state2.svg'); background-position: center; background-size: contain; background-repeat: no-repeat;}
+.hf_text_list_cont { width: 100%;}
+.hf_text_list_cont.type2 {border: 1px solid var(--hf-color-border-gray-light); padding: var(--hf-padding-6); background-color: var(--hf-color-surface-gray-subtler); border-radius: var(--hf-radius-medium3);}
+.hf_text_list_cont + .hf_text_list_cont { margin-top: var(--hf-gap-9);}
+.hf-list-note > li { font-size: var(--hf-font-size-body-small); color: var(--hf-color-text-subtle);}
+.contents .product_intro .con_group {display: flex; flex-direction: column; align-items: flex-start; gap: var(--hf-gap-layout-h3-h3); width: 100%;}
+.contents .product_intro .con_group .sec {display: flex; flex-direction: column; align-items: flex-start; gap: var(--hf-gap-layout-h3-h4); width: 100%;}
+.contents .product_intro .con_group .sec.faq {gap: var(--hf-gap-layout-title-body-medium);}
+.contents .product_intro .con_group .sec .sec_tit {width: 100%; font-weight: 700; font-size: var(--hf-font-size-heading-medium); color: var(--hf-color-text-bolder);}
+.contents .product_intro .con_group .sec .sub_tit {width: 100%; font-weight: 700; font-size: var(--hf-font-size-heading-small); color: var(--hf-color-text-bolder);}
+.contents .product_intro .con_group .sec .con {display: flex; flex-direction: column; align-items: flex-start; gap: var(--hf-gap-8); width: 100%;}
+.contents .product_intro .con_group .sec .con .sub_area {display: flex; flex-direction: column; align-items: flex-start; gap: var(--hf-gap-6); width: 100%;}
+.contents .product_intro .agree_bar {display: flex; align-items: center; justify-content: space-between; gap: var(--hf-gap-7); width: 100%; padding: var(--hf-padding-8); border-radius: var(--hf-radius-xlarge2); background-color: var(--hf-color-button-secondary-fill);}
+.contents .product_intro .agree_bar .q {font-weight: 700; font-size: var(--hf-font-size-body-medium); color: var(--hf-color-text-bolder);}
+.contents .product_intro .agree_bar .krds-check-area {flex-shrink: 0; gap: var(--hf-gap-7);}
+
+/* --- from hf_pup_style.css (jo_*/rc_*/ac_*/issue_* 조회·발급 컴포넌트) --- */
+.debt_cont .jo_body {display: flex; flex-direction: column; align-items: stretch; width: 100%;}
+.debt_cont .jo_summary {display: flex; align-items: center; gap: var(--hf-gap-2); margin-bottom: var(--hf-gap-7);}
+.debt_cont .jo_summary .svg-icon.ico_guide_check {flex: 0 0 auto; width: 3.2rem; height: 3.2rem;}
+.debt_cont .jo_summary .txt {font-weight: 700; font-size: var(--hf-font-size-heading-medium); color: var(--hf-color-text-bolder);}
+.debt_cont .jo_summary .txt .num {color: var(--hf-color-text-primary);}
+.debt_cont .jo_result_card {width: 100%; border: 1px solid var(--hf-color-border-secondary-light); border-radius: var(--hf-radius-large1); overflow: hidden;}
+.debt_cont .jo_result_card + .jo_result_card {margin-top: var(--hf-gap-5);}
+.debt_cont .jo_result_card .rc_head {padding: var(--hf-padding-6) var(--hf-padding-8); border-bottom: 1px solid var(--hf-color-border-secondary-light); background-color: var(--hf-color-surface-secondary-subtler);}
+.debt_cont .jo_result_card .rc_head .tit {font-weight: 700; font-size: var(--hf-font-size-heading-small); color: var(--hf-color-text-basic);}
+.debt_cont .jo_result_card .rc_body {display: flex; align-items: flex-start; width: 100%; padding: var(--hf-padding-6) 0; background-color: var(--hf-color-surface-white-subtler);}
+.debt_cont .jo_result_card .rc_col {box-sizing: border-box; display: flex; flex-direction: column; gap: var(--hf-gap-3); flex: 0 0 auto; padding-left: var(--hf-padding-8);}
+.debt_cont .jo_result_card .rc_col:nth-child(1) {width: 16.8rem;}
+.debt_cont .jo_result_card .rc_col:nth-child(2) {width: 32.35rem;}
+.debt_cont .jo_result_card .rc_col:nth-child(3) {width: 19.3rem;}
+.debt_cont .jo_result_card .rc_col:nth-child(4) {width: 32.35rem;}
+.debt_cont .jo_result_card .rc_col:nth-child(5) {width: 19.2rem; align-items: flex-end; text-align: right; padding-left: 0; padding-right: var(--hf-padding-8);}
+.debt_cont .jo_result_card .rc_col .rc_lbl {font-weight: 400; font-size: var(--hf-font-size-body-small); color: var(--hf-color-text-subtle);}
+.debt_cont .jo_result_card .rc_col .rc_val {font-weight: 700; font-size: var(--hf-font-size-body-large); color: var(--hf-color-text-basic);}
+.debt_cont .jo_apply_card {width: 100%; padding: var(--hf-padding-9); border-radius: var(--hf-radius-xlarge2); background-color: var(--hf-color-surface-gray-subtler);}
+.debt_cont .jo_apply_card + .jo_apply_card {margin-top: var(--hf-gap-7);}
+.debt_cont .jo_apply_card .ac_head {display: flex; flex-direction: column; gap: var(--hf-gap-2);}
+.debt_cont .jo_apply_card .ac_head .ac_head_top {display: flex; align-items: center; gap: var(--hf-gap-5);}
+.debt_cont .jo_apply_card .ac_head .ac_title {font-weight: 700; font-size: var(--hf-font-size-heading-large); color: var(--hf-color-text-bolder);}
+.debt_cont .jo_apply_card .ac_head .ac_sub {display: flex; align-items: center; gap: var(--hf-gap-5); font-weight: 500; font-size: var(--hf-font-size-body-large); color: var(--hf-color-text-basic);}
+.debt_cont .jo_apply_card .ac_head .ac_sub .bar {display: inline-block; flex: 0 0 auto; width: 1px; height: 1.6rem; background-color: var(--hf-color-border-gray-light);}
+.debt_cont .jo_apply_card .ac_badge {display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; height: var(--hf-size-height-5); padding: 0 var(--hf-padding-3); border-radius: var(--hf-radius-small2); font-weight: 500; font-size: var(--hf-font-size-label-medium); white-space: nowrap;}
+.debt_cont .jo_apply_card .ac_badge.red {background-color: var(--hf-color-element-point); color: var(--hf-color-action-white);}
+.debt_cont .jo_apply_card .ac_badge.warning {background-color: var(--hf-color-element-warning); color: var(--hf-color-text-warning);}
+.debt_cont .jo_apply_card .ac_badge.primary {background-color: var(--hf-color-icon-primary); color: var(--hf-color-action-white);}
+.debt_cont .jo_apply_card .ac_badge.success {background-color: var(--hf-color-element-success); color: var(--hf-color-action-white);}
+.debt_cont .jo_apply_card .ac_body {display: flex; align-items: stretch; gap: var(--hf-gap-5); margin-top: var(--hf-gap-7);}
+.debt_cont .jo_apply_card .ac_box {box-sizing: border-box; display: flex; flex-direction: column; gap: var(--hf-gap-6); flex: 1 1 0; min-width: 0; padding: var(--hf-padding-card-small); border: 1px solid var(--hf-color-border-gray-light); border-radius: var(--hf-radius-medium3); background-color: var(--hf-color-surface-white-subtler);}
+.debt_cont .jo_apply_card .ac_row {display: flex; align-items: center; justify-content: space-between; gap: var(--hf-gap-5); min-height: var(--hf-size-height-6);}
+.debt_cont .jo_apply_card .ac_row .ac_lbl {font-weight: 500; font-size: var(--hf-font-size-body-large); color: var(--hf-color-text-basic);}
+.debt_cont .jo_apply_card .ac_row .ac_val {font-weight: 700; font-size: var(--hf-font-size-body-large); color: var(--hf-color-text-basic); text-align: right;}
+.debt_cont .jo_apply_card .ac_row .ac_btn {display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; width: 12.8rem; height: var(--hf-size-height-6); border-radius: var(--hf-radius-medium3); font-weight: 500; font-size: var(--hf-font-size-label-small); white-space: nowrap; cursor: pointer;}
+.debt_cont .jo_apply_card .ac_row .ac_btn.primary {background-color: var(--hf-color-icon-primary); color: var(--hf-color-action-white);}
+.debt_cont .jo_apply_card .ac_row .ac_btn.outline {border: 1px solid var(--hf-color-button-tertiary-border); background-color: transparent; color: var(--hf-color-text-basic);}
+.debt_cont .jo_apply_card .ac_row .ac_btn.disabled {background-color: var(--hf-color-button-disabled-fill); color: var(--hf-color-text-disabled-on); cursor: default;}
+.debt_cont .jo_apply_card .ac_row .ac_dash {display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; width: 12.8rem; font-weight: 500; font-size: var(--hf-font-size-body-large); color: var(--hf-color-text-subtle);}
+.debt_cont .jo_apply_card .ac_row .ac_statwrap {display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; width: 12.8rem;}
+.debt_cont .jo_apply_card .ac_row .ac_stat {display: inline-flex; align-items: center; justify-content: center; height: var(--hf-size-height-5); padding: 0 var(--hf-padding-3); border-radius: var(--hf-radius-small2); background-color: var(--hf-color-surface-white-subtler); font-weight: 500; font-size: var(--hf-font-size-label-small); white-space: nowrap;}
+.debt_cont .jo_apply_card .ac_row .ac_stat.warning {border: 1px solid var(--hf-color-border-warning); color: var(--hf-color-text-warning);}
+.debt_cont .jo_apply_card .ac_row .ac_stat.primary {border: 1px solid var(--hf-color-border-primary); color: var(--hf-color-text-primary);}
+.debt_cont .jo_apply_card .ac_row .ac_stat.success {border: 1px solid var(--hf-color-element-success); color: var(--hf-color-text-success);}
+.debt_cont .jo_issue {display: flex; flex-direction: column;}
+.debt_cont .jo_issue .issue_select_box {display: flex; flex-direction: column; gap: var(--hf-gap-7); width: 100%; padding: var(--hf-padding-9); border-radius: var(--hf-radius-xlarge2); background-color: var(--hf-color-surface-gray-subtler);}
+.debt_cont .jo_issue .issue_select_box .box_head {display: flex; align-items: center; gap: var(--hf-gap-3);}
+.debt_cont .jo_issue .issue_select_box .box_head .svg-icon.ico_guide_check {flex: 0 0 auto; width: 3.2rem; height: 3.2rem;}
+.debt_cont .jo_issue .issue_select_box .box_head .tit {font-weight: 700; font-size: var(--hf-font-size-heading-medium); color: var(--hf-color-text-bolder);}
+.debt_cont .jo_issue .issue_select_box .box_field {display: flex; flex-direction: column; gap: var(--hf-gap-7);}
+.debt_cont .jo_issue .issue_select_box .box_field .f_label {font-weight: 500; font-size: var(--hf-font-size-body-large); color: var(--hf-color-text-basic);}
+.debt_cont .jo_issue .issue_select_box .box_field .sel_row {display: flex; align-items: center; gap: var(--hf-gap-5);}
+.debt_cont .jo_issue .issue_select_box .box_field .sel_row .krds_select_box {flex: 1 1 0; min-width: 0;}
+.debt_cont .jo_issue .issue_req_note {display: flex; align-items: center; justify-content: flex-end; gap: var(--hf-gap-2); width: 100%; margin: var(--hf-gap-7) 0 var(--hf-gap-3);}
+.debt_cont .jo_issue .issue_req_note .svg-icon.ico_info {flex: 0 0 auto; width: 1.6rem; height: 1.6rem; background-color: var(--hf-color-icon-point); -webkit-mask: url('/resources/images/component/ico_info.svg') no-repeat center / contain; mask: url('/resources/images/component/ico_info.svg') no-repeat center / contain;}
+.debt_cont .jo_issue .issue_req_note .txt {font-weight: 400; font-size: var(--hf-font-size-body-small); color: var(--hf-color-text-subtle);}
+.debt_cont .jo_issue .issue_card {display: flex; flex-direction: column; width: 100%; padding: var(--hf-padding-9); border: 1px solid var(--hf-color-border-secondary-light); border-radius: var(--hf-radius-xlarge2);}
+.debt_cont .jo_issue .issue_card > .card_tit {margin-bottom: var(--hf-gap-7); font-weight: 700; font-size: var(--hf-font-size-heading-medium); color: var(--hf-color-text-bolder);}
+.debt_cont .jo_issue .issue_card .issue_field {display: flex; flex-direction: column; align-items: flex-start; gap: var(--hf-gap-7); width: 100%;}
+.debt_cont .jo_issue .issue_card .issue_field + .issue_field {margin-top: var(--hf-gap-9);}
+.debt_cont .jo_issue .issue_card .issue_field .f_label {font-weight: 500; font-size: var(--hf-font-size-body-large); color: var(--hf-color-text-basic);}
+.debt_cont .jo_issue .issue_card .issue_field > input.krds-input {width: 100%; max-width: 37.3rem; height: var(--hf-size-height-8); padding: 0 var(--hf-padding-6); border: 1px solid var(--hf-color-input-border); border-radius: var(--hf-radius-large1);}
+.debt_cont .jo_issue .issue_card .issue_field .email_row {display: flex; align-items: center; gap: var(--hf-gap-5); width: 100%;}
+.debt_cont .jo_issue .issue_card .issue_field .email_row input.krds-input {width: 100%; max-width: 35.8rem; height: var(--hf-size-height-8); padding: 0 var(--hf-padding-6); border: 1px solid var(--hf-color-input-border); border-radius: var(--hf-radius-large1);}
+.debt_cont .jo_issue .issue_card .issue_field .email_row .at {flex: 0 0 auto; font-weight: 400; font-size: var(--hf-font-size-body-large); color: var(--hf-color-text-basic);}
+.debt_cont .jo_issue .issue_card .issue_field .email_row .krds_select_box {flex: 0 0 auto; width: 35.8rem; max-width: 35.8rem;}
+.debt_cont .jo_issue .krds_select_box .select_tit {width: 100%;}
+.debt_cont .jo_issue .krds_select_box .select_tit > button {box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: var(--hf-gap-3); width: 100%; height: var(--hf-size-height-8); padding: 0 var(--hf-padding-6); border: 1px solid var(--hf-color-input-border); border-radius: var(--hf-radius-large1); background-color: var(--hf-color-surface-white-subtler); font-weight: 400; font-size: var(--hf-font-size-body-medium); color: var(--hf-color-text-subtle);}
+.debt_cont .jo_issue .krds_select_box .select_tit > button::after {content: ''; flex: 0 0 auto; width: 2rem; height: 2rem; background: url('/resources/images/component/ico_arrow_down.svg') no-repeat center / contain;}
+.debt_cont .jo_issue_foot {margin-top: var(--hf-gap-9);}
+.svg-icon.ico_tel {-webkit-mask-image: url('/resources/images/component/ico_tel.svg'); mask-image: url('/resources/images/component/ico_tel.svg');}
+.svg-icon.ico_trash {-webkit-mask-image: url('/resources/images/component/ico_trash.svg'); mask-image: url('/resources/images/component/ico_trash.svg');}
+.svg-icon.ico_trash {-webkit-mask-image: url('/resources/images/component/ico_trash.svg'); mask-image: url('/resources/images/component/ico_trash.svg');}
+.com_pop_cont .sil_pop .sil_form_head .head_ref .svg-icon.ico_info {width: var(--hf-size-height-3); height: var(--hf-size-height-3); background-color: var(--hf-color-icon-gray); -webkit-mask-image: url('/resources/images/component/ico_info.svg'); mask-image: url('/resources/images/component/ico_info.svg'); -webkit-mask-position: center; mask-position: center; -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;}
+.com_pop_cont .sil_pop .sil_ctrl .calendar-input .form-btn-datepicker .svg-icon.ico_calendar {width: var(--hf-size-height-3); height: var(--hf-size-height-3); background-color: var(--hf-color-icon-gray-light); -webkit-mask-image: url('/resources/js/krds/img/component/icon/ico_calendar.svg'); mask-image: url('/resources/js/krds/img/component/icon/ico_calendar.svg'); -webkit-mask-position: center; mask-position: center; -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;}
+.debt_cont .sil_table_cont table.tbl .calendar-input .form-btn-datepicker .svg-icon.ico_calendar {width: var(--hf-size-height-3); height: var(--hf-size-height-3); background-color: var(--hf-color-icon-gray-light); -webkit-mask-image: url('/resources/js/krds/img/component/icon/ico_calendar.svg'); mask-image: url('/resources/js/krds/img/component/icon/ico_calendar.svg'); -webkit-mask-position: center; mask-position: center; -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;}
+.debt_cont .sil_table_cont .cell_del .svg-icon.ico_trash {width: var(--hf-size-height-4); height: var(--hf-size-height-4); background-color: var(--hf-color-icon-gray);}
+.sin_prod_item .prod_vals {display: flex; flex-direction: column; justify-content: center; gap: var(--hf-gap-5); flex: 1 0 0; min-width: 0;}
+.sin_prod_item .prod_tit {font-weight: 700; font-size: var(--hf-font-size-body-large); color: var(--hf-color-text-basic);}
+.sin_prod_item .prod_tit .term {margin-left: var(--hf-gap-4); font-weight: 700; color: var(--hf-color-text-primary);}
+.sin_prod_item .prod_desc {font-weight: 400; font-size: var(--hf-font-size-body-medium); color: var(--hf-color-text-subtle);}
+.sin_prod_item .prod_actions {display: flex; align-items: center; gap: var(--hf-gap-3); flex-shrink: 0;}
+.sin_prod_item .prod_actions .field_btn {min-width: 7.8rem; height: var(--hf-size-height-7); padding: 0 var(--hf-padding-6); line-height: var(--hf-size-height-7); font-size: var(--hf-font-size-label-medium);}
+.svg-icon.ico_trash {-webkit-mask-image: url('/resources/images/component/ico_trash.svg'); mask-image: url('/resources/images/component/ico_trash.svg');}
+.issue_select_box {display: flex; flex-direction: column; gap: var(--hf-gap-6); width: 100%; padding: var(--hf-padding-8) var(--hf-padding-card-medium); border-radius: var(--hf-radius-xlarge2); background-color: var(--hf-color-surface-gray-subtler);}
+.issue_select_box .box_head {display: flex; align-items: center; gap: var(--hf-gap-3);}
+.issue_select_box .box_head .svg-icon {width: 2.4rem; height: 2.4rem; }
+.issue_select_box .box_head .tit {font-weight: 700; font-size: var(--hf-font-size-heading-small); color: var(--hf-color-text-bolder);}
+.issue_select_box .box_field {display: flex; flex-direction: column; gap: var(--hf-gap-4);}
+.issue_select_box .box_field .f_label {font-weight: 700; font-size: var(--hf-font-size-body-medium); color: var(--hf-color-text-basic);}
+.issue_select_box .box_field .sel_row {display: flex; align-items: center; gap: var(--hf-gap-5);}
+.issue_select_box .box_field .sel_row .krds_select_box {flex: 1 1 0; min-width: 0;}
+.issue_req_note {display: flex; align-items: center; justify-content: flex-end; gap: var(--hf-gap-2); width: 100%; margin-top: calc(var(--hf-gap-6) * -1 + var(--hf-gap-2));}
+.issue_req_note .dot {display: inline-flex; align-items: center; justify-content: center; font-weight: 400; font-size: var(--hf-font-size-body-medium); line-height: 1; color: var(--hf-color-text-point);}
+.issue_req_note .dot::before {content: '\24d8';}
+.issue_req_note .txt {font-weight: 400; font-size: var(--hf-font-size-body-small); color: var(--hf-color-text-point);}
+.issue_card {display: flex; flex-direction: column; gap: var(--hf-gap-7); width: 100%; padding: var(--hf-padding-card-large); border: 1px solid var(--hf-color-border-gray); border-radius: var(--hf-radius-xlarge2);}
+.issue_card > .card_tit {font-weight: 700; font-size: var(--hf-font-size-body-large); color: var(--hf-color-text-bolder);}
+.issue_card .issue_field {display: flex; flex-direction: column; align-items: flex-start; gap: var(--hf-gap-4); width: 100%;}
+.issue_card .issue_field .f_label {font-weight: 700; font-size: var(--hf-font-size-body-medium); color: var(--hf-color-text-basic);}
+.issue_card .issue_field > input.krds-input {width: 100%; max-width: 46rem; height: var(--hf-size-height-8);}
+.issue_card .issue_field .email_row {display: flex; align-items: center; gap: var(--hf-gap-4); width: 100%;}
+.issue_card .issue_field .email_row input.krds-input {width: 100%; max-width: 24rem; height: var(--hf-size-height-8);}
+.issue_card .issue_field .email_row .at {font-weight: 500; font-size: var(--hf-font-size-body-medium); color: var(--hf-color-text-basic);}
+.issue_card .issue_field .email_row .krds_select_box {width: 22rem; max-width: 22rem;}
+
+
+

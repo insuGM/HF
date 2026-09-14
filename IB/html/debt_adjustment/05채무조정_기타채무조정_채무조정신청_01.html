@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="ko">
+	<meta property="og:site_name" content="한국주택금융공사">
+	<meta property="og:updated_time" content="">
+	<meta name="twitter:card" content="summary">
+	<title>한국주택금융공사</title>
+
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub3.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/component_debt_adjustment.css">
+
+	<!-- JavaScript 파일들 -->
+	<script type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+	<script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+
+	<script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.custom.home.js"></script>
+</head>
+<body>
+	<div data-include="../inc/header.html"></div>
+
+	<div id="container">
+		<div class="container_in">
+
+			<!-- contents -->
+			<div class="contents">
+
+				<div class="sub_con">
+
+					<!-- breadcrumb -->
+					<nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="home"><a href="#" class="txt">홈</a></li>
+							<li><a href="#" class="txt">채무조정</a></li>
+							<li><a href="#" class="txt">채무조정 신청</a></li>
+						</ol>
+					</nav>
+					<!--// breadcrumb -->
+
+					<div class="title_set">
+						<div class="page-title-wrap">
+							<h2 class="h-tit">주택담보대출 채무조정</h2>
+						</div>
+
+						<div class="title_etc_menu">
+							<ul>
+								<li class="print_li">
+									<a href="#">
+										<i class="svg-icon ico-down"></i>
+										<span class="txt">뷰어 다운로드</span>
+									</a>
+								</li>
+								<li class="print_li">
+									<a href="#">
+										<i class="svg-icon ico-print"></i>
+										<span class="txt">인쇄</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- 컨텐츠 -->
+					<div class="debt_cont">
+						<div class="krds-tab-area tab_page layer list" id="tabDebtType">
+							<div class="tab fill full line">
+								<ul>
+									<li>
+										<a href="#" class="btn-tab">원금상환 유예 신청</a>
+									</li>
+									<li>
+										<a href="#" class="btn-tab">지연배상금 감면 신청</a>
+									</li>
+									<li>
+										<a href="#" class="btn-tab">캠코양도형 채무조정</a>
+									</li>
+									<li class="active">
+										<a href="#" class="btn-tab">기타 채무조정(보증, 학자금 등)</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tab-conts-wrap type1">
+								<section class="tab-conts active">
+
+									<div class="debt_body">
+
+										<!-- 채무조정 처리과정 -->
+										<div class="hf_info_field_cont step_section_cont">
+											<div class="main_title_cont">
+												<h3 class="title">채무조정 처리과정</h3>
+											</div>
+											<p class="desc">고객님의 재기지원을 위해 자체적인 채무조정 및 분할상환 제도를 운영하고 있습니다.</p>
+											<div class="step_info_list_cont">
+												<ul class="list">
+													<li>
+														<div class="box">
+															<div class="num">1</div>
+															<div class="text_area">
+																<div class="tit">본인인증</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="box">
+															<div class="num">2</div>
+															<div class="text_area">
+																<div class="tit">채무승인<br>/조정 신청</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="box">
+															<div class="num">3</div>
+															<div class="text_area">
+																<div class="tit">지사 심사</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="box">
+															<div class="num">4</div>
+															<div class="text_area">
+																<div class="tit">심사결과</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="box">
+															<div class="num">5</div>
+															<div class="text_area">
+																<div class="tit">채무조정<br>합의서 작성</div>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="box">
+															<div class="num">6</div>
+															<div class="text_area">
+																<div class="tit">(분할)<br>상환금 납부</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<ol class="krds-info-list ordered hf-list-note note">
+												<li><span class="num">※</span>비대면을 통한 채무조정 신청, 상환내역 조회가 가능합니다.</li>
+												<li><span class="num">※</span>채무조정 여부 및 분할상환 기간 등은 고객님의 재산 및 소득 상태에 따라 달라질 수 있습니다.</li>
+											</ol>
+										</div>
+										<!--// 채무조정 처리과정 -->
+
+										<!-- 주택신용보증 -->
+										<div class="hf_info_field_cont info_block_cont">
+											<ul class="list">
+												<li>
+													<div class="main_title_cont">
+														<h3 class="title">주택신용보증</h3>
+													</div>
+
+													<div class="group_panel">
+														<strong class="panel_title">구상채무</strong>
+														<div class="dt_list">
+															<div class="dt_row">
+																<div class="dt_col">
+																	<div class="dl_text">
+																		<span class="tit">보증종류</span>
+																		<span class="txt">(중점특례전세)청년전세(대환)자금보증</span>
+																	</div>
+																	<div class="dl_text">
+																		<span class="tit">보증일자</span>
+																		<span class="txt">2020-06-09</span>
+																	</div>
+																	<div class="dl_text">
+																		<span class="tit">대위변제일자</span>
+																		<span class="txt">2022-09-30</span>
+																	</div>
+																	<div class="dl_text">
+																		<span class="tit">채무관계자 구분</span>
+																		<span class="txt">피보증인</span>
+																	</div>
+																	<div class="dl_text">
+																		<span class="tit">대위변제원금</span>
+																		<span class="txt">3,000,000원</span>
+																	</div>
+																</div>
+																<div class="dt_col">
+																	<div class="dl_text">
+																		<span class="tit">미수손해금</span>
+																		<span class="txt">1,017,783원</span>
+																	</div>
+																	<div class="dl_text">
+																		<span class="tit">미수 보증료</span>
+																		<span class="txt">0원</span>
+																	</div>
+																	<div class="dl_text">
+																		<span class="tit">미수추가 보증료</span>
+																		<span class="txt">16,830원</span>
+																	</div>
+																	<div class="dl_text">
+																		<span class="tit">미수연체 보증료</span>
+																		<span class="txt">0원</span>
+																	</div>
+																	<div class="dl_text">
+																		<span class="tit">비고</span>
+																		<span class="txt">-</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="group_panel">
+														<strong class="panel_title">미수채권 합계</strong>
+														<div class="dt_list">
+															<div class="dt_group bottom_line">
+																<div class="dt_row">
+																	<div class="dt_col">
+																		<div class="dl_text">
+																			<span class="tit">대위변제원금</span>
+																			<span class="txt">30,000,000 원</span>
+																		</div>
+																		<div class="dl_text">
+																			<span class="tit">미수손해금</span>
+																			<span class="txt">600,000원</span>
+																		</div>
+																		<div class="dl_text">
+																			<span class="tit">미수보증료</span>
+																			<span class="txt">30,000,000원</span>
+																		</div>
+																	</div>
+																	<div class="dt_col">
+																		<div class="dl_text">
+																			<span class="tit">미수추가보증료</span>
+																			<span class="txt">600,000원</span>
+																		</div>
+																		<div class="dl_text">
+																			<span class="tit">미수연체보증료</span>
+																			<span class="txt">3,000,000원</span>
+																		</div>
+																		<div class="dl_text">
+																			<span class="tit">대지지급</span>
+																			<span class="txt">0원</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="dl_text">
+																<span class="tit">총채무금액</span>
+																<span class="txt">14,187,847원</span>
+															</div>
+														</div>
+													</div>
+
+													<div class="group_panel_row">
+														<div class="group_panel">
+															<strong class="panel_title">납입 계좌번호 <span class="sub">(예금주 : 한국주택금융공사)</span></strong>
+															<div class="dt_list">
+																<div class="dl_text">
+																	<span class="tit">국민은행</span>
+																	<span class="txt">844090-11-725687</span>
+																</div>
+																<div class="dl_text">
+																	<span class="tit">우리은행</span>
+																	<span class="txt">261-407133-18-650</span>
+																</div>
+																<div class="dl_text">
+																	<span class="tit">농협</span>
+																	<span class="txt">261-407133-18-650</span>
+																</div>
+															</div>
+														</div>
+														<div class="group_panel">
+															<strong class="panel_title">담당자</strong>
+															<div class="dt_list">
+																<div class="dl_text">
+																	<span class="tit">이름</span>
+																	<span class="txt">홍길동</span>
+																</div>
+																<div class="dl_text">
+																	<span class="tit">팀</span>
+																	<span class="txt">ICT/개발추진당</span>
+																</div>
+																<div class="dl_text">
+																	<span class="tit">연락처</span>
+																	<span class="txt">051-663-8821</span>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<ul class="krds-info-list decimal">
+														<li>자동이체 안내: 우리은행은 가상계좌를 통한 자동이체 가능</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+										<!--// 주택신용보증 -->
+
+										<!-- 학자금 -->
+										<div class="hf_info_field_cont info_block_cont">
+											<ul class="list">
+												<li>
+													<div class="main_title_cont">
+														<h3 class="title">학자금</h3>
+													</div>
+
+													<div class="group_panel">
+														<strong class="panel_title">미수채무</strong>
+														<div class="dt_list">
+															<div class="dt_row">
+																<div class="dt_col">
+																	<div class="dl_text">
+																		<span class="tit">대출상품</span>
+																		<span class="txt">학자금대출</span>
+																	</div>
+																	<div class="dl_text">
+																		<span class="tit">대출일자</span>
+																		<span class="txt">2020-01-02</span>
+																	</div>
+																	<div class="dl_text">
+																		<span class="tit">채무관계자 구분</span>
+																		<span class="txt">피보험자</span>
+																	</div>
+																</div>
+																<div class="dt_col">
+																	<div class="dl_text">
+																		<span class="tit">미수원금</span>
+																		<span class="txt">1,000,000원</span>
+																	</div>
+																	<div class="dl_text">
+																		<span class="tit">미수이자</span>
+																		<span class="txt">600,00원</span>
+																	</div>
+																	<div class="dl_text">
+																		<span class="tit">지원배상금</span>
+																		<span class="txt">30,000,000원</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="group_panel">
+														<strong class="panel_title">미수채무 합계</strong>
+														<div class="dt_list">
+															<div class="dt_group bottom_line">
+																<div class="dt_row">
+																	<div class="dt_col">
+																		<div class="dl_text">
+																			<span class="tit">미수원금</span>
+																			<span class="txt">30,000,000 원</span>
+																		</div>
+																		<div class="dl_text">
+																			<span class="tit">미수이자</span>
+																			<span class="txt">600,000원</span>
+																		</div>
+																	</div>
+																	<div class="dt_col">
+																		<div class="dl_text">
+																			<span class="tit">지연배상금</span>
+																			<span class="txt">30,000,000원</span>
+																		</div>
+																		<div class="dl_text">
+																			<span class="tit">대지지급</span>
+																			<span class="txt">0원</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="dl_text">
+																<span class="tit">총채무금액</span>
+																<span class="txt">14,187,847원</span>
+															</div>
+														</div>
+													</div>
+
+													<div class="group_panel half">
+														<strong class="panel_title">납입 계좌번호 <span class="sub">(예금주 : 한국주택금융공사)</span></strong>
+														<div class="dt_list">
+															<div class="dl_text">
+																<span class="tit">농협</span>
+																<span class="txt">261-407133-18-650</span>
+															</div>
+														</div>
+													</div>
+
+													<div class="group_panel half">
+														<strong class="panel_title">담당자</strong>
+														<div class="dt_list">
+															<div class="dl_text">
+																<span class="tit">이름</span>
+																<span class="txt">홍길동</span>
+															</div>
+															<div class="dl_text">
+																<span class="tit">팀</span>
+																<span class="txt">고객센터</span>
+															</div>
+															<div class="dl_text">
+																<span class="tit">연락처</span>
+																<span class="txt">1688-8114</span>
+															</div>
+														</div>
+													</div>
+
+													<ul class="krds-info-list decimal">
+														<li>
+															정부보증장학금대출 미수채무는 한국장학재단 신용회복지원을 이용해주세요. (1599-2250)
+															<a href="#" class="link_out" target="_blank">한국장학재단<i class="svg-icon ico_link_out" aria-hidden="true"></i><span class="sr-only">새 창 열림</span></a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+										<!--// 학자금 -->
+
+									</div>
+
+									<div class="field_btn_cont">
+										<div class="field_btn_area page">
+											<a href="#" class="field_btn black">이전</a>
+											<a href="#" class="field_btn blue">채무조정 신청</a>
+										</div>
+									</div>
+
+								</section>
+							</div>
+						</div>
+					</div>
+					<!--// 컨텐츠 -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+	<script type="text/javascript" src="/resources/js/include.js"></script>
+	<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</body>
+
+</html>

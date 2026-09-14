@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="ico_counsel_done">
+  <title>ico_counsel_done (임시 이미지)</title>
+  <rect x="6" y="6" width="84" height="84" rx="20" fill="#dbe8ff"/>
+  <rect x="26" y="30" width="44" height="30" rx="6" fill="none" stroke="#1471f8" stroke-width="4"/>
+  <circle cx="38" cy="42" r="4" fill="#1471f8"/>
+  <path d="M30 58 L44 46 L56 56 L66 48 L66 60 H30 Z" fill="#1471f8" opacity=".55"/>
+  <text x="48" y="80" text-anchor="middle" font-size="9" font-family="sans-serif" fill="#1471f8">counsel_do</text>
+</svg>

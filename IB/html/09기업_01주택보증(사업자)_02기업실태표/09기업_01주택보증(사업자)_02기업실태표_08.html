@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="ko">
+	<meta property="og:site_name" content="한국주택금융공사">
+	<meta name="twitter:card" content="summary">
+	<title>한국주택금융공사</title>
+
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/krds.css">
+	<link rel="stylesheet" type="text/css" href="/resources/js/krds/pattern/output.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/hf_home_ko.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/board.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/header.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/footer.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/index.content.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub2.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/sub3.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/hf_pup_style2.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/ex/hf_gieop.css">
+
+	<script type="text/javascript" src="/resources/js/jquery/jquery-ui-1.12.1.min.js"></script>
+	<script type="text/javascript" src="/resources/js/jquery/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/pattern/pattern.js"></script>
+	<script type="text/javascript" src="/resources/js/krds/krds.custom.home.js"></script>
+</head>
+<body>
+	<div data-include="../inc/header.html"></div>
+	<div id="container">
+		<div class="container_in">
+			<div class="contents">
+				<div class="sub_con">
+
+					<!-- breadcrumb -->
+					<nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="home"><a href="#" class="txt">홈</a></li>
+							<li><a href="#" class="txt">주택보증(사업자)</a></li>
+							<li><a href="#" class="txt">기업실태표</a></li>
+						</ol>
+					</nav>
+					<!--// breadcrumb -->
+
+					<div class="title_set">
+						<div class="page-title-wrap">
+							<h2 class="h-tit">기업실태표 작성</h2>
+						</div>
+						<div class="title_etc_menu">
+							<ul>
+								<li class="print_li"><a href="#"><i class="svg-icon ico-down"></i><span class="txt">뷰어 다운로드</span></a></li>
+								<li class="print_li"><a href="#"><i class="svg-icon ico-print"></i><span class="txt">인쇄</span></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- 컨텐츠 -->
+					<div class="debt_cont">
+						<div class="krds-tab-area tab_page layer list" id="tabEsateType">
+							<div class="tab fill full line">
+								<ul>
+									<li><a href="#" class="btn-tab">기업체 개요</a></li>
+									<li><a href="#" class="btn-tab">대표자 및 경영진 정보</a></li>
+									<li><a href="#" class="btn-tab">금융기관 거래상황</a></li>
+									<li><a href="#" class="btn-tab">재무 상황(간략)</a></li>
+									<li class="active"><a href="#" class="btn-tab">시공능력/공사현황</a></li>
+									<li><a href="#" class="btn-tab">도급공사/수상실적</a></li>
+								</ul>
+							</div>
+							<div class="tab-conts-wrap type1">
+								<section class="tab-conts active">
+									<div class="debt_body">
+
+										<!-- 시공능력 -->
+										<div class="hf_info_field_cont info_block_cont">
+											<ul class="list">
+												<li>
+													<div class="main_title_cont">
+														<h4 class="title">시공능력</h4>
+													</div>
+													<div class="hf_table_cont">
+														<div class="krds-table-wrap">
+															<table class="tbl col data">
+																<caption>시공능력 (1) - 면허종류, 년도, 시공능력순위, 평가액</caption>
+																<colgroup>
+																	<col style="width:200px">
+																	<col style="width:468px">
+																	<col>
+																</colgroup>
+																<tbody>
+																	<tr>
+																		<th scope="row">면허종류</th>
+																		<td colspan="2"><input type="text" class="krds-input" placeholder="면허종류를 작성해주세요" title="면허종류"></td>
+																	</tr>
+																	<tr>
+																		<th scope="col">년도</th>
+																		<th scope="col">시공능력순위</th>
+																		<th scope="col">평가액</th>
+																	</tr>
+																	<tr>
+																		<td><input type="text" class="krds-input" placeholder="년도를 작성해주세요" title="년도"></td>
+																		<td>
+																			<div class="area_box"><input type="text" class="krds-input" placeholder="순위" title="순위"><span class="hyphen">/</span><input type="text" class="krds-input" placeholder="전체순위" title="전체순위"></div>
+																		</td>
+																		<td>
+																			<div class="money_cell">
+																				<div class="form-inp"><input type="text" class="krds-input" value="0" title="평가액">
+																					<div class="txt">백만원</div>
+																				</div>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td><input type="text" class="krds-input" placeholder="년도를 작성해주세요" title="년도"></td>
+																		<td>
+																			<div class="area_box"><input type="text" class="krds-input" placeholder="순위" title="순위"><span class="hyphen">/</span><input type="text" class="krds-input" placeholder="전체순위" title="전체순위"></div>
+																		</td>
+																		<td>
+																			<div class="money_cell">
+																				<div class="form-inp"><input type="text" class="krds-input" value="0" title="평가액">
+																					<div class="txt">백만원</div>
+																				</div>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td><input type="text" class="krds-input" placeholder="년도를 작성해주세요" title="년도"></td>
+																		<td>
+																			<div class="area_box"><input type="text" class="krds-input" placeholder="순위" title="순위"><span class="hyphen">/</span><input type="text" class="krds-input" placeholder="전체순위" title="전체순위"></div>
+																		</td>
+																		<td>
+																			<div class="money_cell">
+																				<div class="form-inp"><input type="text" class="krds-input" value="0" title="평가액">
+																					<div class="txt">백만원</div>
+																				</div>
+																			</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+													<div class="hf_table_cont">
+														<div class="krds-table-wrap">
+															<table class="tbl col data">
+																<caption>시공능력 (2) - 면허종류, 년도, 시공능력순위, 평가액</caption>
+																<colgroup>
+																	<col style="width:200px">
+																	<col style="width:468px">
+																	<col>
+																</colgroup>
+																<tbody>
+																	<tr>
+																		<th scope="row">면허종류</th>
+																		<td colspan="2"><input type="text" class="krds-input" placeholder="면허종류를 작성해주세요" title="면허종류"></td>
+																	</tr>
+																	<tr>
+																		<th scope="col">년도</th>
+																		<th scope="col">시공능력순위</th>
+																		<th scope="col">평가액</th>
+																	</tr>
+																	<tr>
+																		<td><input type="text" class="krds-input" placeholder="년도를 작성해주세요" title="년도"></td>
+																		<td>
+																			<div class="area_box"><input type="text" class="krds-input" placeholder="순위" title="순위"><span class="hyphen">/</span><input type="text" class="krds-input" placeholder="전체순위" title="전체순위"></div>
+																		</td>
+																		<td>
+																			<div class="money_cell">
+																				<div class="form-inp"><input type="text" class="krds-input" value="0" title="평가액">
+																					<div class="txt">백만원</div>
+																				</div>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td><input type="text" class="krds-input" placeholder="년도를 작성해주세요" title="년도"></td>
+																		<td>
+																			<div class="area_box"><input type="text" class="krds-input" placeholder="순위" title="순위"><span class="hyphen">/</span><input type="text" class="krds-input" placeholder="전체순위" title="전체순위"></div>
+																		</td>
+																		<td>
+																			<div class="money_cell">
+																				<div class="form-inp"><input type="text" class="krds-input" value="0" title="평가액">
+																					<div class="txt">백만원</div>
+																				</div>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td><input type="text" class="krds-input" placeholder="년도를 작성해주세요" title="년도"></td>
+																		<td>
+																			<div class="area_box"><input type="text" class="krds-input" placeholder="순위" title="순위"><span class="hyphen">/</span><input type="text" class="krds-input" placeholder="전체순위" title="전체순위"></div>
+																		</td>
+																		<td>
+																			<div class="money_cell">
+																				<div class="form-inp"><input type="text" class="krds-input" value="0" title="평가액">
+																					<div class="txt">백만원</div>
+																				</div>
+																			</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+													<div class="hf_table_cont">
+														<div class="krds-table-wrap">
+															<table class="tbl col data">
+																<caption>시공능력 (3) - 면허종류, 년도, 시공능력순위, 평가액</caption>
+																<colgroup>
+																	<col style="width:200px">
+																	<col style="width:468px">
+																	<col>
+																</colgroup>
+																<tbody>
+																	<tr>
+																		<th scope="row">면허종류</th>
+																		<td colspan="2"><input type="text" class="krds-input" placeholder="면허종류를 작성해주세요" title="면허종류"></td>
+																	</tr>
+																	<tr>
+																		<th scope="col">년도</th>
+																		<th scope="col">시공능력순위</th>
+																		<th scope="col">평가액</th>
+																	</tr>
+																	<tr>
+																		<td><input type="text" class="krds-input" placeholder="년도를 작성해주세요" title="년도"></td>
+																		<td>
+																			<div class="area_box"><input type="text" class="krds-input" placeholder="순위" title="순위"><span class="hyphen">/</span><input type="text" class="krds-input" placeholder="전체순위" title="전체순위"></div>
+																		</td>
+																		<td>
+																			<div class="money_cell">
+																				<div class="form-inp"><input type="text" class="krds-input" value="0" title="평가액">
+																					<div class="txt">백만원</div>
+																				</div>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td><input type="text" class="krds-input" placeholder="년도를 작성해주세요" title="년도"></td>
+																		<td>
+																			<div class="area_box"><input type="text" class="krds-input" placeholder="순위" title="순위"><span class="hyphen">/</span><input type="text" class="krds-input" placeholder="전체순위" title="전체순위"></div>
+																		</td>
+																		<td>
+																			<div class="money_cell">
+																				<div class="form-inp"><input type="text" class="krds-input" value="0" title="평가액">
+																					<div class="txt">백만원</div>
+																				</div>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td><input type="text" class="krds-input" placeholder="년도를 작성해주세요" title="년도"></td>
+																		<td>
+																			<div class="area_box"><input type="text" class="krds-input" placeholder="순위" title="순위"><span class="hyphen">/</span><input type="text" class="krds-input" placeholder="전체순위" title="전체순위"></div>
+																		</td>
+																		<td>
+																			<div class="money_cell">
+																				<div class="form-inp"><input type="text" class="krds-input" value="0" title="평가액">
+																					<div class="txt">백만원</div>
+																				</div>
+																			</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+
+										<!-- 3년 이내 준공실적 (본 건 신청기업 시행사) -->
+										<div class="hf_info_field_cont info_block_cont">
+											<ul class="list">
+												<li>
+													<div class="main_title_cont">
+														<h4 class="title">3년 이내 준공실적 (본 건 신청기업 시행사)</h4>
+													</div>
+													<div class="hf_table_cont">
+														<div class="krds-table-wrap">
+															<table class="tbl col data">
+																<caption>3년 이내 준공실적(시행사) - No, 구분, 사업지, 시행사, 시공사, 착공년월, 세대수, 관리</caption>
+																<colgroup>
+																	<col style="width:80px">
+																	<col style="width:84px">
+																	<col>
+																	<col style="width:100px">
+																	<col style="width:100px">
+																	<col style="width:100px">
+																	<col style="width:92px">
+																	<col style="width:120px">
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col">No</th>
+																		<th scope="col">구분</th>
+																		<th scope="col">사업지</th>
+																		<th scope="col">시행사</th>
+																		<th scope="col">시공사</th>
+																		<th scope="col">착공년월</th>
+																		<th scope="col">세대수</th>
+																		<th scope="col">관리</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>1</td>
+																		<td>임대</td>
+																		<td class="tl">서울특별시 강동구 동남로 920 ((주)태영건설 9호선 현장사무실) 123</td>
+																		<td>123</td>
+																		<td>123</td>
+																		<td>2026-2</td>
+																		<td>23</td>
+																		<td>
+																			<div class="cell_btn_area"><button type="button" class="field_btn blue2 small">수정</button><button type="button" class="btn_ico"><i class="svg-icon ico_trash" aria-hidden="true"></i><span class="sr-only">삭제</span></button></div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+													<div class="field_btn_cont">
+														<div class="field_btn_area right"><button type="button" class="field_btn black small">준공실적 추가</button></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+
+										<!-- 3년 이내 준공실적 (본 건 신청기업 시공사) -->
+										<div class="hf_info_field_cont info_block_cont">
+											<ul class="list">
+												<li>
+													<div class="main_title_cont">
+														<h4 class="title">3년 이내 준공실적 (본 건 신청기업 시공사)</h4>
+													</div>
+													<div class="hf_table_cont">
+														<div class="krds-table-wrap">
+															<table class="tbl col data">
+																<caption>3년 이내 준공실적(시공사) - No, 구분, 사업지, 시행사, 시공사, 착공년월, 세대수, 관리</caption>
+																<colgroup>
+																	<col style="width:80px">
+																	<col style="width:84px">
+																	<col>
+																	<col style="width:100px">
+																	<col style="width:100px">
+																	<col style="width:100px">
+																	<col style="width:92px">
+																	<col style="width:120px">
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col">No</th>
+																		<th scope="col">구분</th>
+																		<th scope="col">사업지</th>
+																		<th scope="col">시행사</th>
+																		<th scope="col">시공사</th>
+																		<th scope="col">착공년월</th>
+																		<th scope="col">세대수</th>
+																		<th scope="col">관리</th>
+																	</tr>
+																</thead>
+															</table>
+														</div>
+													</div>
+													<div class="field_btn_cont">
+														<div class="field_btn_area right"><button type="button" class="field_btn black small">준공실적 추가</button></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+
+										<!-- 3년 이내 준공실적 (본 건 신청기업 관계기업) -->
+										<div class="hf_info_field_cont info_block_cont">
+											<ul class="list">
+												<li>
+													<div class="main_title_cont">
+														<h4 class="title">3년 이내 준공실적 (본 건 신청기업 관계기업)</h4>
+													</div>
+													<div class="hf_table_cont">
+														<div class="krds-table-wrap">
+															<table class="tbl col data">
+																<caption>3년 이내 준공실적(관계기업) - No, 구분, 사업지, 시행사, 시공사, 착공년월, 세대수, 관리</caption>
+																<colgroup>
+																	<col style="width:80px">
+																	<col style="width:84px">
+																	<col>
+																	<col style="width:100px">
+																	<col style="width:100px">
+																	<col style="width:100px">
+																	<col style="width:92px">
+																	<col style="width:120px">
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col">No</th>
+																		<th scope="col">구분</th>
+																		<th scope="col">사업지</th>
+																		<th scope="col">시행사</th>
+																		<th scope="col">시공사</th>
+																		<th scope="col">착공년월</th>
+																		<th scope="col">세대수</th>
+																		<th scope="col">관리</th>
+																	</tr>
+																</thead>
+															</table>
+														</div>
+													</div>
+													<div class="field_btn_cont">
+														<div class="field_btn_area right"><button type="button" class="field_btn black small">준공실적 추가</button></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+
+										<!-- 진행중인 사업장(본 건 신청기업 시행사) -->
+										<div class="hf_info_field_cont info_block_cont">
+											<ul class="list">
+												<li>
+													<div class="main_title_cont">
+														<h4 class="title">진행중인 사업장(본 건 신청기업 시행사)</h4>
+													</div>
+													<div class="hf_table_cont">
+														<div class="krds-table-wrap">
+															<table class="tbl col data">
+																<caption>진행중인 사업장(시행사) - No, 구분, 사업지, 시행사, 시공사, 착공년월, 세대수, 관리</caption>
+																<colgroup>
+																	<col style="width:80px">
+																	<col style="width:84px">
+																	<col>
+																	<col style="width:100px">
+																	<col style="width:100px">
+																	<col style="width:100px">
+																	<col style="width:92px">
+																	<col style="width:120px">
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col">No</th>
+																		<th scope="col">구분</th>
+																		<th scope="col">사업지</th>
+																		<th scope="col">시행사</th>
+																		<th scope="col">시공사</th>
+																		<th scope="col">착공년월</th>
+																		<th scope="col">세대수</th>
+																		<th scope="col">관리</th>
+																	</tr>
+																</thead>
+															</table>
+														</div>
+													</div>
+													<div class="field_btn_cont">
+														<div class="field_btn_area right"><button type="button" class="field_btn black small">사업장 추가</button></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+
+										<!-- 진행중인 사업장(본 건 신청기업 시공사) -->
+										<div class="hf_info_field_cont info_block_cont">
+											<ul class="list">
+												<li>
+													<div class="main_title_cont">
+														<h4 class="title">진행중인 사업장(본 건 신청기업 시공사)</h4>
+													</div>
+													<div class="hf_table_cont">
+														<div class="krds-table-wrap">
+															<table class="tbl col data">
+																<caption>진행중인 사업장(시공사) - No, 구분, 사업지, 시행사, 시공사, 착공년월, 세대수, 관리</caption>
+																<colgroup>
+																	<col style="width:80px">
+																	<col style="width:84px">
+																	<col>
+																	<col style="width:100px">
+																	<col style="width:100px">
+																	<col style="width:100px">
+																	<col style="width:92px">
+																	<col style="width:120px">
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col">No</th>
+																		<th scope="col">구분</th>
+																		<th scope="col">사업지</th>
+																		<th scope="col">시행사</th>
+																		<th scope="col">시공사</th>
+																		<th scope="col">착공년월</th>
+																		<th scope="col">세대수</th>
+																		<th scope="col">관리</th>
+																	</tr>
+																</thead>
+															</table>
+														</div>
+													</div>
+													<div class="field_btn_cont">
+														<div class="field_btn_area right"><button type="button" class="field_btn black small">사업장 추가</button></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+
+										<!-- 진행중인 사업장(본 건 신청기업 관계기업) -->
+										<div class="hf_info_field_cont info_block_cont">
+											<ul class="list">
+												<li>
+													<div class="main_title_cont">
+														<h4 class="title">진행중인 사업장(본 건 신청기업 관계기업)</h4>
+													</div>
+													<div class="hf_table_cont">
+														<div class="krds-table-wrap">
+															<table class="tbl col data">
+																<caption>진행중인 사업장(관계기업) - No, 구분, 사업지, 시행사, 시공사, 착공년월, 세대수, 관리</caption>
+																<colgroup>
+																	<col style="width:80px">
+																	<col style="width:84px">
+																	<col>
+																	<col style="width:100px">
+																	<col style="width:100px">
+																	<col style="width:100px">
+																	<col style="width:92px">
+																	<col style="width:120px">
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col">No</th>
+																		<th scope="col">구분</th>
+																		<th scope="col">사업지</th>
+																		<th scope="col">시행사</th>
+																		<th scope="col">시공사</th>
+																		<th scope="col">착공년월</th>
+																		<th scope="col">세대수</th>
+																		<th scope="col">관리</th>
+																	</tr>
+																</thead>
+															</table>
+														</div>
+													</div>
+													<div class="field_btn_cont">
+														<div class="field_btn_area right"><button type="button" class="field_btn black small">사업장 추가</button></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+
+										<!-- 향후 계획사업(본 건 신청기업) -->
+										<div class="hf_info_field_cont info_block_cont">
+											<ul class="list">
+												<li>
+													<div class="main_title_cont">
+														<h4 class="title">향후 계획사업(본 건 신청기업)</h4>
+													</div>
+													<div class="hf_table_cont">
+														<div class="krds-table-wrap">
+															<table class="tbl col data">
+																<caption>향후 계획사업 - No, 구분, 건설예정지, 착공년월, 관리</caption>
+																<colgroup>
+																	<col style="width:80px">
+																	<col style="width:108px">
+																	<col>
+																	<col style="width:108px">
+																	<col style="width:160px">
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col">No</th>
+																		<th scope="col">구분</th>
+																		<th scope="col">건설예정지</th>
+																		<th scope="col">착공년월</th>
+																		<th scope="col">관리</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>1</td>
+																		<td>임대</td>
+																		<td class="tl">서울특별시 강동구 동남로 920 ((주)태영건설 9호선 현장사무실) 123</td>
+																		<td>2026-2</td>
+																		<td>
+																			<div class="cell_btn_area"><button type="button" class="field_btn blue2 small">수정</button><button type="button" class="btn_ico"><i class="svg-icon ico_trash" aria-hidden="true"></i><span class="sr-only">삭제</span></button></div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+													<div class="field_btn_cont">
+														<div class="field_btn_area right"><button type="button" class="field_btn black small">계획사업 추가</button></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="field_btn_cont mt">
+										<div class="field_btn_area page">
+											<a href="#" class="field_btn black small">이전</a>
+											<button type="button" class="field_btn black small">임시저장</button>
+											<button type="button" class="field_btn blue">다음</button>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+					<!--// 컨텐츠 -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 퍼블리싱에서만 추가되는 스크립트 -->
+	<script type="text/javascript" src="/resources/js/include.js"></script>
+	<!-- //퍼블리싱에서만 추가되는 스크립트 -->
+</body>
+</html>

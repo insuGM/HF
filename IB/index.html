@@ -1,0 +1,258 @@
+<!DOCTYPE jsp PUBLIC "-//W3C//DTD Xjsp 1.0 Transitional//EN" "http://www.w3.org/TR/xjsp1/DTD/xjsp1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body cz-shortcut-listen="true">
+    
+    <title>HF 코딩리스트 coding_list</title>
+
+
+
+    <h1 style="margin-bottom:10px;font-size:20px;">HF 코딩리스트</h1>
+    <!--<div class="status_menu menu02">
+        <ul>
+            <li class="on"><a href="status_busan.html" target="_self">부산</a></li>
+            <li><a href="status_yangsan.html" target="_self">양산</a></li>
+        </ul>
+    </div>-->
+
+    <div class="making_guide">
+        <strong>[작업 참고사항]</strong>
+        <ul>
+            <!-- <li style="color:red">
+                <strong>* 작업기준</strong> : 작업은 부산을 기준
+            </li> -->
+            <li>
+                <strong>* 퍼블상태표기</strong> : x : 삭제 / △ : 보류,협의 / ○ : 부분완료 / ● : 완료 / <span style="color:red">●</span> : 신규 완료 /
+                <span style="color:orange">●</span> : 수정 / <span style="color:#27e">●</span> : 진행
+            </li>
+            <!-- <li>
+                <strong class="order_bvs" style="display:inline-block;padding:2px;">*신규/리뉴얼 페이지</strong> : <span class="totalpage2"></span>
+            </li> -->
+        </ul>
+    </div>
+
+    <p class="totalpage">[Total : /] [Progress :]</p>
+    <!-- <dl class="dl_sum">
+        <dt>[총 공수 (일)] :</dt>
+        <dd>[<span id="sumResult"></span>]</dd>
+    </dl> -->
+
+    <table>
+        <caption>컨텐츠</caption>
+        <colgroup>
+            <col width="6%">
+            <col width="10%">
+            <col width="10%">
+            <col width="12%">
+            <col width="12%">
+            <col width="12%">
+            <col width="13%">
+            <col width="8%">
+            <col width="*">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">구분</th>
+                <th scope="col">dept</th>
+                <th scope="col">2depth</th>
+                <th scope="col">3depth</th>
+                <th scope="col">file</th>
+                <th scope="col" title="△ :대기 / ○ :부분완료 / ● :완료">stat</th>
+                <th scope="col">구분</th>
+                <th scope="col">공수 (일)</th>
+                <th scope="col">note</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tit" rowspan="1">국문 홈페이지</td>
+                <td rowspan="1">공통</td>
+                <td></td>
+                <td></td>
+                <td class="file"><a target="_blank" href="html/common/main.html">메인 페이지</a></td>
+                <td class="stat"><span style="color:#27e">●</span></td>
+                <td class="cen"></td>
+                <td class="cen mm"></td>
+                <td class="note"></td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+
+
+<style type="text/css">
+* {margin: 0;padding: 0;font-size: 11px;font-family: 'NanumGothic', verdana;color: #666}
+ol,ul {list-style: none;}
+a {color: #27e;text-decoration: none;}
+a:focus,
+a:hover,
+a:active {text-decoration: underline;}
+body {padding: 10px;}
+h1 {font-size: 14px;}
+h1 a {font-size: 16px;color: #666}
+
+.status_menu {overflow: hidden;width: 100%;margin-bottom: 20px;padding-bottom: 1px;}
+.status_menu li {float: left;width: 14.2%;margin: 0 -1px -1px 0;}
+.status_menu.menu01 li {width:100%;}
+.status_menu.menu02 li {width:50%;}
+.status_menu.menu03 li {width:33.3%;}
+.status_menu.menu04 li {width:25%;}
+.status_menu.menu05 li {width:20%;}
+.status_menu.menu06 li {width:33.3%;}
+.status_menu.menu07 li {width:25%;}
+.status_menu.menu08 li {width:25%;}
+.status_menu li a {display: block;height: 25px;border: 1px solid #999;background: #fff;font-size: 14px;color: #999;line-height: 25px;text-align: center;}
+.status_menu li a:hover {text-decoration: none;}
+.status_menu li.on a {background: #999;color: #fff;font-weight: bold;}
+.totalpage {text-align: right;font-weight: bold;font-size: 12px;}
+.down {text-align: right;font-weight: bold;padding-top: 10px;}
+.down a {font-size: 12px;color: #666}
+.making_guide {margin-bottom: 10px;}
+.making_guide>strong {display: block;margin-bottom: 7px;}
+.making_guide ul {padding: 10px;border: 1px solid #ddd;}
+.making_guide li {overflow: hidden;line-height:16px;}
+.making_guide li+li {margin-top: 5px;}
+.making_guide .order_oh {display: inline-block;padding: 2px 5px 0;border: 1px solid #ddd;vertical-align: top;}
+.making_guide .order_yoo {display: inline-block;padding: 2px 5px 0;border: 1px solid #ddd;vertical-align: top;}
+
+table {width: 100%;border-collapse: collapse;}
+table caption {text-align: left;font-weight: bold;padding: 20px 5px 5px;}
+table th {border: 1px solid #ddd;padding: 5px;background: #f9f9f9}
+table td {height: 24px;border: 1px solid #ddd;padding: 5px;line-height:16px;}
+table tr:hover td {background: #f3ffff}
+table tr.gray td {background: #f5f5f5;}
+table tr.bdt td {border-top:2px solid #000;}
+table .stat,
+table .data,
+table .cen,
+table .tit {text-align: center;}
+table .line td {border-top: 2px solid #999}
+
+.order_main {background: #e2f0e8 !important;}
+.order_bvs {background: #fef4d7 !important;}
+
+.dl_sum { display: flex; justify-content: end; margin-top: 5px;}
+.dl_sum dt, .dl_sum dd {text-align: right;font-weight: bold;font-size: 12px; margin-right: 5px;}
+.dl_sum dd span {text-align: right;font-weight: bold;font-size: 12px;}
+
+.new {color:red;}
+.orange {color:orange;}
+</style>
+
+<script type="text/javascript">
+jQuery.fn.stat = function (options) {
+    var settings = jQuery.extend({
+            total: '.totalpage',
+            title: 'caption',
+            content: 'table',
+            files: 'tbody tr',
+            stat: 'td.stat',
+            completed: '●',
+            index: 0,
+            openAll: true,
+            speed: 'fast',
+
+            total2: '.totalpage2',
+            files2: 'tbody td.order_bvs',
+            stat2: 'td.order_bvs+td.stat',
+
+            total3: '.totalpage3',
+            files3: 'tbody td.order_oh',
+            stat3: 'td.order_oh+td.stat',
+        }, options),
+        all_sections = this;
+    return this.each(function () {
+        var self = this,
+            $self = $(self),
+            title_text = [],
+            completed = 0;
+        self.section_title = $(settings.title, $self);
+        self.content = $(settings.content, $self);
+        self.files = $(settings.files, $self);
+        self.files.each(function () {
+            var stat = $(settings.stat, this);
+            stat.each(function () {
+                var text = $(this).text();
+                if (text && (text === settings.completed)) {
+                    completed++;
+                }
+            });
+        });
+        title_text = [self.section_title.text(), '(', completed, '/', self.files.length, ')'];
+        self.section_title.text(title_text.join(''));
+
+        //total
+        var completedAll = 0;
+        var completedPer = 0;
+        $(settings.stat).each(function () {
+            var text = $(this).text();
+            if (text && (text == settings.completed)) {
+                completedAll++;
+                completedPer = Math.round((100 / $(settings.files).length) *
+                    completedAll);
+            }
+        });
+        $(settings.total).text('[Total : ' + completedAll + '/' + $(settings.files).length +
+            'pages] [Progress : ' + completedPer + '%/' + '100%]');
+
+        //유수지
+        var completedAll2 = 0;
+        var completedPer2 = 0;
+        $(settings.stat2).each(function () {
+            var text = $(this).text();
+            if (text && (text == settings.completed)) {
+                completedAll2++;
+                completedPer2 = Math.round((100 / $(settings.files2).length) *
+                    completedAll2);
+            }
+        });
+        $(settings.total2).text('[Total : ' + completedAll2 + ' / ' + $(settings.files2)
+            .length +
+            'pages] [Progress : ' + completedPer2 + '% / ' + '100%]');
+
+        //오광현
+        var completedAll3 = 0;
+        var completedPer3 = 0;
+        $(settings.stat3).each(function () {
+            var text = $(this).text();
+            if (text && (text == settings.completed)) {
+                completedAll3++;
+                completedPer3 = Math.round((100 / $(settings.files3).length) *
+                    completedAll3);
+            }
+        });
+        $(settings.total3).text('[Total : ' + completedAll3 + ' / ' + $(settings.files3)
+            .length +
+            'pages] [Progress : ' + completedPer3 + '% / ' + '100%]');
+    });
+};
+$(document).ready(function () {
+    $('table').stat();
+});
+
+
+// 모든 클래스가 "mm"인 <td> 요소 선택
+    var mmCells = document.querySelectorAll('.mm');
+
+    // 값의 합 초기화
+    var sum = 0;
+
+    // 각 <td> 요소의 값을 합산
+    mmCells.forEach(function(cell) {
+        sum += parseFloat(cell.textContent || cell.innerText);
+    });
+
+    // 결과를 표시할 p 태그 선택
+    var sumResultElement = document.getElementById('sumResult');
+
+    // 결과를 표시할 p 태그에 결과 출력
+    sumResultElement.textContent = sum;
+
+</script>
+
+
+<!-- </jsp> -->
+</body></html>

@@ -1,0 +1,238 @@
+<div id="popTotalSch" class="krds-modal fade" data-type="full" aria-labelledby="tit_total_sch">
+	<!-- modal-dialog -->
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<!-- modal title -->
+			<div class="modal-header sr-only">
+				<h2 id="tit_total_sch" class="modal-title">통합검색</h2>
+			</div>
+			<!-- //modal title -->
+			<!-- modal contents -->
+			<div class="modal-conts">
+				<!-- 통합검색 -->
+				<div class="pop-total-serch-wrap">
+					<!-- 통합검색 정보입력 영역 -->
+					<div class="search-total-top">
+						<!-- 검색어 타이틀 -->
+						<div class="search-tit">
+							<label for="total-search-input-modal">검색어를 입력해주세요</label>
+						</div>
+						<!-- //검색어 타이틀 -->
+
+						<!-- 검색어 입력 폼 -->
+						<div class="sch-form-wrap vert">
+							<div class="sch-input">
+								<input type="text" id="total-search-input-modal" class="krds-input xlarge" placeholder="검색어 입력" value="">
+								<button type="button" class="btn_search_clear" style="display: none;">
+									<span class="sr-only">검색어 삭제</span>
+									<i class="svg-icon ico-delete-fill"></i>
+								</button>
+								<button type="button" class="krds-btn xlarge icon ico-search">
+									<span class="sr-only">검색</span>
+									<i class="svg-icon ico-sch"></i>
+								</button>
+							</div>
+							<div class="total_sub_box" style="display: none;">
+								<div class="total_sub_box_in">
+									<p class="sr-only">관련자동검색</p>
+									<ul class="auto_list">
+										<li><a href="#n"><span class="keyword">보금자리론</span> 대출정보 미리보기</a></li>
+										<li><a href="#n">아낌e-<span class="keyword">보금자리론</span> 신청</a></li>
+										<li><a href="#n">U-<span class="keyword">보금자리론</span> 서류</a></li>
+										<li><a href="#n">금리우대 <span class="keyword">보금자리론</span> 금리 신청 금리 신청 금리 신청 금리 신청 금리 신청</a></li>
+										<li><a href="#n">금리우대 <span class="keyword">보금자리론</span> 금리 신청</a></li>
+										<li><a href="#n">금리우대 <span class="keyword">보금자리론</span> 금리 신청</a></li>
+										<li><a href="#n">금리우대 <span class="keyword">보금자리론</span> 금리 신청</a></li>
+										<li><a href="#n">금리우대 <span class="keyword">보금자리론</span> 금리 신청</a></li>
+										<li><a href="#n">금리우대 <span class="keyword">보금자리론</span> 금리 신청</a></li>
+										<li><a href="#n">금리우대 <span class="keyword">보금자리론</span> 금리 신청</a></li>
+										<li><a href="#n">금리우대 <span class="keyword">보금자리론</span> 금리 신청</a></li>
+										<li><a href="#n">금리우대 <span class="keyword">보금자리론</span> 금리 신청</a></li>
+										<li><a href="#n">금리우대 <span class="keyword">보금자리론</span> 금리 신청</a></li>
+										<li><a href="#n">금리우대 <span class="keyword">보금자리론</span> 금리 신청</a></li>
+										<li><a href="#n">금리우대 <span class="keyword">보금자리론</span> 금리 신청</a></li>
+										<li><a href="#n">금리우대 <span class="keyword">보금자리론</span> 금리 신청</a></li>
+										<li><a href="#n">금리우대 <span class="keyword">보금자리론</span> 금리 신청</a></li>
+										<li><a href="#n">금리우대 <span class="keyword">보금자리론</span> 금리 신청</a></li>
+										<li><a href="#n">금리우대 <span class="keyword">보금자리론</span> 금리 신청</a></li>
+										<li><a href="#n">금리우대 <span class="keyword">보금자리론</span> 금리 신청</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- //검색어 입력 폼 -->
+						<script>
+                            (function () {
+                                const input = document.getElementById('total-search-input-modal');
+                                if (!input) return;
+                                
+                                // 입력 필드의 부모 컨테이너 내에서 요소 찾기
+                                const schInputContainer = input.closest('.sch-input');
+                                if (!schInputContainer) return;
+                                
+                                const clearBtn = schInputContainer.querySelector('.btn_search_clear');
+                                const schFormWrap = input.closest('.sch-form-wrap');
+                                const autoBox = schFormWrap ? schFormWrap.querySelector('.total_sub_box') : null;
+                                const modalConts = input.closest('.modal-conts');
+       
+                                if (!clearBtn || !autoBox) return;
+       
+                                // 원래 overflow 값 저장
+                                const originalOverflow = modalConts ? modalConts.style.overflow || '' : '';
+       
+                                const showAuto = () => {
+                                    clearBtn.style.display = 'inline-flex';
+                                    autoBox.style.display = 'block';
+                                    if (modalConts) {
+                                        modalConts.style.overflow = 'hidden';
+                                    }
+                                };
+       
+                                const hideAuto = () => {
+                                    clearBtn.style.display = 'none';
+                                    autoBox.style.display = 'none';
+                                    if (modalConts) {
+                                        modalConts.style.overflow = originalOverflow;
+                                    }
+                                };
+       
+                                // 초기 상태
+                                if (input.value.trim()) {
+                                    showAuto();
+                                } else {
+                                    hideAuto();
+                                }
+       
+                                input.addEventListener('focus', () => {
+                                    if (input.value.trim()) {
+                                        showAuto();
+                                    }
+                                });
+       
+                                input.addEventListener('input', () => {
+                                    if (input.value.trim()) {
+                                        showAuto();
+                                    } else {
+                                        hideAuto();
+                                    }
+                                });
+       
+                                input.addEventListener('keydown', (e) => {
+                                    if (e.key === 'Escape') {
+                                        input.value = '';
+                                        hideAuto();
+                                    }
+                                });
+       
+                                clearBtn.addEventListener('click', () => {
+                                    input.value = '';
+                                    input.focus();
+                                    hideAuto();
+                                });
+       
+                                document.addEventListener('click', (e) => {
+                                    if (!autoBox.contains(e.target) && e.target !== input && e.target !== clearBtn && !schInputContainer.contains(e.target)) {
+                                        if (!input.value.trim()) {
+                                            hideAuto();
+                                        }
+                                    }
+                                });
+                            })();
+                        </script>
+					</div>
+					<!-- //통합검색 정보입력 영역 -->
+
+					<!-- 검색어 리스트 -->
+					<div class="search-text">
+						<!-- 검색어 입력 전 -->
+						<ul class="sch-info-list">
+							<li class="sch-info-item word-popular">
+								<h3 class="tit">인기검색어</h3>
+								<ol class="list">
+									<li>
+										<a href="#" class="ranking-txt">안전보건교육</a>
+
+									</li>
+									<li>
+										<a href="#" class="ranking-txt">산업재해조사표</a>
+
+									</li>
+									<li>
+										<a href="#" class="ranking-txt">퇴직금계산기</a>
+
+									</li>
+									<li>
+										<a href="#" class="ranking-txt">육아휴직급여</a>
+
+									</li>
+									<li>
+										<a href="#" class="ranking-txt">실업인정신청</a>
+
+									</li>
+									<li>
+										<a href="#" class="ranking-txt">국민내일배움</a>
+
+									</li>
+									<li>
+										<a href="#" class="ranking-txt">노사협의회</a>
+
+									</li>
+									<li>
+										<a href="#" class="ranking-txt">산업안전보건</a>
+
+									</li>
+									<li>
+										<a href="#" class="ranking-txt">국민내일배움카드신청</a>
+
+									</li>
+									<li>
+										<a href="#" class="ranking-txt">안전보건교육</a>
+
+									</li>
+								</ol>
+							</li>
+							<li class="sch-info-item word-lately">
+								<h3 class="tit">최근검색어</h3>
+								<ul class="list" aria-live="polite">
+									<li>
+										<a href="#" class="word-txt">안전보건교육</a>
+										<button type="button" class="krds-btn small icon">
+											<span class="sr-only">삭제</span>
+											<i class="svg-icon ico-delete-fill"></i>
+										</button>
+									</li>
+									<li>
+										<a href="#" class="word-txt">안전보건교육</a>
+										<button type="button" class="krds-btn small icon">
+											<span class="sr-only">삭제</span>
+											<i class="svg-icon ico-delete-fill"></i>
+										</button>
+									</li>
+									<li>
+										<a href="#" class="word-txt">안전보건교육</a>
+										<button type="button" class="krds-btn small icon">
+											<span class="sr-only">삭제</span>
+											<i class="svg-icon ico-delete-fill"></i>
+										</button>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- //검색어 입력 전 -->
+					</div>
+					<!-- //검색어 리스트 -->
+				</div>
+				<!-- //통합검색 -->
+			</div>
+			<!-- //modal contents -->
+			<!-- close button -->
+			<button type="button" class="krds-btn xlarge icon btn-close close-modal">
+				<span class="sr-only">닫기</span>
+				<i class="svg-icon ico-popup-close"></i>
+			</button>
+			<!-- //close button -->
+		</div>
+	</div>
+	<!-- //modal-dialog -->
+	<div class="modal-back"></div>
+</div>
