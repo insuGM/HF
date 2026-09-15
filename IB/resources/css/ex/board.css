@@ -222,7 +222,7 @@ body .krds-btn.text {display: inline-flex; align-items: center; justify-content:
 .data_chk_btn_area .chk_btn.active {gap: var(--hf-gap-2); border: 1px solid var(--hf-color-border-primary); background-color: var(--hf-color-action-primary-selected); color: var(--hf-color-text-primary);}
 .data_chk_btn_area .chk_btn.active:before {content: ''; width: 1.6rem; height: 1.6rem; background-image: url('/resources/images/common/ico_checkbox_checked.svg'); background-position: center; background-size: contain; background-repeat: no-repeat;}
 
-.btn_cont .com_btn {display: flex; align-items: center; justify-content: center; width: 100%; border: 1px solid var(--hf-color-button-teriary-border ); padding: var(--hf-padding-5) var(--hf-padding-6); font-weight: 500; font-size: var(--hf-font-size-body-medium); color: var(--hf-color-text-basic); border-radius: var(--hf-radius-large1); text-align: center;}
+.btn_cont .com_btn {display: flex; align-items: center; justify-content: center; width: 100%; border: 1px solid var(--hf-color-button-tertiary-border ); padding: var(--hf-padding-5) var(--hf-padding-6); font-weight: 500; font-size: var(--hf-font-size-body-medium); color: var(--hf-color-text-basic); border-radius: var(--hf-radius-large1); text-align: center;}
 .btn_cont .com_btn:disabled {border: initial !important; background-color: var(--hf-color-button-disabled-fill) !important; color: var(--hf-color-text-disabled-on) !important; cursor: initial !important ;}
 .btn_cont .com_btn.blue {border: initial; background-color: var(--hf-color-light-primary-5); color: var(--hf-color-text-secondary);}
 .btn_cont .com_btn.blue2 {border: initial; background-color: var(--hf-color-button-primary-fill); color: #ffffff;}
@@ -243,8 +243,8 @@ body .krds-btn.text {display: inline-flex; align-items: center; justify-content:
 .btn_cont .com_btn.link i {display: inline-flex; position: absolute; top: 50%; right: var(--hf-padding-6); width: 2rem; height: 2rem; mask-position: center; mask-size: contain; mask-repeat: no-repeat; transform: translateY(-50%);}
 .btn_cont .com_btn.link.type2 {font-size: var(--hf-font-size-label-large);}
 .btn_cont .com_btn.link.type2 i {background-color: #ffffff; transform: translateY(-50%) rotate(-90deg);}
-.btn_cont .com_btn.link.type2.org i {background-color: var(--hf-color-button-teriary-border); transform: translateY(-50%) rotate(-90deg);}
-.btn_cont .com_btn.link.org i {background-color: var(--hf-color-button-teriary-border); transform: translateY(-50%) rotate(-90deg);}
+.btn_cont .com_btn.link.type2.org i {background-color: var(--hf-color-button-tertiary-border); transform: translateY(-50%) rotate(-90deg);}
+.btn_cont .com_btn.link.org i {background-color: var(--hf-color-button-tertiary-border); transform: translateY(-50%) rotate(-90deg);}
 .btn_cont .com_btn.link.type2.blue i {background-color: var(--hf-color-icon-primary);}
 .btn_cont .com_btn.link2 {position: relative; font-size: var(--hf-font-size-body-medium);}
 .btn_cont .com_btn.link2 i {display: inline-flex; position: absolute; top: 50%; right: var(--hf-padding-6); width: 2rem; height: 2rem; background-color: var(--hf-color-border-secondary-border); mask-position: center; mask-size: contain; mask-repeat: no-repeat; transform: translateY(-50%) rotate(-90deg);}
@@ -258,7 +258,7 @@ body .krds-btn.text {display: inline-flex; align-items: center; justify-content:
 .btn_cont .com_btn.up {height: 5.6rem;}
 
 
-.jconfirm-buttons .btn {display: block; width: 100%; border: 1px solid var(--hf-color-button-teriary-border ); padding: var(--hf-padding-5) var(--hf-padding-6); font-weight: 500; font-size: var(--hf-font-size-body-medium); color: var(--hf-color-text-basic); border-radius: var(--hf-radius-large1); text-align: center;}
+.jconfirm-buttons .btn {display: block; width: 100%; border: 1px solid var(--hf-color-button-tertiary-border ); padding: var(--hf-padding-5) var(--hf-padding-6); font-weight: 500; font-size: var(--hf-font-size-body-medium); color: var(--hf-color-text-basic); border-radius: var(--hf-radius-large1); text-align: center;}
 .jconfirm-buttons .btn:disabled {border: initial; background-color: var(--hf-color-button-disabled-fill); color: var(--hf-color-text-disabled-on); cursor: initial;}
 .jconfirm-buttons .btn.blue {border: initial; background-color: var(--hf-color-light-primary-5); color: var(--hf-color-text-secondary);}
 .jconfirm-buttons .btn.btn-primary {border: initial; background-color: var(--hf-color-button-primary-fill); color: #ffffff;}

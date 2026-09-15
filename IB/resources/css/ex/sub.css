@@ -19,7 +19,7 @@
   --hf-color-light-information-50: #0B78CB;
   --hf-padding-2-1: 0.5rem;
   --hf-text-danger: #bd2c0f;
-  --hf-color-input-border-disabled: #b1bbbe;
+  --hf-color-input-border-disabled: #b1b8be;
   --hf-color-light-danger: #fdefec;
   --hf-color-light-secondary-60: #08264D;
   --hf-size-height: 0.3rem;
@@ -694,7 +694,7 @@ nav.tab_bar {display: none !important;}
 .ver_cont .text_area {display: block; align-items: flex-start; justify-content: flex-start; gap: var(--hf-gap-7); width: 100%;}
 .ver_cont .text_area .title {font-weight: 500; font-size: var(--hf-font-size-body-large); color: var(--hf-color-text-basic);}
 .ver_cont .text_area .text {font-weight: 400; font-size: var(--hf-font-size-body-small); color: var(--hf-color-text-subtle);}
-.ver_cont .ver_btn {margin: var(--hf-gap-7) auto 0; border: 1px solid var(--hf-color-button-teriary-border); padding: var(--hf-padding-3) var(--hf-padding-5); font-weight: 500; font-size: var(--hf-font-size-label-small); color: var(--hf-color-text-basic); border-radius: var(--hf-radius-medium3);}
+.ver_cont .ver_btn {margin: var(--hf-gap-7) auto 0; border: 1px solid var(--hf-color-button-tertiary-border); padding: var(--hf-padding-3) var(--hf-padding-5); font-weight: 500; font-size: var(--hf-font-size-label-small); color: var(--hf-color-text-basic); border-radius: var(--hf-radius-medium3);}
 .ver_cont .ver_btn.gray {border: initial; background-color: var(--hf-color-light-gray-5); color: var(--hf-color-text-basic);}
 
 

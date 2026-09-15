@@ -95,7 +95,7 @@
 .field_btn.btn-help-exec {gap: var(--hf-gap-2); height: initial; border: initial; padding: 0;}
 .field_btn.gap {gap: var(--hf-gap-4);}
 .field_btn.gray {}
-.field_btn.red {border: 1px solid var(--hf--color-button-required-fill); color: var(--hf-color-text-point);}
+.field_btn.red {border: 1px solid var(--hf-color-button-required-fill); color: var(--hf-color-text-point);}
 .field_btn.blue {border: 1px solid var(--hf-color-icon-primary); background-color: var(--hf-color-icon-primary); color: var(--hf-color-action-white);}
 .field_btn.blue2 {border: 1px solid var(--hf-color-button-secondary-border); background-color: var(--hf-color-button-secondary-fill); color: var(--hf-color-button-secondary-border);}
 .field_btn:disabled {border: 1px solid var(--hf-color-text-disabled) !important; background-color: var(--krds-light-color-button-disabled-fill) !important; color: var(--hf-color-text-disabled-on);}
